@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "507559977821",
+    "project_id": "building-blocks-b0332",
+    "storage_bucket": "building-blocks-b0332.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507559977821:android:9864b70dc5d01c1d4c3eb4",
+        "android_client_info": {
+          "package_name": "com.Akshara.BBplusplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507559977821-qlhpj7mqpkhrsliu72g37a09q4ol9l30.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtRuYmt-G3IpdLTB8IBve8wYWFHWd_ovM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507559977821-qlhpj7mqpkhrsliu72g37a09q4ol9l30.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507559977821:android:8b7962e4199e14034c3eb4",
+        "android_client_info": {
+          "package_name": "com.akshara.easymath"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507559977821-qlhpj7mqpkhrsliu72g37a09q4ol9l30.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtRuYmt-G3IpdLTB8IBve8wYWFHWd_ovM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507559977821-qlhpj7mqpkhrsliu72g37a09q4ol9l30.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
