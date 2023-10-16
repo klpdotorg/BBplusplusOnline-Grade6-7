@@ -19,7 +19,7 @@
     
     <preference name="AndroidXEnabled" value="false"/>
         <preference name="android-minSdkVersion" value="21" />
-        <!-- <preference name="android-targetSdkVersion" value="30" /> -->
+        <preference name="android-targetSdkVersion" value="33" />
         <icon density="mdpi" src="assets/hdpi/ic_bbpp_logo.png" />
         <icon density="hdpi" src="assets/hdpi/ic_bbpp_logo.png" />
         <icon density="xhdpi" src="assets/xhdpi/ic_bbpp_logo.png" />
