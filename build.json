@@ -1,18 +1,19 @@
-{
-    "android": {
-        "debug": {
-            "keystore": "bbplusplusonline.jks",
-            "storePassword": "bbplusplusonline",
-            "alias": "bbplusplusonline",
-            "password" : "bbplusplusonline",
-            "keystoreType": "jks"
-        },
-        "release": {
-            "keystore": "bbplusplusonline.jks",
-            "storePassword": "bbplusplusonline",
-            "alias": "bbplusplusonline",
-            "password" : "bbplusplusonline",  
-            "keystoreType": "jks"
+
+  {
+            "android": {
+                "debug": {
+                    "keystore": "bbplusplusonlinelatest.jks",
+                    "storePassword": "bbplusplusonlinelatest",
+                    "alias": "bbplusplusonlinelatest",
+                    "password" : "bbplusplusonlinelatest",
+                    "keystoreType": "jks"
+                },
+                "release": {
+                    "keystore": "bbplusplusonlinelatest.jks",
+                    "storePassword": "bbplusplusonlinelatest",
+                    "alias": "bbplusplusonlinelatest",
+                    "password" : "bbplusplusonlinelatest",  
+                    "keystoreType": "jks"
+                }
+            }
         }
-    }
-}

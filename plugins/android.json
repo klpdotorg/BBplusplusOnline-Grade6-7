@@ -58,10 +58,16 @@
     "cordova-plugin-native-spinner": {
       "PACKAGE_NAME": "com.Akshara.BBplusplus"
     },
+    "cordova-plugin-navigationbar": {
+      "PACKAGE_NAME": "com.Akshara.BBplusplus"
+    },
     "cordova-plugin-network-information": {
       "PACKAGE_NAME": "com.Akshara.BBplusplus"
     },
     "cordova-plugin-screen-orientation": {
+      "PACKAGE_NAME": "com.Akshara.BBplusplus"
+    },
+    "cordova-plugin-statusbar": {
       "PACKAGE_NAME": "com.Akshara.BBplusplus"
     },
     "cordova-plugin-x-socialsharing": {
@@ -77,12 +83,6 @@
       "PACKAGE_NAME": "com.Akshara.BBplusplus"
     },
     "nl.madebymark.share": {
-      "PACKAGE_NAME": "com.Akshara.BBplusplus"
-    },
-    "cordova-plugin-navigationbar": {
-      "PACKAGE_NAME": "com.Akshara.BBplusplus"
-    },
-    "cordova-plugin-statusbar": {
       "PACKAGE_NAME": "com.Akshara.BBplusplus"
     }
   },

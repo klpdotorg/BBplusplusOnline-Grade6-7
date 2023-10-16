@@ -254,6 +254,14 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       ]
     },
     {
+      "id": "cordova-plugin-navigationbar.navigationbar",
+      "file": "plugins/cordova-plugin-navigationbar/www/navigationbar.js",
+      "pluginId": "cordova-plugin-navigationbar",
+      "clobbers": [
+        "window.navigationbar"
+      ]
+    },
+    {
       "id": "cordova-plugin-network-information.network",
       "file": "plugins/cordova-plugin-network-information/www/network.js",
       "pluginId": "cordova-plugin-network-information",
@@ -281,6 +289,14 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "pluginId": "cordova-plugin-screen-orientation",
       "clobbers": [
         "cordova.plugins.screenorientation"
+      ]
+    },
+    {
+      "id": "cordova-plugin-statusbar.statusbar",
+      "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+      "pluginId": "cordova-plugin-statusbar",
+      "clobbers": [
+        "window.StatusBar"
       ]
     },
     {
@@ -322,22 +338,6 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "window.navigator.share"
       ]
-    },
-    {
-      "id": "cordova-plugin-navigationbar.navigationbar",
-      "file": "plugins/cordova-plugin-navigationbar/www/navigationbar.js",
-      "pluginId": "cordova-plugin-navigationbar",
-      "clobbers": [
-        "window.navigationbar"
-      ]
-    },
-    {
-      "id": "cordova-plugin-statusbar.statusbar",
-      "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
-      "pluginId": "cordova-plugin-statusbar",
-      "clobbers": [
-        "window.StatusBar"
-      ]
     }
   ];
   module.exports.metadata = {
@@ -350,15 +350,15 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-firebasex": "14.2.1",
     "cordova-plugin-fullscreen": "1.3.0",
     "cordova-plugin-native-spinner": "1.1.4",
+    "cordova-plugin-navigationbar": "1.0.31",
     "cordova-plugin-network-information": "3.0.0",
     "es6-promise-plugin": "4.2.2",
     "cordova-plugin-screen-orientation": "3.0.2",
+    "cordova-plugin-statusbar": "3.0.0",
     "cordova-plugin-x-socialsharing": "6.0.4",
     "cordova-plugin-x-toast": "2.7.3",
     "cordova-plugin-zip": "3.1.0",
     "cordova-sqlite-storage": "6.0.0",
-    "nl.madebymark.share": "0.1.1",
-    "cordova-plugin-navigationbar": "1.0.31",
-    "cordova-plugin-statusbar": "3.0.0"
+    "nl.madebymark.share": "0.1.1"
   };
 });
