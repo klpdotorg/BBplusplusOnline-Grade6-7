@@ -13,9 +13,6 @@
     "cordova-plugin-androidx-adapter": {
       "PACKAGE_NAME": "com.Akshara.BBplusplus"
     },
-    "cordova-plugin-appsflyer-sdk": {
-      "PACKAGE_NAME": "com.Akshara.BBplusplus"
-    },
     "cordova-plugin-device": {
       "PACKAGE_NAME": "com.Akshara.BBplusplus"
     },

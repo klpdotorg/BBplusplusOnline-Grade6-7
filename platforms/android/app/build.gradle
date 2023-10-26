@@ -109,7 +109,6 @@ ext {
 }
 
 // PLUGIN GRADLE EXTENSIONS START
-apply from: "../cordova-plugin-appsflyer-sdk/BBplusplus-cordovaAF.gradle"
 apply from: "../cordova-plugin-firebasex/BBplusplus-build.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 

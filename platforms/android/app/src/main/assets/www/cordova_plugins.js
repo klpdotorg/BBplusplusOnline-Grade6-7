@@ -9,22 +9,6 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       ]
     },
     {
-      "id": "cordova-plugin-appsflyer-sdk.appsflyer",
-      "file": "plugins/cordova-plugin-appsflyer-sdk/www/appsflyer.js",
-      "pluginId": "cordova-plugin-appsflyer-sdk",
-      "clobbers": [
-        "window.plugins.appsFlyer"
-      ]
-    },
-    {
-      "id": "cordova-plugin-appsflyer-sdk.AppsFlyerError",
-      "file": "plugins/cordova-plugin-appsflyer-sdk/www/AppsFlyerError.js",
-      "pluginId": "cordova-plugin-appsflyer-sdk",
-      "clobbers": [
-        "AppsFlyerError"
-      ]
-    },
-    {
       "id": "cordova-plugin-device.device",
       "file": "plugins/cordova-plugin-device/www/device.js",
       "pluginId": "cordova-plugin-device",
@@ -343,7 +327,6 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
   module.exports.metadata = {
     "cordova-plugin-android-permissions": "1.1.5",
     "cordova-plugin-androidx-adapter": "1.1.3",
-    "cordova-plugin-appsflyer-sdk": "6.8.2-rc1",
     "cordova-plugin-device": "2.1.0",
     "cordova-plugin-file": "7.0.0",
     "cordova-plugin-file-transfer": "1.7.1",
