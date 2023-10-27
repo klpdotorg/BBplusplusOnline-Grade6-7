@@ -248,13 +248,13 @@ Game.practiceModegradeSelectionScreen.prototype = {
 			// },this);
 
 			//adding grade clouds
-			_this.grade6Cloud = _this.add.sprite(220, 170, 'gradeCloud');
+			_this.grade6Cloud = _this.add.sprite(220, 180, 'gradeCloud');
 			_this.grade6Cloud.anchor.setTo(0.5);
 			_this.grade6Cloud.name = "grade6";
 			_this.grade6Cloud.inputEnabled = true;
 			_this.grade6Cloud.input.useHandCursor = true;
 			_this.grade6Cloud.events.onInputDown.add(_this.gradeSelected, _this);
-			_this.grade6CloudTxt = this.add.text(210, 168, ' \n' + window.selctedLang.grade6 + '\n ');
+			_this.grade6CloudTxt = this.add.text(210, 178, ' \n' + window.selctedLang.grade6 + '\n ');
 			_this.grade6CloudTxt.anchor.setTo(0.5);
 			_this.grade6CloudTxt.align = 'center';
 			_this.grade6CloudTxt.font = 'gradefont';
@@ -267,13 +267,13 @@ Game.practiceModegradeSelectionScreen.prototype = {
 			_this.grade6CloudTxt.wordWrap = true;
 			_this.grade6CloudTxt.wordWrapWidth = 500;
 
-			_this.grade7Cloud = _this.add.sprite(750, 190, 'gradeCloud');
+			_this.grade7Cloud = _this.add.sprite(750, 200, 'gradeCloud');
 			_this.grade7Cloud.anchor.setTo(0.5);
 			_this.grade7Cloud.name = "grade7";
 			_this.grade7Cloud.inputEnabled = true;
 			_this.grade7Cloud.input.useHandCursor = true;
 			_this.grade7Cloud.events.onInputDown.add(_this.gradeSelected, _this);
-			_this.grade7CloudTxt = this.add.text(740, 188, ' \n' + window.selctedLang.grade7 + '\n ');
+			_this.grade7CloudTxt = this.add.text(740, 198, ' \n' + window.selctedLang.grade7 + '\n ');
 			_this.grade7CloudTxt.anchor.setTo(0.5);
 			_this.grade7CloudTxt.align = 'center';
 			_this.grade7CloudTxt.font = 'gradefont';
@@ -286,62 +286,62 @@ Game.practiceModegradeSelectionScreen.prototype = {
 			_this.grade7CloudTxt.wordWrap = true;
 			_this.grade7CloudTxt.wordWrapWidth = 500;
 
-			_this.grade3Cloud = _this.add.sprite(_this.world.centerX, _this.world.centerY, 'gradeCloud');
-			_this.grade3Cloud.anchor.setTo(0.5);
-			_this.grade3Cloud.name = "";
-			_this.grade3Cloud.inputEnabled = true;
-			_this.grade3Cloud.input.useHandCursor = true;
-			//_this.grade3Cloud.events.onInputDown.add(_this.gradeSelected,_this);
-			_this.grade3CloudTxt = this.add.text(_this.world.centerX, _this.world.centerY, ' \n ');
-			_this.grade3CloudTxt.anchor.setTo(0.5);
-			_this.grade3CloudTxt.align = 'center';
-			_this.grade3CloudTxt.font = 'gradefont';
+			_this.grade8Cloud = _this.add.sprite(460, 330, 'gradeCloud');
+			_this.grade8Cloud.anchor.setTo(0.5);
+			_this.grade8Cloud.name = "grade8";
+			_this.grade8Cloud.inputEnabled = true;
+			_this.grade8Cloud.input.useHandCursor = true;
+			//_this.grade8Cloud.events.onInputDown.add(_this.gradeSelected,_this);
+			_this.grade8CloudTxt = this.add.text(450, 328, ' \n' + window.selctedLang.grade8 + ' \n ');
+			_this.grade8CloudTxt.anchor.setTo(0.5);
+			_this.grade8CloudTxt.align = 'center';
+			_this.grade8CloudTxt.font = 'gradefont';						
 			if (_this.languageSelected == "TM")
-				_this.grade3CloudTxt.fontSize = 30;
+				_this.grade8CloudTxt.fontSize = 30;
 			else
-				_this.grade3CloudTxt.fontSize = 34;
-			_this.grade3CloudTxt.fontWeight = 'normal';
-			_this.grade3CloudTxt.fill = '#563814';
-			_this.grade3CloudTxt.wordWrap = true;
-			_this.grade3CloudTxt.wordWrapWidth = 500;
+				_this.grade8CloudTxt.fontSize = 34;
+			_this.grade8CloudTxt.fontWeight = 'normal';
+			_this.grade8CloudTxt.fill = '#563814';
+			_this.grade8CloudTxt.wordWrap = true;
+			_this.grade8CloudTxt.wordWrapWidth = 500;
 
-			_this.grade4Cloud = _this.add.sprite(250, 400, 'gradeCloud');
-			_this.grade4Cloud.anchor.setTo(0.5);
-			_this.grade4Cloud.name = "";
-			_this.grade4Cloud.inputEnabled = true;
-			_this.grade4Cloud.input.useHandCursor = true;
-			//_this.grade4Cloud.events.onInputDown.add(_this.gradeSelected,_this);
-			_this.grade4CloudTxt = this.add.text(240, 398, ' \n \n ');
-			_this.grade4CloudTxt.anchor.setTo(0.5);
-			_this.grade4CloudTxt.align = 'center';
-			_this.grade4CloudTxt.font = 'gradefont';
-			if (_this.languageSelected == "TM")
-				_this.grade4CloudTxt.fontSize = 30;
-			else
-				_this.grade4CloudTxt.fontSize = 34;
-			_this.grade4CloudTxt.fontWeight = 'normal';
-			_this.grade4CloudTxt.fill = '#563814';
-			_this.grade4CloudTxt.wordWrap = true;
-			_this.grade4CloudTxt.wordWrapWidth = 500;
+			// _this.grade4Cloud = _this.add.sprite(250, 400, 'gradeCloud');
+			// _this.grade4Cloud.anchor.setTo(0.5);
+			// _this.grade4Cloud.name = "";
+			// _this.grade4Cloud.inputEnabled = true;
+			// _this.grade4Cloud.input.useHandCursor = true;
+			// //_this.grade4Cloud.events.onInputDown.add(_this.gradeSelected,_this);
+			// _this.grade4CloudTxt = this.add.text(240, 398, ' \n \n ');
+			// _this.grade4CloudTxt.anchor.setTo(0.5);
+			// _this.grade4CloudTxt.align = 'center';
+			// _this.grade4CloudTxt.font = 'gradefont';
+			// if (_this.languageSelected == "TM")
+			// 	_this.grade4CloudTxt.fontSize = 30;
+			// else
+			// 	_this.grade4CloudTxt.fontSize = 34;
+			// _this.grade4CloudTxt.fontWeight = 'normal';
+			// _this.grade4CloudTxt.fill = '#563814';
+			// _this.grade4CloudTxt.wordWrap = true;
+			// _this.grade4CloudTxt.wordWrapWidth = 500;
 
-			_this.grade5Cloud = _this.add.sprite(700, 420, 'gradeCloud');
-			_this.grade5Cloud.anchor.setTo(0.5);
-			_this.grade5Cloud.name = "";
-			_this.grade5Cloud.inputEnabled = true;
-			_this.grade5Cloud.input.useHandCursor = true;
-			//_this.grade5Cloud.events.onInputDown.add(_this.gradeSelected,_this);
-			_this.grade5CloudTxt = this.add.text(690, 418, ' \n\n ');
-			_this.grade5CloudTxt.anchor.setTo(0.5);
-			_this.grade5CloudTxt.align = 'center';
-			_this.grade5CloudTxt.font = 'gradefont';
-			if (_this.languageSelected == "TM")
-				_this.grade5CloudTxt.fontSize = 32;
-			else
-				_this.grade5CloudTxt.fontSize = 34;
-			_this.grade5CloudTxt.fontWeight = 'normal';
-			_this.grade5CloudTxt.fill = '#563814';
-			_this.grade5CloudTxt.wordWrap = true;
-			_this.grade5CloudTxt.wordWrapWidth = 500;
+			// _this.grade5Cloud = _this.add.sprite(700, 420, 'gradeCloud');
+			// _this.grade5Cloud.anchor.setTo(0.5);
+			// _this.grade5Cloud.name = "";
+			// _this.grade5Cloud.inputEnabled = true;
+			// _this.grade5Cloud.input.useHandCursor = true;
+			// //_this.grade5Cloud.events.onInputDown.add(_this.gradeSelected,_this);
+			// _this.grade5CloudTxt = this.add.text(690, 418, ' \n\n ');
+			// _this.grade5CloudTxt.anchor.setTo(0.5);
+			// _this.grade5CloudTxt.align = 'center';
+			// _this.grade5CloudTxt.font = 'gradefont';
+			// if (_this.languageSelected == "TM")
+			// 	_this.grade5CloudTxt.fontSize = 32;
+			// else
+			// 	_this.grade5CloudTxt.fontSize = 34;
+			// _this.grade5CloudTxt.fontWeight = 'normal';
+			// _this.grade5CloudTxt.fill = '#563814';
+			// _this.grade5CloudTxt.wordWrap = true;
+			// _this.grade5CloudTxt.wordWrapWidth = 500;
 
 			_this.graphicsBg = _this.add.graphics(0, 0);
 			_this.graphicsBg.lineStyle(0, 0xFFFFFF, 0.8);
@@ -355,36 +355,36 @@ Game.practiceModegradeSelectionScreen.prototype = {
 			if (_this.languageSelected == "HIN") {
 				_this.grade6Cloud.frame = 1;
 				_this.grade2Cloud.frame = 1;
-				_this.grade3Cloud.frame = 1;
-				_this.grade4Cloud.frame = 1;
-				_this.grade5Cloud.frame = 1;
+				_this.grade8Cloud.frame = 1;
+				//_this.grade4Cloud.frame = 1;
+				//_this.grade5Cloud.frame = 1;
 			}
 			else if (_this.languageSelected == "KAN") {
 				_this.grade6Cloud.frame = 2;
 				_this.grade2Cloud.frame = 2;
-				_this.grade3Cloud.frame = 2;
-				_this.grade4Cloud.frame = 2;
-				_this.grade5Cloud.frame = 2;
+				_this.grade8Cloud.frame = 2;
+				//_this.grade4Cloud.frame = 2;
+				//_this.grade5Cloud.frame = 2;
 			}
 			else {
 				_this.grade6Cloud.frame = 0;
 				_this.grade7Cloud.frame = 0;
-				_this.grade3Cloud.frame = 0;
-				_this.grade4Cloud.frame = 0;
-				_this.grade5Cloud.frame = 0;
+				_this.grade8Cloud.frame = 0;
+				// _this.grade4Cloud.frame = 0;
+				// _this.grade5Cloud.frame = 0;
 			}
 
 			_this.graphicsBg.addChild(_this.grade6Cloud);
 			_this.graphicsBg.addChild(_this.grade7Cloud);
-			_this.graphicsBg.addChild(_this.grade3Cloud);
-			_this.graphicsBg.addChild(_this.grade4Cloud);
-			_this.graphicsBg.addChild(_this.grade5Cloud);
+			_this.graphicsBg.addChild(_this.grade8Cloud);
+			// _this.graphicsBg.addChild(_this.grade4Cloud);
+			// _this.graphicsBg.addChild(_this.grade5Cloud);
 
 			_this.graphicsBg.addChild(_this.grade6CloudTxt);
 			_this.graphicsBg.addChild(_this.grade7CloudTxt);
-			_this.graphicsBg.addChild(_this.grade3CloudTxt);
-			_this.graphicsBg.addChild(_this.grade4CloudTxt);
-			_this.graphicsBg.addChild(_this.grade5CloudTxt);
+			_this.graphicsBg.addChild(_this.grade8CloudTxt);
+			// _this.graphicsBg.addChild(_this.grade4CloudTxt);
+			// _this.graphicsBg.addChild(_this.grade5CloudTxt);
 
 		}
 
@@ -400,8 +400,8 @@ Game.practiceModegradeSelectionScreen.prototype = {
 		_this.gradeBackBtn.events.onInputDown.removeAll();
 		_this.grade6Cloud.events.onInputDown.removeAll();
 		_this.grade7Cloud.events.onInputDown.removeAll();
-		_this.grade3Cloud.events.onInputDown.removeAll();
-		_this.grade4Cloud.events.onInputDown.removeAll();
+		_this.grade8Cloud.events.onInputDown.removeAll();
+		// _this.grade4Cloud.events.onInputDown.removeAll();
 
 
 		_this.clickSound = _this.add.audio('ClickSound');
