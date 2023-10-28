@@ -16,8 +16,8 @@
     <platform name="android">
     <preference name="AndroidPersistentFileLocation" value="Internal" />
             <!-- if u get some error while generating release apk try adding these two lines  (error: mapReleaseSourceSetPaths FAILED)-->
-        <preference name="GradlePluginGoogleServicesEnabled" value="true" />
-        <preference name="GradlePluginGoogleServicesVersion" value="4.3.14" />
+        <!-- <preference name="GradlePluginGoogleServicesEnabled" value="true" />
+        <preference name="GradlePluginGoogleServicesVersion" value="4.3.14" /> -->
     <!-- <preference name="AndroidPersistentFileLocation" value="Compatibility"/> -->
     
     <preference name="AndroidXEnabled" value="false"/>
