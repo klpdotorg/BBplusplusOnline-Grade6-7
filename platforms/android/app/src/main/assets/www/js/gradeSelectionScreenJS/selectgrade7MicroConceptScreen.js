@@ -134,7 +134,7 @@ Game.selectgrade7MicroConceptScreen.prototype={
 		this.gradeTreeTxt[arrIndex] = this.add.text(x, y-40, lang+'\n');
 		this.gradeTreeTxt[arrIndex].anchor.setTo(0.5);
 		this.gradeTreeTxt[arrIndex].align = 'center';
-		this.gradeTreeTxt[arrIndex].fontSize = 16;
+		this.gradeTreeTxt[arrIndex].fontSize = 20;//16;
 		this.gradeTreeTxt[arrIndex].fontWeight = 'normal';
 		this.gradeTreeTxt[arrIndex].fill = '#FFFFFF';
 		this.gradeTreeTxt[arrIndex].wordWrap = true;

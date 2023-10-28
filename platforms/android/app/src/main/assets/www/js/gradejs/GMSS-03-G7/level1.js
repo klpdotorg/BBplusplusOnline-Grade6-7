@@ -243,7 +243,7 @@ Game.GMSS_03_G7level1.prototype =
 
             if (_this.minutes < 10) {
                 _this.minutes = _this.minutes + 1;
-                _this.seconds = 0;
+                _this.seconds = 00;
             }
             else {
                 _this.minutes = _this.minutes + 1;
@@ -256,6 +256,7 @@ Game.GMSS_03_G7level1.prototype =
                 _this.seconds = _this.counterForTimer;
         }
         _this.timeDisplay.setText(_this.minutes + ':' + _this.seconds);
+        //timer.setText(minutes + ':'+ seconds );
     },
     generateStarsForTheScene: function (count) {
         _this.starsGroup = _this.add.group();
