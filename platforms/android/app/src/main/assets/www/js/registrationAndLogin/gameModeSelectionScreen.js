@@ -48,7 +48,7 @@ Game.gameModeSelectionScreen.prototype={
 		titleBar.drawRect(0, 0, 540, 80);
 
 
-		var titleTxt = _this.add.text(_this.world.centerX-140,45,"Building Blocks");
+		var titleTxt = _this.add.text(_this.world.centerX-40,45,"Building Blocks 6-8 by Akshara");
 		titleTxt.x = Math.round(titleTxt.x);
 		titleTxt.anchor.setTo(0.5);
 		titleTxt.align = 'center';
@@ -358,7 +358,7 @@ Game.gameModeSelectionScreen.prototype={
 		else
 		{
 			//window.plugins.toast.show("Building Blocks is loading \n please wait", 2000, "center");
-			SpinnerDialog.show(null, "Building Blocks is loading..", true);
+			SpinnerDialog.show(null, "Building Blocks 6-8 by Akshara is loading..", true);
 			_this.checkOnlineForData();
 		}
 		

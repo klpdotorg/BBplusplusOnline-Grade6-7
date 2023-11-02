@@ -66,10 +66,10 @@ var nativeApp =
             FirebasePlugin.logEvent("Share_button_clicked", {Share_button_clicked_value: "Share_button_clicked", item_id: ""});
 
             var options = {
-              message: 'Check out this Amazing app \"Building Blocks++\",  that can help your child studying in class 6-8 learn Mathematics in the most amazing way, Download the android app now:', // not supported on some apps (Facebook, Instagram)
-              subject: 'Building Blocks++', // fi. for email
+              message: 'Check out this Amazing app \"Building Blocks 6-8 by Akshara\",  that can help your child studying in class 6-8 learn Mathematics in the most amazing way, Download the android app now:', // not supported on some apps (Facebook, Instagram)
+              subject: 'Building Blocks 6-8 by Akshara', // fi. for email
               files: ['', ''], // an array of filenames either locally or remotely
-              url: 'https://bit.ly/BBplusplus_downloads',
+              url: 'https://bit.ly/BuildingBlocks6-8byAkshara_downloads',
               //'http://bit.ly/Building_blocks_download',
               chooserTitle: 'Pick an app' // Android only, you can override the default share sheet title
             }//

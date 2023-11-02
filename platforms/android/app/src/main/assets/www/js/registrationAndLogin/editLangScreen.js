@@ -48,7 +48,7 @@ Game.editLangScreen.prototype={
 
 	    document.addEventListener('backbutton', _this.goback, false);
 
-		var titleTxt = game.add.text(game.world.centerX-80,45,"Building Blocks++");
+		var titleTxt = game.add.text(game.world.centerX-10,45,"Building Blocks 6-8 by Akshara");
 		titleTxt.x = Math.round(titleTxt.x);
 			titleTxt.anchor.setTo(0.5);
 			titleTxt.align = 'center';
@@ -84,16 +84,16 @@ Game.editLangScreen.prototype={
 				lang = "ಕನ್ನಡ";
 			if(_this.user.language == "Odiya")
 				lang = "ଓଡ଼ିଆ";
-			if(_this.user.language == "Gujarati")
-				lang = "ગુજરાતી";
+			// if(_this.user.language == "Gujarati")
+			// 	lang = "ગુજરાતી";
 			if(_this.user.language == "Marathi")
 				lang = "मराठी"
-			if(_this.user.language == "Telugu")
-				lang = "తెలుగు"
+			// if(_this.user.language == "Telugu")
+			// 	lang = "తెలుగు"
 			if(_this.user.language == "Tamil")
 				lang = "தமிழ்"
-			if(_this.user.language == "Urdu")
-				lang = "اردو"
+			// if(_this.user.language == "Urdu")
+			// 	lang = "اردو"
 
     	this.selectLanguageText = game.add.text(game.world.centerX-10,game.world.centerY-57,lang);
 		this.selectLanguageText.x = Math.round(_this.selectLanguageText.x);
@@ -114,21 +114,21 @@ Game.editLangScreen.prototype={
 
 			this.languageSelectedGrp = game.add.group();
 			if(_this.user.language == "English")
-				var languageList = ["Select Language","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","ગુજરાતી","मराठी","తెలుగు","தமிழ்","اردو"];
+				var languageList = ["Select Language","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","मराठी","தமிழ்"];
 			if(_this.user.language == "Hindi")
-				var languageList = ["भाषा चुने","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","ગુજરાતી","मराठी","తెలుగు","தமிழ்","اردو"];
+				var languageList = ["भाषा चुने","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","मराठी","தமிழ்"];
 			if(_this.user.language == "Kannada")
-				var languageList = ["ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","ગુજરાતી","मराठी","తెలుగు","தமிழ்","اردو"];
+				var languageList = ["ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","मराठी","தமிழ்"];
 			if(_this.user.language == "Odiya")
-				var languageList = ["ଭାଷା ବାଛନ୍ତୁ","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","ગુજરાતી","मराठी","తెలుగు","தமிழ்","اردو"];
+				var languageList = ["ଭାଷା ବାଛନ୍ତୁ","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","मराठी","தமிழ்"];
 			// if(_this.user.language == "Gujarati")
 			// 	var languageList = ["ભાષા પસંદ કરો","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","ગુજરાતી","मराठी","తెలుగు","தமிழ்","اردو"];
 			if(_this.user.language == "Marathi")
-				var languageList = ["भाषा निवडा","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","ગુજરાતી","मराठी","తెలుగు","தமிழ்","اردو"];
+				var languageList = ["भाषा निवडा","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","मराठी","தமிழ்"];
 			// if(_this.user.language == "Telugu")
 			// 	var languageList = ["భాషను ఎంపిక చేసుకోండి","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","ગુજરાતી","मराठी","తెలుగు","தமிழ்","اردو"];
 			if(_this.user.language == "Tamil")
-				var languageList = ["மொழியை தேர்ந்தெடு","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","ગુજરાતી","मराठी","తెలుగు","தமிழ்","اردو"];
+				var languageList = ["மொழியை தேர்ந்தெடு","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","मराठी","தமிழ்"];
 			// if(_this.user.language == "Urdu")
 			// 	var languageList = ["زبان منتخب کیجئے","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","ગુજરાતી","मराठी","తెలుగు","தமிழ்","اردو"];
 

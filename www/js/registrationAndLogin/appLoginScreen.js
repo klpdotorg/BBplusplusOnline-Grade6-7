@@ -56,7 +56,7 @@ Game.appLoginScreen.prototype = {
 		titleBar.drawRect(0, 0, 540, 80);
 
 
-		var titleTxt = _this.add.text(_this.world.centerX - 140, 45, "Building Blocks++");
+		var titleTxt = _this.add.text(_this.world.centerX - 40, 45, "Building Blocks 6-8 by Akshara");
 		titleTxt.x = Math.round(titleTxt.x);
 		titleTxt.anchor.setTo(0.5);
 		titleTxt.align = 'center';
@@ -75,8 +75,8 @@ Game.appLoginScreen.prototype = {
 		this.helpIcon = this.add.image(500, 42, 'helpIcon');
 		this.helpIcon.scale.setTo(1);
 		this.helpIcon.anchor.setTo(0.5);
-		this.helpIcon.inputEnabled = true;
-		this.helpIcon.input.useHandCursor = true;
+		// this.helpIcon.inputEnabled = true;
+		// this.helpIcon.input.useHandCursor = true;
 		this.helpIcon.events.onInputDown.add(function () {
 			//this.clickSound = this.add.audio('ClickSound');
 			//this.clickSound.play();
@@ -368,7 +368,7 @@ Game.appLoginScreen.prototype = {
 			//* later you can stop calling that function and close the app 
 
 			//window.plugins.toast.show("please Connect to the network to register", 20000, "center");
-			SpinnerDialog.show(null, "Building Blocks is loading..", true);
+			SpinnerDialog.show(null, "Building Blocks 6-8 by Akshara is loading..", true);
 			_this.checkOnlineForData();
 
 			// _this.closingTimer = setTimeout(function ()    //* 
