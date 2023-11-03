@@ -291,7 +291,7 @@ Game.practiceModegradeSelectionScreen.prototype = {
 			_this.grade8Cloud.name = "grade8";
 			_this.grade8Cloud.inputEnabled = true;
 			_this.grade8Cloud.input.useHandCursor = true;
-			//_this.grade8Cloud.events.onInputDown.add(_this.gradeSelected,_this);
+			_this.grade8Cloud.events.onInputDown.add(_this.gradeSelected,_this);
 			_this.grade8CloudTxt = this.add.text(450, 328, ' \n' + window.selctedLang.grade8 + ' \n ');
 			_this.grade8CloudTxt.anchor.setTo(0.5);
 			_this.grade8CloudTxt.align = 'center';
@@ -419,10 +419,10 @@ Game.practiceModegradeSelectionScreen.prototype = {
 				grade2Selected = true;
 				_this.state.start('selectgrade7MicroConceptScreen', true, false);
 				break;
-			case "grade3":
-				gradeSelected = 3;
+			case "grade8":
+				gradeSelected = 8;
 				grade2Selected = false;
-				_this.state.start('selectgrade3MicroConceptScreen', true, false);
+				_this.state.start('selectgrade8MicroConceptScreen', true, false);
 				break;
 			case "grade4":
 				gradeSelected = 4;

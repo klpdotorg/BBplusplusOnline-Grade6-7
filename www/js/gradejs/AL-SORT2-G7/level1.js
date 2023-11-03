@@ -18,7 +18,7 @@ Game.AL_SORT2_G7level1.prototype =
         }
         else //console.log("Language selected: " + _this.languageSelected);
 
-            _this.clickSound = document.createElement('audio');
+        _this.clickSound = document.createElement('audio');
         _this.clickSoundsrc = document.createElement('source');
         _this.clickSoundsrc.setAttribute("src", window.baseUrl + "sounds/ClickSound.mp3");
         _this.clickSound.appendChild(_this.clickSoundsrc);
