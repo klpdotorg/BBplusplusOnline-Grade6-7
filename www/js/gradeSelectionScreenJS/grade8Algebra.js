@@ -307,7 +307,7 @@ Game.grade8Algebra.prototype = {
         _this.topicBg.drawRoundedRect(0, 0, 805, 400, 30);
         _this.topicBg.boundsPadding = 0;
 
-        _this.AL_ES1_Screen = _this.add.sprite(100, 120, 'ALAS_1_Screen');
+        _this.AL_ES1_Screen = _this.add.sprite(100, 120, 'AL_ES1_Screen');
         _this.bgGraphicAlg1 = this.add.graphics(210, 175);
         _this.bgGraphicAlg1.lineStyle(0, 0xFFFFFF, 0.8);
         _this.bgGraphicAlg1.beginFill(0x493A19, 1);
@@ -333,12 +333,12 @@ Game.grade8Algebra.prototype = {
                     target.events.onInputDown.removeAll();
                     _this.clickSound = _this.add.audio('ClickSound');
                     _this.clickSound.play();
-                    _this.state.start('preloader_ALAS_01_G6', true, false);
+                    _this.state.start('preloader_AL_ES1_G8', true, false);
                 }
             }, _this);
         }, _this);
 
-        _this.AL_MUL1_Screen = _this.add.sprite(300, 120, 'ALA_1_Screen');
+        _this.AL_MUL1_Screen = _this.add.sprite(300, 120, 'AL_MUL1_Screen');
         _this.bgGraphicAlg2 = this.add.graphics(410, 175);
         _this.bgGraphicAlg2.lineStyle(0, 0xFFFFFF, 0.8);
         _this.bgGraphicAlg2.beginFill(0x493A19, 1);
@@ -363,12 +363,12 @@ Game.grade8Algebra.prototype = {
                     target.events.onInputDown.removeAll();
                     _this.clickSound = _this.add.audio('ClickSound');
                     _this.clickSound.play();
-                    _this.state.start('preloader_ALA_01_G6', true, false);
+                    _this.state.start('preloader_AL_MUL1_G8', true, false);
                 }
             }, _this);
         }, _this);
 
-        _this.AL_MUL2_Screen = _this.add.sprite(500, 120, 'ALS_1_Screen');
+        _this.AL_MUL2_Screen = _this.add.sprite(500, 120, 'AL_MUL2_Screen');
         _this.bgGraphicAlg3 = this.add.graphics(610, 175);
         _this.bgGraphicAlg3.lineStyle(0, 0xFFFFFF, 0.8);
         _this.bgGraphicAlg3.beginFill(0x493A19, 1);
@@ -393,12 +393,12 @@ Game.grade8Algebra.prototype = {
                     target.events.onInputDown.removeAll();
                     _this.clickSound = _this.add.audio('ClickSound');
                     _this.clickSound.play();
-                    _this.state.start('preloader_ALS_01_MCQ_G6', true, false);
+                    _this.state.start('preloader_AL_MUL_2_G8', true, false);
                 }
             }, _this);
         }, _this);
 
-        _this.AL_MUL3_Screen = _this.add.sprite(700, 120, 'ALS_2_Screen');
+        _this.AL_MUL3_Screen = _this.add.sprite(700, 120, 'AL_MUL3_Screen');
         _this.bgGraphicAlg4 = this.add.graphics(810, 175);
         _this.bgGraphicAlg4.lineStyle(0, 0xFFFFFF, 0.8);
         _this.bgGraphicAlg4.beginFill(0x493A19, 1);
@@ -423,13 +423,13 @@ Game.grade8Algebra.prototype = {
                     target.events.onInputDown.removeAll();
                     _this.clickSound = _this.add.audio('ClickSound');
                     _this.clickSound.play();
-                    _this.state.start('preloader_ALS_02_FIB_G6', true, false);
+                    _this.state.start('preloader_AL_MUL3_G8', true, false);
                 }
             }, _this);
         }, _this);
 
 
-        _this.AL_IDE_Screen = _this.add.sprite(100, 320, 'ALM_1_Screen');
+        _this.AL_IDE_Screen = _this.add.sprite(100, 320, 'AL_IDE_Screen');
         _this.bgGraphicAlg5 = this.add.graphics(210, 375);
         _this.bgGraphicAlg5.lineStyle(0, 0xFFFFFF, 0.8);
         _this.bgGraphicAlg5.beginFill(0x493A19, 1);
@@ -454,12 +454,12 @@ Game.grade8Algebra.prototype = {
                     target.events.onInputDown.removeAll();
                     _this.clickSound = _this.add.audio('ClickSound');
                     _this.clickSound.play();
-                    _this.state.start('preloader_ALM_01_MCQ_G6', true, false);
+                    _this.state.start('preloader_AL_IDE_G8', true, false);
                 }
             }, _this);
         }, _this);
 
-        _this.AL_FACT_Screen = _this.add.sprite(300, 320, 'ALM_2_Screen');
+        _this.AL_FACT_Screen = _this.add.sprite(300, 320, 'AL_FACT_Screen');
         _this.bgGraphicAlg6 = this.add.graphics(410, 375);
         _this.bgGraphicAlg6.lineStyle(0, 0xFFFFFF, 0.8);
         _this.bgGraphicAlg6.beginFill(0x493A19, 1);
@@ -484,12 +484,12 @@ Game.grade8Algebra.prototype = {
                     target.events.onInputDown.removeAll();
                     _this.clickSound = _this.add.audio('ClickSound');
                     _this.clickSound.play();
-                    _this.state.start('preloader_ALM_02_FIB_G6', true, false);
+                    _this.state.start('preloader_AL_FACT_G8', true, false);
                 }
             }, _this);
         }, _this);
 
-        _this.AL_DIV_Screen = _this.add.sprite(500, 320, 'ALD_1_Screen');
+        _this.AL_DIV_Screen = _this.add.sprite(500, 320, 'AL_DIV_Screen');
         _this.bgGraphicAlg7 = this.add.graphics(610, 375);
         _this.bgGraphicAlg7.lineStyle(0, 0xFFFFFF, 0.8);
         _this.bgGraphicAlg7.beginFill(0x493A19, 1);
@@ -514,7 +514,7 @@ Game.grade8Algebra.prototype = {
                     target.events.onInputDown.removeAll();
                     _this.clickSound = _this.add.audio('ClickSound');
                     _this.clickSound.play();
-                    _this.state.start('preloader_ALD_01_G6', true, false);
+                    _this.state.start('preloader_AL_DIV_G8', true, false);
                 }
             }, _this);
         }, _this);

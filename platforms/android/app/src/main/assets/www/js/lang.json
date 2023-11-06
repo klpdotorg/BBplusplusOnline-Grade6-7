@@ -11,8 +11,8 @@
 		"McTopicText3": "RATIO & PROPORTION",
 		"McTopicText4": "GEOMETRY",
 		"McTopicText5": "DECIMALS",
+		
 		"numbersTitle": "NUMBERS",
-
 		"OE_1_Screen": "1",
 		"FM_1_Screen": "2",
 		"HCF_1_Screen": "3",
@@ -20,7 +20,11 @@
 		"FM_3_Screen": "5",
 		"FM_4_Screen": "6",
 		"LCM_1_Screen": "7",
-		
+
+		"NS_RN_Screen": "1",
+		"NS_SQ_CUB_Screen": "2",
+		"NS_DIN_Screen": "3",
+
 		"integersTitle": "INTEGERS",
 		"INT_1_Screen": "1",
 		"INT_3_Screen": "2",
@@ -122,6 +126,14 @@
 		"AL_SORT2_Screen": "6",
 		"AL_TAR_Screen": "7",
 
+		"AL_ES1_Screen": "1",
+		"AL_MUL1_Screen": "2",
+		"AL_MUL2_Screen": "3",
+		"AL_MUL3_Screen": "4",
+		"AL_IDE_Screen": "5",
+		"AL_FACT_Screen": "6",
+		"AL_DIV_Screen": "7",
+
 		"shapesTitle": "SHAPES",
 		"GMS_1_Screen": "1",
 		"GMS_2_Screen": "2",
@@ -143,8 +155,19 @@
 		"GMLA_6_Screen": "11",
 		"GMLA_7_Screen":"12",
 
+		"GMSS_01_Screen": "1",
+		"GMSS_02_Screen": "2",
+		"GMSS_03_Screen": "3",
+
 		"mensurationTitle": "MENSURATION",
-		"GMPAR_1_Screen": "1"
+		"GMPAR_1_Screen": "1",
+
+		"GMM_1_Screen":"1",
+		"GMM_2_Screen":"2",
+		"GMM_3_Screen":"3",
+		"GMM_4_Screen":"4",
+		"GMM_5_Screen":"5"
+
 	},
 	"ur": {
 		"grade1": "جماعت  1",
@@ -185,6 +208,7 @@
 		"McTopicText3": "விகிதம் மற்றும் விகிதாச்சாரங்கள்",
 		"McTopicText4": "வடிவியல்",
 		"McTopicText5": "தசமங்கள்",
+
 		"numbersTitle": "எண்கள்",
 		"OE_1_Screen": "1",
 		"FM_1_Screen": "2",
@@ -193,6 +217,11 @@
 		"FM_3_Screen": "5",
 		"FM_4_Screen": "6",
 		"LCM_1_Screen": "7",
+
+		"NS_RN_Screen": "1",
+		"NS_SQ_CUB_Screen": "2",
+		"NS_DIN_Screen": "3",
+
 		"integersTitle": "முழு எண்கள்",
 		"INT_1_Screen": "1",
 		"INT_3_Screen": "2",
@@ -216,6 +245,7 @@
 		"INT_ML2_Screen": "6",
 		"INT_ML3_Screen": "7",
 		"INT_ML4_Screen": "8",
+
 		"fractionTitle": "பின்னங்கள்",
 		"NSF_1_Screen": "1",
 		"FSM_2_Screen": "2",
@@ -242,6 +272,7 @@
 		"NSF_DWF_Screen": "8",
 		"NSF_DFW_Screen": "9",
 		"NSF_DFF_Screen": "10",
+
 		"decimalTitle": "தசமங்கள்",
 		"NSD_3A_Screen": "1",
 		"NSD_3B_Screen": "2",
@@ -268,6 +299,7 @@
 		"NSRP_1_Screen": "1",
 		"NSRP_2_Screen": "2",
 		"NSRP_3_Screen": "3",
+
 		"algebraTitle": "மாறி மற்றும் சமன்பாடு",
 		"ALAS_1_Screen": "1",
 		"ALA_1_Screen": "2",
@@ -287,6 +319,14 @@
 		"AL_SORT1_Screen": "5",
 		"AL_SORT2_Screen": "6",
 		"AL_TAR_Screen": "7",
+
+		"AL_ES1_Screen": "1",
+		"AL_MUL1_Screen": "2",
+		"AL_MUL2_Screen": "3",
+		"AL_MUL3_Screen": "4",
+		"AL_IDE_Screen": "5",
+		"AL_FACT_Screen": "6",
+		"AL_DIV_Screen": "7",
 
 		"shapesTitle": "வடிவங்கள்",
 		"GMS_1_Screen": "1",
@@ -308,9 +348,19 @@
 		"GMLA_5_Screen": "10",
 		"GMLA_6_Screen": "11",
 		"GMLA_7_Screen":"12",
+		
+		"GMSS_01_Screen": "1",
+		"GMSS_02_Screen": "2",
+		"GMSS_03_Screen": "3",
 
 		"mensurationTitle": "மாதவிடாய்",
-		"GMPAR_1_Screen": "1"
+		"GMPAR_1_Screen": "1",
+
+		"GMM_1_Screen":"1",
+		"GMM_2_Screen":"2",
+		"GMM_3_Screen":"3",
+		"GMM_4_Screen":"4",
+		"GMM_5_Screen":"5"
 	},
 	"te": {
 		"grade1": "క్లాస్ 1",
@@ -377,6 +427,11 @@
 		"FM_3_Screen": "5",
 		"FM_4_Screen": "6",
 		"LCM_1_Screen": "7",
+
+		"NS_RN_Screen": "1",
+		"NS_SQ_CUB_Screen": "2",
+		"NS_DIN_Screen": "3",
+
 		"integersTitle": "पूर्णांक संख्या",
 		"INT_1_Screen": "1",
 		"INT_3_Screen": "2",
@@ -472,6 +527,14 @@
 		"AL_SORT2_Screen": "6",
 		"AL_TAR_Screen": "7",
 
+		"AL_ES1_Screen": "1",
+		"AL_MUL1_Screen": "2",
+		"AL_MUL2_Screen": "3",
+		"AL_MUL3_Screen": "4",
+		"AL_IDE_Screen": "5",
+		"AL_FACT_Screen": "6",
+		"AL_DIV_Screen": "7",
+
 		"shapesTitle": "आकार",
 		"GMS_1_Screen": "1",
 		"GMS_2_Screen": "2",
@@ -493,8 +556,18 @@
 		"GMLA_6_Screen": "11",
 		"GMLA_7_Screen":"12",
 
+		"GMSS_01_Screen": "1",
+		"GMSS_02_Screen": "2",
+		"GMSS_03_Screen": "3",
+
 		"mensurationTitle": "महत्तवमापन",
-		"GMPAR_1_Screen": "1"
+		"GMPAR_1_Screen": "1",
+
+		"GMM_1_Screen":"1",
+		"GMM_2_Screen":"2",
+		"GMM_3_Screen":"3",
+		"GMM_4_Screen":"4",
+		"GMM_5_Screen":"5"
 	},
 	"gu": {
 		"grade1": "વર્ગ 1",
@@ -529,10 +602,10 @@
 		"grade8": "क्लास 8",
 		"grade9": "क्लास 9",
 		"grade10": "क्लास 10",
-		"McTopicText1": "संख्या प्रणाली ",
+		"McTopicText1": "संख्या ज्ञान",
 		"McTopicText2": "बीजगणित",
 		"McTopicText3": "अनुपात और अनुपात",
-		"McTopicText4": "ज्यामिति",
+		"McTopicText4": "रेखागणित",
 		"McTopicText5": "दशमलव",
 		"fractionTitle": "अंशों",
 		"NSF_1_Screen": "1",
@@ -668,7 +741,7 @@
 		"grade8": "ಕ್ಲಾಸ್ 8",
 		"grade9": "ಕ್ಲಾಸ್ 9",
 		"grade10": "ಕ್ಲಾಸ್ 10",
-		"McTopicText1": "ಸಂಖ್ಯಾ ವ್ಯವಸ್ಥೆಗಳು",
+		"McTopicText1": "ಸಂಖ್ಯಾ ಜ್ಞಾನ",
 		"McTopicText2": "ಬೀಜಗಣಿತ",
 		"McTopicText3": "ಅನುಪಾತ ಮತ್ತು ಅನುಪಾತ",
 		"McTopicText4": "ರೇಖಾಗಣಿತ",
@@ -756,7 +829,7 @@
 		"NSRP_1_Screen": "1",
 		"NSRP_2_Screen": "2",
 		"NSRP_3_Screen": "3",
-		"algebraTitle": "ಅಸ್ಥಿರ ಮತ್ತು ಸಮೀಕರಣ",
+		"algebraTitle": "ಚರಾಕ್ಷರ ಮತ್ತು ಸಮೀಕರಣ",
 		"ALAS_1_Screen": "1",
 		"ALA_1_Screen": "2",
 		"ALS_1_Screen": "3",

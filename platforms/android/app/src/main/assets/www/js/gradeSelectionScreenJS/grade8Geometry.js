@@ -319,13 +319,13 @@ Game.grade8Geometry.prototype={
 		_this.topicBg.drawRoundedRect(0,0,805,200,30);
 		_this.topicBg.boundsPadding = 0;
 
-		_this.GMSS_1_Screen = _this.add.sprite(100,120,'GMS_1_Screen');
+		_this.GMSS_1_Screen = _this.add.sprite(100,120,'GMSS_1_Screen');
 		_this.bgGraphicFr1 = this.add.graphics(210,175);
 		_this.bgGraphicFr1.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicFr1.beginFill(0x493A19, 1);
 		_this.bgGraphicFr1.drawRoundedRect(0,0,30,30,10);
 		_this.bgGraphicFr1.boundsPadding = 0;
-		_this.GMSS_1_ScreenTxt = this.add.text(225, 192, ' \n '+window.selctedLang.GMS_1_Screen+' \n ');
+		_this.GMSS_1_ScreenTxt = this.add.text(225, 192, ' \n '+window.selctedLang.GMSS_01_Screen+' \n ');
 		_this.GMSS_1_ScreenTxt.anchor.setTo(0.5);
 		_this.GMSS_1_ScreenTxt.align = 'center';
 		_this.GMSS_1_ScreenTxt.font = 'gradefont';
@@ -350,13 +350,13 @@ Game.grade8Geometry.prototype={
 			},_this);
 		},_this);
 
-		_this.GMSS_2_Screen = _this.add.sprite(300,120,'GMS_2_Screen');
+		_this.GMSS_2_Screen = _this.add.sprite(300,120,'GMSS_2_Screen');
 		_this.bgGraphicNum2 = this.add.graphics(410,175);
 		_this.bgGraphicNum2.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicNum2.beginFill(0x493A19, 1);
 		_this.bgGraphicNum2.drawRoundedRect(0,0,30,30,10);
 		_this.bgGraphicNum2.boundsPadding = 0;
-		_this.GMSS_2_ScreenTxt = this.add.text(425, 192, ' \n '+window.selctedLang.GMS_2_Screen+' \n ');
+		_this.GMSS_2_ScreenTxt = this.add.text(425, 192, ' \n '+window.selctedLang.GMSS_02_Screen+' \n ');
 		_this.GMSS_2_ScreenTxt.anchor.setTo(0.5);
 		_this.GMSS_2_ScreenTxt.align = 'center';
 		_this.GMSS_2_ScreenTxt.font = 'gradefont';
@@ -381,13 +381,13 @@ Game.grade8Geometry.prototype={
 			},_this);
 		},_this);
 
-		_this.GMSS_3_Screen = _this.add.sprite(500,120,'GMS_3_Screen');
+		_this.GMSS_3_Screen = _this.add.sprite(500,120,'GMSS_3_Screen');
 		_this.bgGraphicNum3 = this.add.graphics(610,175);
 		_this.bgGraphicNum3.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicNum3.beginFill(0x493A19, 1);
 		_this.bgGraphicNum3.drawRoundedRect(0,0,30,30,10);
 		_this.bgGraphicNum3.boundsPadding = 0;
-		_this.GMSS_3_ScreenTxt = this.add.text(625, 192, ' \n '+window.selctedLang.GMS_3_Screen+' \n ');
+		_this.GMSS_3_ScreenTxt = this.add.text(625, 192, ' \n '+window.selctedLang.GMSS_03_Screen+' \n ');
 		_this.GMSS_3_ScreenTxt.anchor.setTo(0.5);
 		_this.GMSS_3_ScreenTxt.align = 'center';
 		_this.GMSS_3_ScreenTxt.font = 'gradefont';
@@ -572,13 +572,13 @@ Game.grade8Geometry.prototype={
 		_this.topicBg.drawRoundedRect(0,0,805,400,30);
 		_this.topicBg.boundsPadding = 0;
 		
-		_this.GMM_01_Screen = _this.add.sprite(100,120,'GMPAR_1_Screen');
+		_this.GMM_01_Screen = _this.add.sprite(100,120,'GMM_1_Screen');
 		_this.bgGraphicMM1 = this.add.graphics(210,175);
 		_this.bgGraphicMM1.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicMM1.beginFill(0x493A19, 1);
 		_this.bgGraphicMM1.drawRoundedRect(0,0,30,30,10);
 		_this.bgGraphicMM1.boundsPadding = 0;
-		_this.GMM_01_ScreenTxt = this.add.text(225, 192, ' \n '+window.selctedLang.GMPAR_1_Screen+' \n ');
+		_this.GMM_01_ScreenTxt = this.add.text(225, 192, ' \n '+window.selctedLang.GMM_1_Screen+' \n ');
 		_this.GMM_01_ScreenTxt.anchor.setTo(0.5);
 		_this.GMM_01_ScreenTxt.align = 'center';
 		_this.GMM_01_ScreenTxt.font = 'gradefont';
@@ -603,13 +603,13 @@ Game.grade8Geometry.prototype={
 			},_this);
 		},_this);
 
-        _this.GMM_02_Screen = _this.add.sprite(300,120,'GMPAR_1_Screen');
+        _this.GMM_02_Screen = _this.add.sprite(300,120,'GMM_2_Screen');
 		_this.bgGraphicMM2 = this.add.graphics(410,175);
 		_this.bgGraphicMM2.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicMM2.beginFill(0x493A19, 1);
 		_this.bgGraphicMM2.drawRoundedRect(0,0,30,30,10);
 		_this.bgGraphicMM2.boundsPadding = 0;
-		_this.GMM_02_ScreenTxt = this.add.text(425, 192, ' \n '+window.selctedLang.GMPAR_1_Screen+' \n ');
+		_this.GMM_02_ScreenTxt = this.add.text(425, 192, ' \n '+window.selctedLang.GMM_2_Screen+' \n ');
 		_this.GMM_02_ScreenTxt.anchor.setTo(0.5);
 		_this.GMM_02_ScreenTxt.align = 'center';
 		_this.GMM_02_ScreenTxt.font = 'gradefont'; 
@@ -634,13 +634,13 @@ Game.grade8Geometry.prototype={
 			},_this);
 		},_this);
 
-        _this.GMM_03_Screen = _this.add.sprite(500,120,'GMPAR_1_Screen');
+        _this.GMM_03_Screen = _this.add.sprite(500,120,'GMM_3_Screen');
 		_this.bgGraphicMM3 = this.add.graphics(610,175);
 		_this.bgGraphicMM3.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicMM3.beginFill(0x493A19, 1);
 		_this.bgGraphicMM3.drawRoundedRect(0,0,30,30,10);
 		_this.bgGraphicMM3.boundsPadding = 0;
-		_this.GMM_03_ScreenTxt = this.add.text(625, 192, ' \n '+window.selctedLang.GMM_03_Screen+' \n ');
+		_this.GMM_03_ScreenTxt = this.add.text(625, 192, ' \n '+window.selctedLang.GMM_3_Screen+' \n ');
 		_this.GMM_03_ScreenTxt.anchor.setTo(0.5);
 		_this.GMM_03_ScreenTxt.align = 'center';
 		_this.GMM_03_ScreenTxt.font = 'gradefont';
@@ -665,13 +665,13 @@ Game.grade8Geometry.prototype={
 			},_this);
 		},_this);
 
-        _this.GMM_04_Screen = _this.add.sprite(700,120,'GMPAR_1_Screen');
+        _this.GMM_04_Screen = _this.add.sprite(700,120,'GMM_4_Screen');
 		_this.bgGraphicMM4 = this.add.graphics(810,175);
 		_this.bgGraphicMM4.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicMM4.beginFill(0x493A19, 1);
 		_this.bgGraphicMM4.drawRoundedRect(0,0,30,30,10);
 		_this.bgGraphicMM4.boundsPadding = 0;
-		_this.GMM_04_ScreenTxt = this.add.text(825, 192, ' \n '+window.selctedLang.GMM_04_Screen+' \n ');
+		_this.GMM_04_ScreenTxt = this.add.text(825, 192, ' \n '+window.selctedLang.GMM_4_Screen+' \n ');
 		_this.GMM_04_ScreenTxt.anchor.setTo(0.5);
 		_this.GMM_04_ScreenTxt.align = 'center';
 		_this.GMM_04_ScreenTxt.font = 'gradefont';
@@ -696,13 +696,13 @@ Game.grade8Geometry.prototype={
 			},_this);
 		},_this);
 
-        _this.GMM_05_Screen = _this.add.sprite(100,320,'GMPAR_1_Screen');
+        _this.GMM_05_Screen = _this.add.sprite(100,320,'GMM_5_Screen');
 		_this.bgGraphicMM5 = this.add.graphics(210,375);
 		_this.bgGraphicMM5.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicMM5.beginFill(0x493A19, 1);
 		_this.bgGraphicMM5.drawRoundedRect(0,0,30,30,10);
 		_this.bgGraphicMM5.boundsPadding = 0;
-		_this.GMM_05_ScreenTxt = this.add.text(225, 392, ' \n '+window.selctedLang.GMPAR_1_Screen+' \n ');
+		_this.GMM_05_ScreenTxt = this.add.text(225, 392, ' \n '+window.selctedLang.GMM_5_Screen+' \n ');
 		_this.GMM_05_ScreenTxt.anchor.setTo(0.5);
 		_this.GMM_05_ScreenTxt.align = 'center';
 		_this.GMM_05_ScreenTxt.font = 'gradefont';

@@ -41,10 +41,10 @@ Game.grade8NumberSystems.prototype = {
 		this.game.input.enabled = false;
 
 		grade8NumberSystemsSelected = false;
-		grade6AlgebraSelected = false;
-		grade6RatioandProportionSelected = false;
-		grade6GeometrySelected = false;
-		grade6DecimalsSelected = false;
+		// grade6AlgebraSelected = false;
+		// grade6RatioandProportionSelected = false;
+		// grade6GeometrySelected = false;
+		// grade6DecimalsSelected = false;
 
 		this.video = null;
 		this.video1 = null;
@@ -1485,7 +1485,7 @@ Game.grade8NumberSystems.prototype = {
 		_this.topicBg.drawRoundedRect(0, 0, 805, 200, 30); 
 		_this.topicBg.boundsPadding = 0;
 
-		_this. NS_RN_Screen = _this.add.sprite(100, 120, 'OE_1_Screen');
+		_this. NS_RN_Screen = _this.add.sprite(100, 120, 'NS_RN_Screen');
 		_this.bgGraphicNum1 = this.add.graphics(210, 175);
 		_this.bgGraphicNum1.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicNum1.beginFill(0x493A19, 1);
@@ -1510,12 +1510,12 @@ Game.grade8NumberSystems.prototype = {
 					target.events.onInputDown.removeAll();
 					_this.clickSound = _this.add.audio('ClickSound');
 					_this.clickSound.play();
-					_this.state.start('preloader_oe_1a', true, false);
+					_this.state.start('preloader_NS_RN_G8', true, false);
 				}
 			}, _this);
 		}, _this);
 
-		_this.NS_SQ_CUB_Screen = _this.add.sprite(300, 120, 'FM_1_Screen');
+		_this.NS_SQ_CUB_Screen = _this.add.sprite(300, 120, 'NS_SQ_CUB_Screen');
 		_this.bgGraphicNum2 = this.add.graphics(410, 175);
 		_this.bgGraphicNum2.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicNum2.beginFill(0x493A19, 1);
@@ -1545,7 +1545,7 @@ Game.grade8NumberSystems.prototype = {
 			}, _this);
 		}, _this);
 
-		_this.NS_DIN_Screen = _this.add.sprite(500, 120, 'HCF_1_Screen');
+		_this.NS_DIN_Screen = _this.add.sprite(500, 120, 'NS_DIN_Screen');
 		_this.bgGraphicNum3 = this.add.graphics(610, 175);
 		_this.bgGraphicNum3.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicNum3.beginFill(0x493A19, 1);

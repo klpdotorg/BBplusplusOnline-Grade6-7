@@ -41,10 +41,10 @@ Game.grade8NumberSystems.prototype = {
 		this.game.input.enabled = false;
 
 		grade8NumberSystemsSelected = false;
-		grade6AlgebraSelected = false;
-		grade6RatioandProportionSelected = false;
-		grade6GeometrySelected = false;
-		grade6DecimalsSelected = false;
+		// grade6AlgebraSelected = false;
+		// grade6RatioandProportionSelected = false;
+		// grade6GeometrySelected = false;
+		// grade6DecimalsSelected = false;
 
 		this.video = null;
 		this.video1 = null;
@@ -1485,13 +1485,13 @@ Game.grade8NumberSystems.prototype = {
 		_this.topicBg.drawRoundedRect(0, 0, 805, 200, 30); 
 		_this.topicBg.boundsPadding = 0;
 
-		_this. NS_RN_Screen = _this.add.sprite(100, 120, 'OE_1_Screen');
+		_this. NS_RN_Screen = _this.add.sprite(100, 120, 'NS_RN_Screen');
 		_this.bgGraphicNum1 = this.add.graphics(210, 175);
 		_this.bgGraphicNum1.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicNum1.beginFill(0x493A19, 1);
 		_this.bgGraphicNum1.drawRoundedRect(0, 0, 30, 30, 10);
 		_this.bgGraphicNum1.boundsPadding = 0;
-		_this.NS_RN_ScreenTxt = this.add.text(225, 192, ' \n ' + window.selctedLang.OE_1_Screen + ' \n ');
+		_this.NS_RN_ScreenTxt = this.add.text(225, 192, ' \n ' + window.selctedLang.NS_RN_Screen + ' \n ');
 		_this.NS_RN_ScreenTxt.anchor.setTo(0.5);
 		_this.NS_RN_ScreenTxt.align = 'center';
 		_this.NS_RN_ScreenTxt.font = 'gradefont';
@@ -1515,13 +1515,13 @@ Game.grade8NumberSystems.prototype = {
 			}, _this);
 		}, _this);
 
-		_this.NS_SQ_CUB_Screen = _this.add.sprite(300, 120, 'FM_1_Screen');
+		_this.NS_SQ_CUB_Screen = _this.add.sprite(300, 120, 'NS_SQ_CUB_Screen');
 		_this.bgGraphicNum2 = this.add.graphics(410, 175);
 		_this.bgGraphicNum2.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicNum2.beginFill(0x493A19, 1);
 		_this.bgGraphicNum2.drawRoundedRect(0, 0, 30, 30, 10);
 		_this.bgGraphicNum2.boundsPadding = 0;
-		_this.NS_SQ_CUB_ScreenTxt = this.add.text(425, 192, ' \n ' + window.selctedLang.FM_1_Screen + ' \n ');
+		_this.NS_SQ_CUB_ScreenTxt = this.add.text(425, 192, ' \n ' + window.selctedLang.NS_SQ_CUB_Screen + ' \n ');
 		_this.NS_SQ_CUB_ScreenTxt.anchor.setTo(0.5);
 		_this.NS_SQ_CUB_ScreenTxt.align = 'center';
 		_this.NS_SQ_CUB_ScreenTxt.font = 'gradefont';
@@ -1545,13 +1545,13 @@ Game.grade8NumberSystems.prototype = {
 			}, _this);
 		}, _this);
 
-		_this.NS_DIN_Screen = _this.add.sprite(500, 120, 'HCF_1_Screen');
+		_this.NS_DIN_Screen = _this.add.sprite(500, 120, 'NS_DIN_Screen');
 		_this.bgGraphicNum3 = this.add.graphics(610, 175);
 		_this.bgGraphicNum3.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicNum3.beginFill(0x493A19, 1);
 		_this.bgGraphicNum3.drawRoundedRect(0, 0, 30, 30, 10);
 		_this.bgGraphicNum3.boundsPadding = 0;
-		_this.NS_DIN_ScreenTxt = this.add.text(625, 192, ' \n ' + window.selctedLang.HCF_1_Screen + ' \n ');
+		_this.NS_DIN_ScreenTxt = this.add.text(625, 192, ' \n ' + window.selctedLang.NS_DIN_Screen + ' \n ');
 		_this.NS_DIN_ScreenTxt.anchor.setTo(0.5);
 		_this.NS_DIN_ScreenTxt.align = 'center';
 		_this.NS_DIN_ScreenTxt.font = 'gradefont';

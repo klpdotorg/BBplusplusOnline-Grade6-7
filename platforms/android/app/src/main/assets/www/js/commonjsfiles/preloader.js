@@ -481,7 +481,7 @@ Game.preloader.prototype = {
         this.load.video('demo', './demo.mp4');
 
         _this.addgradeSelectionAssets();
-        _this.addgrade6SelectionAssets();
+        _this.addAllgradeSelectionAssets();
         _this.loadCommonAssets();
 
         _this.load.audio('ClickSound', 'sounds/ClickSound.mp3');
@@ -547,7 +547,7 @@ Game.preloader.prototype = {
 
     },
 
-    addgrade6SelectionAssets: function () {
+    addAllgradeSelectionAssets: function () {
         _this.load.image('FM_1_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/FM-1.png');
         _this.load.image('FM_3_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/FM-3.png');
         _this.load.image('FM_4_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/FM-4.png');
@@ -677,6 +677,26 @@ Game.preloader.prototype = {
         _this.load.image('GMSS_2_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMSS_02_G7.png');
         _this.load.image('GMSS_3_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMSS-03-G7.png');
         _this.load.image('GMSS_4_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMSS-04-G7.png');
+
+        //* Grade 8 Game icons
+        _this.load.image('AL_MUL3_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/AL-MUL3-G8.png');
+        _this.load.image('GMM_1_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMM-01-G8.png');
+        _this.load.image('GMM_2_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMM-02-G8.png');
+        _this.load.image('AL_DIV_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/AL-DIV-G8.png');
+        _this.load.image('AL_ES1_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/AL-ES1-G8.png');
+        _this.load.image('AL_FACT_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/AL-FACT-G8.png');
+        _this.load.image('AL_IDE_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/AL-IDE-G8.png');
+        _this.load.image('AL_MUL1_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/AL-MUL1-G8.png');
+        _this.load.image('AL_MUL2_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/AL-MUL2-G8.png');
+        _this.load.image('GMM_3_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMM-03-G8.png');
+        _this.load.image('GMM_4_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMM-04-G8.png');
+        _this.load.image('GMM_5_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMM-05-G8.png');
+        _this.load.image('GMSS_1_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMSS_01_G8.png');
+        _this.load.image('GMSS_2_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMSS_02_G8.png');
+        _this.load.image('GMSS_3_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMSS-03-G8.png');
+        _this.load.image('NS_DIN_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/NS_DIN_G8.png');
+        _this.load.image('NS_SQ_CUB_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/NS_SQ_CUB_G8.png');
+        _this.load.image('NS_RN_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/NS-RN-G8.png');
 
     },
 

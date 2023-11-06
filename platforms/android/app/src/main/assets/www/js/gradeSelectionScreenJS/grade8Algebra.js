@@ -307,13 +307,13 @@ Game.grade8Algebra.prototype = {
         _this.topicBg.drawRoundedRect(0, 0, 805, 400, 30);
         _this.topicBg.boundsPadding = 0;
 
-        _this.AL_ES1_Screen = _this.add.sprite(100, 120, 'ALAS_1_Screen');
+        _this.AL_ES1_Screen = _this.add.sprite(100, 120, 'AL_ES1_Screen');
         _this.bgGraphicAlg1 = this.add.graphics(210, 175);
         _this.bgGraphicAlg1.lineStyle(0, 0xFFFFFF, 0.8);
         _this.bgGraphicAlg1.beginFill(0x493A19, 1);
         _this.bgGraphicAlg1.drawRoundedRect(0, 0, 30, 30, 10);
         _this.bgGraphicAlg1.boundsPadding = 0;
-        _this.AL_ES1_ScreenTxt = this.add.text(225, 192, ' \n ' + window.selctedLang.ALAS_1_Screen + ' \n ');
+        _this.AL_ES1_ScreenTxt = this.add.text(225, 192, ' \n ' + window.selctedLang.AL_ES1_Screen + ' \n ');
         _this.AL_ES1_ScreenTxt.anchor.setTo(0.5);
         _this.AL_ES1_ScreenTxt.align = 'center';
         _this.AL_ES1_ScreenTxt.font = 'gradefont';
@@ -338,13 +338,13 @@ Game.grade8Algebra.prototype = {
             }, _this);
         }, _this);
 
-        _this.AL_MUL1_Screen = _this.add.sprite(300, 120, 'ALA_1_Screen');
+        _this.AL_MUL1_Screen = _this.add.sprite(300, 120, 'AL_MUL1_Screen');
         _this.bgGraphicAlg2 = this.add.graphics(410, 175);
         _this.bgGraphicAlg2.lineStyle(0, 0xFFFFFF, 0.8);
         _this.bgGraphicAlg2.beginFill(0x493A19, 1);
         _this.bgGraphicAlg2.drawRoundedRect(0, 0, 30, 30, 10);
         _this.bgGraphicAlg2.boundsPadding = 0;
-        _this.AL_MUL1_ScreenTxt = this.add.text(425, 192, ' \n ' + window.selctedLang.ALA_1_Screen + ' \n ');
+        _this.AL_MUL1_ScreenTxt = this.add.text(425, 192, ' \n ' + window.selctedLang.AL_MUL1_Screen + ' \n ');
         _this.AL_MUL1_ScreenTxt.anchor.setTo(0.5);
         _this.AL_MUL1_ScreenTxt.align = 'center';
         _this.AL_MUL1_ScreenTxt.font = 'gradefont';
@@ -368,13 +368,13 @@ Game.grade8Algebra.prototype = {
             }, _this);
         }, _this);
 
-        _this.AL_MUL2_Screen = _this.add.sprite(500, 120, 'ALS_1_Screen');
+        _this.AL_MUL2_Screen = _this.add.sprite(500, 120, 'AL_MUL2_Screen');
         _this.bgGraphicAlg3 = this.add.graphics(610, 175);
         _this.bgGraphicAlg3.lineStyle(0, 0xFFFFFF, 0.8);
         _this.bgGraphicAlg3.beginFill(0x493A19, 1);
         _this.bgGraphicAlg3.drawRoundedRect(0, 0, 30, 30, 10);
         _this.bgGraphicAlg3.boundsPadding = 0;
-        _this.AL_MUL2_ScreenTxt = this.add.text(625, 192, ' \n ' + window.selctedLang.ALS_1_Screen + ' \n ');
+        _this.AL_MUL2_ScreenTxt = this.add.text(625, 192, ' \n ' + window.selctedLang.AL_MUL2_Screen + ' \n ');
         _this.AL_MUL2_ScreenTxt.anchor.setTo(0.5);
         _this.AL_MUL2_ScreenTxt.align = 'center';
         _this.AL_MUL2_ScreenTxt.font = 'gradefont';
@@ -398,13 +398,13 @@ Game.grade8Algebra.prototype = {
             }, _this);
         }, _this);
 
-        _this.AL_MUL3_Screen = _this.add.sprite(700, 120, 'ALS_2_Screen');
+        _this.AL_MUL3_Screen = _this.add.sprite(700, 120, 'AL_MUL3_Screen');
         _this.bgGraphicAlg4 = this.add.graphics(810, 175);
         _this.bgGraphicAlg4.lineStyle(0, 0xFFFFFF, 0.8);
         _this.bgGraphicAlg4.beginFill(0x493A19, 1);
         _this.bgGraphicAlg4.drawRoundedRect(0, 0, 30, 30, 10);
         _this.bgGraphicAlg4.boundsPadding = 0;
-        _this.AL_MUL3_ScreenTxt = this.add.text(825, 192, ' \n ' + window.selctedLang.ALS_2_Screen + ' \n ');
+        _this.AL_MUL3_ScreenTxt = this.add.text(825, 192, ' \n ' + window.selctedLang.AL_MUL3_Screen + ' \n ');
         _this.AL_MUL3_ScreenTxt.anchor.setTo(0.5);
         _this.AL_MUL3_ScreenTxt.align = 'center';
         _this.AL_MUL3_ScreenTxt.font = 'gradefont';
@@ -429,13 +429,13 @@ Game.grade8Algebra.prototype = {
         }, _this);
 
 
-        _this.AL_IDE_Screen = _this.add.sprite(100, 320, 'ALM_1_Screen');
+        _this.AL_IDE_Screen = _this.add.sprite(100, 320, 'AL_IDE_Screen');
         _this.bgGraphicAlg5 = this.add.graphics(210, 375);
         _this.bgGraphicAlg5.lineStyle(0, 0xFFFFFF, 0.8);
         _this.bgGraphicAlg5.beginFill(0x493A19, 1);
         _this.bgGraphicAlg5.drawRoundedRect(0, 0, 30, 30, 10);
         _this.bgGraphicAlg5.boundsPadding = 0;
-        _this.AL_IDE_ScreenTxt = this.add.text(225, 392, ' \n ' + window.selctedLang.ALM_1_Screen + ' \n ');
+        _this.AL_IDE_ScreenTxt = this.add.text(225, 392, ' \n ' + window.selctedLang.AL_IDE_Screen + ' \n ');
         _this.AL_IDE_ScreenTxt.anchor.setTo(0.5);
         _this.AL_IDE_ScreenTxt.align = 'center';
         _this.AL_IDE_ScreenTxt.font = 'gradefont';
@@ -459,13 +459,13 @@ Game.grade8Algebra.prototype = {
             }, _this);
         }, _this);
 
-        _this.AL_FACT_Screen = _this.add.sprite(300, 320, 'ALM_2_Screen');
+        _this.AL_FACT_Screen = _this.add.sprite(300, 320, 'AL_FACT_Screen');
         _this.bgGraphicAlg6 = this.add.graphics(410, 375);
         _this.bgGraphicAlg6.lineStyle(0, 0xFFFFFF, 0.8);
         _this.bgGraphicAlg6.beginFill(0x493A19, 1);
         _this.bgGraphicAlg6.drawRoundedRect(0, 0, 30, 30, 10);
         _this.bgGraphicAlg6.boundsPadding = 0;
-        _this.AL_FACT_ScreenTxt = this.add.text(425, 392, ' \n ' + window.selctedLang.ALM_2_Screen + ' \n ');
+        _this.AL_FACT_ScreenTxt = this.add.text(425, 392, ' \n ' + window.selctedLang.AL_FACT_Screen + ' \n ');
         _this.AL_FACT_ScreenTxt.anchor.setTo(0.5);
         _this.AL_FACT_ScreenTxt.align = 'center';
         _this.AL_FACT_ScreenTxt.font = 'gradefont';
@@ -489,13 +489,13 @@ Game.grade8Algebra.prototype = {
             }, _this);
         }, _this);
 
-        _this.AL_DIV_Screen = _this.add.sprite(500, 320, 'ALD_1_Screen');
+        _this.AL_DIV_Screen = _this.add.sprite(500, 320, 'AL_DIV_Screen');
         _this.bgGraphicAlg7 = this.add.graphics(610, 375);
         _this.bgGraphicAlg7.lineStyle(0, 0xFFFFFF, 0.8);
         _this.bgGraphicAlg7.beginFill(0x493A19, 1);
         _this.bgGraphicAlg7.drawRoundedRect(0, 0, 30, 30, 10);
         _this.bgGraphicAlg7.boundsPadding = 0;
-        _this.AL_DIV_ScreenTxt = this.add.text(625, 392, ' \n ' + window.selctedLang.ALD_1_Screen + ' \n ');
+        _this.AL_DIV_ScreenTxt = this.add.text(625, 392, ' \n ' + window.selctedLang.AL_DIV_Screen + ' \n ');
         _this.AL_DIV_ScreenTxt.anchor.setTo(0.5);
         _this.AL_DIV_ScreenTxt.align = 'center';
         _this.AL_DIV_ScreenTxt.font = 'gradefont';

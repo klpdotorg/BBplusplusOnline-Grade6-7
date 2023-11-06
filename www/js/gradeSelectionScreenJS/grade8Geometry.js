@@ -319,7 +319,7 @@ Game.grade8Geometry.prototype={
 		_this.topicBg.drawRoundedRect(0,0,805,200,30);
 		_this.topicBg.boundsPadding = 0;
 
-		_this.GMSS_1_Screen = _this.add.sprite(100,120,'GMS_1_Screen');
+		_this.GMSS_1_Screen = _this.add.sprite(100,120,'GMSS_01_Screen');
 		_this.bgGraphicFr1 = this.add.graphics(210,175);
 		_this.bgGraphicFr1.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicFr1.beginFill(0x493A19, 1);
@@ -345,12 +345,12 @@ Game.grade8Geometry.prototype={
 					target.events.onInputDown.removeAll();
 					_this.clickSound = _this.add.audio('ClickSound');
 					_this.clickSound.play();
-					_this.state.start('preloader_GMS_01_G6',true,false);
+					_this.state.start('preloader_GMSS_01_G8',true,false);
 				}
 			},_this);
 		},_this);
 
-		_this.GMSS_2_Screen = _this.add.sprite(300,120,'GMS_2_Screen');
+		_this.GMSS_2_Screen = _this.add.sprite(300,120,'GMSS_02_Screen');
 		_this.bgGraphicNum2 = this.add.graphics(410,175);
 		_this.bgGraphicNum2.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicNum2.beginFill(0x493A19, 1);
@@ -381,7 +381,7 @@ Game.grade8Geometry.prototype={
 			},_this);
 		},_this);
 
-		_this.GMSS_3_Screen = _this.add.sprite(500,120,'GMS_3_Screen');
+		_this.GMSS_3_Screen = _this.add.sprite(500,120,'GMSS_03_Screen');
 		_this.bgGraphicNum3 = this.add.graphics(610,175);
 		_this.bgGraphicNum3.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicNum3.beginFill(0x493A19, 1);
@@ -572,7 +572,7 @@ Game.grade8Geometry.prototype={
 		_this.topicBg.drawRoundedRect(0,0,805,400,30);
 		_this.topicBg.boundsPadding = 0;
 		
-		_this.GMM_01_Screen = _this.add.sprite(100,120,'GMPAR_1_Screen');
+		_this.GMM_01_Screen = _this.add.sprite(100,120,'GMM_1_Screen');
 		_this.bgGraphicMM1 = this.add.graphics(210,175);
 		_this.bgGraphicMM1.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicMM1.beginFill(0x493A19, 1);
@@ -603,7 +603,7 @@ Game.grade8Geometry.prototype={
 			},_this);
 		},_this);
 
-        _this.GMM_02_Screen = _this.add.sprite(300,120,'GMPAR_1_Screen');
+        _this.GMM_02_Screen = _this.add.sprite(300,120,'GMM_2_Screen');
 		_this.bgGraphicMM2 = this.add.graphics(410,175);
 		_this.bgGraphicMM2.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicMM2.beginFill(0x493A19, 1);
@@ -634,7 +634,7 @@ Game.grade8Geometry.prototype={
 			},_this);
 		},_this);
 
-        _this.GMM_03_Screen = _this.add.sprite(500,120,'GMPAR_1_Screen');
+        _this.GMM_03_Screen = _this.add.sprite(500,120,'GMM_3_Screen');
 		_this.bgGraphicMM3 = this.add.graphics(610,175);
 		_this.bgGraphicMM3.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicMM3.beginFill(0x493A19, 1);
@@ -660,12 +660,12 @@ Game.grade8Geometry.prototype={
 					target.events.onInputDown.removeAll();
 					_this.clickSound = _this.add.audio('ClickSound');
 					_this.clickSound.play();
-					_this.state.start('preloader_GMPAR_01_G6',true,false);
+					_this.state.start('preloader_GMM_03_G8',true,false);
 				}
 			},_this);
 		},_this);
 
-        _this.GMM_04_Screen = _this.add.sprite(700,120,'GMPAR_1_Screen');
+        _this.GMM_04_Screen = _this.add.sprite(700,120,'GMM_4_Screen');
 		_this.bgGraphicMM4 = this.add.graphics(810,175);
 		_this.bgGraphicMM4.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicMM4.beginFill(0x493A19, 1);
@@ -696,7 +696,7 @@ Game.grade8Geometry.prototype={
 			},_this);
 		},_this);
 
-        _this.GMM_05_Screen = _this.add.sprite(100,320,'GMPAR_1_Screen');
+        _this.GMM_05_Screen = _this.add.sprite(100,320,'GMM_5_Screen');
 		_this.bgGraphicMM5 = this.add.graphics(210,375);
 		_this.bgGraphicMM5.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicMM5.beginFill(0x493A19, 1);

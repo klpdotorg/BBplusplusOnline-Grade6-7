@@ -2606,7 +2606,6 @@ Game.AL_TAR_G7level1.prototype =
 
     DemoVideo: function () {
 
-
         // DEMO AUDIOS
         _this.demoAudio1 = document.createElement('audio');
         _this.demoAudio1src = document.createElement('source');
