@@ -317,7 +317,7 @@ Game.grade8Algebra.prototype = {
         _this.AL_ES1_ScreenTxt.anchor.setTo(0.5);
         _this.AL_ES1_ScreenTxt.align = 'center';
         _this.AL_ES1_ScreenTxt.font = 'gradefont';
-        _this.AL_ES1_ScreenTxt.fontSize = 20;
+        _this.AL_ES1_ScreenTxt.fontSize = 20; 
         _this.AL_ES1_ScreenTxt.fontWeight = 'normal';
         _this.AL_ES1_ScreenTxt.fill = 'white';
         _this.AL_ES1_ScreenTxt.wordWrap = true;
@@ -333,7 +333,7 @@ Game.grade8Algebra.prototype = {
                     target.events.onInputDown.removeAll();
                     _this.clickSound = _this.add.audio('ClickSound');
                     _this.clickSound.play();
-                    _this.state.start('preloader_ALAS_01_G6', true, false);
+                    _this.state.start('preloader_AL_ES1_G8', true, false);
                 }
             }, _this);
         }, _this);
@@ -363,7 +363,7 @@ Game.grade8Algebra.prototype = {
                     target.events.onInputDown.removeAll();
                     _this.clickSound = _this.add.audio('ClickSound');
                     _this.clickSound.play();
-                    _this.state.start('preloader_ALA_01_G6', true, false);
+                    _this.state.start('preloader_AL_MUL1_G8', true, false);
                 }
             }, _this);
         }, _this);
@@ -393,7 +393,7 @@ Game.grade8Algebra.prototype = {
                     target.events.onInputDown.removeAll();
                     _this.clickSound = _this.add.audio('ClickSound');
                     _this.clickSound.play();
-                    _this.state.start('preloader_ALS_01_MCQ_G6', true, false);
+                    _this.state.start('preloader_AL_MUL_2_G8', true, false);
                 }
             }, _this);
         }, _this);
@@ -423,7 +423,7 @@ Game.grade8Algebra.prototype = {
                     target.events.onInputDown.removeAll();
                     _this.clickSound = _this.add.audio('ClickSound');
                     _this.clickSound.play();
-                    _this.state.start('preloader_ALS_02_FIB_G6', true, false);
+                    _this.state.start('preloader_AL_MUL3_G8', true, false);
                 }
             }, _this);
         }, _this);
@@ -454,7 +454,7 @@ Game.grade8Algebra.prototype = {
                     target.events.onInputDown.removeAll();
                     _this.clickSound = _this.add.audio('ClickSound');
                     _this.clickSound.play();
-                    _this.state.start('preloader_ALM_01_MCQ_G6', true, false);
+                    _this.state.start('preloader_AL_IDE_G8', true, false);
                 }
             }, _this);
         }, _this);
@@ -484,7 +484,7 @@ Game.grade8Algebra.prototype = {
                     target.events.onInputDown.removeAll();
                     _this.clickSound = _this.add.audio('ClickSound');
                     _this.clickSound.play();
-                    _this.state.start('preloader_ALM_02_FIB_G6', true, false);
+                    _this.state.start('preloader_AL_FACT_G8', true, false);
                 }
             }, _this);
         }, _this);
@@ -514,7 +514,7 @@ Game.grade8Algebra.prototype = {
                     target.events.onInputDown.removeAll();
                     _this.clickSound = _this.add.audio('ClickSound');
                     _this.clickSound.play();
-                    _this.state.start('preloader_ALD_01_G6', true, false);
+                    _this.state.start('preloader_AL_DIV_G8', true, false);
                 }
             }, _this);
         }, _this);

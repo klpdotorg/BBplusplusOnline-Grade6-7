@@ -1510,7 +1510,7 @@ Game.grade8NumberSystems.prototype = {
 					target.events.onInputDown.removeAll();
 					_this.clickSound = _this.add.audio('ClickSound');
 					_this.clickSound.play();
-					_this.state.start('preloader_oe_1a', true, false);
+					_this.state.start('preloader_NS_RN_G8', true, false);
 				}
 			}, _this);
 		}, _this);
@@ -1570,7 +1570,7 @@ Game.grade8NumberSystems.prototype = {
 					target.events.onInputDown.removeAll();
 					_this.clickSound = _this.add.audio('ClickSound');
 					_this.clickSound.play();
-					_this.state.start('preloader_hcf_1', true, false);
+					_this.state.start('preloader_NS_DIN_G8', true, false);
 				}
 			}, _this);
 		}, _this);

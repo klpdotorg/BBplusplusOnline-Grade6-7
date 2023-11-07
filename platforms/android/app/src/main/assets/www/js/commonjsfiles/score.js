@@ -120,7 +120,6 @@ Game.score.prototype = {
 				break;
 			case 'Algebra': this.state.start('grade6Algebra', true, false);
 				break;
-
 			case 'Geometry': this.state.start('grade6Geometry', true, false);
 				break;
 			case 'Number SystemsG7': this.state.start('grade7NumberSystems', true, false);
@@ -128,6 +127,12 @@ Game.score.prototype = {
 			case 'AlgebraG7': this.state.start('grade7Algebra', true, false);
 				break;
 			case 'GeometryG7': this.state.start('grade7Geometry', true, false);
+				break;
+			case 'Number SystemsG8': this.state.start('grade8NumberSystems', true, false);
+				break;
+			case 'AlgebraG8': this.state.start('grade8Algebra', true, false);
+				break;
+			case 'GeometryG8': this.state.start('grade8Geometry', true, false);
 				break;
 		}
 	},
@@ -290,10 +295,6 @@ Game.score.prototype = {
 			}
 		} else if (_this.microConcepts == 'Number SystemsG7') {
 			switch (_this.game_id) {
-				// case 'GMS_01_G6': _this.state.start('preloader_GMS_02_G6', true, false);
-				// 	break;
-				// case 'GMS_02_G6': _this.state.start('preloader_GMS_03_G6', true, false);
-				// 	break;
 				case 'NS_INT_DI_1_G7': _this.state.start('preloader_INT_DI2_G7', true, false);
 					break;
 				case 'NS_INT_DI_2_G7': _this.state.start('preloader_INT_DI3_G7', true, false);
@@ -390,7 +391,54 @@ Game.score.prototype = {
 					break;
 			}
 		}
-	},//GeometryG7
+		else if (_this.microConcepts == 'GeometryG8') {
+			switch (_this.game_id) {
+				case 'GMSS_01_G8': _this.state.start('preloader_GMSS_02_G8', true, false);
+					break;
+				case 'GMSS_02_G8': _this.state.start('preloader_GMSS_03_G8', true, false);
+					break;
+				case 'GMSS_03_G8': _this.state.start('preloader_GMM_01_G8', true, false);
+					break;
+				case 'GMM_01_G8': _this.state.start('preloader_GMM_02_G8', true, false);
+					break;
+				case 'GMM_02_G8': _this.state.start('preloader_GMM_03_G8', true, false);//preloader_GMLA_07_G7,GMLA_07_G7
+					break;
+				case 'GMM_03_G8': _this.state.start('preloader_GMM_04_G8', true, false);
+					break;
+				case 'GMM_04_G8': _this.state.start('preloader_GMM_05_G8', true, false);
+					break;
+				case 'GMM_05_G8': _this.state.start('preloader_GMSS_01_G8', true, false);
+					break;
+			}
+		} else if (_this.microConcepts == 'AlgebraG8') {
+			switch (_this.game_id) {
+				case 'AL_ES1_G8': _this.state.start('preloader_AL_MUL1_G8', true, false);
+					break;
+				case 'AL_MUL1_G8': _this.state.start('preloader_AL_MUL_2_G8', true, false);
+					break;
+				case 'AL_MUL2_G8': _this.state.start('preloader_AL_MUL3_G8', true, false);
+					break;
+				case 'AL_MUL3_G8': _this.state.start('preloader_AL_IDE_G8', true, false);
+					break;
+				case 'AL_IDE_G8': _this.state.start('preloader_AL_FACT_G8', true, false);
+					break;
+				case 'AL_FACT_G8': _this.state.start('preloader_AL_DIV_G8', true, false);
+					break;
+				case 'AL_DIV_G8': _this.state.start('preloader_AL_ES1_G8', true, false);
+					break;
+			}
+		} else if (_this.microConcepts == 'Number SystemsG8') {
+			switch (_this.game_id) {
+				//*Add NS Cube games preloader here
+				case 'NSN_RN_G8': _this.state.start('preloader_AL_MUL1_G8', true, false);
+					break;
+				case 'AL_MUL1_G8': _this.state.start('preloader_NS_DIN_G8', true, false);
+					break;
+				case 'NSN_DIN_G8': _this.state.start('preloader_NS_RN_G8', true, false);
+					break;
+			}
+		}
+	},
 
 	getCurrentGame: function () {
 		//* when the replay button is clicked the same game is played again. 
@@ -623,81 +671,42 @@ Game.score.prototype = {
 				break;
 			case 'GMSS_04_G7': _this.state.start('preloader_GMSS_04_G7', true, false);
 				break;
+			case 'GMSS_01_G8': _this.state.start('preloader_GMSS_01_G8', true, false);
+				break;
+			case 'GMSS_02_G8': _this.state.start('preloader_GMSS_02_G8', true, false);
+				break;
+			case 'GMSS_03_G8': _this.state.start('preloader_GMSS_03_G8', true, false);
+				break;
+			case 'GMM_01_G8': _this.state.start('preloader_GMM_01_G8', true, false);
+				break;
+			case 'GMM_02_G8': _this.state.start('preloader_GMM_02_G8', true, false);
+				break;
+			case 'GMM_03_G8': _this.state.start('preloader_GMM_03_G8', true, false);
+				break;
+			case 'GMM_04_G8': _this.state.start('preloader_GMM_04_G8', true, false);
+				break;
+			case 'GMM_05_G8': _this.state.start('preloader_GMM_05_G8', true, false);
+				break;
+			case 'AL_ES1_G8': _this.state.start('preloader_AL_ES1_G8', true, false);
+				break;
+			case 'AL_MUL1_G8': _this.state.start('preloader_AL_MUL1_G8', true, false);
+				break;
+			case 'AL_MUL2_G8': _this.state.start('preloader_AL_MUL_2_G8', true, false);
+				break;
+			case 'AL_MUL3_G8': _this.state.start('preloader_AL_MUL3_G8', true, false);
+				break;
+			case 'AL_IDE_G8': _this.state.start('preloader_AL_IDE_G8', true, false);
+				break;
+			case 'AL_FACT_G8': _this.state.start('preloader_AL_FACT_G8', true, false);
+				break;
+			case 'AL_DIV_G8': _this.state.start('preloader_AL_DIV_G8', true, false);
+				break;
+			case 'NSN_RN_G8': _this.state.start('preloader_NS_RN_G8', true, false);
+				break;
+			case 'NSN_DIN_G8': _this.state.start('preloader_NS_DIN_G8', true, false);
+				break;
 		}
 	},
-
-	// localdatasuccess:function(result) {
-	// 	console.log("start localdatasuccess",result);
-	// 	console.log("start localdatasuccess"+result.rows.length);
-	// 	if(result.rows.length>0)
-	// 	{
-	// 		console.log("inside if statement",result.rows.item(0));
-	// 		console.log("mins",result.rows.item(0).Mins);
-	// 		console.log("Hrs",result.rows.item(0).Hrs);
-	// 		console.log("secs",result.rows.item(0).Secs);
-	// 		_this.convertTimeinMinandSectoHrsMinsSecs(result.rows.item(0).Hrs,result.rows.item(0).Mins,result.rows.item(0).Secs);
-	// 	}
-	// 	else {
-	// 		_this.storingGameDetails();
-	// 	}
-	// },
-
-	// localdatafailed : function(error){
-	// 	console.log(error);
-	// },
-
-	// storingGameDetails :function()
-	// {
-	// 	console.log("inside storingGameDetails",_this.userHasPlayed,_this.timeInMinutes,_this.timeInSeconds,_this.game_id);
-	// 	console.log(device.serial+"_"+device.uuid);
-	// 	var save_assessment ={
-	// 		device_id:device.serial+"_"+device.uuid,
-	// 		grade: _this.grade,
-	// 		microConcept: _this.microConcepts,
-	// 		gradeTopics:_this.gradeTopics,
-	// 		game_id:_this.game_id,
-	// 		totalLearningTimeinHrs:'0',
-	// 		totalLearningTimeinMins:_this.timeInMinutes.toString(),
-	// 		totalLearningTimeinSecs:_this.timeInSeconds.toString(),
-	// 		score:_this.score,
-	// 	}
-	// 	console.log("save assessment",save_assessment);
-	// 	if(_this.userHasPlayed == 1)
-	// 	{
-	// 		BBplusplusdbDetails.userProgressSaving(save_assessment);
-	// 	}
-	// },
-
-	// convertTimeinMinandSectoHrsMinsSecs :function(Hours1,Minutes1,Seconds1)
-	// {
-	// 	console.log("inside convert time",Hours1,Minutes1,Seconds1);
-
-	// 	const totalMinutes = Math.floor((parseInt(Seconds1)+parseInt(_this.timeInSeconds)) / 60) + (parseInt(Minutes1)+parseInt(_this.timeInMinutes));
-	// 	const Seconds2 = (parseInt(Seconds1)+parseInt(_this.timeInSeconds)) % 60;
-
-	// 	const Hours2 = Math.floor(totalMinutes / 60) + parseInt(Hours1);
-	// 	const Minutes2 = totalMinutes % 60;
-
-	// 	console.log("before adding");
-	// 	console.log("totalMinutes",totalMinutes);
-	// 	console.log("after adding");
-	// 	console.log("Seconds2",Seconds2);
-	// 	console.log("Hours2",Hours2);
-	// 	console.log("Minutes2",Minutes2)
-
-	// 	var save_assessment ={
-	// 		game_id:_this.game_id,
-	// 		totalLearningTimeinHrs:Hours2.toString(),
-	// 		totalLearningTimeinMins:Minutes2.toString(),
-	// 		totalLearningTimeinSecs:Seconds2.toString(),
-	// 	}
-	// 	console.log("save assessment",save_assessment);
-	// 	if(_this.userHasPlayed == 1)
-	// 	{
-	// 		BBplusplusdbDetails.updateRecordsUsingGameID(save_assessment);
-	// 	}
-
-	// },
 
 	shutdown: function () {
 		_this.background = null;

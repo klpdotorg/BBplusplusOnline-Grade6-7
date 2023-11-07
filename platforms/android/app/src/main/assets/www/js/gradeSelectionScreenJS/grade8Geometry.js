@@ -319,7 +319,7 @@ Game.grade8Geometry.prototype={
 		_this.topicBg.drawRoundedRect(0,0,805,200,30);
 		_this.topicBg.boundsPadding = 0;
 
-		_this.GMSS_1_Screen = _this.add.sprite(100,120,'GMSS_1_Screen');
+		_this.GMSS_1_Screen = _this.add.sprite(100,120,'GMSS_01_Screen');
 		_this.bgGraphicFr1 = this.add.graphics(210,175);
 		_this.bgGraphicFr1.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicFr1.beginFill(0x493A19, 1);
@@ -345,12 +345,12 @@ Game.grade8Geometry.prototype={
 					target.events.onInputDown.removeAll();
 					_this.clickSound = _this.add.audio('ClickSound');
 					_this.clickSound.play();
-					_this.state.start('preloader_GMS_01_G6',true,false);
+					_this.state.start('preloader_GMSS_01_G8',true,false);
 				}
 			},_this);
 		},_this);
 
-		_this.GMSS_2_Screen = _this.add.sprite(300,120,'GMSS_2_Screen');
+		_this.GMSS_2_Screen = _this.add.sprite(300,120,'GMSS_02_Screen');
 		_this.bgGraphicNum2 = this.add.graphics(410,175);
 		_this.bgGraphicNum2.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicNum2.beginFill(0x493A19, 1);
@@ -376,12 +376,12 @@ Game.grade8Geometry.prototype={
 					target.events.onInputDown.removeAll();
 					_this.clickSound = _this.add.audio('ClickSound');
 					_this.clickSound.play();
-					_this.state.start('preloader_GMS_02_G6',true,false);
+					_this.state.start('preloader_GMSS_02_G8',true,false);
 				}
 			},_this);
 		},_this);
 
-		_this.GMSS_3_Screen = _this.add.sprite(500,120,'GMSS_3_Screen');
+		_this.GMSS_3_Screen = _this.add.sprite(500,120,'GMSS_03_Screen');
 		_this.bgGraphicNum3 = this.add.graphics(610,175);
 		_this.bgGraphicNum3.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicNum3.beginFill(0x493A19, 1);
@@ -407,7 +407,7 @@ Game.grade8Geometry.prototype={
 					target.events.onInputDown.removeAll();
 					_this.clickSound = _this.add.audio('ClickSound');
 					_this.clickSound.play();
-					_this.state.start('preloader_GMS_03_G6',true,false);
+					_this.state.start('preloader_GMSS_03_G8',true,false);
 				}
 			},_this);
 		},_this);
@@ -598,7 +598,7 @@ Game.grade8Geometry.prototype={
 					target.events.onInputDown.removeAll();
 					_this.clickSound = _this.add.audio('ClickSound');
 					_this.clickSound.play();
-					_this.state.start('preloader_GMPAR_01_G6',true,false);
+					_this.state.start('preloader_GMM_01_G8',true,false);
 				}
 			},_this);
 		},_this);
@@ -629,7 +629,7 @@ Game.grade8Geometry.prototype={
 					target.events.onInputDown.removeAll();
 					_this.clickSound = _this.add.audio('ClickSound');
 					_this.clickSound.play();
-					_this.state.start('preloader_GMPAR_01_G6',true,false);
+					_this.state.start('preloader_GMM_02_G8',true,false);
 				}
 			},_this);
 		},_this);
@@ -660,7 +660,7 @@ Game.grade8Geometry.prototype={
 					target.events.onInputDown.removeAll();
 					_this.clickSound = _this.add.audio('ClickSound');
 					_this.clickSound.play();
-					_this.state.start('preloader_GMPAR_01_G6',true,false);
+					_this.state.start('preloader_GMM_03_G8',true,false);
 				}
 			},_this);
 		},_this);
@@ -691,7 +691,7 @@ Game.grade8Geometry.prototype={
 					target.events.onInputDown.removeAll();
 					_this.clickSound = _this.add.audio('ClickSound');
 					_this.clickSound.play();
-					_this.state.start('preloader_GMPAR_01_G6',true,false);
+					_this.state.start('preloader_GMM_04_G8',true,false);
 				}
 			},_this);
 		},_this);
@@ -722,7 +722,7 @@ Game.grade8Geometry.prototype={
 					target.events.onInputDown.removeAll();
 					_this.clickSound = _this.add.audio('ClickSound');
 					_this.clickSound.play();
-					_this.state.start('preloader_GMPAR_01_G6',true,false);
+					_this.state.start('preloader_GMM_05_G8',true,false);
 				}
 			},_this);
 		},_this);

@@ -652,6 +652,13 @@
 		"AL_SORT1_Screen": "5",
 		"AL_SORT2_Screen": "6",
 		"AL_TAR_Screen": "7",
+		"AL_ES1_Screen": "1",
+		"AL_MUL1_Screen": "2",
+		"AL_MUL2_Screen": "3",
+		"AL_MUL3_Screen": "4",
+		"AL_IDE_Screen": "5",
+		"AL_FACT_Screen": "6",
+		"AL_DIV_Screen": "7",
 
 		"shapesTitle": "आकार",
 		"GMS_1_Screen": "1",
@@ -660,6 +667,10 @@
 		"GMR_1_Screen": "4",
 		"GMCR_1_Screen": "5",
 		"GMAN_1_Screen": "6",
+		
+		"GMSS_01_Screen": "1",
+		"GMSS_02_Screen": "2",
+		"GMSS_03_Screen": "3",
 
 		"GM_PYTH_Screen": "1",
 		"GMSS_1_Screen": "2",
@@ -674,6 +685,11 @@
 		"GMLA_6_Screen": "11",
 		"GMLA_7_Screen":"12",
 
+		"GMM_1_Screen":"1",
+		"GMM_2_Screen":"2",
+		"GMM_3_Screen":"3",
+		"GMM_4_Screen":"4",
+		"GMM_5_Screen":"5",
 
 		"numbersTitle": "नंबर",
 		"OE_1_Screen": "1",
@@ -683,6 +699,11 @@
 		"FM_3_Screen": "5",
 		"FM_4_Screen": "6",
 		"LCM_1_Screen": "7",
+
+		"NS_RN_Screen": "1",
+		"NS_SQ_CUB_Screen": "2",
+		"NS_DIN_Screen": "3",
+		
 		"integersTitle": "पूर्णांक",
 		"INT_1_Screen": "1",
 		"INT_3_Screen": "2",
@@ -754,6 +775,11 @@
 		"FM_3_Screen": "5",
 		"FM_4_Screen": "6",
 		"LCM_1_Screen": "7",
+		
+		"NS_RN_Screen": "1",
+		"NS_SQ_CUB_Screen": "2",
+		"NS_DIN_Screen": "3",
+
 		"integersTitle": "ಪೂರ್ಣಾಂಕಗಳು",
 		"INT_1_Screen": "1",
 		"INT_3_Screen": "2",
@@ -849,6 +875,14 @@
 		"AL_SORT2_Screen": "6",
 		"AL_TAR_Screen": "7",
 
+		"AL_ES1_Screen": "1",
+		"AL_MUL1_Screen": "2",
+		"AL_MUL2_Screen": "3",
+		"AL_MUL3_Screen": "4",
+		"AL_IDE_Screen": "5",
+		"AL_FACT_Screen": "6",
+		"AL_DIV_Screen": "7",
+
 		"shapesTitle": "ಆಕಾರಗಳು",
 		"GMS_1_Screen": "1",
 		"GMS_2_Screen": "2",
@@ -870,8 +904,19 @@
 		"GMLA_6_Screen": "11",
 		"GMLA_7_Screen":"12",
 
+		"GMSS_01_Screen": "1",
+		"GMSS_02_Screen": "2",
+		"GMSS_03_Screen": "3",
+
 		"mensurationTitle": "ಮಾಪನ",
-		"GMPAR_1_Screen": "1"
+		"GMPAR_1_Screen": "1",
+
+		"GMM_1_Screen":"1",
+		"GMM_2_Screen":"2",
+		"GMM_3_Screen":"3",
+		"GMM_4_Screen":"4",
+		"GMM_5_Screen":"5"
+
 	},
 	"od": {
 		"grade6": "ଶ୍ରେଣୀ 6",
@@ -892,6 +937,11 @@
 		"FM_3_Screen": "5",
 		"FM_4_Screen": "6",
 		"LCM_1_Screen": "7",
+
+		"NS_RN_Screen": "1",
+		"NS_SQ_CUB_Screen": "2",
+		"NS_DIN_Screen": "3",
+		
 		"integersTitle": "ପୂର୍ଣ୍ଣ ସଂଖ୍ୟା ",
 		"INT_1_Screen": "1",
 		"INT_3_Screen": "2",
@@ -987,6 +1037,14 @@
 		"AL_SORT2_Screen": "6",
 		"AL_TAR_Screen": "7",
 
+		"AL_ES1_Screen": "1",
+		"AL_MUL1_Screen": "2",
+		"AL_MUL2_Screen": "3",
+		"AL_MUL3_Screen": "4",
+		"AL_IDE_Screen": "5",
+		"AL_FACT_Screen": "6",
+		"AL_DIV_Screen": "7",
+
 		"shapesTitle": "ଆକାର ",
 		"GMS_1_Screen": "1",
 		"GMS_2_Screen": "2",
@@ -1008,7 +1066,17 @@
 		"GMLA_6_Screen": "11",
 		"GMLA_7_Screen":"12",
 
+		"GMSS_01_Screen": "1",
+		"GMSS_02_Screen": "2",
+		"GMSS_03_Screen": "3",
+
 		"mensurationTitle": "ପରିମିତି ",
-		"GMPAR_1_Screen": "1"
+		"GMPAR_1_Screen": "1",
+
+		"GMM_1_Screen":"1",
+		"GMM_2_Screen":"2",
+		"GMM_3_Screen":"3",
+		"GMM_4_Screen":"4",
+		"GMM_5_Screen":"5"
 	}
 }

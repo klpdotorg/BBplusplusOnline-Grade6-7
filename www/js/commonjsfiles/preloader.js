@@ -484,17 +484,14 @@ Game.preloader.prototype = {
         this.loadjscssfile("js/commonjsfiles/preloader_GMSS_01_G8.js", "js");
         this.loadjscssfile("js/commonjsfiles/preloader_AL_FACT_G8.js", "js");
         this.loadjscssfile("js/commonjsfiles/loadJson_NS_RN_G8.js", "js");
-
-        //yet to edit ***
-   
-        this.loadjscssfile("js/commonjsfiles/preloader_GMPYTH_G7.js", "js");
-        this.loadjscssfile("js/commonjsfiles/preloader_GMSS_01_G7.js", "js");
-        this.loadjscssfile("js/commonjsfiles/preloader_GMSS_02_G7.js", "js");
-        this.loadjscssfile("js/commonjsfiles/preloader_GMSS_03_G7.js", "js");
-        this.loadjscssfile("js/commonjsfiles/preloader_GMSS_04_G7.js", "js");
-        this.loadjscssfile("js/commonjsfiles/preloader_NSD_6_G7.js", "js");
-        this.loadjscssfile("js/commonjsfiles/preloader_NSD_6_G7.js", "js");
-        this.loadjscssfile("js/commonjsfiles/preloader_NSD_6_G7.js", "js");
+        this.loadjscssfile("js/commonjsfiles/preloader_GMSS_03_G8.js", "js");
+        this.loadjscssfile("js/commonjsfiles/preloader_NS_DIN_G8.js", "js");
+        this.loadjscssfile("js/commonjsfiles/preloader_NS_RN_G8.js", "js");
+        this.loadjscssfile("js/commonjsfiles/preloader_GMM_01_G8.js", "js");
+        this.loadjscssfile("js/commonjsfiles/preloader_GMM_02_G8.js", "js");
+        this.loadjscssfile("js/commonjsfiles/preloader_GMM_04_G8.js", "js");
+        this.loadjscssfile("js/commonjsfiles/preloader_GMM_05_G8.js", "js");
+        this.loadjscssfile("js/commonjsfiles/preloader_GMSS_02_G8.js", "js");
 
         this.loadjscssfile("js/commonjsfiles/loadJson_AL_DIV_G8.js", "js");
         this.loadjscssfile("js/commonjsfiles/loadJson_AL_ES1_G8.js", "js");
@@ -506,19 +503,17 @@ Game.preloader.prototype = {
         this.loadjscssfile("js/commonjsfiles/loadJson_GMSS_01_G8.js", "js");
         this.loadjscssfile("js/commonjsfiles/loadJson_NS_RN_G8.js", "js");
         this.loadjscssfile("js/commonjsfiles/loadJson_AL_FACT_G8.js", "js");
-
-      //yet to edit ***   
-        this.loadjscssfile("js/commonjsfiles/loadJson_GMPYTH_G7.js", "js");
-        this.loadjscssfile("js/commonjsfiles/loadJson_GMSS_01_G7.js", "js");
-        this.loadjscssfile("js/commonjsfiles/loadJson_GMSS_02_G7.js", "js");
-        this.loadjscssfile("js/commonjsfiles/loadJson_GMSS_03_G7.js", "js");
-        this.loadjscssfile("js/commonjsfiles/loadJson_GMSS_04_G7.js", "js");
-        this.loadjscssfile("js/commonjsfiles/loadJson_NSD_6_G7.js", "js");
-        this.loadjscssfile("js/commonjsfiles/loadJson_GMSS_04_G7.js", "js");
-        this.loadjscssfile("js/commonjsfiles/loadJson_NSD_6_G7.js", "js");
+        this.loadjscssfile("js/commonjsfiles/loadJson_GMSS_03_G8.js", "js");
+        this.loadjscssfile("js/commonjsfiles/loadJson_NS_DIN_G8.js", "js");
+        this.loadjscssfile("js/commonjsfiles/loadJson_NS_RN_G8.js", "js");
+        this.loadjscssfile("js/commonjsfiles/loadJson_GMM_01_G8.js", "js");
+        this.loadjscssfile("js/commonjsfiles/loadJson_GMM_02_G8.js", "js");
+        this.loadjscssfile("js/commonjsfiles/loadJson_GMM_04_G8.js", "js");
+        this.loadjscssfile("js/commonjsfiles/loadJson_GMM_05_G8.js", "js");
+        this.loadjscssfile("js/commonjsfiles/loadJson_GMSS_02_G8.js", "js");
          
         //*
-        this.loadjscssfile("js/gradejs/AL-FACT-G8-G7/level1.js", "js");
+        this.loadjscssfile("js/gradejs/AL-FACT-G8/level1.js", "js");
         this.loadjscssfile("js/gradejs/NS-RN-G8/level1.js", "js");
         this.loadjscssfile("js/gradejs/AL-DIV-G8/level1.js", "js");
         this.loadjscssfile("js/gradejs/AL-ES1-G8/level1.js", "js");
@@ -528,16 +523,14 @@ Game.preloader.prototype = {
         this.loadjscssfile("js/gradejs/AL-MUL1-G8/level1.js", "js");
         this.loadjscssfile("js/gradejs/GMM-03-G8/level1.js", "js");
         this.loadjscssfile("js/gradejs/GMSS-01-G8/level1.js", "js");
-       
-
-        this.loadjscssfile("js/gradejs/INT-ML-4-G7/level1.js", "js");
-        this.loadjscssfile("js/gradejs/INT-ML-3-G7/level1.js", "js");
-        this.loadjscssfile("js/gradejs/INT-ML-2-G7/level1.js", "js");
-        this.loadjscssfile("js/gradejs/INT-ML-1-G7/level1.js", "js");
-        this.loadjscssfile("js/gradejs/INT-DI-4-G7/level1.js", "js");
-        this.loadjscssfile("js/gradejs/INT-DI-3-G7/level1.js", "js");
-        this.loadjscssfile("js/gradejs/INT-DI-2-G7/level1.js", "js");
-        this.loadjscssfile("js/gradejs/INT-DI-1-G7/level1.js", "js");  
+        this.loadjscssfile("js/gradejs/GMSS_02_G8/level1.js", "js");
+        this.loadjscssfile("js/gradejs/GMM_05_G8/level1.js", "js");
+        this.loadjscssfile("js/gradejs/GMM_04_G8/level1.js", "js");
+        this.loadjscssfile("js/gradejs/GMM_02_G8/level1.js", "js");
+        this.loadjscssfile("js/gradejs/GMM_01_G8/level1.js", "js");
+        this.loadjscssfile("js/gradejs/NS_RN_G8/level1.js", "js");
+        this.loadjscssfile("js/gradejs/NS_DIN_G8/level1.js", "js");
+        this.loadjscssfile("js/gradejs/GMSS_03_G8/level1.js", "js");  
 
 
 
@@ -1152,6 +1145,21 @@ Game.preloader.prototype = {
         game.state.add('preloader_AL_FACT_G8', Game.preloader_AL_FACT_G8);
         game.state.add('AL_FACT_G8level1', Game.AL_FACT_G8level1);
 
+        game.state.add('preloader_NS_DIN_G8', Game.preloader_NS_DIN_G8);
+        game.state.add('NS_DIN_G8level1', Game.NS_DIN_G8level1);
+        game.state.add('preloader_GMSS_03_G8', Game.preloader_GMSS_03_G8);
+        game.state.add('GMSS_03_G8level1', Game.GMSS_03_G8level1);
+        game.state.add('preloader_GMSS_02_G8', Game.preloader_GMSS_02_G8);
+        game.state.add('GMSS_02_G8level1', Game.GMSS_02_G8level1);
+        game.state.add('preloader_GMM_05_G8', Game.preloader_GMM_05_G8);
+        game.state.add('GMM_05_G8level1', Game.GMM_05_G8level1);
+        game.state.add('preloader_GMM_04_G8', Game.preloader_GMM_04_G8);
+        game.state.add('GMM_04_G8level1', Game.GMM_04_G8level1);
+        game.state.add('preloader_GMM_02_G8', Game.preloader_GMM_02_G8);
+        game.state.add('GMM_02_G8level1', Game.GMM_02_G8level1);
+        game.state.add('preloader_GMM_01_G8', Game.preloader_GMM_01_G8);
+        game.state.add('GMM_01_G8level1', Game.GMM_01_G8level1);
+      
         this.game.cache.removeImage('loadingBg1');
         this.game.cache.removeImage('loadingBg2');
 

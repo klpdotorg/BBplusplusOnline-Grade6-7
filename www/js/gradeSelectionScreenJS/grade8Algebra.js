@@ -317,7 +317,7 @@ Game.grade8Algebra.prototype = {
         _this.AL_ES1_ScreenTxt.anchor.setTo(0.5);
         _this.AL_ES1_ScreenTxt.align = 'center';
         _this.AL_ES1_ScreenTxt.font = 'gradefont';
-        _this.AL_ES1_ScreenTxt.fontSize = 20;
+        _this.AL_ES1_ScreenTxt.fontSize = 20; 
         _this.AL_ES1_ScreenTxt.fontWeight = 'normal';
         _this.AL_ES1_ScreenTxt.fill = 'white';
         _this.AL_ES1_ScreenTxt.wordWrap = true;

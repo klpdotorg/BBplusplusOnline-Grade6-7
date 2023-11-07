@@ -64,14 +64,14 @@ Game.userprogress2.prototype={
 
 
         //BB++
-        this.cnumbersTotal = 7;
+        this.cnumbersTotal = 10;
 		this.cintegersTotal = 22;
 		this.cfractionsTotal = 25;
         this.cdecimalsTotal = 20;//19
         this.cratioandproportionTotal = 3;
-        this.calgebraTotal = 18;//15
-        this.cshapesTotal = 18;
-		this.cmensurationTotal = 1;
+        this.calgebraTotal = 25;//15
+        this.cshapesTotal = 21;
+		this.cmensurationTotal = 6;
 
         var practiceText = "Practice";
         var challengeText = "Challenge";

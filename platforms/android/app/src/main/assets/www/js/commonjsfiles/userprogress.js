@@ -35,9 +35,14 @@ Game.userprogress.prototype={
 
 	create:function(game){
 
-		this.numberSystemsTotal = 76;
-		this.geometryTotal = 19;//7
-		this.algebraTotal = 18;//15
+		this.numberSystemsTotal = 79;
+		this.geometryTotal = 27;//7
+		this.algebraTotal = 25;//15
+
+		//*brfore adding grade 8 games
+		// this.numberSystemsTotal = 76;
+		// this.geometryTotal = 19;//7
+		// this.algebraTotal = 18;//15
 	
 		this.cnumberSystemsPlayedFromServer = 0;
 		this.cgeometryPlayedFromServer = 0;
