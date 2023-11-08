@@ -488,12 +488,12 @@ Game.AL_FACT_G8level1.prototype =
 
         let negstring = '-';
 
-        string1 = negstring + 'X' + _this.power;
+        string1 = negstring + 'x' + _this.power;
         _this.negSquare1 = _this.add.text(50, 295 - 110, string1);
         _this.applyingStyle(_this.negSquare1);
 
 
-        string2 = negstring + 'X'
+        string2 = negstring + 'x'
         _this.negSquare2 = _this.add.text(50, 357 - 110, string2);
         _this.applyingStyle1(_this.negSquare2);
 
@@ -503,12 +503,12 @@ Game.AL_FACT_G8level1.prototype =
 
         let posstring = '+';
 
-        string4 = posstring + 'X' + _this.power
+        string4 = posstring + 'x' + _this.power
         _this.posSquare1 = _this.add.text(145, 295 - 110, string4);
         _this.applyingStyle(_this.posSquare1);
 
 
-        string5 = posstring + 'X'
+        string5 = posstring + 'x'
         _this.posSquare2 = _this.add.text(145, 357 - 110, string5);
         _this.applyingStyle2(_this.posSquare2);
 

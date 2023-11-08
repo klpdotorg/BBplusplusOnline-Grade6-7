@@ -417,6 +417,10 @@ var telInitializer = {
 			case "NSN_DIN_G8":
 				gameID = "NSN_DIN_G8";
 				break;
+			case "NSN_SQ_CUB_G8":
+				gameID = "NSN_SQ_CUB_G8";
+				break;
+			//NSN_SQ_CUB_G8
 
 		}
 

@@ -1515,43 +1515,13 @@ Game.grade8NumberSystems.prototype = {
 			}, _this);
 		}, _this);
 
-		_this.NS_SQ_CUB_Screen = _this.add.sprite(300, 120, 'NS_SQ_CUB_Screen');
-		_this.bgGraphicNum2 = this.add.graphics(410, 175);
-		_this.bgGraphicNum2.lineStyle(0, 0xFFFFFF, 0.8);
-		_this.bgGraphicNum2.beginFill(0x493A19, 1);
-		_this.bgGraphicNum2.drawRoundedRect(0, 0, 30, 30, 10);
-		_this.bgGraphicNum2.boundsPadding = 0;
-		_this.NS_SQ_CUB_ScreenTxt = this.add.text(425, 192, ' \n ' + window.selctedLang.NS_SQ_CUB_Screen + ' \n ');
-		_this.NS_SQ_CUB_ScreenTxt.anchor.setTo(0.5);
-		_this.NS_SQ_CUB_ScreenTxt.align = 'center';
-		_this.NS_SQ_CUB_ScreenTxt.font = 'gradefont';
-		_this.NS_SQ_CUB_ScreenTxt.fontSize = 20;
-		_this.NS_SQ_CUB_ScreenTxt.fontWeight = 'normal';
-		_this.NS_SQ_CUB_ScreenTxt.fill = 'white';
-		_this.NS_SQ_CUB_ScreenTxt.wordWrap = true;
-		_this.NS_SQ_CUB_ScreenTxt.wordWrapWidth = 500;
-		_this.NS_SQ_CUB_Screen.inputEnabled = true;
-		_this.NS_SQ_CUB_Screen.input.useHandCursor = true;
-		_this.NS_SQ_CUB_Screen.name = "Numbers FM-1";
-		_this.NS_SQ_CUB_Screen.events.onInputDown.add(function (target) {
-			_this.time.events.add(300, function () {
-				if (_this.tap) {
-					_this.time.events.removeAll();
-					target.events.onInputDown.removeAll();
-					_this.clickSound = _this.add.audio('ClickSound');
-					_this.clickSound.play();
-					_this.state.start('preloader_fm_1', true, false);
-				}
-			}, _this);
-		}, _this);
-
-		_this.NS_DIN_Screen = _this.add.sprite(500, 120, 'NS_DIN_Screen');
-		_this.bgGraphicNum3 = this.add.graphics(610, 175);
+		_this.NS_DIN_Screen = _this.add.sprite(300, 120, 'NS_DIN_Screen');
+		_this.bgGraphicNum3 = this.add.graphics(410, 175);
 		_this.bgGraphicNum3.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicNum3.beginFill(0x493A19, 1);
 		_this.bgGraphicNum3.drawRoundedRect(0, 0, 30, 30, 10);
 		_this.bgGraphicNum3.boundsPadding = 0;
-		_this.NS_DIN_ScreenTxt = this.add.text(625, 192, ' \n ' + window.selctedLang.NS_DIN_Screen + ' \n ');
+		_this.NS_DIN_ScreenTxt = this.add.text(425, 192, ' \n ' + window.selctedLang.NS_DIN_Screen + ' \n ');
 		_this.NS_DIN_ScreenTxt.anchor.setTo(0.5);
 		_this.NS_DIN_ScreenTxt.align = 'center';
 		_this.NS_DIN_ScreenTxt.font = 'gradefont';
@@ -1561,7 +1531,7 @@ Game.grade8NumberSystems.prototype = {
 		_this.NS_DIN_ScreenTxt.wordWrap = true;
 		_this.NS_DIN_ScreenTxt.wordWrapWidth = 500;
 		_this.NS_DIN_Screen.inputEnabled = true;
-		_this.NS_DIN_Screen.name = "Numbers HCF-1";
+		_this.NS_DIN_Screen.name = "NS_DIN";
 		_this.NS_DIN_Screen.input.useHandCursor = true;
 		_this.NS_DIN_Screen.events.onInputDown.add(function (target) {
 			_this.time.events.add(300, function () {
@@ -1574,124 +1544,64 @@ Game.grade8NumberSystems.prototype = {
 				}
 			}, _this);
 		}, _this);
+		
 
-		// _this.PRM_1_Screen = _this.add.sprite(700, 120, 'PRM_1_Screen');
-		// _this.bgGraphicNum4 = this.add.graphics(810, 175);
-		// _this.bgGraphicNum4.lineStyle(0, 0xFFFFFF, 0.8);
-		// _this.bgGraphicNum4.beginFill(0x493A19, 1);
-		// _this.bgGraphicNum4.drawRoundedRect(0, 0, 30, 30, 10);
-		// _this.bgGraphicNum4.boundsPadding = 0;
-		// _this.PRM_1_ScreenTxt = this.add.text(825, 192, ' \n ' + window.selctedLang.PRM_1_Screen + ' \n ');
-		// _this.PRM_1_ScreenTxt.anchor.setTo(0.5);
-		// _this.PRM_1_ScreenTxt.align = 'center';
-		// _this.PRM_1_ScreenTxt.font = 'gradefont';
-		// _this.PRM_1_ScreenTxt.fontSize = 20;
-		// _this.PRM_1_ScreenTxt.fontWeight = 'normal';
-		// _this.PRM_1_ScreenTxt.fill = 'white';
-		// _this.PRM_1_ScreenTxt.wordWrap = true;
-		// _this.PRM_1_ScreenTxt.wordWrapWidth = 500;
-		// _this.PRM_1_Screen.inputEnabled = true;
-		// _this.PRM_1_Screen.name = "Numbers PRM-1";
-		// _this.PRM_1_Screen.input.useHandCursor = true;
-		// _this.PRM_1_Screen.events.onInputDown.add(function (target) {
+		_this.NS_SQ_CUB_Screen = _this.add.sprite(500, 120, 'NS_SQ_CUB_Screen');
+		_this.bgGraphicNum2 = this.add.graphics(610, 175);
+		_this.bgGraphicNum2.lineStyle(0, 0xFFFFFF, 0.8);
+		_this.bgGraphicNum2.beginFill(0x493A19, 1);
+		_this.bgGraphicNum2.drawRoundedRect(0, 0, 30, 30, 10);
+		_this.bgGraphicNum2.boundsPadding = 0;
+		_this.NS_SQ_CUB_ScreenTxt = this.add.text(625, 192, ' \n ' + window.selctedLang.NS_SQ_CUB_Screen + ' \n ');
+		_this.NS_SQ_CUB_ScreenTxt.anchor.setTo(0.5);
+		_this.NS_SQ_CUB_ScreenTxt.align = 'center';
+		_this.NS_SQ_CUB_ScreenTxt.font = 'gradefont';
+		_this.NS_SQ_CUB_ScreenTxt.fontSize = 20;
+		_this.NS_SQ_CUB_ScreenTxt.fontWeight = 'normal';
+		_this.NS_SQ_CUB_ScreenTxt.fill = 'white';
+		_this.NS_SQ_CUB_ScreenTxt.wordWrap = true;
+		_this.NS_SQ_CUB_ScreenTxt.wordWrapWidth = 500;
+		_this.NS_SQ_CUB_Screen.inputEnabled = true;
+		_this.NS_SQ_CUB_Screen.input.useHandCursor = true;
+		_this.NS_SQ_CUB_Screen.name = "NS_SQ_CUB";
+		_this.NS_SQ_CUB_Screen.events.onInputDown.add(function (target) {
+			_this.time.events.add(300, function () {
+				if (_this.tap) {
+					_this.time.events.removeAll();
+					target.events.onInputDown.removeAll();
+					_this.clickSound = _this.add.audio('ClickSound');
+					_this.clickSound.play();
+					_this.state.start('preloader_fm_1', true, false);
+				}
+			}, _this);
+		}, _this);
+
+		// _this.NS_DIN_Screen = _this.add.sprite(500, 120, 'NS_DIN_Screen');
+		// _this.bgGraphicNum3 = this.add.graphics(610, 175);
+		// _this.bgGraphicNum3.lineStyle(0, 0xFFFFFF, 0.8);
+		// _this.bgGraphicNum3.beginFill(0x493A19, 1);
+		// _this.bgGraphicNum3.drawRoundedRect(0, 0, 30, 30, 10);
+		// _this.bgGraphicNum3.boundsPadding = 0;
+		// _this.NS_DIN_ScreenTxt = this.add.text(625, 192, ' \n ' + window.selctedLang.NS_DIN_Screen + ' \n ');
+		// _this.NS_DIN_ScreenTxt.anchor.setTo(0.5);
+		// _this.NS_DIN_ScreenTxt.align = 'center';
+		// _this.NS_DIN_ScreenTxt.font = 'gradefont';
+		// _this.NS_DIN_ScreenTxt.fontSize = 20;
+		// _this.NS_DIN_ScreenTxt.fontWeight = 'normal';
+		// _this.NS_DIN_ScreenTxt.fill = 'white';
+		// _this.NS_DIN_ScreenTxt.wordWrap = true;
+		// _this.NS_DIN_ScreenTxt.wordWrapWidth = 500;
+		// _this.NS_DIN_Screen.inputEnabled = true;
+		// _this.NS_DIN_Screen.name = "Numbers HCF-1";
+		// _this.NS_DIN_Screen.input.useHandCursor = true;
+		// _this.NS_DIN_Screen.events.onInputDown.add(function (target) {
 		// 	_this.time.events.add(300, function () {
 		// 		if (_this.tap) {
 		// 			_this.time.events.removeAll();
 		// 			target.events.onInputDown.removeAll();
 		// 			_this.clickSound = _this.add.audio('ClickSound');
 		// 			_this.clickSound.play();
-		// 			_this.state.start('preloader_prm_1', true, false);
-		// 		}
-		// 	}, _this);
-		// }, _this);
-
-
-		// _this.FM_3_Screen = _this.add.sprite(100, 320, 'FM_3_Screen');
-		// _this.bgGraphicNum5 = this.add.graphics(210, 375);
-		// _this.bgGraphicNum5.lineStyle(0, 0xFFFFFF, 0.8);
-		// _this.bgGraphicNum5.beginFill(0x493A19, 1);
-		// _this.bgGraphicNum5.drawRoundedRect(0, 0, 30, 30, 10);
-		// _this.bgGraphicNum5.boundsPadding = 0;
-		// _this.FM_3_ScreenTxt = this.add.text(225, 392, ' \n ' + window.selctedLang.FM_3_Screen + ' \n ');
-		// _this.FM_3_ScreenTxt.anchor.setTo(0.5);
-		// _this.FM_3_ScreenTxt.align = 'center';
-		// _this.FM_3_ScreenTxt.font = 'gradefont';
-		// _this.FM_3_ScreenTxt.fontSize = 20;
-		// _this.FM_3_ScreenTxt.fontWeight = 'normal';
-		// _this.FM_3_ScreenTxt.fill = 'white';
-		// _this.FM_3_ScreenTxt.wordWrap = true;
-		// _this.FM_3_ScreenTxt.wordWrapWidth = 500;
-		// _this.FM_3_Screen.inputEnabled = true;
-		// _this.FM_3_Screen.input.useHandCursor = true;
-		// _this.FM_3_Screen.name = "Numbers FM-3";
-		// _this.FM_3_Screen.events.onInputDown.add(function (target) {
-		// 	_this.time.events.add(300, function () {
-		// 		if (_this.tap) {
-		// 			_this.time.events.removeAll();
-		// 			target.events.onInputDown.removeAll();
-		// 			_this.clickSound = _this.add.audio('ClickSound');
-		// 			_this.clickSound.play();
-		// 			_this.state.start('preloader_fm_3', true, false);
-		// 		}
-		// 	}, _this);
-		// }, _this);
-
-		// _this.FM_4_Screen = _this.add.sprite(300, 320, 'FM_4_Screen');
-		// _this.bgGraphicNum6 = this.add.graphics(410, 375);
-		// _this.bgGraphicNum6.lineStyle(0, 0xFFFFFF, 0.8);
-		// _this.bgGraphicNum6.beginFill(0x493A19, 1);
-		// _this.bgGraphicNum6.drawRoundedRect(0, 0, 30, 30, 10);
-		// _this.bgGraphicNum6.boundsPadding = 0;
-		// _this.FM_4_ScreenTxt = this.add.text(425, 392, ' \n ' + window.selctedLang.FM_4_Screen + ' \n ');
-		// _this.FM_4_ScreenTxt.anchor.setTo(0.5);
-		// _this.FM_4_ScreenTxt.align = 'center';
-		// _this.FM_4_ScreenTxt.font = 'gradefont';
-		// _this.FM_4_ScreenTxt.fontSize = 20;
-		// _this.FM_4_ScreenTxt.fontWeight = 'normal';
-		// _this.FM_4_ScreenTxt.fill = 'white';
-		// _this.FM_4_ScreenTxt.wordWrap = true;
-		// _this.FM_4_ScreenTxt.wordWrapWidth = 500;
-		// _this.FM_4_Screen.inputEnabled = true;
-		// _this.FM_4_Screen.name = "Numbers FM-4";
-		// _this.FM_4_Screen.input.useHandCursor = true;
-		// _this.FM_4_Screen.events.onInputDown.add(function (target) {
-		// 	_this.time.events.add(300, function () {
-		// 		if (_this.tap) {
-		// 			_this.time.events.removeAll();
-		// 			target.events.onInputDown.removeAll();
-		// 			_this.clickSound = _this.add.audio('ClickSound');
-		// 			_this.clickSound.play();
-		// 			_this.state.start('preloader_fm_4a', true, false);
-		// 		}
-		// 	}, _this);
-		// }, _this);
-
-		// _this.LCM_1_Screen = _this.add.sprite(500, 320, 'LCM_1_Screen');
-		// _this.bgGraphicNum7 = this.add.graphics(610, 375);
-		// _this.bgGraphicNum7.lineStyle(0, 0xFFFFFF, 0.8);
-		// _this.bgGraphicNum7.beginFill(0x493A19, 1);
-		// _this.bgGraphicNum7.drawRoundedRect(0, 0, 30, 30, 10);
-		// _this.bgGraphicNum7.boundsPadding = 0;
-		// _this.LCM_1_ScreenTxt = this.add.text(625, 392, ' \n ' + window.selctedLang.LCM_1_Screen + ' \n ');
-		// _this.LCM_1_ScreenTxt.anchor.setTo(0.5);
-		// _this.LCM_1_ScreenTxt.align = 'center';
-		// _this.LCM_1_ScreenTxt.font = 'gradefont';
-		// _this.LCM_1_ScreenTxt.fontSize = 20;
-		// _this.LCM_1_ScreenTxt.fontWeight = 'normal';
-		// _this.LCM_1_ScreenTxt.fill = 'white';
-		// _this.LCM_1_ScreenTxt.wordWrap = true;
-		// _this.LCM_1_ScreenTxt.wordWrapWidth = 500;
-		// _this.LCM_1_Screen.inputEnabled = true;
-		// _this.LCM_1_Screen.name = "Numbers LCM-1";
-		// _this.LCM_1_Screen.input.useHandCursor = true;
-		// _this.LCM_1_Screen.events.onInputDown.add(function (target) {
-		// 	_this.time.events.add(300, function () {
-		// 		if (_this.tap) {
-		// 			_this.time.events.removeAll();
-		// 			target.events.onInputDown.removeAll();
-		// 			_this.clickSound = _this.add.audio('ClickSound');
-		// 			_this.clickSound.play();
-		// 			_this.state.start('preloader_lcm_1', true, false);
+		// 			_this.state.start('preloader_NS_DIN_G8', true, false);
 		// 		}
 		// 	}, _this);
 		// }, _this);

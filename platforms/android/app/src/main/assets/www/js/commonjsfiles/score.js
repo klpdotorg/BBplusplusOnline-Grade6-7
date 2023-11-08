@@ -430,12 +430,12 @@ Game.score.prototype = {
 		} else if (_this.microConcepts == 'Number SystemsG8') {
 			switch (_this.game_id) {
 				//*Add NS Cube games preloader here
-				case 'NSN_RN_G8': _this.state.start('preloader_AL_MUL1_G8', true, false);
+				case 'NSN_RN_G8': _this.state.start('preloader_NS_DIN_G8', true, false);
 					break;
-				case 'AL_MUL1_G8': _this.state.start('preloader_NS_DIN_G8', true, false);
+				case 'NSN_DIN_G8': _this.state.start('preloader_NS_DIN_G8', true, false);
 					break;
-				case 'NSN_DIN_G8': _this.state.start('preloader_NS_RN_G8', true, false);
-					break;
+				// case 'NSN_DIN_G8': _this.state.start('preloader_NS_RN_G8', true, false);
+				// 	break;
 			}
 		}
 	},
@@ -705,6 +705,8 @@ Game.score.prototype = {
 				break;
 			case 'NSN_DIN_G8': _this.state.start('preloader_NS_DIN_G8', true, false);
 				break;
+			// case 'NSN_SQ_CUB_G8': _this.state.start('preloader_NS_DIN_G8', true, false);
+			// 	break;
 		}
 	},
 
