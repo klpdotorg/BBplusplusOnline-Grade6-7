@@ -60,7 +60,7 @@ Game.AL_FACT_G8level1.prototype =
         _this.Ask_Question6 = _this.createAudio("AL_FACT_G8_a6");
 
         telInitializer.gameIdInit("AL_FACT_G8", gradeSelected);
-        console.log(gameID,"gameID...");
+        console.log(gameID, "gameID...");
     },
 
     create: function (game) {
@@ -95,7 +95,7 @@ Game.AL_FACT_G8level1.prototype =
         _this.questionid = null;
 
 
-      //  _this.AnsTimerCount = 0;
+        //  _this.AnsTimerCount = 0;
         _this.count1 = 0;
         _this.speakerbtn;
         _this.background;
@@ -135,7 +135,7 @@ Game.AL_FACT_G8level1.prototype =
         _this.backbtn.inputEnabled = true;
         _this.backbtn.input.useHandCursor = true;
         _this.backbtn.events.onInputDown.add(function () {
-            _this.state.start('grade8Algebra',true, false);
+            _this.state.start('grade8Algebra', true, false);
         });
 
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
@@ -222,7 +222,7 @@ Game.AL_FACT_G8level1.prototype =
     createAudio: function (src) {
         audio = document.createElement('audio');
         audiosrc = document.createElement('source');
-        audiosrc.setAttribute("src",window.baseUrl + "questionSounds/AL-FACT-G8/" + _this.languageSelected + "/" + src + ".mp3");
+        audiosrc.setAttribute("src", window.baseUrl + "questionSounds/AL-FACT-G8/" + _this.languageSelected + "/" + src + ".mp3");
         audio.appendChild(audiosrc);
 
         return audio;
@@ -1654,7 +1654,6 @@ Game.AL_FACT_G8level1.prototype =
                             _this.Ask_Question6.play();
                         })
                     }
-
                 }
                 _this.time.events.add(500, () => {
                     _this.rightbtn.frame = 0;
@@ -2488,14 +2487,14 @@ Game.AL_FACT_G8level1.prototype =
         else {
             _this.celebrationSound.play();
             _this.starActions(_this.count1);
-            
+
             telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
             _this.AnsTimerCount = 0;
             _this.noofAttempts = 0;
 
             _this.time.events.add(2000, _this.ClearAll);
             _this.time.events.add(2500, () => {
-                _this.state.start('score', true, false,gameID,_this.microConcepts);
+                _this.state.start('score', true, false, gameID, _this.microConcepts);
             })
         }
     },
@@ -2520,48 +2519,48 @@ Game.AL_FACT_G8level1.prototype =
         // DEMO AUDIOS
         _this.demoAudio1 = document.createElement('audio');
         _this.demoAudio1src = document.createElement('source');
-        _this.demoAudio1src.setAttribute("src",window.baseUrl + "questionSounds/AL-FACT-G8/" + _this.languageSelected + "/AL_FACT_G8_d1.mp3");
+        _this.demoAudio1src.setAttribute("src", window.baseUrl + "questionSounds/AL-FACT-G8/" + _this.languageSelected + "/AL_FACT_G8_d1.mp3");
         _this.demoAudio1.appendChild(_this.demoAudio1src);
 
         _this.demoAudio2 = document.createElement('audio');
         _this.demoAudio2src = document.createElement('source');
-        _this.demoAudio2src.setAttribute("src",window.baseUrl + "questionSounds/AL-FACT-G8/" + _this.languageSelected + "/AL_FACT_G8_d2.mp3");
+        _this.demoAudio2src.setAttribute("src", window.baseUrl + "questionSounds/AL-FACT-G8/" + _this.languageSelected + "/AL_FACT_G8_d2.mp3");
         _this.demoAudio2.appendChild(_this.demoAudio2src);
 
         // QUESTION AUDIOS
         _this.q1Sound = document.createElement('audio');
         _this.q1Soundsrc = document.createElement('source');
-        _this.q1Soundsrc.setAttribute("src",window.baseUrl + "questionSounds/AL-FACT-G8/" +
+        _this.q1Soundsrc.setAttribute("src", window.baseUrl + "questionSounds/AL-FACT-G8/" +
             _this.languageSelected + "/AL_FACT_G8_a1.mp3");
         _this.q1Sound.appendChild(_this.q1Soundsrc);
 
         _this.q2Sound = document.createElement('audio');
         _this.q2Soundsrc = document.createElement('source');
-        _this.q2Soundsrc.setAttribute("src",window.baseUrl + "questionSounds/AL-FACT-G8/" +
+        _this.q2Soundsrc.setAttribute("src", window.baseUrl + "questionSounds/AL-FACT-G8/" +
             _this.languageSelected + "/AL_FACT_G8_a2.mp3");
         _this.q2Sound.appendChild(_this.q2Soundsrc);
 
         _this.q3Sound = document.createElement('audio');
         _this.q3Soundsrc = document.createElement('source');
-        _this.q3Soundsrc.setAttribute("src",window.baseUrl + "questionSounds/AL-FACT-G8/" +
+        _this.q3Soundsrc.setAttribute("src", window.baseUrl + "questionSounds/AL-FACT-G8/" +
             _this.languageSelected + "/AL_FACT_G8_a3.mp3");
         _this.q3Sound.appendChild(_this.q3Soundsrc);
 
         _this.q4Sound = document.createElement('audio');
         _this.q4Soundsrc = document.createElement('source');
-        _this.q4Soundsrc.setAttribute("src",window.baseUrl + "questionSounds/AL-FACT-G8/" +
+        _this.q4Soundsrc.setAttribute("src", window.baseUrl + "questionSounds/AL-FACT-G8/" +
             _this.languageSelected + "/AL_FACT_G8_a4.mp3");
         _this.q4Sound.appendChild(_this.q4Soundsrc);
 
         _this.q5Sound = document.createElement('audio');
         _this.q5Soundsrc = document.createElement('source');
-        _this.q5Soundsrc.setAttribute("src",window.baseUrl + "questionSounds/AL-FACT-G8/" +
+        _this.q5Soundsrc.setAttribute("src", window.baseUrl + "questionSounds/AL-FACT-G8/" +
             _this.languageSelected + "/AL_FACT_G8_a5.mp3");
         _this.q5Sound.appendChild(_this.q5Soundsrc);
 
         _this.q6Sound = document.createElement('audio');
         _this.q6Soundsrc = document.createElement('source');
-        _this.q6Soundsrc.setAttribute("src",window.baseUrl + "questionSounds/AL-FACT-G8/" +
+        _this.q6Soundsrc.setAttribute("src", window.baseUrl + "questionSounds/AL-FACT-G8/" +
             _this.languageSelected + "/AL_FACT_G8_a6.mp3");
         _this.q6Sound.appendChild(_this.q6Soundsrc);
 
@@ -2573,12 +2572,14 @@ Game.AL_FACT_G8level1.prototype =
         _this.skip.input.useHandCursor = true;
         _this.skip.events.onInputDown.add(function () {
             _this.stopAudio();
-
             if (_this.demoVideo_1)
                 _this.demoVideo_1.stop(false);
             if (_this.videoWorld_1)
                 _this.videoWorld_1.destroy();
-
+            if (_this.hintBtn) {
+                _this.hintBtn.inputEnabled = true;
+                _this.hintBtn.input.useHandCursor = true;
+            }
             _this.game.paused = false;  //* restart the game
         });
     },
@@ -2588,7 +2589,7 @@ Game.AL_FACT_G8level1.prototype =
         if (_this.q1Timer) clearTimeout(_this.q1Timer);
         if (_this.q2Timer) clearTimeout(_this.q2Timer);
         if (_this.q3Timer) clearTimeout(_this.q3Timer);
-   
+
         if (_this.demoAudio1) {
             console.log("removing the demo audio1");
             _this.demoAudio1.pause();
@@ -2645,7 +2646,7 @@ Game.AL_FACT_G8level1.prototype =
 
         _this.demoVideo_1 = _this.add.video('AL_FACT');
         _this.demoVideo_1.play(false);
-        _this.demoVideo_1.changeSource(window.baseUrl + 'assets/demoVideos/AL-FACT-G8.mp4');
+        _this.demoVideo_1.changeSource(window.baseUrl + 'assets/demoVideos/AL FACT-G8.mp4');
         _this.video_playing = 1;
         _this.videoWorld_1 = _this.demoVideo_1.addToWorld();
 

@@ -42,7 +42,7 @@ Game.ALA_01_G6level1.prototype =
         _this.bubbleSound.appendChild(_this.bubbleSoundsrc);
 
         telInitializer.gameIdInit("ALA_01_G6", gradeSelected);
-        console.log(gameID,"gameID...");
+        console.log(gameID, "gameID...");
     },
 
     create: function (game) {
@@ -102,7 +102,7 @@ Game.ALA_01_G6level1.prototype =
         // _this.game_id;
         // _this.score = 0;
         // _this.gradeTopics;
-      //   _this.microConcepts;
+        //   _this.microConcepts;
         // _this.grade;
 
         _this.hint_flag = 0;// * hint flag zero
@@ -1738,7 +1738,7 @@ Game.ALA_01_G6level1.prototype =
             _this.timer1 = null;
             _this.time.events.add(2000, function () {
                 //_this.state.start('score')
-                _this.state.start('score', true, false,gameID,_this.microConcepts);
+                _this.state.start('score', true, false, gameID, _this.microConcepts);
             });
         }
 
@@ -1927,7 +1927,7 @@ Game.ALA_01_G6level1.prototype =
         // _this.game_id = "ALA_01_G6";
         // _this.grade = "6";
         // _this.gradeTopics = "Variable and Equation";
-         _this.microConcepts = "Algebra";
+        _this.microConcepts = "Algebra";
 
         anim.play();
     },
@@ -1975,8 +1975,8 @@ Game.ALA_01_G6level1.prototype =
         _this.skip.input.useHandCursor = true;
         _this.skip.events.onInputDown.add(function () {
             _this.stopAudio();
-            if (_this.demoVideo_1) 
-                _this.demoVideo_1.stop(false); 
+            if (_this.demoVideo_1)
+                _this.demoVideo_1.stop(false);
             if (_this.videoWorld_1)
                 _this.videoWorld_1.destroy();
 

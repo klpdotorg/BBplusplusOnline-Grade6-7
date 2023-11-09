@@ -319,7 +319,7 @@ Game.AL_MUL3_G8level1.prototype =
         // _this.hintBtn = _this.add.sprite(670, 6, 'bulb');
         // _this.hintBtn.scale.setTo(0.5, 0.6);
         _this.hintBtn.bringToTop();
-        _this.hintBtn.visible = false;
+        _this.hintBtn.visible = true;
         _this.hintBtn.smoothed = false;
         _this.hintBtnAnim = _this.hintBtn.animations.add('hint');
         _this.hintBtnAnim.play(15);

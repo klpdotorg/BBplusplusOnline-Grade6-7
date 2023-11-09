@@ -204,7 +204,7 @@ Game.AL_DIV_G8level1.prototype =
         // _this.hintBtn = _this.add.sprite(670, 6, 'bulb');
         // _this.hintBtn.scale.setTo(0.5, 0.6);
         _this.hintBtn.bringToTop();
-        _this.hintBtn.visible = false;
+        _this.hintBtn.visible = true;
         _this.hintBtn.smoothed = false;
         _this.hintBtnAnim = _this.hintBtn.animations.add('hint');
         _this.hintBtnAnim.play(15);
@@ -1927,12 +1927,12 @@ Game.AL_DIV_G8level1.prototype =
         }
         else if (_this.place1 == true || _this.place2 == true) {
             console.log("here Q6 Time#");
-            _this.Question_flag = 7;
-            if (_this.count1 == 0) {
-                _this.time.events.add(2000, () => {
-                    _this.Ask_Question7.play();
-                })
-            }
+            // _this.Question_flag = 7;
+            // if (_this.count1 == 0) {
+            //     _this.time.events.add(2000, () => {
+            //         _this.Ask_Question7.play();
+            //     })
+            // }
             if (_this.checkPlacTiles()) {
                 _this.counterCelebrationSound.currentTime = 0;
                 _this.counterCelebrationSound.play();
@@ -1946,6 +1946,13 @@ Game.AL_DIV_G8level1.prototype =
                     _this.space3 = _this.add.sprite(610, 160, 'panel_3');
                     _this.space3.scale.setTo(1, 0.95);
                     _this.generateOptions();
+
+                    _this.Question_flag = 7;
+                    if (_this.count1 == 0) {
+                        _this.time.events.add(2000, () => {
+                            _this.Ask_Question7.play();
+                        })
+                    }
 
                 }
                 _this.time.events.add(500, () => {

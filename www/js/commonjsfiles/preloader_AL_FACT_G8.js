@@ -6,7 +6,7 @@ var chime, clockTick;
 Game.preloader_AL_FACT_G8.prototype = {
         preload: function () {
 
-                this.load.video('AL_FACT', window.baseUrl + 'assets/demoVideos/AL-FACT-G8.mp4');   //* include demo video of ML-2 game.
+                this.load.video('AL_FACT', window.baseUrl + 'assets/demoVideos/AL FACT-G8.mp4');   //* include demo video of ML-2 game.
                 // this.load.video('ML1_2', 'demoVideos/ML1-G7_2.mp4');   //* include demo video of ML-2 game.
 
                 this.load.atlas('bulb', window.baseUrl + 'assets/commonAssets/bulb.png', null, AL_FACT_G8_JSON.bulbBtnJson);

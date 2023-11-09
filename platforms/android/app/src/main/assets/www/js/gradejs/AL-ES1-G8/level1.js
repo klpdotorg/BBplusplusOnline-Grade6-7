@@ -470,6 +470,10 @@ Game.AL_ES1_G8level1.prototype =
         //  It won't start automatically, allowing you to hook it to button events and the like.
         _this.speakerbtn.inputEnabled = true;
         _this.speakerbtn.input.useHandCursor = true;
+
+        _this.hintBtn.inputEnabled = true;
+        _this.hintBtn.input.useHandCursor = true;
+        
         _this.Initial_randomizing();
         _this.displayQuestions();
 

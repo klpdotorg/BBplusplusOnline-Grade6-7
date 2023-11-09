@@ -195,13 +195,18 @@ Game.GMSS_01_G8level1.prototype =
                 if (_this.Question_flag == 1) {
                     _this.pauseVoice();
                     // _this.Ask_Question4.play();
-                    if (_this.languageSelected == "ENG")
-                        _this.Ask_Question4 = _this.playAudio(window.baseUrl + 'questionSounds/GMSS-01-G8/ENG/GMSS_01_G8_d1.mp3');
-                    else if (_this.languageSelected == "HIN")
-                        _this.Ask_Question4 = _this.playAudio(window.baseUrl + 'questionSounds/GMSS-01-G8/HIN/GMSS_01_G8_d1.mp3');
-                    else if (_this.languageSelected == "KAN")
-                        _this.Ask_Question4 = _this.playAudio(window.baseUrl + 'questionSounds/GMSS-01-G8/KAN/GMSS_01_G8_d1.mp3');
-
+                    if (_this.languageSelected == "English")
+                        _this.Ask_Question4 = _this.playAudio(window.baseUrl + 'questionSounds/GMSS-01-G8/English/GMSS_01_G8_d1.mp3');
+                    else if (_this.languageSelected == "Hindi")
+                        _this.Ask_Question4 = _this.playAudio(window.baseUrl + 'questionSounds/GMSS-01-G8/Hindi/GMSS_01_G8_d1.mp3');
+                    else if (_this.languageSelected == "Kannada")
+                        _this.Ask_Question4 = _this.playAudio(window.baseUrl + 'questionSounds/GMSS-01-G8/Kannada/GMSS_01_G8_d1.mp3');
+                    else if (_this.languageSelected == "Marathi")
+                        _this.Ask_Question4 = _this.playAudio(window.baseUrl + 'questionSounds/GMSS-01-G8/Marathi/GMSS_01_G8_d1.mp3');
+                    else if (_this.languageSelected == "Tamil")
+                        _this.Ask_Question4 = _this.playAudio(window.baseUrl + 'questionSounds/GMSS-01-G8/Tamil/GMSS_01_G8_d1.mp3');
+                    else if (_this.languageSelected == "Odiya")
+                        _this.Ask_Question4 = _this.playAudio(window.baseUrl + 'questionSounds/GMSS-01-G8/Odiya/GMSS_01_G8_d1.mp3');
                 }
                 if (_this.Question_flag == 2) {
                     if (_this.top_viewFlag == 1) {
@@ -237,6 +242,7 @@ Game.GMSS_01_G8level1.prototype =
         // _this.hintBtn = _this.add.sprite(670, 6, 'bulb');
         // _this.hintBtn.scale.setTo(0.5, 0.6);
         _this.hintBtn.bringToTop();
+        _this.hintBtn.visible = true;
         _this.hintBtn.smoothed = false;
         _this.hintBtnAnim = _this.hintBtn.animations.add('hint');
         _this.hintBtnAnim.play(15);
@@ -278,7 +284,7 @@ Game.GMSS_01_G8level1.prototype =
     createAudio: function (src) {
         audio = document.createElement('audio');
         audiosrc = document.createElement('source');
-        audiosrc.setAttribute("src", "questionSounds/GMSS-01-G8/" + _this.languageSelected + "/" + src + ".mp3");
+        audiosrc.setAttribute("src", window.baseUrl + "questionSounds/GMSS-01-G8/" + _this.languageSelected + "/" + src + ".mp3");
         audio.appendChild(audiosrc);
         return audio;
     },
@@ -291,8 +297,8 @@ Game.GMSS_01_G8level1.prototype =
         }
     },
     updateTimer: function () {
-        console.log("timer function...");
-        console.log('_this.counterForTimer:', _this.counterForTimer);
+        // console.log("timer function...");
+        // console.log('_this.counterForTimer:', _this.counterForTimer);
         _this.counterForTimer++;
         if (_this.counterForTimer > 59) {
             _this.counterForTimer = 0;
@@ -2209,6 +2215,12 @@ Game.GMSS_01_G8level1.prototype =
                     _this.Ask_Question4 = _this.playAudio(window.baseUrl + 'questionSounds/GMSS-01-G8/Hindi/GMSS_01_G8_d1.mp3');
                 else if (_this.languageSelected == "Kannada")
                     _this.Ask_Question4 = _this.playAudio(window.baseUrl + 'questionSounds/GMSS-01-G8/Kannada/GMSS_01_G8_d1.mp3');
+                else if (_this.languageSelected == "Marathi")
+                    _this.Ask_Question4 = _this.playAudio(window.baseUrl + 'questionSounds/GMSS-01-G8/Marathi/GMSS_01_G8_d1.mp3');
+                else if (_this.languageSelected == "Odiya")
+                    _this.Ask_Question4 = _this.playAudio(window.baseUrl + 'questionSounds/GMSS-01-G8/Odiya/GMSS_01_G8_d1.mp3');
+                else if (_this.languageSelected == "Tamil")
+                    _this.Ask_Question4 = _this.playAudio(window.baseUrl + 'questionSounds/GMSS-01-G8/Tamil/GMSS_01_G8_d1.mp3');
 
                 _this.square_1 = _this.add.image(170, 200, 'square_box_1');
                 _this.arrow_1 = _this.add.image(220, 130, 'arrow_1');
@@ -4386,7 +4398,7 @@ Game.GMSS_01_G8level1.prototype =
 
     lastScreenCelebration: function () {
         _this.celebrationSound.play();
-         //for api
+        //for api
         //edited for baseurl apk
         _this.noofAttempts++;
         telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
@@ -4400,7 +4412,7 @@ Game.GMSS_01_G8level1.prototype =
 
         _this.starActions();
         _this.pauseVoice();
-        _this.speakerbtn.inputEnabled = false;
+      //  _this.speakerbtn.inputEnabled = false;
         _this.time.events.add(3000, () => {
             _this.clearAll();
             if (_this.count1 == 6) {
@@ -4543,7 +4555,7 @@ Game.GMSS_01_G8level1.prototype =
     },
     //Adding a star to the above created six stars.
     starActions: function (target) {
-          //for api
+        //for api
         //edited for baseurl apk
         _this.AnsTimerCount = 0;
 
@@ -4554,8 +4566,8 @@ Game.GMSS_01_G8level1.prototype =
         // _this.count1++;
         anim.play();
 
-          //edited for baseurl apk //for api
-          _this.microConcepts = "GeometryG8";
+        //edited for baseurl apk //for api
+        _this.microConcepts = "GeometryG8";
     },
     shutdown: function () {
         _this.stopVoice();

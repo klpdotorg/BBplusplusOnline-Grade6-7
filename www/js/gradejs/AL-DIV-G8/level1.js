@@ -22,37 +22,37 @@ Game.AL_DIV_G8level1.prototype =
 
         _this.clickSound = document.createElement('audio');
         _this.clickSoundsrc = document.createElement('source');
-        _this.clickSoundsrc.setAttribute("src", window.baseUrl +"sounds/ClickSound.mp3");
+        _this.clickSoundsrc.setAttribute("src", window.baseUrl + "sounds/ClickSound.mp3");
         _this.clickSound.appendChild(_this.clickSoundsrc);
 
         _this.successSound = document.createElement('audio');
         _this.successSoundsrc = document.createElement('source');
-        _this.successSoundsrc.setAttribute("src", window.baseUrl +"sounds/Success.mp3");
+        _this.successSoundsrc.setAttribute("src", window.baseUrl + "sounds/Success.mp3");
         _this.successSound.appendChild(_this.successSoundsrc);
 
         _this.celebrationSound = document.createElement('audio');
         _this.celebrationSoundsrc = document.createElement('source');
-        _this.celebrationSoundsrc.setAttribute("src", window.baseUrl +"sounds/celebration.mp3");
+        _this.celebrationSoundsrc.setAttribute("src", window.baseUrl + "sounds/celebration.mp3");
         _this.celebrationSound.appendChild(_this.celebrationSoundsrc);
 
         _this.counterCelebrationSound = document.createElement('audio');
         _this.counterCelebrationSoundsrc = document.createElement('source');
-        _this.counterCelebrationSoundsrc.setAttribute("src", window.baseUrl +"sounds/counter_celebration.mp3");
+        _this.counterCelebrationSoundsrc.setAttribute("src", window.baseUrl + "sounds/counter_celebration.mp3");
         _this.counterCelebrationSound.appendChild(_this.counterCelebrationSoundsrc);
 
         _this.wrongans = document.createElement('audio');
         _this.wronganssrc = document.createElement('source');
-        _this.wronganssrc.setAttribute("src", window.baseUrl +"sounds/WrongCelebrationSound.mp3");
+        _this.wronganssrc.setAttribute("src", window.baseUrl + "sounds/WrongCelebrationSound.mp3");
         _this.wrongans.appendChild(_this.wronganssrc);
 
         _this.framechange = document.createElement('audio');
         _this.framechangesrc = document.createElement('source');
-        _this.framechangesrc.setAttribute("src", window.baseUrl +"sounds/Frame_change_sound.mp3");
+        _this.framechangesrc.setAttribute("src", window.baseUrl + "sounds/Frame_change_sound.mp3");
         _this.framechange.appendChild(_this.framechangesrc);
 
         _this.snapSound = document.createElement('audio');
         _this.snapSoundsrc = document.createElement('source');
-        _this.snapSoundsrc.setAttribute("src", window.baseUrl +"sounds/snapSound.mp3");
+        _this.snapSoundsrc.setAttribute("src", window.baseUrl + "sounds/snapSound.mp3");
         _this.snapSound.appendChild(_this.snapSoundsrc);
 
         _this.Ask_Question1 = _this.createAudio("AL_DIV_G8_a2");
@@ -204,7 +204,7 @@ Game.AL_DIV_G8level1.prototype =
         // _this.hintBtn = _this.add.sprite(670, 6, 'bulb');
         // _this.hintBtn.scale.setTo(0.5, 0.6);
         _this.hintBtn.bringToTop();
-        _this.hintBtn.visible = false;
+        _this.hintBtn.visible = true;
         _this.hintBtn.smoothed = false;
         _this.hintBtnAnim = _this.hintBtn.animations.add('hint');
         _this.hintBtnAnim.play(15);
@@ -1927,12 +1927,12 @@ Game.AL_DIV_G8level1.prototype =
         }
         else if (_this.place1 == true || _this.place2 == true) {
             console.log("here Q6 Time#");
-            _this.Question_flag = 7;
-            if (_this.count1 == 0) {
-                _this.time.events.add(2000, () => {
-                    _this.Ask_Question7.play();
-                })
-            }
+            // _this.Question_flag = 7;
+            // if (_this.count1 == 0) {
+            //     _this.time.events.add(2000, () => {
+            //         _this.Ask_Question7.play();
+            //     })
+            // }
             if (_this.checkPlacTiles()) {
                 _this.counterCelebrationSound.currentTime = 0;
                 _this.counterCelebrationSound.play();
@@ -1946,6 +1946,13 @@ Game.AL_DIV_G8level1.prototype =
                     _this.space3 = _this.add.sprite(610, 160, 'panel_3');
                     _this.space3.scale.setTo(1, 0.95);
                     _this.generateOptions();
+
+                    _this.Question_flag = 7;
+                    if (_this.count1 == 0) {
+                        _this.time.events.add(2000, () => {
+                            _this.Ask_Question7.play();
+                        })
+                    }
 
                 }
                 _this.time.events.add(500, () => {
@@ -2899,7 +2906,10 @@ Game.AL_DIV_G8level1.prototype =
                 _this.demoVideo_1.stop(false);
             if (_this.videoWorld_1)
                 _this.videoWorld_1.destroy();
-
+            if (_this.hintBtn) {
+                _this.hintBtn.inputEnabled = true;
+                _this.hintBtn.input.useHandCursor = true;
+            }
             _this.game.paused = false;  //* restart the game
         });
     },

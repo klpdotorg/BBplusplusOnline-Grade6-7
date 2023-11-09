@@ -1933,7 +1933,8 @@ Game.GMSS_03_G7level1.prototype =
             }
             else {
                 _this.time.events.add(800, () => {
-                    _this.getQuestion();
+                    _this.InitialScreen();
+                   // _this.getQuestion();
                 });
             }
         });

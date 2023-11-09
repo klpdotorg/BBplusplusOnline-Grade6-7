@@ -1654,7 +1654,6 @@ Game.AL_FACT_G8level1.prototype =
                             _this.Ask_Question6.play();
                         })
                     }
-
                 }
                 _this.time.events.add(500, () => {
                     _this.rightbtn.frame = 0;
@@ -2645,7 +2644,7 @@ Game.AL_FACT_G8level1.prototype =
 
         _this.demoVideo_1 = _this.add.video('AL_FACT');
         _this.demoVideo_1.play(false);
-        _this.demoVideo_1.changeSource(window.baseUrl + 'assets/demoVideos/AL-FACT-G8.mp4');
+        _this.demoVideo_1.changeSource(window.baseUrl + 'assets/demoVideos/AL FACT-G8.mp4');
         _this.video_playing = 1;
         _this.videoWorld_1 = _this.demoVideo_1.addToWorld();
 

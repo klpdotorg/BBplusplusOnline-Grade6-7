@@ -182,7 +182,7 @@ Game.AL_MUL1_G8level1.prototype =
         _this.backbtn.events.onInputDown.add(function () {
             // _this.state.start('AL_MUL1_G8Score');
             // _this.state.start('score');
-            _this.state.start('grade8Algebra',true, false);
+            _this.state.start('grade8Algebra', true, false);
         });
 
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
@@ -355,10 +355,10 @@ Game.AL_MUL1_G8level1.prototype =
         _this.speakerbtn.inputEnabled = true;
         _this.speakerbtn.input.useHandCursor = true;
 
-         //* hintbtn will be true when the game is playing
-         _this.hintBtn.inputEnabled = true;
-         _this.hintBtn.input.useHandCursor = true;
-         _this.hint_flag = 1;
+        //* hintbtn will be true when the game is playing
+        _this.hintBtn.inputEnabled = true;
+        _this.hintBtn.input.useHandCursor = true;
+        _this.hint_flag = 1;
 
         _this.questionid = 1;
 
@@ -465,7 +465,7 @@ Game.AL_MUL1_G8level1.prototype =
             _this.timer1.stop();
             _this.timer1 = null;
             // _this.time.events.add(1000, function () { _this.state.start('score') });
-            _this.state.start('score', true, false,gameID,_this.microConcepts);
+            _this.state.start('score', true, false, gameID, _this.microConcepts);
 
         }
     },
@@ -10103,7 +10103,7 @@ Game.AL_MUL1_G8level1.prototype =
             if (_this.numberOfQuestions == 6) {
                 // _this.state.start('AL_MUL1_G8Score');
                 // _this.state.start('score');
-                _this.state.start('score', true, false,gameID,_this.microConcepts);
+                _this.state.start('score', true, false, gameID, _this.microConcepts);
             }
             else {
                 _this.NextQuestion();
@@ -10212,7 +10212,7 @@ Game.AL_MUL1_G8level1.prototype =
             if (_this.numberOfQuestions == 6) {
                 // _this.state.start('AL_MUL1_G8Score');
                 // _this.state.start('score');
-                _this.state.start('score', true, false,gameID,_this.microConcepts);
+                _this.state.start('score', true, false, gameID, _this.microConcepts);
             }
             else {
                 _this.NextQuestion();
@@ -10803,13 +10803,15 @@ Game.AL_MUL1_G8level1.prototype =
         _this.skip.events.onInputDown.add(function () {
             _this.stopAudio();
 
-
             if (_this.demoVideo_1)
                 _this.demoVideo_1.stop(false);
             if (_this.videoWorld_1)
                 _this.videoWorld_1.destroy();
 
-
+            if (_this.hintBtn) {
+                _this.hintBtn.inputEnabled = true;
+                _this.hintBtn.input.useHandCursor = true;
+            }
             _this.game.paused = false;  //* restart the game
         });
     },
