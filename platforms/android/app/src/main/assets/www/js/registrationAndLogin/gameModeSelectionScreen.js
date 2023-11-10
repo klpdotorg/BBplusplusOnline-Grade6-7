@@ -417,7 +417,7 @@ Game.gameModeSelectionScreen.prototype={
 		if(navigator.connection.type!="none" && navigator.connection.type!="unknown" && navigator.connection.type!=null && navigator.connection.type!="undefined")
 		{
 				var apiurl = "https://abbmath.klp.org.in/abbppchmprm/login";    
-				//var apiurl = "https://10.0.2.2/abbchmprm/login";    		        
+				//var apiurl = "https://10.0.2.2/abbppchmprm/login";    		        
 		        $.ajax({
 		            url: apiurl,
 		            type: "POST",
@@ -475,7 +475,7 @@ Game.gameModeSelectionScreen.prototype={
 		if(navigator.connection.type!="none" && navigator.connection.type!="unknown" && navigator.connection.type!=null && navigator.connection.type!="undefined")
 		{
 				var apiurl = "https://abbmath.klp.org.in/abbppchmprm/getchild";  
-				//var apiurl = "https://10.0.2.2/abbchmprm/getchild";       		        
+				//var apiurl = "https://10.0.2.2/abbppchmprm/getchild";       		        
 		        $.ajax({
 		            url: apiurl,
 		            type: "POST",

@@ -262,7 +262,7 @@ Game.AL_MUL_2_G8level1.prototype =
         _this.backbtn.input.useHandCursor = true;
         _this.backbtn.events.onInputDown.add(function () {
             // _this.state.start('AL_MUL_2_G8Score');
-            _this.state.start('grade8Algebra',true, false);
+            _this.state.start('grade8Algebra', true, false);
         });
 
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
@@ -6408,13 +6408,15 @@ Game.AL_MUL_2_G8level1.prototype =
         _this.skip.events.onInputDown.add(function () {
             _this.stopAudio();
 
-
             if (_this.demoVideo_1)
                 _this.demoVideo_1.stop(false);
             if (_this.videoWorld_1)
                 _this.videoWorld_1.destroy();
 
-
+            if (_this.hintBtn) {
+                _this.hintBtn.inputEnabled = true;
+                _this.hintBtn.input.useHandCursor = true;
+            }
             _this.game.paused = false;  //* restart the game
         });
     },

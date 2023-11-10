@@ -9,7 +9,7 @@ Game.appLoginScreen.prototype = {
 		_this.app_Mode = app_Mode;
 		console.log(_this.app_Mode, "_this.app_Mode in appLoginScreen");
 		console.log(window.app_Mode, "FRom App MODE ///");
-		
+
 	},
 
 	onDeviceReady: function () {
@@ -328,7 +328,9 @@ Game.appLoginScreen.prototype = {
 
 	localdatasuccess: function (result) {
 		SpinnerDialog.hide();
+		console.log("local data success", result);
 		if (result.rows.length > 0) {
+
 			_this.loadEverything(_this);
 			for (var i = 0; i < result.rows.length; i++) {
 				console.log(result.rows.item(i));
@@ -368,7 +370,7 @@ Game.appLoginScreen.prototype = {
 			//* later you can stop calling that function and close the app 
 
 			//window.plugins.toast.show("please Connect to the network to register", 20000, "center");
-			SpinnerDialog.show(null, "Building Blocks 6-8 by Akshara is loading..", true);
+			//SpinnerDialog.show(null, "Building Blocks 6-8 by Akshara is loading..", true);
 			_this.checkOnlineForData();
 
 			// _this.closingTimer = setTimeout(function ()    //* 
@@ -438,7 +440,7 @@ Game.appLoginScreen.prototype = {
 	checkOnlineForData: function () {
 		// console.log(device.serial + "_" + device.uuid);
 		// var jsondata = { name: _this.avatarName[0], deviceid: device.serial + "_" + device.uuid };
-		// console.log(jsondata);
+		console.log("checkOnlineForData");
 		FirebasePlugin.getInstallationId(function (id) {
 			console.log("Got installation ID: " + id);
 
@@ -447,7 +449,7 @@ Game.appLoginScreen.prototype = {
 
 			if (navigator.connection.type != "none" && navigator.connection.type != "unknown" && navigator.connection.type != null && navigator.connection.type != "undefined") {
 				var apiurl = "https://abbmath.klp.org.in/abbppchmprm/login";
-				//var apiurl = "https://10.0.2.2/abbchmprm/login";    		        
+				//var apiurl = "https://10.0.2.2/abbchmprm/login";
 				$.ajax({
 					url: apiurl,
 					type: "POST",
@@ -519,7 +521,8 @@ Game.appLoginScreen.prototype = {
 
 			if (navigator.connection.type != "none" && navigator.connection.type != "unknown" && navigator.connection.type != null && navigator.connection.type != "undefined") {
 				var apiurl = "https://abbmath.klp.org.in/abbppchmprm/getchild";
-				//var apiurl = "https://10.0.2.2/abbchmprm/getchild";       		        
+				//var apiurl = "https://10.0.2.2/abbppchmprm/getchild";
+				
 				$.ajax({
 					url: apiurl,
 					type: "POST",

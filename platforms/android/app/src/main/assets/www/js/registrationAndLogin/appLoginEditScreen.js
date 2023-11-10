@@ -447,7 +447,7 @@ Game.appLoginEditScreen.prototype = {
 
 			//_this.baseUrl = "https://abbmath.klp.org.in/abbchmprm/assets/bb5_0_5/";
 			_this.baseUrl = "https://abbmath.klp.org.in/bbplusplus/assets2/";
-			//_this.baseUrl = "https://10.0.2.2/abbchmprm/assets/bb5_0_5/";
+			//_this.baseUrl = "https://10.0.2.2/abbppchmprm/assets/bb5_0_5/";
 			var fileTransfer = new FileTransfer();
 
 			fileTransfer.onprogress = function (progressEvent) {

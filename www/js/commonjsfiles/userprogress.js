@@ -68,7 +68,7 @@ Game.userprogress.prototype={
 		{
 			console.log("sync telemetry"+navigator.connection.type);
 			var apiurl = "https://abbmath.klp.org.in/abbppchmprm/assets/userprogress/userprogress";
-			//"https://10.0.2.2/abbppchmprm/assets/userprogress/userprogress";
+			//var apiurl = "https://10.0.2.2/abbppchmprm/assets/userprogress/userprogress";
 			
 		        console.log("RESTAPImgr.invokeRESTAPI: apiname:" + apiurl + "jsondata" + JSON.stringify(jsondata));
 		        nativeApp.CallUserProgressBeforeFEtchingData();
@@ -83,7 +83,6 @@ Game.userprogress.prototype={
 		            accepts: 'application/json',
 		            success: function (jsonresp) {
 		            	
-
 		            	if(jsonresp.status == "success")
 		            	{
 		            		_this.responseData = jsonresp;

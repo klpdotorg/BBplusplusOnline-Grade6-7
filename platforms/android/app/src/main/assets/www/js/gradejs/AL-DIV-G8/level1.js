@@ -22,37 +22,37 @@ Game.AL_DIV_G8level1.prototype =
 
         _this.clickSound = document.createElement('audio');
         _this.clickSoundsrc = document.createElement('source');
-        _this.clickSoundsrc.setAttribute("src", window.baseUrl +"sounds/ClickSound.mp3");
+        _this.clickSoundsrc.setAttribute("src", window.baseUrl + "sounds/ClickSound.mp3");
         _this.clickSound.appendChild(_this.clickSoundsrc);
 
         _this.successSound = document.createElement('audio');
         _this.successSoundsrc = document.createElement('source');
-        _this.successSoundsrc.setAttribute("src", window.baseUrl +"sounds/Success.mp3");
+        _this.successSoundsrc.setAttribute("src", window.baseUrl + "sounds/Success.mp3");
         _this.successSound.appendChild(_this.successSoundsrc);
 
         _this.celebrationSound = document.createElement('audio');
         _this.celebrationSoundsrc = document.createElement('source');
-        _this.celebrationSoundsrc.setAttribute("src", window.baseUrl +"sounds/celebration.mp3");
+        _this.celebrationSoundsrc.setAttribute("src", window.baseUrl + "sounds/celebration.mp3");
         _this.celebrationSound.appendChild(_this.celebrationSoundsrc);
 
         _this.counterCelebrationSound = document.createElement('audio');
         _this.counterCelebrationSoundsrc = document.createElement('source');
-        _this.counterCelebrationSoundsrc.setAttribute("src", window.baseUrl +"sounds/counter_celebration.mp3");
+        _this.counterCelebrationSoundsrc.setAttribute("src", window.baseUrl + "sounds/counter_celebration.mp3");
         _this.counterCelebrationSound.appendChild(_this.counterCelebrationSoundsrc);
 
         _this.wrongans = document.createElement('audio');
         _this.wronganssrc = document.createElement('source');
-        _this.wronganssrc.setAttribute("src", window.baseUrl +"sounds/WrongCelebrationSound.mp3");
+        _this.wronganssrc.setAttribute("src", window.baseUrl + "sounds/WrongCelebrationSound.mp3");
         _this.wrongans.appendChild(_this.wronganssrc);
 
         _this.framechange = document.createElement('audio');
         _this.framechangesrc = document.createElement('source');
-        _this.framechangesrc.setAttribute("src", window.baseUrl +"sounds/Frame_change_sound.mp3");
+        _this.framechangesrc.setAttribute("src", window.baseUrl + "sounds/Frame_change_sound.mp3");
         _this.framechange.appendChild(_this.framechangesrc);
 
         _this.snapSound = document.createElement('audio');
         _this.snapSoundsrc = document.createElement('source');
-        _this.snapSoundsrc.setAttribute("src", window.baseUrl +"sounds/snapSound.mp3");
+        _this.snapSoundsrc.setAttribute("src", window.baseUrl + "sounds/snapSound.mp3");
         _this.snapSound.appendChild(_this.snapSoundsrc);
 
         _this.Ask_Question1 = _this.createAudio("AL_DIV_G8_a2");
@@ -2906,7 +2906,10 @@ Game.AL_DIV_G8level1.prototype =
                 _this.demoVideo_1.stop(false);
             if (_this.videoWorld_1)
                 _this.videoWorld_1.destroy();
-
+            if (_this.hintBtn) {
+                _this.hintBtn.inputEnabled = true;
+                _this.hintBtn.input.useHandCursor = true;
+            }
             _this.game.paused = false;  //* restart the game
         });
     },

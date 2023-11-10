@@ -1,4 +1,4 @@
-Game.GMSS_02_G8level1 = function () {};
+Game.GMSS_02_G8level1 = function () { };
 
 Game.GMSS_02_G8level1.prototype = {
   init: function (param, score) {
@@ -114,7 +114,7 @@ Game.GMSS_02_G8level1.prototype = {
     _this.Ask_Question47 = _this.createAudio("GMSS_02_G8_a142"); //try another route
 
     telInitializer.gameIdInit("GMSS_02_G8", gradeSelected);
-    console.log(gameID,"gameID...");
+    console.log(gameID, "gameID...");
   },
   create: function (game) {
     //* start the game with delay. Since the Demo video will pause the game, the timer will freeze
@@ -134,7 +134,7 @@ Game.GMSS_02_G8level1.prototype = {
     _this.AnsTimerCount = 0;
     _this.sceneCount = 0;
     _this.questionid = null;
-        
+
     _this.numberOfQuestions = 0;
     _this.speakerbtn;
     _this.background;
@@ -745,7 +745,7 @@ Game.GMSS_02_G8level1.prototype = {
       _this.timer1.stop();
       _this.timer1 = null;
       _this.time.events.add(1000, function () {
-        _this.state.start('score', true, false,gameID,_this.microConcepts);
+        _this.state.start('score', true, false, gameID, _this.microConcepts);
       });
     }
   },
@@ -2286,7 +2286,7 @@ Game.GMSS_02_G8level1.prototype = {
         _this.extra1_M1.frame = 0;
       }
       _this.noofAttempts++;
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+      telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
       _this.starActions();
 
       target.destroy();
@@ -2298,8 +2298,10 @@ Game.GMSS_02_G8level1.prototype = {
       _this.tick.events.onInputDown.add(_this.tickSecondEvaluation, _this);
 
       _this.noofAttempts = 0;
-                    _this.AnsTimerCount = 0;
-      _this.travelToDestination();
+      _this.AnsTimerCount = 0;
+      _this.time.events.add(2000, function () {
+        _this.travelToDestination();
+      });
     }
   },
 
@@ -5790,7 +5792,7 @@ Game.GMSS_02_G8level1.prototype = {
       target.destroy();
       _this.celebrationSound.play();
       _this.noofAttempts++;
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+      telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
       _this.starActions();
 
       _this.tick = _this.add.sprite(850, 470, "TickBtn");
@@ -5913,7 +5915,10 @@ Game.GMSS_02_G8level1.prototype = {
       }
       _this.noofAttempts = 0;
       _this.AnsTimerCount = 0;
-      _this.FindWhichPlaceIsCloser();
+      _this.time.events.add(2000, function () {
+        _this.FindWhichPlaceIsCloser();
+      });
+      // _this.FindWhichPlaceIsCloser();
     } else {
       _this.noofAttempts++;
       _this.wrongSound.play();
@@ -7217,11 +7222,14 @@ Game.GMSS_02_G8level1.prototype = {
       if (_this.mapArray[_this.count1] === 4) _this.Map4.destroy();
       _this.count1++;
       _this.noofAttempts++;
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+      telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
       _this.starActions();
       _this.noofAttempts = 0;
-                    _this.AnsTimerCount = 0;
-      _this.NextMap();
+      _this.AnsTimerCount = 0;
+      _this.time.events.add(2000, function () {
+        _this.NextMap();
+      });
+     // _this.NextMap();
     } else {
       _this.noofAttempts++;
       _this.nearestPlace = 0;
@@ -8419,13 +8427,13 @@ Game.GMSS_02_G8level1.prototype = {
       _this.Right.inputEnabled = false;
       _this.celebrationSound.play();
       _this.noofAttempts++;
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+      telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
       _this.starActions();
       _this.noofAttempts = 0;
       _this.AnsTimerCount = 0;
       _this.time.events.add(2000, function () {
         target.destroy();
-        _this.state.start('score', true, false,gameID,_this.microConcepts);
+        _this.state.start('score', true, false, gameID, _this.microConcepts);
         _this.clearAll();
       });
     } else if (
@@ -8441,13 +8449,13 @@ Game.GMSS_02_G8level1.prototype = {
       _this.Right.inputEnabled = false;
       _this.celebrationSound.play();
       telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
-                _this.starActions(_this.count1);
+      //_this.starActions(_this.count1);
       _this.starActions();
       _this.noofAttempts = 0;
       _this.AnsTimerCount = 0;
       _this.time.events.add(2000, function () {
         target.destroy();
-        _this.state.start('score', true, false,gameID,_this.microConcepts);
+        _this.state.start('score', true, false, gameID, _this.microConcepts);
         _this.clearAll();
       });
     } else if (
@@ -8463,13 +8471,13 @@ Game.GMSS_02_G8level1.prototype = {
       _this.Right.inputEnabled = false;
       _this.celebrationSound.play();
       telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
-                _this.starActions(_this.count1);
+      //_this.starActions(_this.count1);
       _this.starActions();
       _this.noofAttempts = 0;
       _this.AnsTimerCount = 0;
       _this.time.events.add(2000, function () {
         target.destroy();
-        _this.state.start('score', true, false,gameID,_this.microConcepts);
+        _this.state.start('score', true, false, gameID, _this.microConcepts);
         _this.clearAll();
       });
     } else {
@@ -8721,10 +8729,10 @@ Game.GMSS_02_G8level1.prototype = {
       _this.numGroup.destroy();
       _this.celebrationSound.play();
       _this.noofAttempts++;
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+      telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
       _this.starActions();
       _this.noofAttempts = 0;
-                    _this.AnsTimerCount = 0;
+      _this.AnsTimerCount = 0;
       if (_this.count1 < 2) {
         _this.clearAll();
         _this.InitialScreen();

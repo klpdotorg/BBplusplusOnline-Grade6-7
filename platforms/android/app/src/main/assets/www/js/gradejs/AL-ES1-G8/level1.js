@@ -162,7 +162,7 @@ Game.AL_ES1_G8level1.prototype =
             _this.backbtn.events.onInputDown.removeAll();
             _this.time.events.add(50, function () {
                 //_this.state.start('Backbutton');
-                _this.state.start('grade8Algebra',true, false);
+                _this.state.start('grade8Algebra', true, false);
             });
         });
 
@@ -439,7 +439,6 @@ Game.AL_ES1_G8level1.prototype =
         return audio;
     },
 
-
     getQuestion: function () {
         if (_this.timer) {
             _this.timer.stop();
@@ -473,7 +472,7 @@ Game.AL_ES1_G8level1.prototype =
 
         _this.hintBtn.inputEnabled = true;
         _this.hintBtn.input.useHandCursor = true;
-        
+
         _this.Initial_randomizing();
         _this.displayQuestions();
 
@@ -3908,13 +3907,14 @@ Game.AL_ES1_G8level1.prototype =
         _this.skip.events.onInputDown.add(function () {
             _this.stopAudio();
 
-
             if (_this.demoVideo_1)
                 _this.demoVideo_1.stop(false);
             if (_this.videoWorld_1)
                 _this.videoWorld_1.destroy();
-
-
+            if (_this.hintBtn) {
+                _this.hintBtn.inputEnabled = true;
+                _this.hintBtn.input.useHandCursor = true;
+            }
             _this.game.paused = false;  //* restart the game
         });
     },

@@ -237,11 +237,10 @@ Game.AL_IDE_G8level1.prototype =
             //* show the demo video
             _this.hintBtn.inputEnabled = false;
             _this.hintBtn.input.useHandCursor = false;
-            // _this.time.events.add(1, function () {
-            //     //console.log(_this.hintBtn.inputEnabled, "status of hintBtn");
-            //     _this.ViewDemoVideo();
-            // });
-
+            _this.time.events.add(1, function () {
+                //console.log(_this.hintBtn.inputEnabled, "status of hintBtn");
+                _this.ViewDemoVideo();
+            });
         });
 
         _this.generateStarsForTheScene(6);

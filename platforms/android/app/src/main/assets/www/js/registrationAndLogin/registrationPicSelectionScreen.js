@@ -263,13 +263,13 @@ Game.registrationPicSelectionScreen.prototype = {
 		FirebasePlugin.getInstallationId(function (id) {
 			console.log("Got installation ID: " + id);
 			console.log(jsondata);
-			//var jsondata = { name: avatarSelected, gender: null, schooltype: "0", geo: "77.580643,12.972442", grade: "1st Grade", deviceid: device.serial + "_" + device.uuid, language: _this.language, organization: "Akshara", avatarpic: " " };
-			var jsondata = { name: avatarSelected, gender: null, schooltype: "0", geo: "77.580643,12.972442", grade: "1st Grade", deviceid: id, language: _this.language, organization: "Akshara" };
+			var jsondata = { name: avatarSelected, gender: null, schooltype: "0", geo: "77.580643,12.972442", grade: "1st Grade", deviceid: device.serial + "_" + device.uuid, language: _this.language, organization: "Akshara", avatarpic: " " };
+			//var jsondata = { name: avatarSelected, gender: null, schooltype: "0", geo: "77.580643,12.972442", grade: "1st Grade", deviceid: id, language: _this.language, organization: "Akshara" };
 			console.log(jsondata);
 			if (navigator.connection.type != "none" && navigator.connection.type != "unknown" && navigator.connection.type != null && navigator.connection.type != "undefined") {
 				console.log("Reading the register api");
 				var apiurl = "https://abbmath.klp.org.in/abbppchmprm/register";
-				//var apiurl = "https://10.0.2.2/abbchmprm/register";  
+				//var apiurl = "https://10.0.2.2/abbppchmprm/register";  
 
 				console.log("REDDD");
 				$.ajax({
@@ -315,7 +315,7 @@ Game.registrationPicSelectionScreen.prototype = {
 			console.log(jsondata);
 			if (navigator.connection.type != "none" && navigator.connection.type != "unknown" && navigator.connection.type != null && navigator.connection.type != "undefined") {
 				var apiurl = "https://abbmath.klp.org.in/abbppchmprm/login";
-				//var apiurl = "https://10.0.2.2/abbchmprm/login"; 
+				//var apiurl = "https://10.0.2.2/abbppchmprm/login"; 
 				console.log(jsondata);
 				$.ajax({
 					url: apiurl,
@@ -361,7 +361,7 @@ Game.registrationPicSelectionScreen.prototype = {
 
 			if (navigator.connection.type != "none" && navigator.connection.type != "unknown" && navigator.connection.type != null && navigator.connection.type != "undefined") {
 				var apiurl = "https://abbmath.klp.org.in/abbppchmprm/getchild";
-				//var apiurl = "https://10.0.2.2/abbchmprm/getchild";     		        
+				//var apiurl = "https://10.0.2.2/abbppchmprm/getchild";     		        
 				$.ajax({
 					url: apiurl,
 					type: "POST",

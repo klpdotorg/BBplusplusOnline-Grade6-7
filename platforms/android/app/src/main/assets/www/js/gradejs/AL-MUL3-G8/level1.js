@@ -21,27 +21,27 @@ Game.AL_MUL3_G8level1.prototype =
 
         _this.clickSound = document.createElement('audio');
         _this.clickSoundsrc = document.createElement('source');
-        _this.clickSoundsrc.setAttribute("src", window.baseUrl +"sounds/ClickSound.mp3");
+        _this.clickSoundsrc.setAttribute("src", window.baseUrl + "sounds/ClickSound.mp3");
         _this.clickSound.appendChild(_this.clickSoundsrc);
 
         _this.celebrationSound = document.createElement('audio');
         _this.celebrationSoundsrc = document.createElement('source');
-        _this.celebrationSoundsrc.setAttribute("src",window.baseUrl + "sounds/celebration.mp3");
+        _this.celebrationSoundsrc.setAttribute("src", window.baseUrl + "sounds/celebration.mp3");
         _this.celebrationSound.appendChild(_this.celebrationSoundsrc);
 
         _this.counterCelebrationSound = document.createElement('audio');
         _this.counterCelebrationSoundsrc = document.createElement('source');
-        _this.counterCelebrationSoundsrc.setAttribute("src",window.baseUrl + "sounds/counter_celebration.mp3");
+        _this.counterCelebrationSoundsrc.setAttribute("src", window.baseUrl + "sounds/counter_celebration.mp3");
         _this.counterCelebrationSound.appendChild(_this.counterCelebrationSoundsrc);
 
         _this.wrongans = document.createElement('audio');
         _this.wronganssrc = document.createElement('source');
-        _this.wronganssrc.setAttribute("src", window.baseUrl +"sounds/WrongCelebrationSound.mp3");
+        _this.wronganssrc.setAttribute("src", window.baseUrl + "sounds/WrongCelebrationSound.mp3");
         _this.wrongans.appendChild(_this.wronganssrc);
 
         _this.wrongSound = document.createElement('audio');
         _this.wrongSoundsrc = document.createElement('source');
-        _this.wrongSoundsrc.setAttribute("src",window.baseUrl + "sounds/WrongCelebrationSound.mp3");
+        _this.wrongSoundsrc.setAttribute("src", window.baseUrl + "sounds/WrongCelebrationSound.mp3");
         _this.wrongSound.appendChild(_this.wrongSoundsrc);
 
         // _this.snapSound = document.createElement('audio');
@@ -51,17 +51,17 @@ Game.AL_MUL3_G8level1.prototype =
 
         _this.framechange = document.createElement('audio');
         _this.framechangesrc = document.createElement('source');
-        _this.framechangesrc.setAttribute("src", window.baseUrl +"sounds/Frame_change_sound.mp3");
+        _this.framechangesrc.setAttribute("src", window.baseUrl + "sounds/Frame_change_sound.mp3");
         _this.framechange.appendChild(_this.framechangesrc);
 
         _this.pairing = document.createElement('audio');
         _this.pairingsrc = document.createElement('source');
-        _this.pairingsrc.setAttribute("src",window.baseUrl + "sounds/Power Up.mp3");
+        _this.pairingsrc.setAttribute("src", window.baseUrl + "sounds/Power Up.mp3");
         _this.pairing.appendChild(_this.pairingsrc);
 
         _this.tweening = document.createElement('audio');
         _this.tweeningsrc = document.createElement('source');
-        _this.tweeningsrc.setAttribute("src",window.baseUrl + "sounds/Unlock Skill.mp3");
+        _this.tweeningsrc.setAttribute("src", window.baseUrl + "sounds/Unlock Skill.mp3");
         _this.tweening.appendChild(_this.tweeningsrc);
 
 
@@ -263,7 +263,7 @@ Game.AL_MUL3_G8level1.prototype =
         _this.backbtn.events.onInputDown.add(function () {
             // _this.state.start('AL_MUL3_G8Score');
 
-            _this.state.start('grade8Algebra',true, false);
+            _this.state.start('grade8Algebra', true, false);
         });
 
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
@@ -9406,13 +9406,15 @@ Game.AL_MUL3_G8level1.prototype =
         _this.skip.events.onInputDown.add(function () {
             _this.stopAudio();
 
-
             if (_this.demoVideo_1)
                 _this.demoVideo_1.stop(false);
             if (_this.videoWorld_1)
                 _this.videoWorld_1.destroy();
 
-
+            if (_this.hintBtn) {
+                _this.hintBtn.inputEnabled = true;
+                _this.hintBtn.input.useHandCursor = true;
+            }
             _this.game.paused = false;  //* restart the game
         });
     },

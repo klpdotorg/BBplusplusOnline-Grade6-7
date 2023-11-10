@@ -130,7 +130,7 @@
 * [CB-10047](https://issues.apache.org/jira/browse/CB-10047) fix **iOS** 8 deprecated warnings
 
 ### 2.1.1 (Feb 09, 2016)
-* [CB-10102](https://issues.apache.org/jira/browse/CB-10102) The removeObserver code was wrong and it might crash on plugin deallocation
+* [CB-10102](https://issues.apache.org/jira/browse/CB-10102) The removeObservercode was wrong and it might crash on plugin deallocation
 
 ### 2.1.0 (Jan 15, 2016)
 * [CB-9513](https://issues.apache.org/jira/browse/CB-9513) Allow to show/hide status bar in fullscreen mode.

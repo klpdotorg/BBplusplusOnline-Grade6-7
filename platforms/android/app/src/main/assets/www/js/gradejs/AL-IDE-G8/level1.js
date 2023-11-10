@@ -158,7 +158,7 @@ Game.AL_IDE_G8level1.prototype =
         _this.backbtn.inputEnabled = true;
         _this.backbtn.input.useHandCursor = true;
         _this.backbtn.events.onInputDown.add(function () {
-            _this.state.start('grade8Algebra',true, false);
+            _this.state.start('grade8Algebra', true, false);
         });
 
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
@@ -237,11 +237,10 @@ Game.AL_IDE_G8level1.prototype =
             //* show the demo video
             _this.hintBtn.inputEnabled = false;
             _this.hintBtn.input.useHandCursor = false;
-            // _this.time.events.add(1, function () {
-            //     //console.log(_this.hintBtn.inputEnabled, "status of hintBtn");
-            //     _this.ViewDemoVideo();
-            // });
-
+            _this.time.events.add(1, function () {
+                //console.log(_this.hintBtn.inputEnabled, "status of hintBtn");
+                _this.ViewDemoVideo();
+            });
         });
 
         _this.generateStarsForTheScene(6);
@@ -5310,13 +5309,15 @@ Game.AL_IDE_G8level1.prototype =
         _this.skip.events.onInputDown.add(function () {
             _this.stopAudio();
 
-
             if (_this.demoVideo_1)
                 _this.demoVideo_1.stop(false);
             if (_this.videoWorld_1)
                 _this.videoWorld_1.destroy();
 
-
+            if (_this.hintBtn) {
+                _this.hintBtn.inputEnabled = true;
+                _this.hintBtn.input.useHandCursor = true;
+            }
             _this.game.paused = false;  //* restart the game
         });
     },
