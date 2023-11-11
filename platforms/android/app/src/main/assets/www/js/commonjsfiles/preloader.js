@@ -492,7 +492,6 @@ Game.preloader.prototype = {
         this.loadjscssfile("js/commonjsfiles/preloader_GMM_04_G8.js", "js");
         this.loadjscssfile("js/commonjsfiles/preloader_GMM_05_G8.js", "js");
         this.loadjscssfile("js/commonjsfiles/preloader_GMSS_02_G8.js", "js");
-        this.loadjscssfile("js/commonjsfiles/preloader_NS_SQ_CUB_G8.js", "js");
 
         this.loadjscssfile("js/commonjsfiles/loadJson_AL_DIV_G8.js", "js");
         this.loadjscssfile("js/commonjsfiles/loadJson_AL_ES1_G8.js", "js");
@@ -512,8 +511,7 @@ Game.preloader.prototype = {
         this.loadjscssfile("js/commonjsfiles/loadJson_GMM_04_G8.js", "js");
         this.loadjscssfile("js/commonjsfiles/loadJson_GMM_05_G8.js", "js");
         this.loadjscssfile("js/commonjsfiles/loadJson_GMSS_02_G8.js", "js");
-        this.loadjscssfile("js/commonjsfiles/loadJson_NS_SQ_CUB_G8.js", "js");
-         //loadJson_NS_SQ_CUB_G8
+         
         //*
         this.loadjscssfile("js/gradejs/AL-FACT-G8/level1.js", "js");
         this.loadjscssfile("js/gradejs/NS-RN-G8/level1.js", "js");
@@ -533,7 +531,11 @@ Game.preloader.prototype = {
         this.loadjscssfile("js/gradejs/NS_RN_G8/level1.js", "js");
         this.loadjscssfile("js/gradejs/NS_DIN_G8/level1.js", "js");
         this.loadjscssfile("js/gradejs/GMSS_03_G8/level1.js", "js");  
-        this.loadjscssfile("js/gradejs/NS_SQ_CUB_G8/level1.js", "js");  
+
+
+
+
+
         //*level,json,preloader
 
         //// ***************************** loading the video files *****************************************//
@@ -1157,9 +1159,6 @@ Game.preloader.prototype = {
         game.state.add('GMM_02_G8level1', Game.GMM_02_G8level1);
         game.state.add('preloader_GMM_01_G8', Game.preloader_GMM_01_G8);
         game.state.add('GMM_01_G8level1', Game.GMM_01_G8level1);
-        game.state.add('preloader_NS_SQ_CUB_G8', Game.preloader_NS_SQ_CUB_G8);
-        game.state.add('NS_SQ_CUB_G8level1', Game.NS_SQ_CUB_G8level1);
-      
       
         this.game.cache.removeImage('loadingBg1');
         this.game.cache.removeImage('loadingBg2');
