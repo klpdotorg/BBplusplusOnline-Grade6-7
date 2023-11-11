@@ -263,8 +263,8 @@ Game.registrationPicSelectionScreen.prototype = {
 		FirebasePlugin.getInstallationId(function (id) {
 			console.log("Got installation ID: " + id);
 			console.log(jsondata);
-			var jsondata = { name: avatarSelected, gender: null, schooltype: "0", geo: "77.580643,12.972442", grade: "1st Grade", deviceid: device.serial + "_" + device.uuid, language: _this.language, organization: "Akshara", avatarpic: " " };
-			//var jsondata = { name: avatarSelected, gender: null, schooltype: "0", geo: "77.580643,12.972442", grade: "1st Grade", deviceid: id, language: _this.language, organization: "Akshara" };
+			//var jsondata = { name: avatarSelected, gender: null, schooltype: "0", geo: "77.580643,12.972442", grade: "1st Grade", deviceid: device.serial + "_" + device.uuid, language: _this.language, organization: "Akshara", avatarpic: " " };
+			var jsondata = { name: avatarSelected, gender: null, schooltype: "0", geo: "77.580643,12.972442", grade: "1st Grade", deviceid: id, language: _this.language, organization: "Akshara" };
 			console.log(jsondata);
 			if (navigator.connection.type != "none" && navigator.connection.type != "unknown" && navigator.connection.type != null && navigator.connection.type != "undefined") {
 				console.log("Reading the register api");
