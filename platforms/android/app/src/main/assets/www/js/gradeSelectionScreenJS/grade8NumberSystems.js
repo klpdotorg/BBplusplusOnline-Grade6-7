@@ -1571,7 +1571,7 @@ Game.grade8NumberSystems.prototype = {
 					target.events.onInputDown.removeAll();
 					_this.clickSound = _this.add.audio('ClickSound');
 					_this.clickSound.play();
-					_this.state.start('preloader_fm_1', true, false);
+					_this.state.start('preloader_NS_SQ_CUB_G8', true, false);
 				}
 			}, _this);
 		}, _this);

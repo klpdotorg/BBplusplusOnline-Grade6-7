@@ -258,7 +258,7 @@ Game.practiceModegradeSelectionScreen.prototype = {
 			_this.grade6CloudTxt.anchor.setTo(0.5);
 			_this.grade6CloudTxt.align = 'center';
 			_this.grade6CloudTxt.font = 'gradefont';
-			if (_this.languageSelected == "TM")
+			if (_this.languageSelected == "Tamil")
 				_this.grade6CloudTxt.fontSize = 30;
 			else
 				_this.grade6CloudTxt.fontSize = 34;
@@ -277,7 +277,7 @@ Game.practiceModegradeSelectionScreen.prototype = {
 			_this.grade7CloudTxt.anchor.setTo(0.5);
 			_this.grade7CloudTxt.align = 'center';
 			_this.grade7CloudTxt.font = 'gradefont';
-			if (_this.languageSelected == "TM")
+			if (_this.languageSelected == "Tamil")
 				_this.grade7CloudTxt.fontSize = 30;
 			else
 				_this.grade7CloudTxt.fontSize = 34;
@@ -296,7 +296,7 @@ Game.practiceModegradeSelectionScreen.prototype = {
 			_this.grade8CloudTxt.anchor.setTo(0.5);
 			_this.grade8CloudTxt.align = 'center';
 			_this.grade8CloudTxt.font = 'gradefont';						
-			if (_this.languageSelected == "TM")
+			if (_this.languageSelected == "Tamil")
 				_this.grade8CloudTxt.fontSize = 30;
 			else
 				_this.grade8CloudTxt.fontSize = 34;

@@ -91,7 +91,7 @@ Game.NS_SQ_CUB_G8level1.prototype =
         _this.Ask_Question15 = _this.createAudio("NS_SQ_CUB_G8_a20");
 
         //edited for baseurl online apk
-        telInitializer.gameIdInit("NS_SQ_CUB_G8", gradeSelected);
+        telInitializer.gameIdInit("NSN_SQ_CUB_G8", gradeSelected);
         console.log(gameID, "gameID...");
     },
     create: function (game) {
