@@ -973,21 +973,50 @@ Game.GMSS_04_G7level1.prototype =
         _this.objectArray = [1, 2]; // there are 4 different cuboid objects
         _this.shuffleArray(_this.objectArray);
 
-        var torch_Array = [1];
+        _this.torch_Array = [1, 2];
+        _this.shuffleArray(_this.torch_Array);
 
-        //Add Torch 
-        _this.torch1 = _this.add.sprite(20, 78, 'torch2');
-        _this.clearArray.push(_this.torch1);
-        //Add 3D object
-        if (_this.objectArray[0] == 1) {
-            _this.purpleTri = _this.add.image(315, 255, 'Object9');
-            _this.correctImage = 'shape8';
-            // _this.optionArray = [1,2,3,4,5,6,8,9,10,11,12,13,14,15,16];
+        if (_this.torch_Array[0] == 1) {
+            //Add Torch 
+            _this.torch1 = _this.add.sprite(20, 78, 'torch2');
+            _this.clearArray.push(_this.torch1);
+
+            if (_this.objectArray[0] == 1) {
+                _this.purpleTri = _this.add.image(315, 255, 'Object9');
+                _this.correctImage = 'shape8';
+                // _this.optionArray = [1,2,3,4,5,6,8,9,10,11,12,13,14,15,16];
+            } else {
+                _this.purpleTri = _this.add.image(280, 290, 'Object10');
+                //  _this.optionArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,15,16];
+                _this.correctImage = 'shape9';
+            }
         } else {
-            _this.purpleTri = _this.add.image(280, 290, 'Object10');
-            //  _this.optionArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,15,16];
-            _this.correctImage = 'shape8';
+            _this.torch1 = _this.add.sprite(24, 73, 'torch1');
+            _this.clearArray.push(_this.torch1);
+
+            if (_this.objectArray[0] == 1) {
+                _this.purpleTri = _this.add.image(345, 220, 'Object9');
+                _this.correctImage = 'shape9';
+                // _this.optionArray = [1,2,3,4,5,6,8,9,10,11,12,13,14,15,16];
+            } else {
+                _this.purpleTri = _this.add.image(310, 250, 'Object10');
+                //  _this.optionArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,15,16];
+                _this.correctImage = 'shape8';
+            }
         }
+        // //Add Torch 
+        // _this.torch1 = _this.add.sprite(20, 78, 'torch2');
+        // _this.clearArray.push(_this.torch1);
+        //Add 3D object
+        // if (_this.objectArray[0] == 1) {
+        //     _this.purpleTri = _this.add.image(315, 255, 'Object9');
+        //     _this.correctImage = 'shape8';
+        //     // _this.optionArray = [1,2,3,4,5,6,8,9,10,11,12,13,14,15,16];
+        // } else {
+        //     _this.purpleTri = _this.add.image(280, 290, 'Object10');
+        //     //  _this.optionArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,15,16];
+        //     _this.correctImage = 'shape8';
+        // }
         _this.clearArray.push(_this.purpleTri);
         _this.decideOptions();
 
@@ -2739,7 +2768,6 @@ Game.GMSS_04_G7level1.prototype =
                         _this.box3.frame = 0;
                         _this.selectedBox3 = false;
                     }
-                    _this.noofAttempts++;
                     _this.wrongSound.play();
                 }
             } else {
@@ -2801,7 +2829,6 @@ Game.GMSS_04_G7level1.prototype =
                         _this.box3.frame = 0;
                         _this.selectedBox3 = false;
                     }
-                    _this.noofAttempts++;
                     _this.wrongSound.play();
                 }
             }
@@ -2865,7 +2892,6 @@ Game.GMSS_04_G7level1.prototype =
                         _this.box3.frame = 0;
                         _this.selectedBox3 = false;
                     }
-                    _this.noofAttempts++;
                     _this.wrongSound.play();
                 }
             } else {
@@ -2927,7 +2953,6 @@ Game.GMSS_04_G7level1.prototype =
                         _this.box3.frame = 0;
                         _this.selectedBox3 = false;
                     }
-                    _this.noofAttempts++;
                     _this.wrongSound.play();
                 }
             }
@@ -2991,7 +3016,6 @@ Game.GMSS_04_G7level1.prototype =
                         _this.box3.frame = 0;
                         _this.selectedBox3 = false;
                     }
-                    _this.noofAttempts++;
                     _this.wrongSound.play();
                 }
             } else {
@@ -3052,7 +3076,6 @@ Game.GMSS_04_G7level1.prototype =
                         _this.box3.frame = 0;
                         _this.selectedBox3 = false;
                     }
-                    _this.noofAttempts++;
                     _this.wrongSound.play();
                 }
             }
@@ -3115,7 +3138,6 @@ Game.GMSS_04_G7level1.prototype =
                     _this.box3.frame = 0;
                     _this.selectedBox3 = false;
                 }
-                _this.noofAttempts++;
                 _this.wrongSound.play();
                 // }
             }
@@ -3178,39 +3200,141 @@ Game.GMSS_04_G7level1.prototype =
                     _this.box3.frame = 0;
                     _this.selectedBox3 = false;
                 }
-                _this.noofAttempts++;
                 _this.wrongSound.play();
             }
         } else if (_this.numbers[_this.count1] == 6) {
-            if (_this.objectArray[0] == 1 || _this.objectArray[0] == 2) {
-                if (_this.selectedBox1 == true && _this.box1.name == 'shape8') {
-                    _this.celebrationSound.play();
-                    _this.disableBoxes();
-                    _this.starActions();
-                    // _this.count1++;
-                    _this.time.events.add(3000, () => {
-                        _this.clearAll();
-                        _this.NextQuestion();
-                    });
-                } else if (_this.selectedBox2 == true && _this.box2.name == 'shape8') {
-                    _this.celebrationSound.play();
-                    _this.disableBoxes();
-                    _this.starActions();
-                    // _this.count1++;
-                    _this.time.events.add(3000, () => {
-                        _this.clearAll();
-                        _this.NextQuestion();
-                    });
-                } else if (_this.selectedBox3 == true && _this.box3.name == 'shape8') {
-                    _this.celebrationSound.play();
-                    _this.disableBoxes();
-                    _this.starActions();
-                    // _this.count1++;
-                    _this.time.events.add(3000, () => {
-                        _this.clearAll();
-                        _this.NextQuestion();
-                    });
-                } else {
+            console.log("shape 6 cylinder !");
+            if (_this.torch_Array[0] == 2) {
+                if (_this.objectArray[0] == 1) //|| _this.objectArray[0] == 2
+                {
+                    if (_this.selectedBox1 == true && _this.box1.name == 'shape9') {
+                        _this.celebrationSound.play();
+                        _this.disableBoxes();
+                        _this.starActions();
+                        // _this.count1++;
+                        _this.time.events.add(3000, () => {
+                            _this.clearAll();
+                            _this.NextQuestion();
+                        });
+                    } else if (_this.selectedBox2 == true && _this.box2.name == 'shape9') {
+                        _this.celebrationSound.play();
+                        _this.disableBoxes();
+                        _this.starActions();
+                        // _this.count1++;
+                        _this.time.events.add(3000, () => {
+                            _this.clearAll();
+                            _this.NextQuestion();
+                        });
+                    } else if (_this.selectedBox3 == true && _this.box3.name == 'shape9') {
+                        _this.celebrationSound.play();
+                        _this.disableBoxes();
+                        _this.starActions();
+                        // _this.count1++;
+                        _this.time.events.add(3000, () => {
+                            _this.clearAll();
+                            _this.NextQuestion();
+                        });
+                    } else {
+                        _this.wrongSound.play();
+                    }
+                } else if (_this.objectArray[0] == 2) {
+                    if (_this.selectedBox1 == true && _this.box1.name == 'shape8') {
+                        _this.celebrationSound.play();
+                        _this.disableBoxes();
+                        _this.starActions();
+                        // _this.count1++;
+                        _this.time.events.add(3000, () => {
+                            _this.clearAll();
+                            _this.NextQuestion();
+                        });
+                    } else if (_this.selectedBox2 == true && _this.box2.name == 'shape8') {
+                        _this.celebrationSound.play();
+                        _this.disableBoxes();
+                        _this.starActions();
+                        // _this.count1++;
+                        _this.time.events.add(3000, () => {
+                            _this.clearAll();
+                            _this.NextQuestion();
+                        });
+                    } else if (_this.selectedBox3 == true && _this.box3.name == 'shape8') {
+                        _this.celebrationSound.play();
+                        _this.disableBoxes();
+                        _this.starActions();
+                        // _this.count1++;
+                        _this.time.events.add(3000, () => {
+                            _this.clearAll();
+                            _this.NextQuestion();
+                        });
+                    } else {
+                        _this.wrongSound.play();
+                    }
+                }
+            } else if (_this.torch_Array[0] == 1) {
+                if (_this.objectArray[0] == 1)//|| _this.objectArray[0] == 2
+                {
+                    if (_this.selectedBox1 == true && _this.box1.name == 'shape8') {
+                        _this.celebrationSound.play();
+                        _this.disableBoxes();
+                        _this.starActions();
+                        // _this.count1++;
+                        _this.time.events.add(3000, () => {
+                            _this.clearAll();
+                            _this.NextQuestion();
+                        });
+                    } else if (_this.selectedBox2 == true && _this.box2.name == 'shape8') {
+                        _this.celebrationSound.play();
+                        _this.disableBoxes();
+                        _this.starActions();
+                        // _this.count1++;
+                        _this.time.events.add(3000, () => {
+                            _this.clearAll();
+                            _this.NextQuestion();
+                        });
+                    } else if (_this.selectedBox3 == true && _this.box3.name == 'shape8') {
+                        _this.celebrationSound.play();
+                        _this.disableBoxes();
+                        _this.starActions();
+                        // _this.count1++;
+                        _this.time.events.add(3000, () => {
+                            _this.clearAll();
+                            _this.NextQuestion();
+                        });
+                    } else {
+                        _this.wrongSound.play();
+                    }
+                } else if (_this.objectArray[0] == 2) {
+                    if (_this.selectedBox1 == true && _this.box1.name == 'shape9') {
+                        _this.celebrationSound.play();
+                        _this.disableBoxes();
+                        _this.starActions();
+                        // _this.count1++;
+                        _this.time.events.add(3000, () => {
+                            _this.clearAll();
+                            _this.NextQuestion();
+                        });
+                    } else if (_this.selectedBox2 == true && _this.box2.name == 'shape9') {
+                        _this.celebrationSound.play();
+                        _this.disableBoxes();
+                        _this.starActions();
+                        // _this.count1++;
+                        _this.time.events.add(3000, () => {
+                            _this.clearAll();
+                            _this.NextQuestion();
+                        });
+                    } else if (_this.selectedBox3 == true && _this.box3.name == 'shape9') {
+                        _this.celebrationSound.play();
+                        _this.disableBoxes();
+                        _this.starActions();
+                        // _this.count1++;
+                        _this.time.events.add(3000, () => {
+                            _this.clearAll();
+                            _this.NextQuestion();
+                        });
+                    } else {
+                        _this.wrongSound.play();
+                    }
+                }
+                else {
                     if (_this.selectedBox1 == true) {
                         var blinkTween = _this.add.tween(_this.box1).to({ tint: 0xff0000 }, 250, Phaser.Easing.Linear.None, true, 0, 1, true);
                         _this.time.events.add(500, function () {
@@ -3241,7 +3365,6 @@ Game.GMSS_04_G7level1.prototype =
                         _this.box3.frame = 0;
                         _this.selectedBox3 = false;
                     }
-                    _this.noofAttempts++;
                     _this.wrongSound.play();
                 }
             }
@@ -3305,7 +3428,6 @@ Game.GMSS_04_G7level1.prototype =
                         _this.box3.frame = 0;
                         _this.selectedBox3 = false;
                     }
-                    _this.noofAttempts++;
                     _this.wrongSound.play();
                 }
             } else {
@@ -3367,7 +3489,6 @@ Game.GMSS_04_G7level1.prototype =
                         _this.box3.frame = 0;
                         _this.selectedBox3 = false;
                     }
-                    _this.noofAttempts++;
                     _this.wrongSound.play();
                 }
             }

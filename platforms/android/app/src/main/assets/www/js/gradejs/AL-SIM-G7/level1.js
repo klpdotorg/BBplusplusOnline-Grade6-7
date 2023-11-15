@@ -15,11 +15,11 @@ Game.AL_SIM_G7level1.prototype =
             || _this.languageSelected == " "
             || _this.languageSelected == "") {
             _this.languageSelected = "English";
-        } 
+        }
         else console.log("Language selected: " + _this.languageSelected);
-            _this.clickSound = document.createElement('audio');
+        _this.clickSound = document.createElement('audio');
         _this.clickSoundsrc = document.createElement('source');
-        _this.clickSoundsrc.setAttribute("src",  window.baseUrl +"sounds/ClickSound.mp3");
+        _this.clickSoundsrc.setAttribute("src", window.baseUrl + "sounds/ClickSound.mp3");
         _this.clickSound.appendChild(_this.clickSoundsrc);
 
         _this.celebrationSound = document.createElement('audio');
@@ -29,17 +29,17 @@ Game.AL_SIM_G7level1.prototype =
 
         _this.counterCelebrationSound = document.createElement('audio');
         _this.counterCelebrationSoundsrc = document.createElement('source');
-        _this.counterCelebrationSoundsrc.setAttribute("src",  window.baseUrl +"sounds/counter_celebration.mp3");
+        _this.counterCelebrationSoundsrc.setAttribute("src", window.baseUrl + "sounds/counter_celebration.mp3");
         _this.counterCelebrationSound.appendChild(_this.counterCelebrationSoundsrc);
 
         _this.wrongans = document.createElement('audio');
         _this.wronganssrc = document.createElement('source');
-        _this.wronganssrc.setAttribute("src",  window.baseUrl +"sounds/WrongCelebrationSound.mp3");
+        _this.wronganssrc.setAttribute("src", window.baseUrl + "sounds/WrongCelebrationSound.mp3");
         _this.wrongans.appendChild(_this.wronganssrc);
 
         _this.wrongSound = document.createElement('audio');
         _this.wrongSoundsrc = document.createElement('source');
-        _this.wrongSoundsrc.setAttribute("src",  window.baseUrl +"sounds/WrongCelebrationSound.mp3");
+        _this.wrongSoundsrc.setAttribute("src", window.baseUrl + "sounds/WrongCelebrationSound.mp3");
         _this.wrongSound.appendChild(_this.wrongSoundsrc);
 
         _this.snapSound = document.createElement('audio');
@@ -49,7 +49,7 @@ Game.AL_SIM_G7level1.prototype =
 
         _this.framechange = document.createElement('audio');
         _this.framechangesrc = document.createElement('source');
-        _this.framechangesrc.setAttribute("src",  window.baseUrl +"sounds/Frame_change_sound.mp3");
+        _this.framechangesrc.setAttribute("src", window.baseUrl + "sounds/Frame_change_sound.mp3");
         _this.framechange.appendChild(_this.framechangesrc);
 
 
@@ -95,7 +95,7 @@ Game.AL_SIM_G7level1.prototype =
         _this.questionid = null;//always 1
         //............
         _this.hint_flag = 0;
-        
+
         _this.count1 = 0;
         _this.trackCount = 0;
         _this.speakerbtn;
@@ -132,7 +132,7 @@ Game.AL_SIM_G7level1.prototype =
 
         _this.arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 
-       // _this.hint_flag = 0;
+        // _this.hint_flag = 0;
         _this.speakerbtnClicked = false;
         _this.rightbtn_Clicked = false;
 
@@ -232,7 +232,7 @@ Game.AL_SIM_G7level1.prototype =
     createAudio: function (src) {
         audio = document.createElement('audio');
         audiosrc = document.createElement('source');
-        audiosrc.setAttribute("src",  window.baseUrl +"questionSounds/AL-SIM-G7/" + _this.languageSelected + "/" + src + ".mp3");
+        audiosrc.setAttribute("src", window.baseUrl + "questionSounds/AL-SIM-G7/" + _this.languageSelected + "/" + src + ".mp3");
         audio.appendChild(audiosrc);
         // audio.play();
 
@@ -494,12 +494,6 @@ Game.AL_SIM_G7level1.prototype =
 
     //this function is used for generating the equation.
     EquationGenerating: function () {
-        //edited for baseurl apk
-        _this.sceneCount++;
-        // _this.AnsTimerCount = 0;
-        _this.noofAttempts = 0;
-        //....
-
         console.log("MakeSideBar");
         _this.questionWithAnswer = '';
 
@@ -517,17 +511,17 @@ Game.AL_SIM_G7level1.prototype =
             _this.yellowBox.visible = true;
 
             if (_this.mSquare1 == 1) {
-                _this.mSq1 = _this.add.text(26, 19, (_this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
+                _this.mSq1 = _this.add.text(26, 22, (_this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
 
             }
             else if (_this.mSquare1 == -1) {
-                _this.mSq1 = _this.add.text(26, 19, (' - ' + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
+                _this.mSq1 = _this.add.text(26, 22, (' - ' + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
             }
             else {
                 if (_this.mSquare1 > 0)
-                    _this.mSq1 = _this.add.text(26, 19, (_this.mSquare1 + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
+                    _this.mSq1 = _this.add.text(26, 22, (_this.mSquare1 + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
                 else
-                    _this.mSq1 = _this.add.text(26, 19, (_this.mSquare1 + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
+                    _this.mSq1 = _this.add.text(26, 22, (_this.mSquare1 + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
             }
 
             _this.applyingStyle1(_this.mSq1);
@@ -539,18 +533,18 @@ Game.AL_SIM_G7level1.prototype =
             _this.yellowBox2.visible = false;
 
             if (_this.mLinear1 == 1) {
-                _this.mLi1 = _this.add.text(70, 19, (" + " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                _this.mLi1 = _this.add.text(70, 22, (" + " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
             }
             else if (_this.mLinear1 == -1) {
-                _this.mLi1 = _this.add.text(70, 19, (" - " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                _this.mLi1 = _this.add.text(70, 22, (" - " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
 
             }
             else {
                 if (_this.mLinear1 > 0)
-                    _this.mLi1 = _this.add.text(70, 19, (" + " + _this.mLinear1 + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                    _this.mLi1 = _this.add.text(70, 22, (" + " + _this.mLinear1 + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
                 else {
                     _this.ml1 = (_this.mLinear1);
-                    _this.mLi1 = _this.add.text(70, 19, (" - " + Math.abs(_this.ml1) + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                    _this.mLi1 = _this.add.text(70, 22, (" - " + Math.abs(_this.ml1) + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
 
                 }
             }
@@ -562,10 +556,10 @@ Game.AL_SIM_G7level1.prototype =
             _this.yellowBox3.visible = false;
 
             if (_this.mConstant1 > 0)
-                _this.Con1 = _this.add.text(123, 19, (" + " + _this.mConstant1), { fontSize: '22px', fill: '#65B4C3' });
+                _this.Con1 = _this.add.text(123, 22, (" + " + _this.mConstant1), { fontSize: '22px', fill: '#65B4C3' });
             else {
                 _this.mc1 = _this.mConstant1;
-                _this.Con1 = _this.add.text(123, 19, ("  - " + Math.abs(_this.mc1)), { fontSize: '22px', fill: '#65B4C3' });
+                _this.Con1 = _this.add.text(123, 22, ("  - " + Math.abs(_this.mc1)), { fontSize: '22px', fill: '#65B4C3' });
             }
 
             _this.applyingStyle1(_this.Con1);
@@ -577,18 +571,18 @@ Game.AL_SIM_G7level1.prototype =
             _this.yellowBox4.visible = true;
 
             if (_this.mSquare2 == 1) {
-                _this.mSq2 = _this.add.text(158, 19, (" + " + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
+                _this.mSq2 = _this.add.text(158, 22, (" + " + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
 
             }
             else if (_this.mSquare2 == -1) {
-                _this.mSq2 = _this.add.text(158, 19, (' - ' + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
+                _this.mSq2 = _this.add.text(158, 22, (' - ' + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
             }
             else {
                 if (_this.mSquare2 > 0)
-                    _this.mSq2 = _this.add.text(158, 19, (" + " + _this.mSquare2 + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
+                    _this.mSq2 = _this.add.text(158, 22, (" + " + _this.mSquare2 + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
                 else {
                     _this.msq_2 = _this.mSquare2;
-                    _this.mSq2 = _this.add.text(158, 19, (" - " + Math.abs(_this.msq_2) + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
+                    _this.mSq2 = _this.add.text(158, 22, (" - " + Math.abs(_this.msq_2) + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
                 }
             }
 
@@ -601,18 +595,18 @@ Game.AL_SIM_G7level1.prototype =
             _this.yellowBox5.visible = false;
 
             if (_this.mLinear2 == 1) {
-                _this.mLi2 = _this.add.text(212, 19, ("  + " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                _this.mLi2 = _this.add.text(212, 22, ("  + " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
             }
             else if (_this.mLinear2 == -1) {
-                _this.mLi2 = _this.add.text(212, 19, ("  - " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                _this.mLi2 = _this.add.text(212, 22, ("  - " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
 
             }
             else {
                 if (_this.mLinear2 > 0)
-                    _this.mLi2 = _this.add.text(212, 19, ("  + " + _this.mLinear2 + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                    _this.mLi2 = _this.add.text(212, 22, ("  + " + _this.mLinear2 + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
                 else {
                     _this.ml2 = _this.mLinear2;
-                    _this.mLi2 = _this.add.text(212, 19, ("  - " + Math.abs(_this.ml2) + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                    _this.mLi2 = _this.add.text(212, 22, ("  - " + Math.abs(_this.ml2) + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
                 }
             }
 
@@ -624,10 +618,10 @@ Game.AL_SIM_G7level1.prototype =
             _this.yellowBox6.visible = false;
 
             if (_this.mConstant2 > 0)
-                _this.Con2 = _this.add.text(272, 19, (" + " + _this.mConstant2), { fontSize: '22px', fill: '#65B4C3' });
+                _this.Con2 = _this.add.text(272, 22, (" + " + _this.mConstant2), { fontSize: '22px', fill: '#65B4C3' });
             else {
                 _this.mc2 = _this.mConstant2;
-                _this.Con2 = _this.add.text(272, 19, ("  - " + Math.abs(_this.mc2)), { fontSize: '22px', fill: '#65B4C3' });
+                _this.Con2 = _this.add.text(272, 22, ("  - " + Math.abs(_this.mc2)), { fontSize: '22px', fill: '#65B4C3' });
             }
 
             _this.applyingStyle1(_this.Con2);
@@ -643,17 +637,17 @@ Game.AL_SIM_G7level1.prototype =
             _this.yellowBox.visible = true;
 
             if (_this.mSquare1 == 1) {
-                _this.mSq1 = _this.add.text(26, 19, (_this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
+                _this.mSq1 = _this.add.text(26, 22, (_this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
 
             }
             else if (_this.mSquare1 == -1) {
-                _this.mSq1 = _this.add.text(26, 19, (' - ' + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
+                _this.mSq1 = _this.add.text(26, 22, (' - ' + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
             }
             else {
                 if (_this.mSquare1 > 0)
-                    _this.mSq1 = _this.add.text(26, 19, (_this.mSquare1 + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
+                    _this.mSq1 = _this.add.text(26, 22, (_this.mSquare1 + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
                 else
-                    _this.mSq1 = _this.add.text(26, 19, (_this.mSquare1 + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
+                    _this.mSq1 = _this.add.text(26, 22, (_this.mSquare1 + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
             }
 
             _this.applyingStyle1(_this.mSq1);
@@ -665,18 +659,18 @@ Game.AL_SIM_G7level1.prototype =
             _this.yellowBox2.visible = false;
 
             if (_this.mLinear1 == 1) {
-                _this.mLi1 = _this.add.text(70, 19, (" + " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                _this.mLi1 = _this.add.text(70, 22, (" + " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
             }
             else if (_this.mLinear1 == -1) {
-                _this.mLi1 = _this.add.text(70, 19, (" - " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                _this.mLi1 = _this.add.text(70, 22, (" - " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
 
             }
             else {
                 if (_this.mLinear1 > 0)
-                    _this.mLi1 = _this.add.text(70, 19, (" + " + _this.mLinear1 + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                    _this.mLi1 = _this.add.text(70, 22, (" + " + _this.mLinear1 + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
                 else {
                     _this.ml1 = (_this.mLinear1);
-                    _this.mLi1 = _this.add.text(70, 19, (" - " + Math.abs(_this.ml1) + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                    _this.mLi1 = _this.add.text(70, 22, (" - " + Math.abs(_this.ml1) + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
 
                 }
             }
@@ -688,10 +682,10 @@ Game.AL_SIM_G7level1.prototype =
             _this.yellowBox3.visible = false;
 
             if (_this.mConstant1 > 0)
-                _this.Con1 = _this.add.text(123, 19, (" + " + _this.mConstant1), { fontSize: '22px', fill: '#65B4C3' });
+                _this.Con1 = _this.add.text(123, 22, (" + " + _this.mConstant1), { fontSize: '22px', fill: '#65B4C3' });
             else {
                 _this.mc1 = _this.mConstant1;
-                _this.Con1 = _this.add.text(123, 19, ("  - " + Math.abs(_this.mc1)), { fontSize: '22px', fill: '#65B4C3' });
+                _this.Con1 = _this.add.text(123, 22, ("  - " + Math.abs(_this.mc1)), { fontSize: '22px', fill: '#65B4C3' });
             }
 
             _this.applyingStyle1(_this.Con1);
@@ -703,18 +697,18 @@ Game.AL_SIM_G7level1.prototype =
             _this.yellowBox4.visible = true;
 
             if (_this.mSquare2 == 1) {
-                _this.mSq2 = _this.add.text(158, 19, (" + " + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
+                _this.mSq2 = _this.add.text(158, 22, (" + " + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
 
             }
             else if (_this.mSquare2 == -1) {
-                _this.mSq2 = _this.add.text(158, 19, (' - ' + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
+                _this.mSq2 = _this.add.text(158, 22, (' - ' + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
             }
             else {
                 if (_this.mSquare2 > 0)
-                    _this.mSq2 = _this.add.text(158, 19, (" + " + _this.mSquare2 + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
+                    _this.mSq2 = _this.add.text(158, 22, (" + " + _this.mSquare2 + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
                 else {
                     _this.msq_2 = _this.mSquare2;
-                    _this.mSq2 = _this.add.text(158, 19, (" - " + Math.abs(_this.msq_2) + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
+                    _this.mSq2 = _this.add.text(158, 22, (" - " + Math.abs(_this.msq_2) + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
                 }
             }
 
@@ -727,18 +721,18 @@ Game.AL_SIM_G7level1.prototype =
             _this.yellowBox5.visible = false;
 
             if (_this.mLinear2 == 1) {
-                _this.mLi2 = _this.add.text(212, 19, ("  + " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                _this.mLi2 = _this.add.text(212, 22, ("  + " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
             }
             else if (_this.mLinear2 == -1) {
-                _this.mLi2 = _this.add.text(212, 19, ("  - " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                _this.mLi2 = _this.add.text(212, 22, ("  - " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
 
             }
             else {
                 if (_this.mLinear2 > 0)
-                    _this.mLi2 = _this.add.text(212, 19, ("  + " + _this.mLinear2 + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                    _this.mLi2 = _this.add.text(212, 22, ("  + " + _this.mLinear2 + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
                 else {
                     _this.ml2 = _this.mLinear2;
-                    _this.mLi2 = _this.add.text(212, 19, ("  - " + Math.abs(_this.ml2) + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                    _this.mLi2 = _this.add.text(212, 22, ("  - " + Math.abs(_this.ml2) + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
                 }
             }
 
@@ -750,10 +744,10 @@ Game.AL_SIM_G7level1.prototype =
             _this.yellowBox6.visible = false;
 
             if (_this.mConstant2 > 0)
-                _this.Con2 = _this.add.text(272, 19, (" + " + _this.mConstant2), { fontSize: '22px', fill: '#65B4C3' });
+                _this.Con2 = _this.add.text(272, 22, (" + " + _this.mConstant2), { fontSize: '22px', fill: '#65B4C3' });
             else {
                 _this.mc2 = _this.mConstant2;
-                _this.Con2 = _this.add.text(272, 19, ("  - " + Math.abs(_this.mc2)), { fontSize: '22px', fill: '#65B4C3' });
+                _this.Con2 = _this.add.text(272, 22, ("  - " + Math.abs(_this.mc2)), { fontSize: '22px', fill: '#65B4C3' });
             }
 
             _this.applyingStyle1(_this.Con2);
@@ -765,18 +759,18 @@ Game.AL_SIM_G7level1.prototype =
             _this.yellowBox7.visible = false;
 
             if (_this.mLinear3 == 1) {
-                _this.mLi3 = _this.add.text(307, 19, (" + " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                _this.mLi3 = _this.add.text(307, 22, (" + " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
             }
             else if (_this.mLinear3 == -1) {
-                _this.mLi3 = _this.add.text(307, 19, (" - " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                _this.mLi3 = _this.add.text(307, 22, (" - " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
 
             }
             else {
                 if (_this.mLinear3 > 0)
-                    _this.mLi3 = _this.add.text(307, 19, (" + " + _this.mLinear3 + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                    _this.mLi3 = _this.add.text(307, 22, (" + " + _this.mLinear3 + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
                 else {
                     _this.ml3 = _this.mLinear3;
-                    _this.mLi3 = _this.add.text(307, 19, (" - " + Math.abs(_this.ml3) + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                    _this.mLi3 = _this.add.text(307, 22, (" - " + Math.abs(_this.ml3) + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
                 }
             }
 
@@ -791,17 +785,17 @@ Game.AL_SIM_G7level1.prototype =
             _this.yellowBox.visible = true;
 
             if (_this.mSquare1 == 1) {
-                _this.mSq1 = _this.add.text(26, 19, (_this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
+                _this.mSq1 = _this.add.text(26, 22, (_this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
 
             }
             else if (_this.mSquare1 == -1) {
-                _this.mSq1 = _this.add.text(26, 19, (' - ' + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
+                _this.mSq1 = _this.add.text(26, 22, (' - ' + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
             }
             else {
                 if (_this.mSquare1 > 0)
-                    _this.mSq1 = _this.add.text(26, 19, (_this.mSquare1 + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
+                    _this.mSq1 = _this.add.text(26, 22, (_this.mSquare1 + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
                 else
-                    _this.mSq1 = _this.add.text(26, 19, (_this.mSquare1 + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
+                    _this.mSq1 = _this.add.text(26, 22, (_this.mSquare1 + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
             }
 
             _this.applyingStyle1(_this.mSq1);
@@ -813,18 +807,18 @@ Game.AL_SIM_G7level1.prototype =
             _this.yellowBox2.visible = false;
 
             if (_this.mLinear1 == 1) {
-                _this.mLi1 = _this.add.text(70, 19, (" + " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                _this.mLi1 = _this.add.text(70, 22, (" + " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
             }
             else if (_this.mLinear1 == -1) {
-                _this.mLi1 = _this.add.text(70, 19, (" - " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                _this.mLi1 = _this.add.text(70, 22, (" - " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
 
             }
             else {
                 if (_this.mLinear1 > 0)
-                    _this.mLi1 = _this.add.text(70, 19, (" + " + _this.mLinear1 + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                    _this.mLi1 = _this.add.text(70, 22, (" + " + _this.mLinear1 + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
                 else {
                     _this.ml1 = (_this.mLinear1);
-                    _this.mLi1 = _this.add.text(70, 19, (" - " + Math.abs(_this.ml1) + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                    _this.mLi1 = _this.add.text(70, 22, (" - " + Math.abs(_this.ml1) + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
 
                 }
             }
@@ -836,10 +830,10 @@ Game.AL_SIM_G7level1.prototype =
             _this.yellowBox3.visible = false;
 
             if (_this.mConstant1 > 0)
-                _this.Con1 = _this.add.text(123, 19, (" + " + _this.mConstant1), { fontSize: '22px', fill: '#65B4C3' });
+                _this.Con1 = _this.add.text(123, 22, (" + " + _this.mConstant1), { fontSize: '22px', fill: '#65B4C3' });
             else {
                 _this.mc1 = _this.mConstant1;
-                _this.Con1 = _this.add.text(123, 19, ("  - " + Math.abs(_this.mc1)), { fontSize: '22px', fill: '#65B4C3' });
+                _this.Con1 = _this.add.text(123, 22, ("  - " + Math.abs(_this.mc1)), { fontSize: '22px', fill: '#65B4C3' });
             }
             _this.applyingStyle1(_this.Con1);
             _this.textBox.addChild(_this.Con1);
@@ -850,18 +844,18 @@ Game.AL_SIM_G7level1.prototype =
             _this.yellowBox4.visible = true;
 
             if (_this.mSquare2 == 1) {
-                _this.mSq2 = _this.add.text(158, 19, (" + " + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
+                _this.mSq2 = _this.add.text(158, 22, (" + " + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
 
             }
             else if (_this.mSquare2 == -1) {
-                _this.mSq2 = _this.add.text(158, 19, (' - ' + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
+                _this.mSq2 = _this.add.text(158, 22, (' - ' + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
             }
             else {
                 if (_this.mSquare2 > 0)
-                    _this.mSq2 = _this.add.text(158, 19, (" + " + _this.mSquare2 + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
+                    _this.mSq2 = _this.add.text(158, 22, (" + " + _this.mSquare2 + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
                 else {
                     _this.msq_2 = _this.mSquare2;
-                    _this.mSq2 = _this.add.text(158, 19, (" - " + Math.abs(_this.msq_2) + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
+                    _this.mSq2 = _this.add.text(158, 22, (" - " + Math.abs(_this.msq_2) + _this.variable[_this.choice] + _this.power), { fontSize: '22px', fill: '#65B4C3' });
                 }
             }
             _this.applyingStyle1(_this.mSq2);
@@ -873,18 +867,18 @@ Game.AL_SIM_G7level1.prototype =
             _this.yellowBox5.visible = false;
 
             if (_this.mLinear2 == 1) {
-                _this.mLi2 = _this.add.text(212, 19, ("  + " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                _this.mLi2 = _this.add.text(212, 22, ("  + " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
             }
             else if (_this.mLinear2 == -1) {
-                _this.mLi2 = _this.add.text(212, 19, ("  - " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                _this.mLi2 = _this.add.text(212, 22, ("  - " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
 
             }
             else {
                 if (_this.mLinear2 > 0)
-                    _this.mLi2 = _this.add.text(212, 19, ("  + " + _this.mLinear2 + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                    _this.mLi2 = _this.add.text(212, 22, ("  + " + _this.mLinear2 + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
                 else {
                     _this.ml2 = _this.mLinear2;
-                    _this.mLi2 = _this.add.text(212, 19, ("  - " + Math.abs(_this.ml2) + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                    _this.mLi2 = _this.add.text(212, 22, ("  - " + Math.abs(_this.ml2) + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
                 }
             }
 
@@ -896,10 +890,10 @@ Game.AL_SIM_G7level1.prototype =
             _this.yellowBox6.visible = false;
 
             if (_this.mConstant2 > 0)
-                _this.Con2 = _this.add.text(272, 19, (" + " + _this.mConstant2), { fontSize: '22px', fill: '#65B4C3' });
+                _this.Con2 = _this.add.text(272, 22, (" + " + _this.mConstant2), { fontSize: '22px', fill: '#65B4C3' });
             else {
                 _this.mc2 = _this.mConstant2;
-                _this.Con2 = _this.add.text(272, 19, ("  - " + Math.abs(_this.mc2)), { fontSize: '22px', fill: '#65B4C3' });
+                _this.Con2 = _this.add.text(272, 22, ("  - " + Math.abs(_this.mc2)), { fontSize: '22px', fill: '#65B4C3' });
             }
 
             _this.applyingStyle1(_this.Con2);
@@ -911,18 +905,18 @@ Game.AL_SIM_G7level1.prototype =
             _this.yellowBox7.visible = false;
 
             if (_this.mLinear3 == 1) {
-                _this.mLi3 = _this.add.text(307, 19, (" + " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                _this.mLi3 = _this.add.text(307, 22, (" + " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
             }
             else if (_this.mLinear3 == -1) {
-                _this.mLi3 = _this.add.text(307, 19, (" - " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                _this.mLi3 = _this.add.text(307, 22, (" - " + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
 
             }
             else {
                 if (_this.mLinear3 > 0)
-                    _this.mLi3 = _this.add.text(307, 19, (" + " + _this.mLinear3 + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                    _this.mLi3 = _this.add.text(307, 22, (" + " + _this.mLinear3 + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
                 else {
                     _this.ml3 = _this.mLinear3;
-                    _this.mLi3 = _this.add.text(307, 19, (" - " + Math.abs(_this.ml3) + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
+                    _this.mLi3 = _this.add.text(307, 22, (" - " + Math.abs(_this.ml3) + _this.variable[_this.choice]), { fontSize: '22px', fill: '#65B4C3' });
                 }
             }
 
@@ -934,10 +928,10 @@ Game.AL_SIM_G7level1.prototype =
             _this.yellowBox8.visible = false;
 
             if (_this.mConstant3 > 0)
-                _this.Con3 = _this.add.text(359, 19, ("  + " + _this.mConstant3), { fontSize: '22px', fill: '#65B4C3' });
+                _this.Con3 = _this.add.text(359, 22, ("  + " + _this.mConstant3), { fontSize: '22px', fill: '#65B4C3' });
             else {
                 _this.mc3 = _this.mConstant3;
-                _this.Con3 = _this.add.text(359, 19, ("  - " + Math.abs(_this.mc3)), { fontSize: '22px', fill: '#65B4C3' });
+                _this.Con3 = _this.add.text(359, 22, ("  - " + Math.abs(_this.mc3)), { fontSize: '22px', fill: '#65B4C3' });
             }
             _this.applyingStyle1(_this.Con3);
             _this.textBox.addChild(_this.Con3);
@@ -1067,6 +1061,7 @@ Game.AL_SIM_G7level1.prototype =
 
 
     },
+
 
     //Tick button in the question screen and its evaluation.
     tickEvaluation: function (target) {
@@ -2511,11 +2506,11 @@ Game.AL_SIM_G7level1.prototype =
             else
                 string2 = string2 + " - " + Math.abs(_this.mConstant2);
 
-            _this.questionText6 = _this.add.text(0, 18, string2);
-            _this.applyingStyle1(_this.questionText6);
+            _this.questionText6 = _this.add.text(390, 73, string2);//_this.add.text(0, 18, string2);
+            _this.applyingStyle(_this.questionText6);
             _this.questionText6.fill = '#65B4C3';
-            _this.textBox2.addChild(_this.questionText6);
-            _this.questionText6.x = _this.textBox2.getBounds().width / 5 - _this.questionText6.getBounds().width / 5;
+            // _this.textBox2.addChild(_this.questionText6);
+            // _this.questionText6.x = _this.textBox2.getBounds().width / 5 - _this.questionText6.getBounds().width / 5;
         }
 
         if (_this.order1[0] == 7) {
@@ -2600,10 +2595,11 @@ Game.AL_SIM_G7level1.prototype =
                     string2 = string2 + " - " + Math.abs(_this.mLinear3) + _this.variable[_this.choice];
             }
 
-            _this.questionText6 = _this.add.text(20, 18, string2);
-            _this.applyingStyle1(_this.questionText6);
+            _this.questionText6 = _this.add.text(350, 73, string2);//_this.add.text(20, 18, string2);
+            _this.applyingStyle(_this.questionText6);
             _this.questionText6.fill = '#65B4C3';
-            _this.textBox2.addChild(_this.questionText6);
+            // _this.textBox2.addChild(_this.questionText6);
+
             // _this.questionText6.x = _this.textBox.getBounds().width / 6 - _this.questionText6.getBounds().width / 6;
         }
 
@@ -2696,9 +2692,10 @@ Game.AL_SIM_G7level1.prototype =
                 string2 = string2 + " - " + Math.abs(_this.mConstant3);
 
 
-            _this.questionText6 = _this.add.text(18, 18, string2);
+            _this.questionText6 = _this.add.text(330, 73, string2);//_this.add.text(18, 18, string2);
+            _this.applyingStyle(_this.questionText6);
             _this.questionText6.fill = '#65B4C3';
-            _this.textBox2.addChild(_this.questionText6);
+            // _this.textBox2.addChild(_this.questionText6);
             // _this.questionText6.x = _this.textBox.getBounds().width / 15 - _this.questionText6.getBounds().width / 15;
         }
     },
@@ -2709,34 +2706,65 @@ Game.AL_SIM_G7level1.prototype =
 
             _this.tempText = _this.add.text(0, 0, '=');
             _this.tempText.visible = false;
-            // _this.yellowbox9.scale.setTo((_this.tempText.getBounds().width) / (_this.yellowbox9.getBounds().width), 1);
             _this.tempText.destroy();
             _this.textBox2.destroy();
-            _this.textBox = _this.add.sprite(140, 60, 'Text box_2');
-            _this.textBox.scale.setTo(0.8);//0.8
+            _this.questionText6.destroy();//changed 14-11-23
+
+            if (_this.order1[0] == 8) {
+                _this.textBox = _this.add.sprite(140, 60, 'Text box_2');
+                _this.textBox.scale.setTo(0.88, 0.8);//0.8
+
+                _this.ChangeBoxEquation();
+                _this.questionText2 = _this.add.text(450, 19, ' =');//438
+                _this.questionText3 = _this.add.text(560, 19, _this.variable[_this.choice] + _this.power + ' + ');//555
+                _this.questionText4 = _this.add.text(680, 19, _this.variable[_this.choice] + ' + ');//675
+                // _this.questionText1.fill='#65B4C3';
+                _this.questionText2.fill = '#65B4C3';
+                _this.questionText3.fill = '#65B4C3';
+                _this.questionText4.fill = '#65B4C3';
+                // _this.textBox.addChild(_this.questionText1);
+                _this.textBox.addChild(_this.questionText2);
+                _this.textBox.addChild(_this.questionText3);
+                _this.textBox.addChild(_this.questionText4);
+            }
+            else {
+                _this.textBox = _this.add.sprite(140, 60, 'Text box_2');
+                _this.textBox.scale.setTo(0.8);//0.8
+
+                _this.ChangeBoxEquation();
+                _this.questionText2 = _this.add.text(450, 19, ' =');//438
+                _this.questionText3 = _this.add.text(560, 19, _this.variable[_this.choice] + _this.power + ' + ');//555
+                _this.questionText4 = _this.add.text(680, 19, _this.variable[_this.choice] + ' + ');//675
+                // _this.questionText1.fill='#65B4C3';
+                _this.questionText2.fill = '#65B4C3';
+                _this.questionText3.fill = '#65B4C3';
+                _this.questionText4.fill = '#65B4C3';
+                // _this.textBox.addChild(_this.questionText1);
+                _this.textBox.addChild(_this.questionText2);
+                _this.textBox.addChild(_this.questionText3);
+                _this.textBox.addChild(_this.questionText4);
+            }
             // _this.textBox.addChild(_this.yellowbox9);
-            _this.ChangeBoxEquation();
-            _this.questionText2 = _this.add.text(450, 19, ' =');//438
-            _this.questionText3 = _this.add.text(560, 19, _this.variable[_this.choice] + _this.power + ' + ');//555
-            _this.questionText4 = _this.add.text(680, 19, _this.variable[_this.choice] + ' + ');//675
-            // _this.questionText1.fill='#65B4C3';
-            _this.questionText2.fill = '#65B4C3';
-            _this.questionText3.fill = '#65B4C3';
-            _this.questionText4.fill = '#65B4C3';
-            // _this.textBox.addChild(_this.questionText1);
-            _this.textBox.addChild(_this.questionText2);
-            _this.textBox.addChild(_this.questionText3);
-            _this.textBox.addChild(_this.questionText4);
+
 
             _this.addAnswerBoxAndHighlight();
 
         });
     },
+    //2nd change 14-11-23
     //Adds the three answer boxes and highlight them.
     addAnswerBoxAndHighlight: function () {
-        _this.AnswerBox1 = _this.add.sprite(527, 68, 'Text box_5');//525
-        _this.AnswerBox2 = _this.add.sprite(628, 68, 'Text box_5');//623
-        _this.AnswerBox3 = _this.add.sprite(731, 68, 'Text box_5');//726        
+        if (_this.order1[0] == 8) {
+            _this.AnswerBox1 = _this.add.sprite(570, 68, 'Text box_5');//525
+            _this.AnswerBox2 = _this.add.sprite(681, 68, 'Text box_5');//623
+            _this.AnswerBox3 = _this.add.sprite(784, 68, 'Text box_5');//726      
+
+        }
+        else {
+            _this.AnswerBox1 = _this.add.sprite(527, 68, 'Text box_5');//525
+            _this.AnswerBox2 = _this.add.sprite(628, 68, 'Text box_5');//623
+            _this.AnswerBox3 = _this.add.sprite(731, 68, 'Text box_5');//726     
+        }
 
         _this.AnswerBox1.inputEnabled = true;
         _this.AnswerBox2.inputEnabled = true;
@@ -2788,6 +2816,7 @@ Game.AL_SIM_G7level1.prototype =
             }
         });
     },
+
 
 
     SecondBoxMerge: function () {
@@ -3123,10 +3152,13 @@ Game.AL_SIM_G7level1.prototype =
             else
                 string = string + " - " + Math.abs(_this.mConstant2);
 
-            _this.questionText5 = _this.add.text(0, 18, string);
+            _this.questionText5 = _this.add.text(220, 78, string);//_this.add.text(15, 18, string);
+            _this.applyingStyle2(_this.questionText5);
             _this.questionText5.fill = '#65B4C3';
-            _this.textBox.addChild(_this.questionText5);
-            _this.questionText5.x = _this.textBox.getBounds().width / 7 - _this.questionText5.getBounds().width / 7;
+            // _this.questionText5 = _this.add.text(0, 18, string);
+            // _this.questionText5.fill = '#65B4C3';
+            // _this.textBox.addChild(_this.questionText5);
+            // _this.questionText5.x = _this.textBox.getBounds().width / 7 - _this.questionText5.getBounds().width / 7;
         }
 
         if (_this.order1[0] == 7) {
@@ -3210,10 +3242,13 @@ Game.AL_SIM_G7level1.prototype =
                     string = string + " - " + Math.abs(_this.mLinear3) + _this.variable[_this.choice];
             }
 
-            _this.questionText5 = _this.add.text(0, 18, string);
+            _this.questionText5 = _this.add.text(180, 78, string);//_this.add.text(15, 18, string);
+            _this.applyingStyle2(_this.questionText5);
             _this.questionText5.fill = '#65B4C3';
-            _this.textBox.addChild(_this.questionText5);
-            _this.questionText5.x = _this.textBox.getBounds().width / 15 - _this.questionText5.getBounds().width / 15;
+            // _this.questionText5 = _this.add.text(0, 18, string);
+            // _this.questionText5.fill = '#65B4C3';
+            // _this.textBox.addChild(_this.questionText5);
+            // _this.questionText5.x = _this.textBox.getBounds().width / 15 - _this.questionText5.getBounds().width / 15;
         }
 
         if (_this.order1[0] == 8) {
@@ -3304,15 +3339,15 @@ Game.AL_SIM_G7level1.prototype =
                 string = string + " - " + Math.abs(_this.mConstant3);
 
 
-            _this.questionText5 = _this.add.text(15, 18, string);
+            _this.questionText5 = _this.add.text(160, 78, string);//2nd change 14-11-23
+            _this.applyingStyle2(_this.questionText5);
             _this.questionText5.fill = '#65B4C3';
-            _this.textBox.addChild(_this.questionText5);
+            // _this.textBox.addChild(_this.questionText5);
             // _this.questionText5.x = _this.textBox.getBounds().width / 14 - _this.questionText5.getBounds().width / 14;
         }
 
 
     },
-
     m2S1: function () {
         _this.clickSound.play();
         if (_this.space1Boxes.length > 5) {
@@ -3858,8 +3893,8 @@ Game.AL_SIM_G7level1.prototype =
                 //_this.state.start('AL_SIM_G7Score');
                 console.log("score");
                 // _this.time.events.add(2500, () => {
-                    _this.state.start('score', true, false,gameID, _this.microConcepts);
-                    //})
+                _this.state.start('score', true, false, gameID, _this.microConcepts);
+                //})
             }
             else {
                 _this.Initial_randomizing();
@@ -4267,6 +4302,7 @@ Game.AL_SIM_G7level1.prototype =
         _this.numGroup.destroy();
 
         _this.textBox.destroy();
+        _this.questionText5.destroy();//changed 14-11-23
 
         _this.AnswerBox1.destroy();
         _this.AnswerBox2.destroy();
@@ -4299,8 +4335,14 @@ Game.AL_SIM_G7level1.prototype =
         _this.Question_flag = 0;
     },
 
-
-
+    applyingStyle2: function (target) {
+        target.align = 'right';
+        target.font = "Akzidenz-Grotesk BQ";
+        target.fill = '#65B4C3';
+        target.fontWeight = 'normal';
+        target.visible = true;
+        target.fontSize = '20px';
+    },
 
     applyingStyle: function (target) {
         target.align = 'right';
@@ -4366,7 +4408,7 @@ Game.AL_SIM_G7level1.prototype =
 
         _this.q3Sound = document.createElement('audio');
         _this.q3Soundsrc = document.createElement('source');
-        _this.q3Soundsrc.setAttribute("src",  window.baseUrl +"questionSounds/AL-SIM-G7/" +
+        _this.q3Soundsrc.setAttribute("src", window.baseUrl + "questionSounds/AL-SIM-G7/" +
             _this.languageSelected + "/AL_SIM_G7_a3.mp3");
         _this.q3Sound.appendChild(_this.q3Soundsrc);
 

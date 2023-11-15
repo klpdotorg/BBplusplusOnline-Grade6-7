@@ -651,7 +651,7 @@ Game.NSF_9A_G6level1.prototype =
         //* Slide the arrow and estimate what is the given fraction closer to
         _this.q2Sound = document.createElement('audio');
         _this.q2Soundsrc = document.createElement('source');
-        _this.q2Soundsrc.setAttribute("src", window.baseUrl + "questionSounds/NSF-9A-G6/" +
+        _this.q2Soundsrc.setAttribute("src", window.baseUrl + "questionSounds/NSF-9B-G6/" +
             _this.languageSelected + "/NSF-9-G6-b.mp3");
         _this.q2Sound.appendChild(_this.q2Soundsrc);
 

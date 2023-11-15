@@ -1569,30 +1569,30 @@ Game.AL_SUB_G7level1.prototype =
         let string6 = "";
         if (_this.order2[0] == 1) {
             if (_this.mSquare2 == 1)
-                string6 = string6 + '-' + _this.variable[_this.choice] + _this.power
+                string6 = string6 + ' - ' + _this.variable[_this.choice] + _this.power
             else if (_this.mSquare2 == -1)
-                string6 = string6 + '+' + _this.variable[_this.choice] + _this.power
+                string6 = string6 + ' + ' + _this.variable[_this.choice] + _this.power
             else if (_this.mSquare2 != 0) {
                 if (_this.mSquare2 > 0) {
-                    string6 = string6 + '-' + String(_this.mSquare2) + _this.variable[_this.choice] + _this.power;
+                    string6 = string6 + ' - ' + String(_this.mSquare2) + _this.variable[_this.choice] + _this.power;
                 }
                 else if (_this.mSquare2 < 0) {
-                    string6 = string6 + '+' + String(-_this.mSquare2) + _this.variable[_this.choice] + _this.power;
+                    string6 = string6 + ' + ' + String(-_this.mSquare2) + _this.variable[_this.choice] + _this.power;
                 }
             }
             console.log("string 6 in order2[0] ", string6);
         }
         else if (_this.order2[0] == 2) {
             if (_this.mLinear2 == 1)
-                string6 = string6 + '-' + _this.variable[_this.choice]
+                string6 = string6 + ' - ' + _this.variable[_this.choice]
             else if (_this.mLinear2 == -1)
-                string6 = string6 + '+' + _this.variable[_this.choice]
+                string6 = string6 + ' + ' + _this.variable[_this.choice]
             else if (_this.mLinear2 != 0) {
                 if (_this.mLinear2 > 0) {
-                    string6 = string6 + '-' + String(_this.mLinear2) + _this.variable[_this.choice]
+                    string6 = string6 + ' - ' + String(_this.mLinear2) + _this.variable[_this.choice]
                 }
                 else if (_this.mLinear2 < 0) {
-                    string6 = string6 + '+' + String(-_this.mLinear2) + _this.variable[_this.choice]
+                    string6 = string6 + ' + ' + String(-_this.mLinear2) + _this.variable[_this.choice]
                 }
             }
             console.log("string 6 in order2[0]2 ", string6);
@@ -1601,10 +1601,10 @@ Game.AL_SUB_G7level1.prototype =
         else {
             if (_this.mConstant2 != 0) {
                 if (_this.mConstant2 > 0) {
-                    string6 = string6 + '-' + String(_this.mConstant2)
+                    string6 = string6 + ' - ' + String(_this.mConstant2)
                 }
                 else {
-                    string6 = string6 + '+' + String(-_this.mConstant2);
+                    string6 = string6 + ' + ' + String(-_this.mConstant2);
                 }
             }
             console.log("string 6 in order2[0] ", string6);
@@ -1614,44 +1614,44 @@ Game.AL_SUB_G7level1.prototype =
         if (_this.term2) {
             if (_this.order2[1] == 1) {
                 if (_this.mSquare2 == 1)
-                    string6 = string6 + '-' + _this.variable[_this.choice] + _this.power
+                    string6 = string6 + ' - ' + _this.variable[_this.choice] + _this.power
                 else if (_this.mSquare2 == -1)
-                    string6 = string6 + '+' + _this.variable[_this.choice] + _this.power
+                    string6 = string6 + ' + ' + _this.variable[_this.choice] + _this.power
                 else if (_this.mSquare2 > 0)
-                    string6 = string6 + "-" + String(_this.mSquare2) + _this.variable[_this.choice] + _this.power
+                    string6 = string6 + " - " + String(_this.mSquare2) + _this.variable[_this.choice] + _this.power
                 else if (_this.mSquare2 < 0)
-                    string6 = string6 + "+" + String(-_this.mSquare2) + _this.variable[_this.choice] + _this.power
+                    string6 = string6 + " + " + String(-_this.mSquare2) + _this.variable[_this.choice] + _this.power
 
                 console.log("string 6 in order2[0] ", string6);
 
             }
             else if (_this.order2[1] == 2) {
                 if (_this.mLinear2 == 1)
-                    string6 = string6 + '-' + _this.variable[_this.choice]
+                    string6 = string6 + ' - ' + _this.variable[_this.choice]
                 else if (_this.mLinear2 == -1)
-                    string6 = string6 + '+' + _this.variable[_this.choice]
+                    string6 = string6 + ' + ' + _this.variable[_this.choice]
                 else if (_this.mLinear2 > 0)
-                    string6 = string6 + "-" + String(_this.mLinear2) + _this.variable[_this.choice]
+                    string6 = string6 + " - " + String(_this.mLinear2) + _this.variable[_this.choice]
                 else if (_this.mLinear2 < 0)
-                    string6 = string6 + "+" + String(-_this.mLinear2) + _this.variable[_this.choice]
+                    string6 = string6 + " + " + String(-_this.mLinear2) + _this.variable[_this.choice]
                 // _this.secondeqLin = string6;
 
             }
             else {
                 if (_this.mConstant2 > 0)
-                    string6 = string6 + "-" + String(_this.mConstant2)
+                    string6 = string6 + " - " + String(_this.mConstant2)
                 else if (_this.mConstant2 < 0)
-                    string6 = string6 + "+" + String(-_this.mConstant2)
+                    string6 = string6 + " + " + String(-_this.mConstant2)
             }
             if (_this.order2[2] == 1) {
                 if (_this.mSquare2 == 1)
-                    string6 = string6 + '-' + _this.variable[_this.choice] + _this.power
+                    string6 = string6 + ' - ' + _this.variable[_this.choice] + _this.power
                 else if (_this.mSquare2 == -1)
-                    string6 = string6 + '+' + _this.variable[_this.choice] + _this.power
+                    string6 = string6 + ' + ' + _this.variable[_this.choice] + _this.power
                 else if (_this.mSquare2 > 0)
-                    string6 = string6 + "-" + String(_this.mSquare2) + _this.variable[_this.choice] + _this.power
+                    string6 = string6 + " - " + String(_this.mSquare2) + _this.variable[_this.choice] + _this.power
                 else if (_this.mSquare2 < 0)
-                    string6 = string6 + "+" + String(-_this.mSquare2) + _this.variable[_this.choice] + _this.power
+                    string6 = string6 + " + " + String(-_this.mSquare2) + _this.variable[_this.choice] + _this.power
                 // _this.secondeqSq = string6;
                 console.log("string 6 in order2[0] ", string6);
 
@@ -1659,33 +1659,33 @@ Game.AL_SUB_G7level1.prototype =
             }
             else if (_this.order2[2] == 2) {
                 if (_this.mLinear2 == 1)
-                    string6 = string6 + '-' + _this.variable[_this.choice]
+                    string6 = string6 + ' - ' + _this.variable[_this.choice]
                 else if (_this.mLinear2 == -1)
-                    string6 = string6 + '+' + _this.variable[_this.choice]
+                    string6 = string6 + ' + ' + _this.variable[_this.choice]
                 else if (_this.mLinear2 > 0)
-                    string6 = string6 + "-" + String(_this.mLinear2) + _this.variable[_this.choice]
+                    string6 = string6 + " - " + String(_this.mLinear2) + _this.variable[_this.choice]
                 else if (_this.mLinear2 < 0)
-                    string6 = string6 + "+" + String(-_this.mLinear2) + _this.variable[_this.choice]
+                    string6 = string6 + " + " + String(-_this.mLinear2) + _this.variable[_this.choice]
             }
             else {
                 if (_this.mConstant2 > 0)
-                    string6 = string6 + "-" + String(_this.mConstant2)
+                    string6 = string6 + " - " + String(_this.mConstant2)
                 else if (_this.mConstant2 < 0)
-                    string6 = string6 + "+" + String(-_this.mConstant2)
+                    string6 = string6 + " + " + String(-_this.mConstant2)
             }
         }
         else {
             if (_this.order2[1] == 1) {
                 if (_this.mSquare2 == 1)
-                    string6 = string6 + '-' + _this.variable[_this.choice] + _this.power
+                    string6 = string6 + ' - ' + _this.variable[_this.choice] + _this.power
                 else if (_this.mSquare2 == -1)
-                    string6 = string6 + "+" + _this.variable[_this.choice] + _this.power
+                    string6 = string6 + " + " + _this.variable[_this.choice] + _this.power
                 else if (_this.mSquare2 != 0) {
                     if (_this.mSquare2 > 0) {
-                        string6 = string6 + '-' + String(_this.mSquare2) + _this.variable[_this.choice] + _this.power;
+                        string6 = string6 + ' - ' + String(_this.mSquare2) + _this.variable[_this.choice] + _this.power;
                     }
                     else {
-                        string6 = string6 + '+' + String(-_this.mSquare2) + _this.variable[_this.choice] + _this.power;
+                        string6 = string6 + ' + ' + String(-_this.mSquare2) + _this.variable[_this.choice] + _this.power;
                     }
                 }
                 console.log("string 6 in order2[0] ", string6);
@@ -1695,58 +1695,59 @@ Game.AL_SUB_G7level1.prototype =
             }
             else if (_this.order2[1] == 2) {
                 if (_this.mLinear2 == 1)
-                    string6 = string6 + '-' + _this.variable[_this.choice]
+                    string6 = string6 + ' - ' + _this.variable[_this.choice]
                 else if (_this.mLinear2 == -1)
-                    string6 = string6 + '+' + _this.variable[_this.choice]
+                    string6 = string6 + ' + ' + _this.variable[_this.choice]
                 else if (_this.mLinear2 != 0) {
                     if (_this.mLinear2 > 0) {
-                        string6 = string6 + '-' + String(_this.mLinear2) + _this.variable[_this.choice]
+                        string6 = string6 + ' - ' + String(_this.mLinear2) + _this.variable[_this.choice]
                     }
                     else {
-                        string6 = string6 + '+' + String(-_this.mLinear2) + _this.variable[_this.choice]
+                        string6 = string6 + ' + ' + String(-_this.mLinear2) + _this.variable[_this.choice]
                     }
                 }
             }
             else {
                 if (_this.mConstant2 != 0) {
                     if (_this.mConstant2 > 0) {
-                        string6 = string6 + '-' + String(_this.mConstant2)
+                        string6 = string6 + ' - ' + String(_this.mConstant2)
                     }
                     else {
-                        string6 = string6 + '+' + String(-_this.mConstant2)
+                        string6 = string6 + ' + ' + String(-_this.mConstant2)
                     }
                 }
             }
             if (_this.order2[2] == 1) {
                 if (_this.mSquare2 == 1)
-                    string6 = string6 + '-' + _this.variable[_this.choice] + _this.power
+                    string6 = string6 + ' - ' + _this.variable[_this.choice] + _this.power
                 else if (_this.mSquare2 == -1)
-                    string6 = string6 + '+' + _this.variable[_this.choice] + _this.power
+                    string6 = string6 + ' + ' + _this.variable[_this.choice] + _this.power
                 else if (_this.mSquare2 > 0)
-                    string6 = string6 + "-" + String(_this.mSquare2) + _this.variable[_this.choice] + _this.power
+                    string6 = string6 + " - " + String(_this.mSquare2) + _this.variable[_this.choice] + _this.power
                 else if (_this.mSquare2 < 0)
-                    string6 = string6 + "+" + String(-_this.mSquare2) + _this.variable[_this.choice] + _this.power
+                    string6 = string6 + " + " + String(-_this.mSquare2) + _this.variable[_this.choice] + _this.power
                 // _this.secondeqSq = string6;
                 console.log("string 6 in order2[0] ", string6);
 
             }
             else if (_this.order2[2] == 2) {
                 if (_this.mLinear2 == 1)
-                    string6 = string6 + '-' + _this.variable[_this.choice]
+                    string6 = string6 + ' - ' + _this.variable[_this.choice]
                 else if (_this.mLinear2 == -1)
-                    string6 = string6 + '+' + _this.variable[_this.choice]
+                    string6 = string6 + ' + ' + _this.variable[_this.choice]
                 else if (_this.mLinear2 > 0)
-                    string6 = string6 + "-" + String(_this.mLinear2) + _this.variable[_this.choice]
+                    string6 = string6 + " - " + String(_this.mLinear2) + _this.variable[_this.choice]
                 else if (_this.mLinear2 < 0)
-                    string6 = string6 + "+" + String(-_this.mLinear2) + _this.variable[_this.choice]
+                    string6 = string6 + " + " + String(-_this.mLinear2) + _this.variable[_this.choice]
             }
             else {
                 if (_this.mConstant2 > 0)
-                    string6 = string6 + "-" + String(_this.mConstant2)
+                    string6 = string6 + " - " + String(_this.mConstant2)
                 else if (_this.mConstant2 < 0)
-                    string6 = string6 + "+" + String(-_this.mConstant2)
+                    string6 = string6 + " + " + String(-_this.mConstant2)
             }
         }
+
 
         string5 += string6;
         console.log(string5, "string5..");
@@ -2346,28 +2347,54 @@ Game.AL_SUB_G7level1.prototype =
         }
         else {
             console.log("delay");
-            _this.time.events.add(1000 * (delay), () => {
-                _this.tempText.destroy();
-                _this.tempText = _this.add.text(0, 0, '=');
-                _this.tempText.visible = false;
-                _this.tempText.destroy();
-                _this.textBox.destroy();
-                _this.textBox = _this.add.sprite(140, 60, 'Text box_2');
-                _this.textBox.scale.setTo(0.8);
-                _this.questionText1 = _this.add.text(13, 19, _this.questionWithAnswer);
-                _this.questionText2 = _this.add.text(438, 19, ' =');
-                _this.questionText3 = _this.add.text(555, 19, _this.variable[_this.choice] + _this.power + ' + ');
-                _this.questionText4 = _this.add.text(675, 19, _this.variable[_this.choice] + ' + ');
-                _this.questionText1.fill = '#65B4C3';
-                _this.questionText2.fill = '#65B4C3';
-                _this.questionText3.fill = '#65B4C3';
-                _this.questionText4.fill = '#65B4C3';
-                _this.textBox.addChild(_this.questionText1);
-                _this.textBox.addChild(_this.questionText2);
-                _this.textBox.addChild(_this.questionText3);
-                _this.textBox.addChild(_this.questionText4);
-                _this.addAnswerBoxAndHighlight();
-            });
+            if (delay == 0) {
+                _this.time.events.add(3000, () => {
+                    _this.tempText.destroy();
+                    _this.tempText = _this.add.text(0, 0, '=');
+                    _this.tempText.visible = false;
+                    _this.tempText.destroy();
+                    _this.textBox.destroy();
+                    _this.textBox = _this.add.sprite(140, 60, 'Text box_2');
+                    _this.textBox.scale.setTo(0.8);
+                    _this.questionText1 = _this.add.text(13, 19, _this.questionWithAnswer);
+                    _this.questionText2 = _this.add.text(438, 19, ' =');
+                    _this.questionText3 = _this.add.text(555, 19, _this.variable[_this.choice] + _this.power + ' + ');
+                    _this.questionText4 = _this.add.text(675, 19, _this.variable[_this.choice] + ' + ');
+                    _this.questionText1.fill = '#65B4C3';
+                    _this.questionText2.fill = '#65B4C3';
+                    _this.questionText3.fill = '#65B4C3';
+                    _this.questionText4.fill = '#65B4C3';
+                    _this.textBox.addChild(_this.questionText1);
+                    _this.textBox.addChild(_this.questionText2);
+                    _this.textBox.addChild(_this.questionText3);
+                    _this.textBox.addChild(_this.questionText4);
+                    _this.addAnswerBoxAndHighlight();
+                });
+            } //till here
+            else {
+                _this.time.events.add(1000 * (delay), () => {
+                    _this.tempText.destroy();
+                    _this.tempText = _this.add.text(0, 0, '=');
+                    _this.tempText.visible = false;
+                    _this.tempText.destroy();
+                    _this.textBox.destroy();
+                    _this.textBox = _this.add.sprite(140, 60, 'Text box_2');
+                    _this.textBox.scale.setTo(0.8);
+                    _this.questionText1 = _this.add.text(13, 19, _this.questionWithAnswer);
+                    _this.questionText2 = _this.add.text(438, 19, ' =');
+                    _this.questionText3 = _this.add.text(555, 19, _this.variable[_this.choice] + _this.power + ' + ');
+                    _this.questionText4 = _this.add.text(675, 19, _this.variable[_this.choice] + ' + ');
+                    _this.questionText1.fill = '#65B4C3';
+                    _this.questionText2.fill = '#65B4C3';
+                    _this.questionText3.fill = '#65B4C3';
+                    _this.questionText4.fill = '#65B4C3';
+                    _this.textBox.addChild(_this.questionText1);
+                    _this.textBox.addChild(_this.questionText2);
+                    _this.textBox.addChild(_this.questionText3);
+                    _this.textBox.addChild(_this.questionText4);
+                    _this.addAnswerBoxAndHighlight();
+                });
+            }
         }
 
     },

@@ -333,43 +333,13 @@ Game.grade7Geometry.prototype = {
 		_this.topicBg.drawRoundedRect(0, 0, 805, 600, 30);
 		_this.topicBg.boundsPadding = 0;
 
-		_this.GMS_1_Screen = _this.add.sprite(100, 120, 'GM_PYTH_Screen');
-		_this.bgGraphicFr1 = this.add.graphics(210, 175);
-		_this.bgGraphicFr1.lineStyle(0, 0xFFFFFF, 0.8);
-		_this.bgGraphicFr1.beginFill(0x493A19, 1);
-		_this.bgGraphicFr1.drawRoundedRect(0, 0, 30, 30, 10);
-		_this.bgGraphicFr1.boundsPadding = 0;
-		_this.GMS_1_ScreenTxt = this.add.text(225, 192, ' \n ' + window.selctedLang.GMS_1_Screen + ' \n ');
-		_this.GMS_1_ScreenTxt.anchor.setTo(0.5);
-		_this.GMS_1_ScreenTxt.align = 'center';
-		_this.GMS_1_ScreenTxt.font = 'gradefont';
-		_this.GMS_1_ScreenTxt.fontSize = 20;
-		_this.GMS_1_ScreenTxt.fontWeight = 'normal';
-		_this.GMS_1_ScreenTxt.fill = 'white';
-		_this.GMS_1_ScreenTxt.wordWrap = true;
-		_this.GMS_1_ScreenTxt.wordWrapWidth = 500;
-		_this.GMS_1_Screen.inputEnabled = true;
-		_this.GMS_1_Screen.input.useHandCursor = true;
-		_this.GMS_1_Screen.name = "GMS-1";
-		_this.GMS_1_Screen.events.onInputDown.add(function (target) {
-			_this.time.events.add(300, function () {
-				if (_this.tap) {
-					_this.time.events.removeAll();
-					target.events.onInputDown.removeAll();
-					_this.clickSound = _this.add.audio('ClickSound');
-					_this.clickSound.play();
-					_this.state.start('preloader_GMPYTH_G7', true, false);
-				}
-			}, _this);
-		}, _this);
-
-		_this.GMS_2_Screen = _this.add.sprite(300, 120, 'GMSS_1_Screen');
-		_this.bgGraphicNum2 = this.add.graphics(410, 175);
+		_this.GMS_2_Screen = _this.add.sprite(100, 120, 'GMSS_1_Screen');
+		_this.bgGraphicNum2 = this.add.graphics(210, 175);
 		_this.bgGraphicNum2.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicNum2.beginFill(0x493A19, 1);
 		_this.bgGraphicNum2.drawRoundedRect(0, 0, 30, 30, 10);
 		_this.bgGraphicNum2.boundsPadding = 0;
-		_this.GMS_2_ScreenTxt = this.add.text(425, 192, ' \n ' + window.selctedLang.GMS_2_Screen + ' \n ');
+		_this.GMS_2_ScreenTxt = this.add.text(225, 192, ' \n ' + window.selctedLang.GMS_2_Screen + ' \n ');
 		_this.GMS_2_ScreenTxt.anchor.setTo(0.5);
 		_this.GMS_2_ScreenTxt.align = 'center';
 		_this.GMS_2_ScreenTxt.font = 'gradefont';
@@ -393,13 +363,13 @@ Game.grade7Geometry.prototype = {
 			}, _this);
 		}, _this);
 
-		_this.GMS_3_Screen = _this.add.sprite(500, 120, 'GMSS_2_Screen');
-		_this.bgGraphicNum3 = this.add.graphics(610, 175);
+		_this.GMS_3_Screen = _this.add.sprite(300, 120, 'GMSS_2_Screen');
+		_this.bgGraphicNum3 = this.add.graphics(410, 175);
 		_this.bgGraphicNum3.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicNum3.beginFill(0x493A19, 1);
 		_this.bgGraphicNum3.drawRoundedRect(0, 0, 30, 30, 10);
 		_this.bgGraphicNum3.boundsPadding = 0;
-		_this.GMS_3_ScreenTxt = this.add.text(625, 192, ' \n ' + window.selctedLang.GMS_3_Screen + ' \n ');
+		_this.GMS_3_ScreenTxt = this.add.text(425, 192, ' \n ' + window.selctedLang.GMS_3_Screen + ' \n ');
 		_this.GMS_3_ScreenTxt.anchor.setTo(0.5);
 		_this.GMS_3_ScreenTxt.align = 'center';
 		_this.GMS_3_ScreenTxt.font = 'gradefont';
@@ -423,13 +393,13 @@ Game.grade7Geometry.prototype = {
 			}, _this);
 		}, _this);
 
-		_this.GMS_4_Screen = _this.add.sprite(700, 120, 'GMSS_3_Screen');
-		_this.bgGraphicFr4 = this.add.graphics(810, 175);
+		_this.GMS_4_Screen = _this.add.sprite(500, 120, 'GMSS_3_Screen');
+		_this.bgGraphicFr4 = this.add.graphics(610, 175);
 		_this.bgGraphicFr4.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicFr4.beginFill(0x493A19, 1);
 		_this.bgGraphicFr4.drawRoundedRect(0, 0, 30, 30, 10);
 		_this.bgGraphicFr4.boundsPadding = 0;
-		_this.GMS_4_ScreenTxt = this.add.text(825, 192, ' \n ' + window.selctedLang.GMR_1_Screen + ' \n ');
+		_this.GMS_4_ScreenTxt = this.add.text(625, 192, ' \n ' + window.selctedLang.GMR_1_Screen + ' \n ');
 		_this.GMS_4_ScreenTxt.anchor.setTo(0.5);
 		_this.GMS_4_ScreenTxt.align = 'center';
 		_this.GMS_4_ScreenTxt.font = 'gradefont';
@@ -453,13 +423,13 @@ Game.grade7Geometry.prototype = {
 			}, _this);
 		}, _this);
 
-		_this.GMCR_1_Screen = _this.add.sprite(100, 320, 'GMSS_4_Screen');
-		_this.bgGraphicNum5 = this.add.graphics(210, 375);
+		_this.GMCR_1_Screen = _this.add.sprite(700, 120, 'GMSS_4_Screen');
+		_this.bgGraphicNum5 = this.add.graphics(810, 175);
 		_this.bgGraphicNum5.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicNum5.beginFill(0x493A19, 1);
 		_this.bgGraphicNum5.drawRoundedRect(0, 0, 30, 30, 10);
 		_this.bgGraphicNum5.boundsPadding = 0;
-		_this.GMCR_1_ScreenTxt = this.add.text(225, 392, ' \n ' + window.selctedLang.GMCR_1_Screen + ' \n ');
+		_this.GMCR_1_ScreenTxt = this.add.text(825, 192, ' \n ' + window.selctedLang.GMCR_1_Screen + ' \n ');
 		_this.GMCR_1_ScreenTxt.anchor.setTo(0.5);
 		_this.GMCR_1_ScreenTxt.align = 'center';
 		_this.GMCR_1_ScreenTxt.font = 'gradefont';
@@ -483,13 +453,13 @@ Game.grade7Geometry.prototype = {
 			}, _this);
 		}, _this);
 
-		_this.GMLA_1_Screen = _this.add.sprite(300, 320, 'GMLA_1_Screen');
-		_this.bgGraphicAlg7 = this.add.graphics(410, 375);
+		_this.GMLA_1_Screen = _this.add.sprite(100, 320, 'GMLA_1_Screen');
+		_this.bgGraphicAlg7 = this.add.graphics(210, 375);
 		_this.bgGraphicAlg7.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicAlg7.beginFill(0x493A19, 1);
 		_this.bgGraphicAlg7.drawRoundedRect(0, 0, 30, 30, 10);
 		_this.bgGraphicAlg7.boundsPadding = 0;
-		_this.GMLA_1_ScreenTxt = this.add.text(425, 392, ' \n ' + window.selctedLang.GMLA_1_Screen + ' \n ');
+		_this.GMLA_1_ScreenTxt = this.add.text(225, 392, ' \n ' + window.selctedLang.GMLA_1_Screen + ' \n ');
 		_this.GMLA_1_ScreenTxt.anchor.setTo(0.5);
 		_this.GMLA_1_ScreenTxt.align = 'center';
 		_this.GMLA_1_ScreenTxt.font = 'gradefont';
@@ -513,13 +483,13 @@ Game.grade7Geometry.prototype = {
 			}, _this);
 		}, _this);
 
-		_this.GMLA_2_Screen = _this.add.sprite(500, 320, 'GMLA_2_Screen');
-		_this.bgGraphicAlg8 = this.add.graphics(610, 375);
+		_this.GMLA_2_Screen = _this.add.sprite(300, 320, 'GMLA_2_Screen');
+		_this.bgGraphicAlg8 = this.add.graphics(410, 375);
 		_this.bgGraphicAlg8.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicAlg8.beginFill(0x493A19, 1);
 		_this.bgGraphicAlg8.drawRoundedRect(0, 0, 30, 30, 10);
 		_this.bgGraphicAlg8.boundsPadding = 0;
-		_this.GMLA_2_ScreenTxt = this.add.text(625, 392, ' \n ' + window.selctedLang.GMLA_2_Screen + ' \n ');
+		_this.GMLA_2_ScreenTxt = this.add.text(425, 392, ' \n ' + window.selctedLang.GMLA_2_Screen + ' \n ');
 		_this.GMLA_2_ScreenTxt.anchor.setTo(0.5);
 		_this.GMLA_2_ScreenTxt.align = 'center';
 		_this.GMLA_2_ScreenTxt.font = 'gradefont';
@@ -543,13 +513,13 @@ Game.grade7Geometry.prototype = {
 			}, _this);
 		}, _this);
 
-		_this.GMLA_3_Screen = _this.add.sprite(700, 320, 'GMLA_3_Screen');
+		_this.GMLA_3_Screen = _this.add.sprite(500, 320, 'GMLA_3_Screen');
 		_this.bgGraphicAlg9 = this.add.graphics(810, 375);
 		_this.bgGraphicAlg9.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicAlg9.beginFill(0x493A19, 1);
 		_this.bgGraphicAlg9.drawRoundedRect(0, 0, 30, 30, 10);
 		_this.bgGraphicAlg9.boundsPadding = 0;
-		_this.GMLA_3_ScreenTxt = this.add.text(825, 392, ' \n ' + window.selctedLang.GMLA_3_Screen + ' \n ');
+		_this.GMLA_3_ScreenTxt = this.add.text(625, 392, ' \n ' + window.selctedLang.GMLA_3_Screen + ' \n ');
 		_this.GMLA_3_ScreenTxt.anchor.setTo(0.5);
 		_this.GMLA_3_ScreenTxt.align = 'center';
 		_this.GMLA_3_ScreenTxt.font = 'gradefont';
@@ -573,13 +543,13 @@ Game.grade7Geometry.prototype = {
 			}, _this);
 		}, _this);
 
-		_this.GMLA_4_Screen = _this.add.sprite(100, 520, 'GMLA_4_Screen');
+		_this.GMLA_4_Screen = _this.add.sprite(700, 320, 'GMLA_4_Screen');
 		_this.bgGraphicAlg10 = this.add.graphics(210, 575);
 		_this.bgGraphicAlg10.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicAlg10.beginFill(0x493A19, 1);
 		_this.bgGraphicAlg10.drawRoundedRect(0, 0, 30, 30, 10);
 		_this.bgGraphicAlg10.boundsPadding = 0;
-		_this.GMLA_4_ScreenTxt = this.add.text(225, 592, ' \n ' + window.selctedLang.GMLA_4_Screen + ' \n ');
+		_this.GMLA_4_ScreenTxt = this.add.text(825, 392, ' \n ' + window.selctedLang.GMLA_4_Screen + ' \n ');
 		_this.GMLA_4_ScreenTxt.anchor.setTo(0.5);
 		_this.GMLA_4_ScreenTxt.align = 'center';
 		_this.GMLA_4_ScreenTxt.font = 'gradefont';
@@ -603,13 +573,13 @@ Game.grade7Geometry.prototype = {
 			}, _this);
 		}, _this);
 
-		_this.GMLA_5_Screen = _this.add.sprite(300,520,'GMLA_5_Screen');
-		_this.bgGraphicAlg11 = this.add.graphics(410,575);
+		_this.GMLA_5_Screen = _this.add.sprite(100,520,'GMLA_5_Screen');
+		_this.bgGraphicAlg11 = this.add.graphics(210,575);
 		_this.bgGraphicAlg11.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicAlg11.beginFill(0x493A19, 1);
 		_this.bgGraphicAlg11.drawRoundedRect(0,0,30,30,10);
 		_this.bgGraphicAlg11.boundsPadding = 0;
-		_this.GMLA_5_ScreenTxt = this.add.text(425, 592, ' \n '+window.selctedLang.GMLA_5_Screen+' \n ');
+		_this.GMLA_5_ScreenTxt = this.add.text(225, 592, ' \n '+window.selctedLang.GMLA_5_Screen+' \n ');
 		_this.GMLA_5_ScreenTxt.anchor.setTo(0.5);
 		_this.GMLA_5_ScreenTxt.align = 'center';
 		_this.GMLA_5_ScreenTxt.font = 'gradefont';
@@ -634,13 +604,13 @@ Game.grade7Geometry.prototype = {
 			},_this);
 		},_this);
 
-		_this.GMLA_6_Screen = _this.add.sprite(500,520, 'GMLA_6_Screen');
-		_this.bgGraphicInt12 = this.add.graphics(610, 575);
+		_this.GMLA_6_Screen = _this.add.sprite(300,520, 'GMLA_6_Screen');
+		_this.bgGraphicInt12 = this.add.graphics(410, 575);
 		_this.bgGraphicInt12.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicInt12.beginFill(0x493A19, 1);
 		_this.bgGraphicInt12.drawRoundedRect(0, 0, 30, 30, 10);
 		_this.bgGraphicInt12.boundsPadding = 0;
-		_this.GMLA_6_ScreenTxt = this.add.text(625, 592, ' \n ' + window.selctedLang.GMLA_6_Screen + ' \n ');
+		_this.GMLA_6_ScreenTxt = this.add.text(425, 592, ' \n ' + window.selctedLang.GMLA_6_Screen + ' \n ');
 		_this.GMLA_6_ScreenTxt.anchor.setTo(0.5);
 		_this.GMLA_6_ScreenTxt.align = 'center';
 		_this.GMLA_6_ScreenTxt.font = 'gradefont';
@@ -664,13 +634,13 @@ Game.grade7Geometry.prototype = {
 			}, _this);
 		}, _this);
 
-		_this.GMLA_7_Screen = _this.add.sprite(700, 520,'GMLA_7_Screen');//'GMLA_7_Screen'
-		_this.bgGraphicNum6 = this.add.graphics(810, 575);
+		_this.GMLA_7_Screen = _this.add.sprite(500,520,'GMLA_7_Screen');//'GMLA_7_Screen'
+		_this.bgGraphicNum6 = this.add.graphics(610, 575);
 		_this.bgGraphicNum6.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.bgGraphicNum6.beginFill(0x493A19, 1);
 		_this.bgGraphicNum6.drawRoundedRect(0,0,30,30,10);
 		_this.bgGraphicNum6.boundsPadding = 0;
-		_this.GMLA_7_ScreenTxt = this.add.text(825, 592, ' \n '+window.selctedLang.GMLA_7_Screen +' \n ');
+		_this.GMLA_7_ScreenTxt = this.add.text(625, 592, ' \n '+window.selctedLang.GMLA_7_Screen +' \n ');
 		_this.GMLA_7_ScreenTxt.anchor.setTo(0.5);
 		_this.GMLA_7_ScreenTxt.align = 'center';
 		_this.GMLA_7_ScreenTxt.font = 'gradefont';
@@ -694,6 +664,36 @@ Game.grade7Geometry.prototype = {
 				}
 			},_this);
 		},_this);
+
+		_this.GMS_1_Screen = _this.add.sprite(700, 520, 'GM_PYTH_Screen');
+		_this.bgGraphicFr1 = this.add.graphics(810, 575);
+		_this.bgGraphicFr1.lineStyle(0, 0xFFFFFF, 0.8);
+		_this.bgGraphicFr1.beginFill(0x493A19, 1);
+		_this.bgGraphicFr1.drawRoundedRect(0, 0, 30, 30, 10);
+		_this.bgGraphicFr1.boundsPadding = 0;
+		_this.GMS_1_ScreenTxt = this.add.text(825, 592, ' \n ' + window.selctedLang.GMS_1_Screen + ' \n ');
+		_this.GMS_1_ScreenTxt.anchor.setTo(0.5);
+		_this.GMS_1_ScreenTxt.align = 'center';
+		_this.GMS_1_ScreenTxt.font = 'gradefont';
+		_this.GMS_1_ScreenTxt.fontSize = 20;
+		_this.GMS_1_ScreenTxt.fontWeight = 'normal';
+		_this.GMS_1_ScreenTxt.fill = 'white';
+		_this.GMS_1_ScreenTxt.wordWrap = true;
+		_this.GMS_1_ScreenTxt.wordWrapWidth = 500;
+		_this.GMS_1_Screen.inputEnabled = true;
+		_this.GMS_1_Screen.input.useHandCursor = true;
+		_this.GMS_1_Screen.name = "GMPYTH_G7";
+		_this.GMS_1_Screen.events.onInputDown.add(function (target) {
+			_this.time.events.add(300, function () {
+				if (_this.tap) {
+					_this.time.events.removeAll();
+					target.events.onInputDown.removeAll();
+					_this.clickSound = _this.add.audio('ClickSound');
+					_this.clickSound.play();
+					_this.state.start('preloader_GMPYTH_G7', true, false);
+				}
+			}, _this);
+		}, _this);
 
 		if (window.languageSelected == "Hindi") {
 			//_this.topicTitleText.frame = 1;

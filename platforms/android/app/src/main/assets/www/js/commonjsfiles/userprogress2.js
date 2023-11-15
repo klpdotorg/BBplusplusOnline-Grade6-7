@@ -157,7 +157,7 @@ Game.userprogress2.prototype={
 		// //this.graphics2.beginFill(0xFFFF0B,0.5);
     	// this.graphics5.drawRect(70, 10, 360, 390);
 
-        this.practicemodeTxt = this.add.text(140, 80,practiceText);
+        this.practicemodeTxt = this.add.text(250, 80,practiceText);
         this.practicemodeTxt.anchor.setTo(0.5);
         this.practicemodeTxt.align = 'center';
         this.practicemodeTxt.fontSize = 32;
@@ -612,12 +612,12 @@ Game.userprogress2.prototype={
    
 
 
-        this.algebraTree = game.add.sprite(140,160,'mcIconAlgebra');
+        this.algebraTree = game.add.sprite(140,180,'mcIconAlgebra');
         //this.numberSenseTree.frame = 0;
         this.algebraTree.anchor.setTo(0.5);
         this.algebraTree.scale.setTo(1.5);
 
-        this.algebraTreeTreeTxt = this.add.text(160, 200,window.selctedLang.algebraTitle);//algebraTitle
+        this.algebraTreeTreeTxt = this.add.text(160, 220,window.selctedLang.algebraTitle);//algebraTitle
         this.algebraTreeTreeTxt.anchor.setTo(0.5);
         this.algebraTreeTreeTxt.align = 'center';
         this.algebraTreeTreeTxt.fontSize = 16;
@@ -669,12 +669,12 @@ Game.userprogress2.prototype={
         // this.shapesTreeTxt.wordWrapWidth = 500;
 
 
-        this.algebraPrgress = game.add.sprite(320,170,'progressCircle');
+        this.algebraPrgress = game.add.sprite(320,190,'progressCircle');
         this.algebraPrgress.frame = this.algebraPercent-1;
         this.algebraPrgress.anchor.setTo(0.5);
         this.algebraPrgress.scale.setTo(1.2);
 
-        this.algebraPercentTxt = this.add.text(320, 170, this.algebraPercent+'%');
+        this.algebraPercentTxt = this.add.text(320, 190, this.algebraPercent+'%');
         this.algebraPercentTxt.anchor.setTo(0.5);
         this.algebraPercentTxt.align = 'center';
         this.algebraPercentTxt.fontSize = 20;
@@ -683,7 +683,7 @@ Game.userprogress2.prototype={
         this.algebraPercentTxt.wordWrap = true;
         this.algebraPercentTxt.wordWrapWidth = 500;
 
-        this.algebraPrgressTotalTxt = this.add.text(390, 170, this.responseData.PALG +'/'+this.calgebraTotal);// this.responseData.PALGV
+        this.algebraPrgressTotalTxt = this.add.text(390, 190, this.responseData.PALG +'/'+this.calgebraTotal);// this.responseData.PALGV
         this.algebraPrgressTotalTxt.anchor.setTo(0.5);
         this.algebraPrgressTotalTxt.align = 'center';
         this.algebraPrgressTotalTxt.fontSize = 20;
@@ -774,12 +774,12 @@ Game.userprogress2.prototype={
     //         if(this.totalgameplayed3>0)
     //             this.divisionScore = Math.round((((this.passcount3*5)-(this.hintcount3*3))/((this.passcount3*5)+this.failcount3))*100);
 
-        this.shapesTree = game.add.sprite(140,160,'mcIconShapes');
+        this.shapesTree = game.add.sprite(140,190,'mcIconShapes');
         //this.numberSenseTree.frame = 0;
         this.shapesTree.anchor.setTo(0.5);
         this.shapesTree.scale.setTo(1.5);
 
-        this.shapesTreeTxt = this.add.text(140, 200, window.selctedLang.shapesTitle);
+        this.shapesTreeTxt = this.add.text(140, 230, window.selctedLang.shapesTitle);
         this.shapesTreeTxt.anchor.setTo(0.5);
         this.shapesTreeTxt.align = 'center';
         this.shapesTreeTxt.fontSize = 16;
@@ -788,12 +788,12 @@ Game.userprogress2.prototype={
         this.shapesTreeTxt.wordWrap = true;
         this.shapesTreeTxt.wordWrapWidth = 500;
 
-        this.mensurationTree = game.add.sprite(140,240,'mcIconMensuration');
+        this.mensurationTree = game.add.sprite(140,270,'mcIconMensuration');
         //this.mensurationTree.frame = 1;
         this.mensurationTree.anchor.setTo(0.5);
         this.mensurationTree.scale.setTo(1.5);
 
-        this.mensurationTreeTxt = this.add.text(140, 280, window.selctedLang.mensurationTitle);
+        this.mensurationTreeTxt = this.add.text(140, 310, window.selctedLang.mensurationTitle);
         this.mensurationTreeTxt.anchor.setTo(0.5);
         this.mensurationTreeTxt.align = 'center';
         this.mensurationTreeTxt.fontSize = 16;
@@ -831,12 +831,12 @@ Game.userprogress2.prototype={
         // this.shapesTreeTxt.wordWrapWidth = 500;
 
 
-        this.shapesPrgress = game.add.sprite(320,170,'progressCircle');
+        this.shapesPrgress = game.add.sprite(320,200,'progressCircle');
         this.shapesPrgress.frame = this.shapesPercent-1;
         this.shapesPrgress.anchor.setTo(0.5);
         this.shapesPrgress.scale.setTo(1.2);
 
-        this.shapesPrgressTxt = this.add.text(320, 170, this.shapesPercent+'%');
+        this.shapesPrgressTxt = this.add.text(320, 200, this.shapesPercent+'%');
         this.shapesPrgressTxt.anchor.setTo(0.5);
         this.shapesPrgressTxt.align = 'center';
         this.shapesPrgressTxt.fontSize = 20;
@@ -845,7 +845,7 @@ Game.userprogress2.prototype={
         this.shapesPrgressTxt.wordWrap = true;
         this.shapesPrgressTxt.wordWrapWidth = 500;
 
-        this.shapesPrgressTotalTxt = this.add.text(390, 170, this.responseData.PGMS+'/'+this.cshapesTotal);
+        this.shapesPrgressTotalTxt = this.add.text(390, 200, this.responseData.PGMS+'/'+this.cshapesTotal);
         this.shapesPrgressTotalTxt.anchor.setTo(0.5);
         this.shapesPrgressTotalTxt.align = 'center';
         this.shapesPrgressTotalTxt.fontSize = 20;
@@ -854,12 +854,12 @@ Game.userprogress2.prototype={
         this.shapesPrgressTotalTxt.wordWrap = true;
         this.shapesPrgressTotalTxt.wordWrapWidth = 500;
 
-        this.mensurationPrgress = game.add.sprite(320,250,'progressCircle');
+        this.mensurationPrgress = game.add.sprite(320,280,'progressCircle');
         this.mensurationPrgress.frame = this.mensurationPercent-1;
         this.mensurationPrgress.anchor.setTo(0.5);
         this.mensurationPrgress.scale.setTo(1.2);
 
-        this.mensurationPrgressTxt = this.add.text(320, 250, this.mensurationPercent+'%');
+        this.mensurationPrgressTxt = this.add.text(320, 280, this.mensurationPercent+'%');
         this.mensurationPrgressTxt.anchor.setTo(0.5);
         this.mensurationPrgressTxt.align = 'center';
         this.mensurationPrgressTxt.fontSize = 20;
@@ -868,7 +868,7 @@ Game.userprogress2.prototype={
         this.mensurationPrgressTxt.wordWrap = true;
         this.mensurationPrgressTxt.wordWrapWidth = 500;
 
-        this.mensurationPrgressTotalTxt = this.add.text(390, 250, this.responseData.PGMM+'/'+this.cmensurationTotal);
+        this.mensurationPrgressTotalTxt = this.add.text(390, 280, this.responseData.PGMM+'/'+this.cmensurationTotal);
         this.mensurationPrgressTotalTxt.anchor.setTo(0.5);
         this.mensurationPrgressTotalTxt.align = 'center';
         this.mensurationPrgressTotalTxt.fontSize = 20;

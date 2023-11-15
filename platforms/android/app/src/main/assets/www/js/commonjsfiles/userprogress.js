@@ -336,7 +336,7 @@ Game.userprogress.prototype={
     	// this.graphics5.drawRect(70, 10, 360, 390);
 
 
-		this.practicemodeTxt = this.add.text(140, 80,practiceText);
+		this.practicemodeTxt = this.add.text(250, 80,practiceText);
 		this.practicemodeTxt.anchor.setTo(0.5);
 		this.practicemodeTxt.align = 'center';
 		this.practicemodeTxt.fontSize = 32;
@@ -646,9 +646,9 @@ Game.userprogress.prototype={
 	{
 
 
-		_this.groupScroll = _this.add.group();
+		//_this.groupScroll = _this.add.group();
 
-		this.numberSenseTree = game.add.sprite(160,190,'MicroConceptTree');
+		this.numberSenseTree = game.add.sprite(160,210,'MicroConceptTree');
     	this.numberSenseTree.frame = 0;
     	this.numberSenseTree.anchor.setTo(0.5);
     	this.numberSenseTree.scale.setTo(0.85,0.42);
@@ -659,7 +659,7 @@ Game.userprogress.prototype={
     		this.state.start('userprogress2',true,false,"Number Systems",this.responseData,this.responseData);
     	},this);
 
-    	this.numberSenseTreeTxt = this.add.text(160, 180, window.selctedLang.McTopicText1);
+    	this.numberSenseTreeTxt = this.add.text(160, 200, window.selctedLang.McTopicText1);
 		this.numberSenseTreeTxt.anchor.setTo(0.5);
 		this.numberSenseTreeTxt.align = 'center';
 		this.numberSenseTreeTxt.fontSize = 12;
@@ -668,10 +668,10 @@ Game.userprogress.prototype={
 		this.numberSenseTreeTxt.wordWrap = true;
 		this.numberSenseTreeTxt.wordWrapWidth = 500;
 
-    	this.algebraTree = game.add.sprite(160,285,'MicroConceptTree');
+    	this.algebraTree = game.add.sprite(160,315,'MicroConceptTree');
     	this.algebraTree.frame = 1;
     	this.algebraTree.anchor.setTo(0.5);
-    	this.algebraTree.scale.setTo(0.7,0.38);
+    	this.algebraTree.scale.setTo(0.85,0.42);//0.7,0.38
     	this.algebraTree.inputEnabled = true;
     	this.algebraTree.events.onInputDown.add(function(){
     		this.clickSound = this.add.audio('ClickSound');
@@ -679,7 +679,7 @@ Game.userprogress.prototype={
     		this.state.start('userprogress2',true,false,"Algebra",this.responseData,this.responseData);
     	},this);
 
-    	this.algebraTreeTxt = this.add.text(160, 275, window.selctedLang.McTopicText2);
+    	this.algebraTreeTxt = this.add.text(160, 305, window.selctedLang.McTopicText2);
 		this.algebraTreeTxt.anchor.setTo(0.5);
 		this.algebraTreeTxt.align = 'center';
 		this.algebraTreeTxt.fontSize = 12;
@@ -688,10 +688,10 @@ Game.userprogress.prototype={
 		this.algebraTreeTxt.wordWrap = true;
 		this.algebraTreeTxt.wordWrapWidth = 500;
 
-    	this.geometryTree = game.add.sprite(160,380,'MicroConceptTree');
+    	this.geometryTree = game.add.sprite(160,420,'MicroConceptTree');
     	this.geometryTree.frame = 2;
     	this.geometryTree.anchor.setTo(0.5);
-    	this.geometryTree.scale.setTo(0.7,0.38);
+    	this.geometryTree.scale.setTo(0.85,0.42);
     	this.geometryTree.inputEnabled = true;
     	this.geometryTree.events.onInputDown.add(function(){
     		this.clickSound = this.add.audio('ClickSound');
@@ -699,7 +699,7 @@ Game.userprogress.prototype={
     		this.state.start('userprogress2',true,false,"Geometry",this.responseData,this.responseData);
     	},this);
 
-    	this.geometryTreeTxt = this.add.text(160, 370, window.selctedLang.McTopicText4);
+    	this.geometryTreeTxt = this.add.text(160, 410, window.selctedLang.McTopicText4);
 		this.geometryTreeTxt.anchor.setTo(0.5);
 		this.geometryTreeTxt.align = 'center';
 		this.geometryTreeTxt.fontSize = 12;
@@ -746,7 +746,7 @@ Game.userprogress.prototype={
 		this.completedTxt.wordWrap = true;
 		this.completedTxt.wordWrapWidth = 500;
 
-		this.numbersystemsPrgress = game.add.sprite(320,180,'progressCircle');
+		this.numbersystemsPrgress = game.add.sprite(320,200,'progressCircle');
     	this.numbersystemsPrgress.frame = this.numbersensePersent-1;
     	this.numbersystemsPrgress.anchor.setTo(0.5);
     	this.numbersystemsPrgress.scale.setTo(1.5);
@@ -759,7 +759,7 @@ Game.userprogress.prototype={
     		this.state.start('userprogress2',true,false,"Number Systems",this.responseData,this.responseData);
     	},this);
 
-    	this.numbersystemsPrgressTxt = this.add.text(320, 180, this.numbersensePersent+'%');
+    	this.numbersystemsPrgressTxt = this.add.text(320, 200, this.numbersensePersent+'%');
 		this.numbersystemsPrgressTxt.anchor.setTo(0.5);
 		this.numbersystemsPrgressTxt.align = 'center';
 		this.numbersystemsPrgressTxt.fontSize = 20;
@@ -768,7 +768,7 @@ Game.userprogress.prototype={
 		this.numbersystemsPrgressTxt.wordWrap = true;
 		this.numbersystemsPrgressTxt.wordWrapWidth = 500;
 
-		this.numbersystemsPrgressTotalTxt = this.add.text(390, 180, this.responseData.PNS+'/'+this.numberSystemsTotal);
+		this.numbersystemsPrgressTotalTxt = this.add.text(390, 200, this.responseData.PNS+'/'+this.numberSystemsTotal);
 		this.numbersystemsPrgressTotalTxt.anchor.setTo(0.5);
 		this.numbersystemsPrgressTotalTxt.align = 'center';
 		this.numbersystemsPrgressTotalTxt.fontSize = 20;
@@ -777,7 +777,7 @@ Game.userprogress.prototype={
 		this.numbersystemsPrgressTotalTxt.wordWrap = true;
 		this.numbersystemsPrgressTotalTxt.wordWrapWidth = 500;
 
-    	this.algebraPrgress = game.add.sprite(320,280,'progressCircle');
+    	this.algebraPrgress = game.add.sprite(320,310,'progressCircle');
     	this.algebraPrgress.frame = this.algebraPersent-1;
     	this.algebraPrgress.anchor.setTo(0.5);
     	this.algebraPrgress.scale.setTo(1.5);
@@ -788,7 +788,7 @@ Game.userprogress.prototype={
     		this.state.start('userprogress2',true,false,"Algebra",this.responseData,this.responseData);
     	},this);
 
-    	this.algebraPrgressTxt = this.add.text(320, 280, this.algebraPersent+'%');
+    	this.algebraPrgressTxt = this.add.text(320, 310, this.algebraPersent+'%');
 		this.algebraPrgressTxt.anchor.setTo(0.5);
 		this.algebraPrgressTxt.align = 'center';
 		this.algebraPrgressTxt.fontSize = 20;
@@ -797,7 +797,7 @@ Game.userprogress.prototype={
 		this.algebraPrgressTxt.wordWrap = true;
 		this.algebraPrgressTxt.wordWrapWidth = 500;
 
-		this.algebraPrgressTotalTxt = this.add.text(390, 280, this.responseData.PALG+'/'+this.algebraTotal);
+		this.algebraPrgressTotalTxt = this.add.text(390, 310, this.responseData.PALG+'/'+this.algebraTotal);
 		this.algebraPrgressTotalTxt.anchor.setTo(0.5);
 		this.algebraPrgressTotalTxt.align = 'center';
 		this.algebraPrgressTotalTxt.fontSize = 20;
@@ -806,7 +806,7 @@ Game.userprogress.prototype={
 		this.algebraPrgressTotalTxt.wordWrap = true;
 		this.algebraPrgressTotalTxt.wordWrapWidth = 500;
 
-    	this.geometryPrgress = game.add.sprite(320,380,'progressCircle');
+    	this.geometryPrgress = game.add.sprite(320,420,'progressCircle');
     	this.geometryPrgress.frame = this.geometryPersent-1;
     	this.geometryPrgress.anchor.setTo(0.5);
     	this.geometryPrgress.scale.setTo(1.5);
@@ -818,7 +818,7 @@ Game.userprogress.prototype={
     		this.state.start('userprogress2',true,false,"Geometry",this.responseData,this.responseData);
     	},this);
 
-    	this.geometryPrgressTxt = this.add.text(320, 380, this.geometryPersent+'%');
+    	this.geometryPrgressTxt = this.add.text(320, 420, this.geometryPersent+'%');
 		this.geometryPrgressTxt.anchor.setTo(0.5);
 		this.geometryPrgressTxt.align = 'center';
 		this.geometryPrgressTxt.fontSize = 20;
@@ -827,7 +827,7 @@ Game.userprogress.prototype={
 		this.geometryPrgressTxt.wordWrap = true;
 		this.geometryPrgressTxt.wordWrapWidth = 500;
 
-		this.geometryPrgressTotalTxt = this.add.text(390, 380, this.responseData.PGM+'/'+this.geometryTotal);
+		this.geometryPrgressTotalTxt = this.add.text(390, 420, this.responseData.PGM+'/'+this.geometryTotal);
 		this.geometryPrgressTotalTxt.anchor.setTo(0.5);
 		this.geometryPrgressTotalTxt.align = 'center';
 		this.geometryPrgressTotalTxt.fontSize = 20;
@@ -883,99 +883,97 @@ Game.userprogress.prototype={
 		// this.datahandlingPrgressTotalTxt.wordWrapWidth = 500;
 
 
-		_this.swipeUpFlag = true;
-		_this.swipeDownFlag = false;
+		// _this.swipeUpFlag = true;
+		// _this.swipeDownFlag = false;
 
-		_this.graphicsBg = _this.add.graphics(0, 0);
-		_this.graphicsBg.lineStyle(0, 0xFFFFFF, 0.8);
-		_this.graphicsBg.beginFill(0xA24098, 0);
-		_this.graphicsBg.drawRect(70, 10, 350, 800);
-		_this.graphicsBg.boundsPadding = 0;
+		// _this.graphicsBg = _this.add.graphics(0, 0);
+		// _this.graphicsBg.lineStyle(0, 0xFFFFFF, 0.8);
+		// _this.graphicsBg.beginFill(0xA24098, 0);
+		// _this.graphicsBg.drawRect(70, 10, 350, 800);
+		// _this.graphicsBg.boundsPadding = 0;
 
-		_this.mask = _this.add.graphics(10, 135);
-		_this.mask.lineStyle(0, 0xFFFFFF, 0);
-		_this.mask.beginFill(0xA24098, 1);
-		_this.mask.drawRect(70, 10, 360, 375);
-		_this.mask.boundsPadding = 0;
+		// _this.mask = _this.add.graphics(10, 135);
+		// _this.mask.lineStyle(0, 0xFFFFFF, 0);
+		// _this.mask.beginFill(0xA24098, 1);
+		// _this.mask.drawRect(70, 10, 360, 375);
+		// _this.mask.boundsPadding = 0;
 
-		_this.graphicsBg.mask = _this.mask;
+		// _this.graphicsBg.mask = _this.mask;
 
 
-		_this.graphicsBg.addChild(this.numberSenseTree);
-		_this.graphicsBg.addChild(this.numberSenseTreeTxt);
+		// _this.graphicsBg.addChild(this.numberSenseTree);
+		// _this.graphicsBg.addChild(this.numberSenseTreeTxt);
 		
-		_this.graphicsBg.addChild(this.geometryTree);
-		_this.graphicsBg.addChild(this.geometryTreeTxt);
+		// _this.graphicsBg.addChild(this.geometryTree);
+		// _this.graphicsBg.addChild(this.geometryTreeTxt);
 
-		_this.graphicsBg.addChild(this.algebraTree);
-		_this.graphicsBg.addChild(this.algebraTreeTxt);
+		// _this.graphicsBg.addChild(this.algebraTree);
+		// _this.graphicsBg.addChild(this.algebraTreeTxt);
 
-		_this.graphicsBg.addChild(this.numbersystemsPrgress);
-		_this.graphicsBg.addChild(this.numbersystemsPrgressTxt);
-		_this.graphicsBg.addChild(this.numbersystemsPrgressTotalTxt);
+		// _this.graphicsBg.addChild(this.numbersystemsPrgress);
+		// _this.graphicsBg.addChild(this.numbersystemsPrgressTxt);
+		// _this.graphicsBg.addChild(this.numbersystemsPrgressTotalTxt);
 	
-		_this.graphicsBg.addChild(this.algebraPrgress);
-		_this.graphicsBg.addChild(this.algebraPrgressTxt);
-		_this.graphicsBg.addChild(this.algebraPrgressTotalTxt);
-	
-
-		_this.graphicsBg.addChild(this.geometryPrgress);
-		_this.graphicsBg.addChild(this.geometryPrgressTxt);
-		_this.graphicsBg.addChild(this.geometryPrgressTotalTxt);
-
+		// _this.graphicsBg.addChild(this.algebraPrgress);
+		// _this.graphicsBg.addChild(this.algebraPrgressTxt);
+		// _this.graphicsBg.addChild(this.algebraPrgressTotalTxt);
 	
 
+		// _this.graphicsBg.addChild(this.geometryPrgress);
+		// _this.graphicsBg.addChild(this.geometryPrgressTxt);
+		// _this.graphicsBg.addChild(this.geometryPrgressTotalTxt);
 
-		_this.scrollWhite = _this.add.sprite(425,130,'scrollWhite');
-		_this.scrollBlack = _this.add.sprite(428,135,'scrollBlack');
+	
+		// _this.scrollWhite = _this.add.sprite(425,130,'scrollWhite');
+		// _this.scrollBlack = _this.add.sprite(428,135,'scrollBlack');
 
-		_this.graphicsBg.inputEnabled = true;
-		_this.graphicsBg.input.enableDrag();
-		_this.graphicsBg.input.allowHorizontalDrag = false;
-		_this.graphicsBg.events.onDragUpdate.add(function(target){
-			console.log(_this.graphicsBg.y);
+		// _this.graphicsBg.inputEnabled = true;
+		// _this.graphicsBg.input.enableDrag();
+		// _this.graphicsBg.input.allowHorizontalDrag = false;
+		// _this.graphicsBg.events.onDragUpdate.add(function(target){
+		// 	console.log(_this.graphicsBg.y);
 
-			if(_this.graphicsBg.y>0)
-				_this.graphicsBg.y = 0;
-			if(_this.graphicsBg.y<-95)
-				_this.graphicsBg.y = -95;
+		// 	if(_this.graphicsBg.y>0)
+		// 		_this.graphicsBg.y = 0;
+		// 	if(_this.graphicsBg.y<-95)
+		// 		_this.graphicsBg.y = -95;
 
-			/*if(_this.scrollBlack.y>-47){
-				_this.scrollBlack.y = 210;
-				_this.graphicsBg.y = -95;
-			}
-			else if(_this.scrollBlack.y<-47){
-				_this.scrollBlack.y = 135;
-				_this.graphicsBg.y = 0;
-			}*/
+		// 	/*if(_this.scrollBlack.y>-47){
+		// 		_this.scrollBlack.y = 210;
+		// 		_this.graphicsBg.y = -95;
+		// 	}
+		// 	else if(_this.scrollBlack.y<-47){
+		// 		_this.scrollBlack.y = 135;
+		// 		_this.graphicsBg.y = 0;
+		// 	}*/
 
-		},true);
+		// },true);
 
-		_this.scrollBlack.inputEnabled = true;
+		// _this.scrollBlack.inputEnabled = true;
 
-    	_this.scrollBlack.input.enableDrag();
-		_this.scrollBlack.input.allowHorizontalDrag = false;
-		_this.scrollBlack.events.onDragUpdate.add(function(target){
-			console.log(_this.scrollBlack.y);
+    	// _this.scrollBlack.input.enableDrag();
+		// _this.scrollBlack.input.allowHorizontalDrag = false;
+		// _this.scrollBlack.events.onDragUpdate.add(function(target){
+		// 	console.log(_this.scrollBlack.y);
 			
 			
-			if(_this.scrollBlack.y<135)
-				_this.scrollBlack.y = 135;
+		// 	if(_this.scrollBlack.y<135)
+		// 		_this.scrollBlack.y = 135;
 
-			if(_this.scrollBlack.y>210)
-				_this.scrollBlack.y = 210;
+		// 	if(_this.scrollBlack.y>210)
+		// 		_this.scrollBlack.y = 210;
 
-			if(_this.scrollBlack.y>172){
-				_this.scrollBlack.y = 210;
-				_this.graphicsBg.y = -95;
-			}
-			else if(_this.scrollBlack.y<172){
-				_this.scrollBlack.y = 135;
-				_this.graphicsBg.y = 0;
-			}
+		// 	if(_this.scrollBlack.y>172){
+		// 		_this.scrollBlack.y = 210;
+		// 		_this.graphicsBg.y = -95;
+		// 	}
+		// 	else if(_this.scrollBlack.y<172){
+		// 		_this.scrollBlack.y = 135;
+		// 		_this.graphicsBg.y = 0;
+		// 	}
 
 
-		},true);
+		// },true);
 		
 	},
 
