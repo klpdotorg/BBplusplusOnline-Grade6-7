@@ -232,7 +232,9 @@ Game.editLangScreen.prototype = {
 
 		FirebasePlugin.logEvent("Select_language", { Select_language: target.name, item_id: "" });
 		//window.deviceId //_this.user.deviceid
-		var jsondata = { name: _this.user.name, deviceId: _this.user.deviceid, grade: _this.user.grade, schooltype: _this.user.schooltype, language: target.name, organization: _this.user.organization };
+		console.log(_this.user.name, _this.user.deviceId, "//////");
+
+		var jsondata = { name: _this.user.name, deviceid: _this.user.deviceId, grade: _this.user.grade, schooltype: _this.user.schooltype, language: target.name, organization: _this.user.organization };
 
 		if (navigator.connection.type != "none" && navigator.connection.type != "unknown" && navigator.connection.type != null && navigator.connection.type != "undefined") {
 			var apiurl = "https://abbmath.klp.org.in/abbppchmprm/updateprofile";

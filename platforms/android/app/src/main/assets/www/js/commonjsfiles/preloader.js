@@ -13,7 +13,6 @@ Game.preloader.prototype = {
     preload: function () {
         console.log("I am in preloader.js");
 
-
         _this = this;
 
         // var levelParameter = this.game.myParameter.level;

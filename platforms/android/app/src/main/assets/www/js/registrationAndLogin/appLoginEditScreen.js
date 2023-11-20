@@ -279,7 +279,7 @@ Game.appLoginEditScreen.prototype = {
 			_this.regandstsrtBtn.inputEnabled = true;
 			_this.regandstsrtBtn.events.onInputDown.add(function () {
 				FirebasePlugin.logEvent("Button_click_start", { Button_click_start: "", item_id: "" });
-				_this.state.start('index2', true, false, _this.user, false, _this.app_Mode);
+				_this.state.start('index2', true, false, _this.user,_this.app_Mode);
 			}, _this);
 		}
 

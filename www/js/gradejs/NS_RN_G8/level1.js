@@ -17,35 +17,35 @@ Game.NS_RN_G8level1.prototype = {
     } //// console.log("Language selected: " + _this.languageSelected);
     else _this.clickSound = document.createElement("audio");
     _this.clickSoundsrc = document.createElement("source");
-    _this.clickSoundsrc.setAttribute("src",  window.baseUrl + "sounds/ClickSound.mp3");
+    _this.clickSoundsrc.setAttribute("src", window.baseUrl + "sounds/ClickSound.mp3");
     _this.clickSound.appendChild(_this.clickSoundsrc);
 
     _this.celebrationSound = document.createElement("audio");
     _this.celebrationSoundsrc = document.createElement("source");
-    _this.celebrationSoundsrc.setAttribute("src",  window.baseUrl + "sounds/celebration.mp3");
+    _this.celebrationSoundsrc.setAttribute("src", window.baseUrl + "sounds/celebration.mp3");
     _this.celebrationSound.appendChild(_this.celebrationSoundsrc);
 
     _this.counterCelebrationSound = document.createElement("audio");
     _this.counterCelebrationSoundsrc = document.createElement("source");
     _this.counterCelebrationSoundsrc.setAttribute(
       "src",
-       window.baseUrl + "sounds/counter_celebration.mp3"
+      window.baseUrl + "sounds/counter_celebration.mp3"
     );
     _this.counterCelebrationSound.appendChild(_this.counterCelebrationSoundsrc);
 
     _this.wrongSound = document.createElement("audio");
     _this.wrongSoundsrc = document.createElement("source");
-    _this.wrongSoundsrc.setAttribute("src",  window.baseUrl + "sounds/WrongCelebrationSound.mp3");
+    _this.wrongSoundsrc.setAttribute("src", window.baseUrl + "sounds/WrongCelebrationSound.mp3");
     _this.wrongSound.appendChild(_this.wrongSoundsrc);
 
     _this.firecrack = document.createElement("audio");
     _this.firecracksrc = document.createElement("source");
-    _this.firecracksrc.setAttribute("src",  window.baseUrl + "sounds/firecracker_03.mp3");
+    _this.firecracksrc.setAttribute("src", window.baseUrl + "sounds/firecracker_03.mp3");
     _this.firecrack.appendChild(_this.firecracksrc);
 
     _this.frame_change = document.createElement("audio");
     _this.frame_changesrc = document.createElement("source");
-    _this.frame_changesrc.setAttribute("src",  window.baseUrl + "sounds/Unlock Skill.mp3"); //unlock-skill_k9AY3CPU//Frame_change_sound
+    _this.frame_changesrc.setAttribute("src", window.baseUrl + "sounds/Unlock Skill.mp3"); //unlock-skill_k9AY3CPU//Frame_change_sound
     _this.frame_change.appendChild(_this.frame_changesrc);
     //Frame_change_sound
     _this.Ask_Question1 = _this.createAudio("NS_RN_G8_a1");
@@ -191,7 +191,7 @@ Game.NS_RN_G8level1.prototype = {
     audiosrc = document.createElement("source");
     audiosrc.setAttribute(
       "src",
-       window.baseUrl + "questionSounds/NS-RN-G8/" + _this.languageSelected + "/" + src + ".mp3"
+      window.baseUrl + "questionSounds/NS-RN-G8/" + _this.languageSelected + "/" + src + ".mp3"
     );
     audio.appendChild(audiosrc);
     return audio;
@@ -469,12 +469,11 @@ Game.NS_RN_G8level1.prototype = {
     let distance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
     return distance;
   },
-
   showtank1ClickigDemo: function () {
-    console.log("hiiii");
+    console.log("hiiii")
     _this.hand_flag = 1;
     //* This will show the demo for clicking the bowl
-    _this.hand = _this.add.image(470, 310, "hand");
+    _this.hand = _this.add.image(470, 310, 'hand');
     _this.hand.scale.setTo(0.65);
     _this.time.events.add(400, () => {
       _this.hand.scale.setTo(0.6);
@@ -482,50 +481,39 @@ Game.NS_RN_G8level1.prototype = {
         _this.hand.scale.setTo(0.65);
         _this.time.events.add(450, () => {
           //_this.hand.destroy();
-          _this.tweenHand = _this.add
-            .tween(_this.hand)
-            .to({ x: 540, y: 310 }, 700, Phaser.Easing.Linear.None, true);
+          _this.tweenHand = _this.add.tween(_this.hand).to({ x: 540, y: 310 }, 1260, Phaser.Easing.Linear.None, true);
           _this.tweenHand.onComplete.add(function () {
             _this.hand.scale.setTo(0.6);
             _this.time.events.add(400, () => {
               _this.hand.scale.setTo(0.65);
               _this.time.events.add(470, () => {
-                _this.tweenHand1 = _this.add
-                  .tween(_this.hand)
-                  .to({ x: 590, y: 310 }, 700, Phaser.Easing.Linear.None, true);
+                _this.tweenHand1 = _this.add.tween(_this.hand).to({ x: 590, y: 310 }, 1260, Phaser.Easing.Linear.None, true);
                 _this.tweenHand1.onComplete.add(function () {
                   _this.hand.scale.setTo(0.6);
                   _this.time.events.add(400, () => {
                     _this.hand.scale.setTo(0.65);
                     _this.time.events.add(470, () => {
-                      _this.tweenHand2 = _this.add
-                        .tween(_this.hand)
-                        .to(
-                          { x: 650, y: 310 },
-                          700,
-                          Phaser.Easing.Linear.None,
-                          true
-                        );
+                      _this.tweenHand2 = _this.add.tween(_this.hand).to({ x: 650, y: 310 }, 1260, Phaser.Easing.Linear.None, true);
                       _this.tweenHand2.onComplete.add(function () {
                         _this.hand.scale.setTo(0.6);
                         _this.time.events.add(400, () => {
                           _this.hand.scale.setTo(0.65);
                           _this.time.events.add(500, () => {
                             _this.hand.destroy();
-                          });
-                        });
-                      });
-                    });
-                  });
-                });
-              });
-            });
-          });
-        });
-      });
-    });
-  },
+                          })
+                        })
+                      })
 
+                    })
+                  })
+                })
+              })
+            })
+          })
+        })
+      })
+    })
+  },
   initialScreenDisplay: function () {
     //* Part B initial screen
     _this.q_count = 0;

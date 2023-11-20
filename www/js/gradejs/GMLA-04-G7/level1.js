@@ -2510,6 +2510,15 @@ Game.GMLA_04_G7level1.prototype =
     },
 
     playQuestion1: function () {
+
+        if (_this.languageSelected === 'Marathi') {
+            var timer1 = 13000;
+            var timer2 = 27000;
+        } else {
+            var timer1 = 7800;
+            var timer2 = 13000;
+        }
+
         _this.q1Sound.play();
         // _this.Ask_Question13.play();
         _this.Question_flag = 13;
@@ -2528,7 +2537,7 @@ Game.GMLA_04_G7level1.prototype =
             clearTimeout(_this.q3Timer);
             _this.q3Sound.play();
             _this.Question_flag = 15;
-        }, 7800);
+        }, timer1);
 
         _this.q4Timer = setTimeout(function ()    //* demoAudio1 js timer to play demoAudio1Timer after 4 seconds.
         {
@@ -2536,7 +2545,7 @@ Game.GMLA_04_G7level1.prototype =
             clearTimeout(_this.q4Timer);
             _this.q4Sound.play();
             _this.Question_flag = 16;
-        }, 13000);
+        }, timer2);
 
 
     },
