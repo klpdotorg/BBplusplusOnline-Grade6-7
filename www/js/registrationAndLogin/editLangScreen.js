@@ -237,8 +237,10 @@ Game.editLangScreen.prototype = {
 		var jsondata = { name: _this.user.name, deviceid: _this.user.deviceId, grade: _this.user.grade, schooltype: _this.user.schooltype, language: target.name, organization: _this.user.organization };
 
 		if (navigator.connection.type != "none" && navigator.connection.type != "unknown" && navigator.connection.type != null && navigator.connection.type != "undefined") {
-		//	var apiurl = "https://abbmath.klp.org.in/abbppchmprm/updateprofile";
-			var apiurl = "https://localhost/abbppchmprm/updateprofile";      		        
+			var apiurl = "https://abbmath.klp.org.in/abbppchmprm/updateprofile";
+			//var apiurl = "https://localhost/abbppchmprm/updateprofile";   
+			//var apiurl = "https://10.0.2.2/abbppchmprm/updateprofile";      		        
+
 			$.ajax({
 				url: apiurl,
 				type: "POST",

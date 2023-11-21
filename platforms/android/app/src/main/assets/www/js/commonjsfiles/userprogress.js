@@ -67,8 +67,8 @@ Game.userprogress.prototype={
 		if(navigator.connection.type!="none" && navigator.connection.type!="unknown" && navigator.connection.type!=null && navigator.connection.type!="undefined")
 		{
 			console.log("sync telemetry"+navigator.connection.type);
-			//var apiurl = "https://abbmath.klp.org.in/abbppchmprm/assets/userprogress/userprogress";
-			var apiurl = "https://10.0.2.2/abbppchmprm/assets/userprogress/userprogress";
+			var apiurl = "https://abbmath.klp.org.in/abbppchmprm/assets/userprogress/userprogress";
+			//var apiurl = "https://10.0.2.2/abbppchmprm/assets/userprogress/userprogress";
 			
 		        console.log("RESTAPImgr.invokeRESTAPI: apiname:" + apiurl + "jsondata" + JSON.stringify(jsondata));
 		        nativeApp.CallUserProgressBeforeFEtchingData();
