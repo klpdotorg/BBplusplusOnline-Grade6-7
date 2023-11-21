@@ -268,8 +268,8 @@ Game.registrationPicSelectionScreen.prototype = {
 			console.log(jsondata);
 			if (navigator.connection.type != "none" && navigator.connection.type != "unknown" && navigator.connection.type != null && navigator.connection.type != "undefined") {
 				console.log("Reading the register api");
-				var apiurl = "https://abbmath.klp.org.in/abbppchmprm/register";
-				//var apiurl = "https://10.0.2.2/abbppchmprm/register";  
+				//var apiurl = "https://abbmath.klp.org.in/abbppchmprm/register";
+				var apiurl = "https://10.0.2.2/abbppchmprm/register";  
 
 				console.log("REDDD");
 				$.ajax({
@@ -314,8 +314,8 @@ Game.registrationPicSelectionScreen.prototype = {
 			var jsondata = { name: avatarName, deviceid: id };
 			console.log(jsondata);
 			if (navigator.connection.type != "none" && navigator.connection.type != "unknown" && navigator.connection.type != null && navigator.connection.type != "undefined") {
-				var apiurl = "https://abbmath.klp.org.in/abbppchmprm/login";
-				//var apiurl = "https://10.0.2.2/abbppchmprm/login"; 
+				//var apiurl = "https://abbmath.klp.org.in/abbppchmprm/login";
+				var apiurl = "https://10.0.2.2/abbppchmprm/login"; 
 				console.log(jsondata);
 				$.ajax({
 					url: apiurl,
@@ -360,8 +360,8 @@ Game.registrationPicSelectionScreen.prototype = {
 			var jsondata = { name: avatarName, deviceid: id };
 
 			if (navigator.connection.type != "none" && navigator.connection.type != "unknown" && navigator.connection.type != null && navigator.connection.type != "undefined") {
-				var apiurl = "https://abbmath.klp.org.in/abbppchmprm/getchild";
-				//var apiurl = "https://10.0.2.2/abbppchmprm/getchild";     		        
+				//var apiurl = "https://abbmath.klp.org.in/abbppchmprm/getchild";
+				var apiurl = "https://10.0.2.2/abbppchmprm/getchild";     		        
 				$.ajax({
 					url: apiurl,
 					type: "POST",

@@ -756,6 +756,50 @@ Game.GMM_03_G8level1.prototype =
                 _this.addL3.destroy();
             });
                 break;
+
+            case 'Marathi': _this.time.events.add(8000, function () {
+                _this.initialScreenLoad();
+                _this.hintBtn.inputEnabled = true;
+                _this.hintBtn.input.useHandCursor = true;
+                _this.speakerbtn.inputEnabled = true;
+                _this.bigCube.destroy();
+                _this.line_1.destroy();
+                _this.line_2.destroy();
+                _this.line_3.destroy();
+                _this.addL1.destroy();
+                _this.addL2.destroy();
+                _this.addL3.destroy();
+            });
+                break;
+
+            case 'Tamil': _this.time.events.add(8000, function () {
+                _this.initialScreenLoad();
+                _this.hintBtn.inputEnabled = true;
+                _this.hintBtn.input.useHandCursor = true;
+                _this.speakerbtn.inputEnabled = true;
+                _this.bigCube.destroy();
+                _this.line_1.destroy();
+                _this.line_2.destroy();
+                _this.line_3.destroy();
+                _this.addL1.destroy();
+                _this.addL2.destroy();
+                _this.addL3.destroy();
+            });
+                break;
+            case 'Odiya': _this.time.events.add(8000, function () {
+                _this.initialScreenLoad();
+                _this.hintBtn.inputEnabled = true;
+                _this.hintBtn.input.useHandCursor = true;
+                _this.speakerbtn.inputEnabled = true;
+                _this.bigCube.destroy();
+                _this.line_1.destroy();
+                _this.line_2.destroy();
+                _this.line_3.destroy();
+                _this.addL1.destroy();
+                _this.addL2.destroy();
+                _this.addL3.destroy();
+            });
+                break;
         }
 
 
@@ -2458,6 +2502,12 @@ Game.GMM_03_G8level1.prototype =
             case 'Hindi': timer = 7000;
                 break;
             case 'Kannada': timer = 8000;
+                break;
+            case 'Marathi': timer = 9000;
+                break;
+            case 'Odiya': timer = 8000;
+                break;
+            case 'Tamil': timer = 8000;
                 break;
         }
 
