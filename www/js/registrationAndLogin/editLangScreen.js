@@ -40,6 +40,7 @@ Game.editLangScreen.prototype = {
 
 		regBackArrow.inputEnabled = true;
 		regBackArrow.events.onInputDown.add(function () {
+			console.log(_this.user,"editLangScreen though");
 			game.state.start('appLoginEditScreen', true, false, _this.user, _this.app_Mode);
 		}, this);
 
@@ -143,6 +144,7 @@ Game.editLangScreen.prototype = {
 
 	goback: function (e) {
 		document.removeEventListener('backbutton', _this.goback, false);
+		console.log(_this.user,"editLangScreen though");
 		_this.state.start('appLoginEditScreen', true, false, _this.user, _this.app_Mode);
 	},
 
@@ -232,9 +234,9 @@ Game.editLangScreen.prototype = {
 
 		FirebasePlugin.logEvent("Select_language", { Select_language: target.name, item_id: "" });
 		//window.deviceId //_this.user.deviceid
-		console.log(_this.user.name, _this.user.deviceId, "//////");
+		console.log(_this.user.name, _this.user.deviceid, "//////");
 
-		var jsondata = { name: _this.user.name, deviceid: _this.user.deviceId, grade: _this.user.grade, schooltype: _this.user.schooltype, language: target.name, organization: _this.user.organization };
+		var jsondata = { name: _this.user.name, deviceid: _this.user.deviceid, grade: _this.user.grade, schooltype: _this.user.schooltype, language: target.name, organization: _this.user.organization };
 
 		if (navigator.connection.type != "none" && navigator.connection.type != "unknown" && navigator.connection.type != null && navigator.connection.type != "undefined") {
 			var apiurl = "https://abbmath.klp.org.in/abbppchmprm/updateprofile";
@@ -245,7 +247,7 @@ Game.editLangScreen.prototype = {
 				url: apiurl,
 				type: "POST",
 				dataType: "json",
-				// async:false, // set to false to perform a synchronous request
+				async:false, // set to false to perform a synchronous request
 				data: JSON.stringify(jsondata),
 				contentType: 'application/json; charset=UTF-8',
 				accepts: 'application/json',

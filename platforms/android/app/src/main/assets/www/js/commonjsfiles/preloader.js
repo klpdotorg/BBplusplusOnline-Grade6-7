@@ -1227,7 +1227,8 @@ Game.preloader.prototype = {
             // window.baseUrl = cordova.file.externalRootDirectory + "Android/data/
             //com.Akshara.ENBBplusplus/Files/Download/.gameFilesBB++V10_2/www/";//cordova.file.externalDataDirectory + 
             if (window.app_Mode == "online") {
-                console.log("Online app - its Preload");
+                console.log("Online app - its Preload",window.user);
+                
                 window.baseUrl = "https://abbmath.klp.org.in/bbplusplus/assets1/";
                 _this.state.start('practiceModegradeSelectionScreen', true, false);
             } else {

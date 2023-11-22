@@ -21,6 +21,7 @@ Game.index2.prototype = {
 		window.selctedLang = null;
 		_this.app_Mode = app_Mode;
 		window.app_Mode = _this.app_Mode;
+		window.user.deviceId = user.deviceId; 
 		//window.baseUrl = cordova.file.externalRootDirectory+"Android/data/com.akshara.easymath/Files/Download/.gameFilesBBV5_0_5/www/";
 		//window.baseUrl = "https://abbmath.klp.org.in/bbplusplus/assets1/";
 		window.score = 50;

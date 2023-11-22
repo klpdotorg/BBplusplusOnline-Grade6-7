@@ -4,13 +4,13 @@ Game.registrationLangSelectionScreen = function () {
 
 Game.registrationLangSelectionScreen.prototype = {
 
-	init: function (user,app_Mode) {
+	init: function (user, app_Mode) {
 		_this = this;
 		_this.user = user;
 		_this.app_Mode = app_Mode;
-		console.log("user,_this.app_Mode",_this.user,_this.app_Mode);
+		console.log("user,_this.app_Mode", _this.user, _this.app_Mode);
 	},
- 
+
 	preload: function (game) {
 
 	},
@@ -41,7 +41,8 @@ Game.registrationLangSelectionScreen.prototype = {
 
 			regBackArrow.inputEnabled = true;
 			regBackArrow.events.onInputDown.add(function () {
-				game.state.start('appLoginScreen', true, false,_this.app_Mode);//,lang
+				console.log(_this.user, "registrationPicSelectionScreen Back");
+				game.state.start('appLoginScreen', true, false, _this.app_Mode);//,lang
 			}, this);
 
 			document.addEventListener('backbutton', _this.goback, false);
@@ -105,7 +106,7 @@ Game.registrationLangSelectionScreen.prototype = {
 
 			this.languageSelectedGrp = game.add.group();
 
-			var languageList = ["Select Language", "English", "हिंदी", "ಕನ್ನಡ", "ଓଡ଼ିଆ", "मराठी",  "தமிழ்"];
+			var languageList = ["Select Language", "English", "हिंदी", "ಕನ್ನಡ", "ଓଡ଼ିଆ", "मराठी", "தமிழ்"];
 			//var languageList = ["Select Language"];//"తెలుగు", "اردو", "ગુજરાતી"
 
 			var x = game.world.centerX - 140;
@@ -122,7 +123,7 @@ Game.registrationLangSelectionScreen.prototype = {
 
 	goback: function (e) {
 		document.removeEventListener('backbutton', _this.goback, false);
-		_this.state.start('appLoginScreen', true, false,_this.app_Mode,lang);
+		_this.state.start('appLoginScreen', true, false, _this.app_Mode, lang);
 	},
 
 
@@ -211,7 +212,7 @@ Game.registrationLangSelectionScreen.prototype = {
 					console.log(lang, "lang //////////");
 					FirebasePlugin.logEvent("Select_language", { Select_language: lang, item_id: "" });
 
-					game.state.start('registrationPicSelectionScreen', true, false, lang , _this.user,_this.app_Mode);
+					game.state.start('registrationPicSelectionScreen', true, false, lang, _this.user, _this.app_Mode);
 				}, this);
 			}
 		}, this);

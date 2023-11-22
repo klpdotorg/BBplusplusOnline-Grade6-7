@@ -45,10 +45,14 @@ Game.registrationPicSelectionScreen.prototype = {
 		regBackArrow.events.onInputDown.add(function () {
 
 			if (_this.app_Mode == "online") {
-				if (_this.user)
+				if (_this.user) {
+					console.log(_this.user, "registrationPicSelectionScreen Back");
 					game.state.start('registrationLangSelectionScreen', true, false, _this.user, _this.app_Mode);
-				else
+				}
+				else {
+					console.log(_this.user, "registrationPicSelectionScreen Back");
 					game.state.start('registrationLangSelectionScreen', true, false, _this.app_Mode);
+				}
 			} else {
 				if (_this.user)
 					game.state.start('appLoginScreen', true, false, _this.app_Mode, _this.language);
@@ -223,10 +227,15 @@ Game.registrationPicSelectionScreen.prototype = {
 
 	goback: function (e) {
 		document.removeEventListener('backbutton', _this.goback, false);
-		if (_this.user)
+		if (_this.user) {
+			console.log(_this.user, "registrationPicSelectionScreen Back");
 			_this.state.start('registrationLangSelectionScreen', true, false, _this.user, _this.app_Mode);
-		else
+		}
+
+		else {
+			console.log(_this.user, "registrationPicSelectionScreen Back");
 			_this.state.start('registrationLangSelectionScreen', true, false, _this.user, _this.app_Mode);
+		}
 	},
 
 	deactivateAll: function (fish, butterfly, flower, parrot, sun, tree) {

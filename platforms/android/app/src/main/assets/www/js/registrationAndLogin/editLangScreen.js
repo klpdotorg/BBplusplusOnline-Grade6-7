@@ -40,6 +40,7 @@ Game.editLangScreen.prototype = {
 
 		regBackArrow.inputEnabled = true;
 		regBackArrow.events.onInputDown.add(function () {
+			console.log(_this.user,"editLangScreen though");
 			game.state.start('appLoginEditScreen', true, false, _this.user, _this.app_Mode);
 		}, this);
 
@@ -143,6 +144,7 @@ Game.editLangScreen.prototype = {
 
 	goback: function (e) {
 		document.removeEventListener('backbutton', _this.goback, false);
+		console.log(_this.user,"editLangScreen though");
 		_this.state.start('appLoginEditScreen', true, false, _this.user, _this.app_Mode);
 	},
 
@@ -245,7 +247,7 @@ Game.editLangScreen.prototype = {
 				url: apiurl,
 				type: "POST",
 				dataType: "json",
-				// async:false, // set to false to perform a synchronous request
+				async:false, // set to false to perform a synchronous request
 				data: JSON.stringify(jsondata),
 				contentType: 'application/json; charset=UTF-8',
 				accepts: 'application/json',
