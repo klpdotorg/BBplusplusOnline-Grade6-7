@@ -59,6 +59,7 @@ Game.practiceModegradeSelectionScreen.prototype = {
 
 	create: function (game) {
 
+		
 		window.prevScreen = "gameScreen";
 		window.currScreen = "practiceModegradeSelectionScreen";
 
@@ -82,9 +83,12 @@ Game.practiceModegradeSelectionScreen.prototype = {
 			_this.gradeBackBtn.input.useHandCursor = true;
 			_this.gradeBackBtn.events.onInputDown.add(function () {
 
-			//	window.user.deviceid = window.deviceId;
-				console.log(window.user.deviceid,"PRACTICE JS BACK BTN");
-				
+				if (window.user.deviceId !== '') {
+					console.log(window.user.deviceId,"If condition Check");
+					window.user.deviceid = window.user.deviceId;
+				}
+				console.log(window.user.deviceid, "PRACTICE JS BACK BTN");
+
 				game.state.start('appLoginEditScreen', true, false, window.user, window.app_Mode);
 				// game.state.start('gameScreen',true,false);
 
@@ -294,11 +298,11 @@ Game.practiceModegradeSelectionScreen.prototype = {
 			_this.grade8Cloud.name = "grade8";
 			_this.grade8Cloud.inputEnabled = true;
 			_this.grade8Cloud.input.useHandCursor = true;
-			_this.grade8Cloud.events.onInputDown.add(_this.gradeSelected,_this);
+			_this.grade8Cloud.events.onInputDown.add(_this.gradeSelected, _this);
 			_this.grade8CloudTxt = this.add.text(450, 328, ' \n' + window.selctedLang.grade8 + ' \n ');
 			_this.grade8CloudTxt.anchor.setTo(0.5);
 			_this.grade8CloudTxt.align = 'center';
-			_this.grade8CloudTxt.font = 'gradefont';						
+			_this.grade8CloudTxt.font = 'gradefont';
 			if (_this.languageSelected == "Tamil")
 				_this.grade8CloudTxt.fontSize = 30;
 			else
