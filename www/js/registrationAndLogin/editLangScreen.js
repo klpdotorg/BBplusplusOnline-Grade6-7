@@ -234,9 +234,9 @@ Game.editLangScreen.prototype = {
 
 		FirebasePlugin.logEvent("Select_language", { Select_language: target.name, item_id: "" });
 		//window.deviceId //_this.user.deviceid
-		console.log(_this.user.name, _this.user.deviceid, "//////");
+		console.log(_this.user.name, _this.user.deviceId, "//////");
 
-		var jsondata = { name: _this.user.name, deviceid: _this.user.deviceid, grade: _this.user.grade, schooltype: _this.user.schooltype, language: target.name, organization: _this.user.organization };
+		var jsondata = { name: _this.user.name, deviceid: _this.user.deviceId, grade: _this.user.grade, schooltype: _this.user.schooltype, language: target.name, organization: _this.user.organization };
 
 		if (navigator.connection.type != "none" && navigator.connection.type != "unknown" && navigator.connection.type != null && navigator.connection.type != "undefined") {
 			var apiurl = "https://abbmath.klp.org.in/abbppchmprm/updateprofile";
@@ -247,7 +247,7 @@ Game.editLangScreen.prototype = {
 				url: apiurl,
 				type: "POST",
 				dataType: "json",
-				async:false, // set to false to perform a synchronous request
+			//	async:false, // set to false to perform a synchronous request
 				data: JSON.stringify(jsondata),
 				contentType: 'application/json; charset=UTF-8',
 				accepts: 'application/json',

@@ -247,7 +247,7 @@ Game.editLangScreen.prototype = {
 				url: apiurl,
 				type: "POST",
 				dataType: "json",
-				async:false, // set to false to perform a synchronous request
+			//	async:false, // set to false to perform a synchronous request
 				data: JSON.stringify(jsondata),
 				contentType: 'application/json; charset=UTF-8',
 				accepts: 'application/json',

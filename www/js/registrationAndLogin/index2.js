@@ -5,7 +5,7 @@ Game.index2 = function () {
 
 Game.index2.prototype = {
 
-	gamesVar: null,
+	gamesVar: null, 
 
 	// Application Constructor
 	init: function (user, flag,app_Mode) {
@@ -15,12 +15,13 @@ Game.index2.prototype = {
 		window.user = user;
 		window.acctkn = user.uid;
 		window.avatarName = user.name;
-		window.deviceid = user.deviceid;//user.deviceid;
+		window.deviceId = user.deviceid;//user.deviceid;
 		window.languageSelected = user.language;
 		window.gradeSelected = user.grade;
 		window.selctedLang = null;
 		_this.app_Mode = app_Mode;
 		window.app_Mode = _this.app_Mode;
+		
 		//window.baseUrl = cordova.file.externalRootDirectory+"Android/data/com.akshara.easymath/Files/Download/.gameFilesBBV5_0_5/www/";
 		//window.baseUrl = "https://abbmath.klp.org.in/bbplusplus/assets1/";
 		window.score = 50;

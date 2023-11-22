@@ -82,7 +82,9 @@ Game.practiceModegradeSelectionScreen.prototype = {
 			_this.gradeBackBtn.input.useHandCursor = true;
 			_this.gradeBackBtn.events.onInputDown.add(function () {
 
-				console.log(window.user.deviceId,"PRACTICE JS BACK BTN");
+			//	window.user.deviceid = window.deviceId;
+				console.log(window.user.deviceid,"PRACTICE JS BACK BTN");
+				
 				game.state.start('appLoginEditScreen', true, false, window.user, window.app_Mode);
 				// game.state.start('gameScreen',true,false);
 
