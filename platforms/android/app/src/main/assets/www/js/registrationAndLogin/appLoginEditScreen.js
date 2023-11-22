@@ -8,6 +8,11 @@ Game.appLoginEditScreen.prototype = {
 		// if(screen.orientation == 'landscape')
 		// {
 		window.user = user;
+		if(user.deviceid){
+			window.user.deviceid = user.deviceid;
+		}else if(user.deviceId){
+			window.user.deviceid = user.deviceId;
+		}
 		console.log(user.deviceId,user.deviceid,"user.deviceId >>");
 		screen.orientation.lock('portrait');
 		AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_LOW_PROFILE, null, null);
