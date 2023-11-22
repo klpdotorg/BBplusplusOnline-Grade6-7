@@ -7,10 +7,7 @@ Game.appLoginEditScreen.prototype = {
 	init: function (user, app_Mode) {
 		// if(screen.orientation == 'landscape')
 		// {
-		if (window.user.deviceId) {
-			console.log(window.user.deviceId, "If condition Check");
-			user.deviceid = window.user.deviceId;
-		}
+		
 		screen.orientation.lock('portrait');
 		AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_LOW_PROFILE, null, null);
 		_this.game.scale.setGameSize(540, 960);
