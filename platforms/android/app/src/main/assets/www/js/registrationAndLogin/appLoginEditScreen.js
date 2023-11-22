@@ -1,5 +1,5 @@
 Game.appLoginEditScreen = function () {
-	
+
 };
 
 Game.appLoginEditScreen.prototype = {
@@ -7,11 +7,15 @@ Game.appLoginEditScreen.prototype = {
 	init: function (user, app_Mode) {
 		// if(screen.orientation == 'landscape')
 		// {
-			screen.orientation.lock('portrait');
-			AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_LOW_PROFILE, null, null);
-			_this.game.scale.setGameSize(540, 960);
-			_this.scale.forceOrientation(true, false);
-			document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
+		if (window.user.deviceId) {
+			console.log(window.user.deviceId, "If condition Check");
+			user.deviceid = window.user.deviceId;
+		}
+		screen.orientation.lock('portrait');
+		AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_LOW_PROFILE, null, null);
+		_this.game.scale.setGameSize(540, 960);
+		_this.scale.forceOrientation(true, false);
+		document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
 		//}
 		_this = this;
 		_this.user = user;
@@ -253,7 +257,7 @@ Game.appLoginEditScreen.prototype = {
 		_this.userEditBtn.anchor.setTo(0.5);
 		_this.userEditBtn.inputEnabled = true;
 		_this.userEditBtn.events.onInputDown.add(function () {
-			console.log(_this.user,"userEditBTN edit screen");
+			console.log(_this.user, "userEditBTN edit screen");
 			_this.state.start('editLangScreen', true, false, _this.user, _this.app_Mode);
 		}, _this);
 
@@ -272,7 +276,7 @@ Game.appLoginEditScreen.prototype = {
 			console.log("App Online..... !!!");
 			_this.regBackArrow.inputEnabled = true;
 			_this.regBackArrow.events.onInputDown.add(function () {
-				console.log(_this.user,"APPLOgEDitScreen Back btn !!!");
+				console.log(_this.user, "APPLOgEDitScreen Back btn !!!");
 				_this.state.start('appLoginScreen', true, false, _this.app_Mode, _this.user.language);
 			}, _this);
 
@@ -281,8 +285,8 @@ Game.appLoginEditScreen.prototype = {
 			_this.regandstsrtBtn.inputEnabled = true;
 			_this.regandstsrtBtn.events.onInputDown.add(function () {
 				FirebasePlugin.logEvent("Button_click_start", { Button_click_start: "", item_id: "" });
-				console.log(_this.user,"moving to index 2 !");
-				_this.state.start('index2', true, false, _this.user,false,_this.app_Mode);
+				console.log(_this.user, "moving to index 2 !");
+				_this.state.start('index2', true, false, _this.user, false, _this.app_Mode);
 			}, _this);
 		}
 
