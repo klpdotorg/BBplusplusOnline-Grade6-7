@@ -55,9 +55,9 @@ Game.NS_RN_G8level1.prototype = {
     _this.Ask_Question5 = _this.createAudio("NS_RN_G8_a6");
     _this.Ask_Question6 = _this.createAudio("NS_RN_G8_a2");
 
-    
+
     telInitializer.gameIdInit("NSN_RN_G8", gradeSelected);
-    console.log(gameID,"gameID...");
+    console.log(gameID, "gameID...");
   },
 
   create: function (game) {
@@ -269,7 +269,7 @@ Game.NS_RN_G8level1.prototype = {
     _this.Initial_randomizing();
     _this.DisplayQuestion();
     //_this.initialScreenDisplay();
-    _this.questionid =1;
+    _this.questionid = 1;
     console.log("inside get question.....");
   },
 
@@ -451,61 +451,52 @@ Game.NS_RN_G8level1.prototype = {
     return distance;
   },
 
+
   showtank1ClickigDemo: function () {
-    console.log("hiiii");
+    console.log("hiiii")
     _this.hand_flag = 1;
     //* This will show the demo for clicking the bowl
-    _this.hand = _this.add.image(470, 310, "hand");
+    _this.hand = _this.add.image(470, 310, 'hand');
     _this.hand.scale.setTo(0.65);
     _this.time.events.add(400, () => {
-      _this.hand.scale.setTo(0.6);
-      _this.time.events.add(400, () => {
-        _this.hand.scale.setTo(0.65);
-        _this.time.events.add(450, () => {
-          //_this.hand.destroy();
-          _this.tweenHand = _this.add
-            .tween(_this.hand)
-            .to({ x: 540, y: 310 }, 700, Phaser.Easing.Linear.None, true);
-          _this.tweenHand.onComplete.add(function () {
-            _this.hand.scale.setTo(0.6);
-            _this.time.events.add(400, () => {
-              _this.hand.scale.setTo(0.65);
-              _this.time.events.add(470, () => {
-                _this.tweenHand1 = _this.add
-                  .tween(_this.hand)
-                  .to({ x: 590, y: 310 }, 700, Phaser.Easing.Linear.None, true);
-                _this.tweenHand1.onComplete.add(function () {
-                  _this.hand.scale.setTo(0.6);
-                  _this.time.events.add(400, () => {
-                    _this.hand.scale.setTo(0.65);
-                    _this.time.events.add(470, () => {
-                      _this.tweenHand2 = _this.add
-                        .tween(_this.hand)
-                        .to(
-                          { x: 650, y: 310 },
-                          700,
-                          Phaser.Easing.Linear.None,
-                          true
-                        );
-                      _this.tweenHand2.onComplete.add(function () {
-                        _this.hand.scale.setTo(0.6);
-                        _this.time.events.add(400, () => {
-                          _this.hand.scale.setTo(0.65);
-                          _this.time.events.add(500, () => {
-                            _this.hand.destroy();
-                          });
-                        });
-                      });
-                    });
-                  });
-                });
-              });
-            });
-          });
-        });
-      });
-    });
-  },
+        _this.hand.scale.setTo(0.6);
+        _this.time.events.add(400, () => {
+            _this.hand.scale.setTo(0.65);
+            _this.time.events.add(450, () => {
+                //_this.hand.destroy();
+                _this.tweenHand = _this.add.tween(_this.hand).to({ x: 540, y: 310 }, 1260, Phaser.Easing.Linear.None, true);
+                _this.tweenHand.onComplete.add(function () {
+                    _this.hand.scale.setTo(0.6);
+                    _this.time.events.add(400, () => {
+                        _this.hand.scale.setTo(0.65);
+                        _this.time.events.add(470, () => {
+                            _this.tweenHand1 = _this.add.tween(_this.hand).to({ x: 590, y: 310 }, 1260, Phaser.Easing.Linear.None, true);
+                            _this.tweenHand1.onComplete.add(function () {
+                                _this.hand.scale.setTo(0.6);
+                                _this.time.events.add(400, () => {
+                                    _this.hand.scale.setTo(0.65);
+                                    _this.time.events.add(470, () => {
+                                        _this.tweenHand2 = _this.add.tween(_this.hand).to({ x: 650, y: 310 }, 1260, Phaser.Easing.Linear.None, true);
+                                        _this.tweenHand2.onComplete.add(function () {
+                                            _this.hand.scale.setTo(0.6);
+                                            _this.time.events.add(400, () => {
+                                                _this.hand.scale.setTo(0.65);
+                                                _this.time.events.add(500, () => {
+                                                    _this.hand.destroy();
+                                                })
+                                            })
+                                        })
+
+                                    })
+                                })
+                            })
+                        })
+                    })
+                })
+            })
+        })
+    })
+},
 
   initialScreenDisplay: function () {
     //* Part B initial screen
@@ -1922,7 +1913,7 @@ Game.NS_RN_G8level1.prototype = {
       _this.timer1.stop();
       _this.timer1 = null;
       _this.time.events.add(1000, function () {
-        _this.state.start('score', true, false,gameID,_this.microConcepts);
+        _this.state.start('score', true, false, gameID, _this.microConcepts);
       });
     }
   },
@@ -1940,7 +1931,7 @@ Game.NS_RN_G8level1.prototype = {
       _this.timer1.stop();
       _this.timer1 = null;
       _this.time.events.add(1000, function () {
-        _this.state.start('score', true, false,gameID,_this.microConcepts);
+        _this.state.start('score', true, false, gameID, _this.microConcepts);
       });
     }
   },
@@ -1973,12 +1964,12 @@ Game.NS_RN_G8level1.prototype = {
   starActions: function (target) {
 
     _this.microConcepts = "Number SystemsG8";
-    _this.sceneCount ++;
-    _this.noofAttempts ++;
+    _this.sceneCount++;
+    _this.noofAttempts++;
     telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
-    _this.noofAttempts =0;
-    _this.AnsTimerCount =0;
+    _this.noofAttempts = 0;
+    _this.AnsTimerCount = 0;
     console.log("starActions");
     // _this.celebrationSound.play();
     starAnim = _this.starsGroup.getChildAt(_this.numberOfQuestions);

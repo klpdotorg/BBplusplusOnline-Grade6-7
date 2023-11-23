@@ -432,12 +432,12 @@ Game.score.prototype = {
 				//*Add NS Cube games preloader here
 				case 'NSN_RN_G8': _this.state.start('preloader_NS_DIN_G8', true, false);
 					break;
-				case 'NSN_DIN_G8': _this.state.start('preloader_NS_DIN_G8', true, false);
+				case 'NSN_DIN_G8': _this.state.start('preloader_NS_SQ_CUB_G8', true, false);
 					break;
-				// case 'NSN_DIN_G8': _this.state.start('preloader_NS_RN_G8', true, false);
-				// 	break;
+				case 'NSN_SQ_CUB_G8': _this.state.start('preloader_NS_RN_G8', true, false);
+					break;
 			}
-		}
+		} 
 	},
 
 	getCurrentGame: function () {
@@ -705,8 +705,8 @@ Game.score.prototype = {
 				break;
 			case 'NSN_DIN_G8': _this.state.start('preloader_NS_DIN_G8', true, false);
 				break;
-			// case 'NSN_SQ_CUB_G8': _this.state.start('preloader_NS_DIN_G8', true, false);
-			// 	break;
+			case 'NSN_SQ_CUB_G8': _this.state.start('preloader_NS_SQ_CUB_G8', true, false);
+				break;
 		}
 	},
 
