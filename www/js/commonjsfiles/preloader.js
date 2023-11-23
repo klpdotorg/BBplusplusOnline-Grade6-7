@@ -16,10 +16,9 @@ Game.preloader.prototype = {
         _this = this;
 
         // var levelParameter = this.game.myParameter.level;
-        _this.app_mode = window.app_mode;
+       // _this.app_mode = window.app_mode; 
 
         // console.log(_this.game.app_mode,"_this.game.app_mode");
-        console.log(_this.app_mode);
 
         _this.bg = _this.add.tileSprite(0, 0, _this.world.width, _this.world.height, 'loadingBg1');
 

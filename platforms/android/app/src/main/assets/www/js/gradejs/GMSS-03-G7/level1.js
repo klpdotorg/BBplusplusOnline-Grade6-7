@@ -1933,6 +1933,7 @@ Game.GMSS_03_G7level1.prototype =
             }
             else {
                 _this.time.events.add(800, () => {
+                    _this.speakerbtn.inputEnabled = true;
                     _this.InitialScreen();
                    // _this.getQuestion();
                 });

@@ -757,7 +757,7 @@ Game.GMM_03_G8level1.prototype =
             });
                 break;
 
-            case 'Marathi': _this.time.events.add(8000, function () {
+            case 'Marathi': _this.time.events.add(9000, function () {
                 _this.initialScreenLoad();
                 _this.hintBtn.inputEnabled = true;
                 _this.hintBtn.input.useHandCursor = true;

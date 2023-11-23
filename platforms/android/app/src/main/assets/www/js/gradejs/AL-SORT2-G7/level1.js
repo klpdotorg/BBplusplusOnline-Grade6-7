@@ -236,7 +236,7 @@ Game.AL_SORT2_G7level1.prototype =
 
             if (_this.minutes < 10) {
                 _this.minutes = _this.minutes + 1;
-                _this.seconds = 00;
+                _this.seconds = 0o0;
             }
             else {
                 _this.minutes = _this.minutes + 1;
@@ -303,38 +303,38 @@ Game.AL_SORT2_G7level1.prototype =
         //_this.test123();
 
         //pREV CODE //
-        // if (_this.numberOfQuestions == 0) {
-        //     _this.speakerbtn.inputEnabled = false;
-        //     _this.Ask_Question1.play();
-        //     _this.Ask_Question1.addEventListener('ended', () => {
-        //         if (_this.hand_flag == 1) _this.showtank1ClickigDemo2();
-        //         _this.Ask_Question2.play();
-        //     });
-        // }
-        // _this.Ask_Question2.addEventListener('ended', () => {
-        //     _this.speakerbtn.inputEnabled = true;
-
-        //     if (_this.called_me == false) _this.startDisplayFruits();
-
-        // });
-        ///
-        ///mODIFIED ON 30-10-2023
         if (_this.numberOfQuestions == 0) {
             _this.speakerbtn.inputEnabled = false;
             _this.Ask_Question1.play();
-            // _this.Ask_Question1.addEventListener('ended', () => {
-            //     if (_this.hand_flag == 1) _this.showtank1ClickigDemo2();
-            //     _this.Ask_Question2.play();
-            // });
-            _this.time.events.add(6750, function () {
+            _this.Ask_Question1.addEventListener('ended', () => {
                 if (_this.hand_flag == 1) _this.showtank1ClickigDemo2();
                 _this.Ask_Question2.play();
             });
         }
-        _this.time.events.add(19000, function () {
+        _this.Ask_Question2.addEventListener('ended', () => {
             _this.speakerbtn.inputEnabled = true;
+
             if (_this.called_me == false) _this.startDisplayFruits();
+
         });
+        ///
+        ///mODIFIED ON 30-10-2023
+        // if (_this.numberOfQuestions == 0) {
+        //     _this.speakerbtn.inputEnabled = false;
+        //     _this.Ask_Question1.play();
+        //     // _this.Ask_Question1.addEventListener('ended', () => {
+        //     //     if (_this.hand_flag == 1) _this.showtank1ClickigDemo2();
+        //     //     _this.Ask_Question2.play();
+        //     // });
+        //     _this.time.events.add(6750, function () {
+        //         if (_this.hand_flag == 1) _this.showtank1ClickigDemo2();
+        //         _this.Ask_Question2.play();
+        //     });
+        // }
+        // _this.time.events.add(19000, function () {
+        //     _this.speakerbtn.inputEnabled = true;
+        //     if (_this.called_me == false) _this.startDisplayFruits();
+        // });
         _this.questionid = 1;
     },
 
