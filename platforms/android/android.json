@@ -10,11 +10,37 @@
           "/manifest/uses-permission": [
             {
               "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
+              "count": 2,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "com.google.android.gms.permission.AD_ID",
+                "tools:node": "remove"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"com.google.android.gms.permission.AD_ID\" tools:node=\"remove\" />",
               "count": 1,
               "mode": "merge",
               "id": "config.xml",
               "oldAttrib": {
-                "android:name": "android.permission.READ_PHONE_STATE"
+                "android:name": "android.permission.READ_PHONE_STATE",
+                "tools:node": "remove"
+              }
+            }
+          ],
+          "/manifest": [
+            {
+              "xml": "<manifest xmlns:tools=\"http://schemas.android.com/tools\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:hardwareAccelerated": "true",
+                "android:versionCode": "11",
+                "android:versionName": "1.1.0",
+                "xmlns:android": "http://schemas.android.com/apk/res/android",
+                "xmlns:tools": "http://schemas.android.com/tools"
               }
             }
           ],
