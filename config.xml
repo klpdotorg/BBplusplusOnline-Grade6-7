@@ -28,7 +28,7 @@
         <icon density="xhdpi" src="assets/xhdpi/ic_bbpp_logo.png" />
         <icon density="xxhdpi" src="assets/xxhdpi/ic_bbpp_logo.png" />
         <allow-intent href="market:*" />
-        <preference name="Fullscreen" value="true" />
+        <preference name="Fullscreen" value="true" /> 
         <preference name="Orientation" value="portrait" />
         <preference name="AndroidInsecureFileModeEnabled" value="true" />
         <resource-file src="google-services.json" target="app/google-services.json" />
