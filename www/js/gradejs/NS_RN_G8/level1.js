@@ -469,7 +469,7 @@ Game.NS_RN_G8level1.prototype = {
     let distance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
     return distance;
   },
-  
+
   showtank1ClickigDemo: function () {
     console.log("hiiii")
     _this.hand_flag = 1;
@@ -480,41 +480,74 @@ Game.NS_RN_G8level1.prototype = {
       _this.hand.scale.setTo(0.6);
       _this.time.events.add(400, () => {
         _this.hand.scale.setTo(0.65);
-        _this.time.events.add(450, () => {
-          //_this.hand.destroy();
-          _this.tweenHand = _this.add.tween(_this.hand).to({ x: 540, y: 310 }, 1260, Phaser.Easing.Linear.None, true);
-          _this.tweenHand.onComplete.add(function () {
-            _this.hand.scale.setTo(0.6);
-            _this.time.events.add(400, () => {
-              _this.hand.scale.setTo(0.65);
-              _this.time.events.add(470, () => {
-                _this.tweenHand1 = _this.add.tween(_this.hand).to({ x: 590, y: 310 }, 1260, Phaser.Easing.Linear.None, true);
-                _this.tweenHand1.onComplete.add(function () {
-                  _this.hand.scale.setTo(0.6);
-                  _this.time.events.add(400, () => {
-                    _this.hand.scale.setTo(0.65);
-                    _this.time.events.add(470, () => {
-                      _this.tweenHand2 = _this.add.tween(_this.hand).to({ x: 650, y: 310 }, 1260, Phaser.Easing.Linear.None, true);
-                      _this.tweenHand2.onComplete.add(function () {
-                        _this.hand.scale.setTo(0.6);
-                        _this.time.events.add(400, () => {
-                          _this.hand.scale.setTo(0.65);
-                          _this.time.events.add(500, () => {
-                            _this.hand.destroy();
-                          })
-                        })
-                      })
+        // _this.time.events.add(450, () => {
+        //   //_this.hand.destroy();
+        //   _this.tweenHand = _this.add.tween(_this.hand).to({ x: 540, y: 310 }, 1260, Phaser.Easing.Linear.None, true);
+        //   _this.tweenHand.onComplete.add(function () {
+        //     _this.hand.scale.setTo(0.6);
+        //     _this.time.events.add(400, () => {
+        //       _this.hand.scale.setTo(0.65);
+        //       _this.time.events.add(470, () => {
+        //         _this.tweenHand1 = _this.add.tween(_this.hand).to({ x: 590, y: 310 }, 1260, Phaser.Easing.Linear.None, true);
+        //         _this.tweenHand1.onComplete.add(function () {
+        //           _this.hand.scale.setTo(0.6);
+        //           _this.time.events.add(400, () => {
+        //             _this.hand.scale.setTo(0.65);
+        //             _this.time.events.add(470, () => {
+        //               _this.tweenHand2 = _this.add.tween(_this.hand).to({ x: 650, y: 310 }, 1260, Phaser.Easing.Linear.None, true);
+        //               _this.tweenHand2.onComplete.add(function () {
+        //                 _this.hand.scale.setTo(0.6);
+        //                 _this.time.events.add(400, () => {
+        //                   _this.hand.scale.setTo(0.65);
+        //                   _this.time.events.add(500, () => {
+        //                     _this.hand.destroy();
+        //                   })
+        //                 })
+        //               })
 
-                    })
-                  })
-                })
-              })
-            })
-          })
-        })
+        //             })
+        //           })
+        //         })
+        //       })
+        //     })
+        //   })
+        // })
       })
     })
   },
+
+  showtank2ClickigDemo: function () {
+    _this.tweenHand = _this.add.tween(_this.hand).to({ x: 540, y: 310 }, 1260, Phaser.Easing.Linear.None, true);
+    _this.tweenHand.onComplete.add(function () {
+      _this.hand.scale.setTo(0.6);
+      _this.time.events.add(400, () => {
+        _this.hand.scale.setTo(0.65);
+      });
+    });
+  },
+
+  showtank3ClickigDemo: function () {
+
+    _this.tweenHand1 = _this.add.tween(_this.hand).to({ x: 590, y: 310 }, 1260, Phaser.Easing.Linear.None, true);
+    _this.tweenHand1.onComplete.add(function () {
+      _this.hand.scale.setTo(0.6);
+      _this.time.events.add(400, () => {
+        _this.hand.scale.setTo(0.65);
+      });
+    });
+  },
+
+  showtank4ClickigDemo: function () {
+
+    _this.tweenHand2 = _this.add.tween(_this.hand).to({ x: 650, y: 310 }, 1200, Phaser.Easing.Linear.None, true);
+    _this.tweenHand2.onComplete.add(function () {
+      _this.hand.scale.setTo(0.6);
+      _this.time.events.add(400, () => {
+        _this.hand.scale.setTo(0.65);
+      });
+    });
+  },
+
   initialScreenDisplay: function () {
     //* Part B initial screen
     _this.q_count = 0;
@@ -550,13 +583,19 @@ Game.NS_RN_G8level1.prototype = {
         if (_this.count1 == 3 && _this.q_count == 0) _this.Ask_Question2.play();
       });
       _this.Ask_Question2.addEventListener("ended", function () {
+        _this.showtank2ClickigDemo();
         if (_this.count1 == 3 && _this.q_count == 0) _this.Ask_Question3.play();
       });
       _this.Ask_Question3.addEventListener("ended", function () {
+        _this.showtank3ClickigDemo();
         if (_this.count1 == 3 && _this.q_count == 0) _this.Ask_Question4.play();
       });
       _this.Ask_Question4.addEventListener("ended", function () {
+        _this.showtank4ClickigDemo();
         if (_this.count1 == 3 && _this.q_count == 0) _this.Ask_Question5.play();
+      });
+      _this.Ask_Question5.addEventListener("ended", function () {
+        _this.hand.destroy();
       });
     }
 
