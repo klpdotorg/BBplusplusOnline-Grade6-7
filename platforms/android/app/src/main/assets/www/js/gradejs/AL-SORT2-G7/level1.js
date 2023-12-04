@@ -18,7 +18,7 @@ Game.AL_SORT2_G7level1.prototype =
         }
         else //console.log("Language selected: " + _this.languageSelected);
 
-        _this.clickSound = document.createElement('audio');
+            _this.clickSound = document.createElement('audio');
         _this.clickSoundsrc = document.createElement('source');
         _this.clickSoundsrc.setAttribute("src", window.baseUrl + "sounds/ClickSound.mp3");
         _this.clickSound.appendChild(_this.clickSoundsrc);
@@ -144,7 +144,8 @@ Game.AL_SORT2_G7level1.prototype =
             _this.time.events.removeAll();
             _this.backbtn.events.onInputDown.removeAll();
             _this.time.events.add(50, function () {
-                _this.state.start('grade7Algebra', true, false);            });
+                _this.state.start('grade7Algebra', true, false);
+            });
         });
 
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
@@ -191,15 +192,15 @@ Game.AL_SORT2_G7level1.prototype =
         // _this.hintBtn.inputEnabled = true;
         // _this.hintBtn.input.useHandCursor = true;
 
-     //   _this.hintBtn.events.onInputDown.add(function () {
-            //console.log("inside hintbutton function");
-            //* show the demo video
-            // _this.hintBtn.inputEnabled = false;
-            // _this.hintBtn.input.useHandCursor = false;
-            // _this.time.events.add(1, function () {
-            //     //console.log(_this.hintBtn.inputEnabled, "status of hintBtn");
-            //     _this.ViewDemoVideo();
-            // });
+        //   _this.hintBtn.events.onInputDown.add(function () {
+        //console.log("inside hintbutton function");
+        //* show the demo video
+        // _this.hintBtn.inputEnabled = false;
+        // _this.hintBtn.input.useHandCursor = false;
+        // _this.time.events.add(1, function () {
+        //     //console.log(_this.hintBtn.inputEnabled, "status of hintBtn");
+        //     _this.ViewDemoVideo();
+        // });
 
         //});
 
@@ -339,6 +340,25 @@ Game.AL_SORT2_G7level1.prototype =
     },
 
     showtank1ClickigDemo2: function () {
+        if(_this.languageSelected == 'Hindi')
+        {
+            var t1 = 2000;
+            var t2 = 2000;
+            var t3 = 700;
+        }
+       else if(_this.languageSelected == 'Kannada' || _this.languageSelected == 'Marathi')
+        {
+            var t1 = 3000;
+            var t2 = 3000;
+            //  var t3 = 3000;//ENG
+            var t3 = 3000;
+        }else{
+            var t1 = 2000;
+            var t2 = 2000;
+            //  var t3 = 3000;//ENG
+            var t3 = 2000;
+        }
+      
         _this.hand_flag = 0;
         _this.time.events.add(500, function () {
             _this.hand = _this.add.image(130, 450, 'hand');
@@ -347,7 +367,7 @@ Game.AL_SORT2_G7level1.prototype =
                 _this.hand.scale.setTo(0.6);
                 _this.time.events.add(400, () => {
                     _this.hand.scale.setTo(0.65);
-                    _this.time.events.add(600, () => {
+                    _this.time.events.add(t1, () => {
                         _this.tweenHand = _this.add.tween(_this.hand);
                         _this.tweenHand.to({ x: 350, y: 450 }, 700, 'Linear', true, 0);
                         _this.tweenHand.start();
@@ -357,14 +377,14 @@ Game.AL_SORT2_G7level1.prototype =
                             _this.hand.scale.setTo(0.6);
                             _this.time.events.add(600, () => {
                                 _this.hand.scale.setTo(0.65);
-                                _this.time.events.add(500, () => {
+                                _this.time.events.add(t2, () => {
                                     _this.tweenHand1 = _this.add.tween(_this.hand);
                                     _this.tweenHand1.to({ x: 570, y: 450 }, 700, 'Linear', true, 0);
                                     _this.tweenHand1.start();
 
                                     _this.tweenHand1.onComplete.add(function () {
                                         _this.hand.scale.setTo(0.6);
-                                        _this.time.events.add(900, () => {
+                                        _this.time.events.add(t3, () => {
                                             _this.hand.scale.setTo(0.65);
                                             _this.hand.destroy();
                                         })
@@ -960,7 +980,7 @@ Game.AL_SORT2_G7level1.prototype =
                             _this.basket1Y = 360;
                             _this.basket2Y = 360;
                             _this.basket3Y = 360;
-                            _this.state.start('score', true, false,gameID, _this.microConcepts);
+                            _this.state.start('score', true, false, gameID, _this.microConcepts);
                         }
                         else {
                             //  _this.QuestionFormation();
@@ -1037,7 +1057,7 @@ Game.AL_SORT2_G7level1.prototype =
                     _this.time.events.add(4000, () => {
                         // _this.clearAll();
                         if (_this.numberOfQuestions == 6) {
-                            _this.state.start('score', true, false,gameID, _this.microConcepts);
+                            _this.state.start('score', true, false, gameID, _this.microConcepts);
                         }
                         else {
                             // _this.QuestionFormation();
@@ -1113,7 +1133,7 @@ Game.AL_SORT2_G7level1.prototype =
                     _this.time.events.add(4000, () => {
                         // _this.clearAll();
                         if (_this.numberOfQuestions == 6) {
-                            _this.state.start('score', true, false,gameID, _this.microConcepts);
+                            _this.state.start('score', true, false, gameID, _this.microConcepts);
                         }
                         else {
                             //  _this.QuestionFormation();
