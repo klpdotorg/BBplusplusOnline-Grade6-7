@@ -1493,12 +1493,25 @@ Game.GMLA_01_G7level1.prototype =
 
         _this.demoAudio1.play();
 
+        // _this.q1Timer = setTimeout(function ()    //* q1 js timer to play q1 after 5 seconds.
+        // {
+        //     console.log("inside q1sound.....")
+        //     clearTimeout(_this.q1Timer);         //* clear the time once its used.
+        //     _this.q1Sound.play();
+        // }, 6200);
+        if (_this.languageSelected === 'Odiya') {
+            var t1 = 8300;
+        }
+        else {
+            var t1 = 6200;
+        }
+
         _this.q1Timer = setTimeout(function ()    //* q1 js timer to play q1 after 5 seconds.
         {
             console.log("inside q1sound.....")
             clearTimeout(_this.q1Timer);         //* clear the time once its used.
             _this.q1Sound.play();
-        }, 6200);
+        }, t1);//6200
 
         _this.q2Timer = setTimeout(function ()    //* q2 js timer to play q2 after 2 min.
         {

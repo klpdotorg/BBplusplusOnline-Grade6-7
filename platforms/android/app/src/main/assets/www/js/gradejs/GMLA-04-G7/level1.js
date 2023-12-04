@@ -2511,13 +2511,20 @@ Game.GMLA_04_G7level1.prototype =
 
     playQuestion1: function () {
 
-        if (_this.languageSelected === 'Marathi') {
-            var timer1 = 13000;
-            var timer2 = 27000;
-        } else {
-            var timer1 = 7800;
-            var timer2 = 13000;
-        }
+        // if (_this.languageSelected === 'Marathi') {
+        //     var timer1 = 13000;
+        //     var timer2 = 27000;
+        // } else {
+        //     var timer1 = 7800;
+        //     var timer2 = 13000;
+        // }
+        if(_this.languageSelected === 'Marathi' || _this.languageSelected === 'Odiya'){
+            var  timer1 = 13000;
+            var  timer2 = 27000;
+          }else{
+              var  timer1 = 7800;
+              var  timer2 = 13000;
+          }
 
         _this.q1Sound.play();
         // _this.Ask_Question13.play();

@@ -1010,7 +1010,14 @@ Game.GMLA_05_G7level1.prototype =
             _this.strawberry_9.alpha = 0;
             _this.strawberry_10.alpha = 0;
         });
-        _this.time.events.add(7000, () => {
+        if(_this.languageSelected == 'Marathi' || _this.languageSelected == 'Odiya'){
+            var t1 = 9000;
+            console.log(t1,"T1 !");
+        }else{
+            var t1 = 7000;
+        }
+
+        _this.time.events.add(t1, () => {
             if (_this.count1 < 4) {
                 _this.Question_flag = 1;
                 if (_this.count1 == 0) {
@@ -1395,7 +1402,14 @@ Game.GMLA_05_G7level1.prototype =
             _this.sausage_3.alpha = 0;
         });
 
-        _this.time.events.add(7000, () => {
+        if(_this.languageSelected == 'Marathi' || _this.languageSelected == 'Odiya'){
+            var t1 = 9000;
+            console.log(t1,"T1 !");
+        }else{
+            var t1 = 7000;
+        }
+
+        _this.time.events.add(t1, () => {
             if (_this.count1 < 4) {
                 _this.Question_flag = 1;
                 if (_this.count1 == 0) {
@@ -1740,7 +1754,14 @@ Game.GMLA_05_G7level1.prototype =
             _this.donut.alpha = 0;
         });
 
-        _this.time.events.add(7000, () => {
+        if(_this.languageSelected == 'Marathi' || _this.languageSelected == 'Odiya'){
+            var t1 = 9000;
+            console.log(t1,"T1 !");
+        }else{
+            var t1 = 7000;
+        }
+
+        _this.time.events.add(t1, () => {
             if (_this.count1 < 4) {
                 _this.Question_flag = 1;
                 if (_this.count1 == 0) {
@@ -2094,7 +2115,14 @@ Game.GMLA_05_G7level1.prototype =
                 _this.cashew.alpha = 0;
                 _this.apple.alpha = 0;
             });
-            _this.time.events.add(7000, () => {
+            if(_this.languageSelected == 'Marathi' || _this.languageSelected == 'Odiya'){
+                var t1 = 9000;
+                console.log(t1,"T1 !");
+            }else{
+                var t1 = 7000;
+            }
+    
+            _this.time.events.add(t1, () => {
                 if (_this.count1 < 4) {
                     _this.Question_flag = 1;
                     if (_this.count1 == 0) {
@@ -2398,7 +2426,14 @@ Game.GMLA_05_G7level1.prototype =
                 _this.cashew.alpha = 0;
                 _this.apple.alpha = 0;
             });
-            _this.time.events.add(7000, () => {
+            if(_this.languageSelected == 'Marathi' || _this.languageSelected == 'Odiya'){
+                var t1 = 9000;
+                console.log(t1,"T1 !");
+            }else{
+                var t1 = 7000;
+            }
+    
+            _this.time.events.add(t1, () => {
                 if (_this.count1 < 4) {
                     _this.Question_flag = 1;
                     if (_this.count1 == 0) {
