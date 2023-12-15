@@ -1402,7 +1402,7 @@ Game.GMLA_05_G7level1.prototype =
             _this.sausage_3.alpha = 0;
         });
 
-        if(_this.languageSelected == 'Marathi' || _this.languageSelected == 'Odiya'){
+        if(_this.languageSelected == 'Marathi' || _this.languageSelected == 'Odiya' || _this.languageSelected == 'Tamil'){
             var t1 = 9000;
             console.log(t1,"T1 !");
         }else{
@@ -1754,7 +1754,7 @@ Game.GMLA_05_G7level1.prototype =
             _this.donut.alpha = 0;
         });
 
-        if(_this.languageSelected == 'Marathi' || _this.languageSelected == 'Odiya'){
+        if(_this.languageSelected == 'Marathi' || _this.languageSelected == 'Odiya'|| _this.languageSelected == 'Tamil'){
             var t1 = 9000;
             console.log(t1,"T1 !");
         }else{
@@ -2115,7 +2115,7 @@ Game.GMLA_05_G7level1.prototype =
                 _this.cashew.alpha = 0;
                 _this.apple.alpha = 0;
             });
-            if(_this.languageSelected == 'Marathi' || _this.languageSelected == 'Odiya'){
+            if(_this.languageSelected == 'Marathi' || _this.languageSelected == 'Odiya' || _this.languageSelected == 'Tamil'){
                 var t1 = 9000;
                 console.log(t1,"T1 !");
             }else{
@@ -2426,7 +2426,7 @@ Game.GMLA_05_G7level1.prototype =
                 _this.cashew.alpha = 0;
                 _this.apple.alpha = 0;
             });
-            if(_this.languageSelected == 'Marathi' || _this.languageSelected == 'Odiya'){
+            if(_this.languageSelected == 'Marathi' || _this.languageSelected == 'Odiya' || _this.languageSelected == 'Tamil'){
                 var t1 = 9000;
                 console.log(t1,"T1 !");
             }else{

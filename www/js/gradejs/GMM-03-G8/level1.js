@@ -772,7 +772,7 @@ Game.GMM_03_G8level1.prototype =
             });
                 break;
 
-            case 'Tamil': _this.time.events.add(8000, function () {
+            case 'Tamil': _this.time.events.add(9000, function () {
                 _this.initialScreenLoad();
                 _this.hintBtn.inputEnabled = true;
                 _this.hintBtn.input.useHandCursor = true;
@@ -2507,7 +2507,7 @@ Game.GMM_03_G8level1.prototype =
                 break;
             case 'Odiya': timer = 8000;
                 break;
-            case 'Tamil': timer = 8000;
+            case 'Tamil': timer = 9000;
                 break;
         }
 
