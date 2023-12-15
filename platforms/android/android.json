@@ -9,22 +9,22 @@
         "parents": {
           "/manifest/uses-permission": [
             {
-              "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
+              "xml": "<uses-permission android:name=\"com.google.android.gms.permission.AD_ID\" tools:node=\"remove\" />",
               "count": 2,
               "mode": "merge",
               "id": "config.xml",
               "oldAttrib": {
-                "android:name": "com.google.android.gms.permission.AD_ID",
+                "android:name": "android.permission.READ_PHONE_STATE",
                 "tools:node": "remove"
               }
             },
             {
-              "xml": "<uses-permission android:name=\"com.google.android.gms.permission.AD_ID\" tools:node=\"remove\" />",
+              "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
               "count": 1,
               "mode": "merge",
               "id": "config.xml",
               "oldAttrib": {
-                "android:name": "android.permission.READ_PHONE_STATE",
+                "android:name": "com.google.android.gms.permission.AD_ID",
                 "tools:node": "remove"
               }
             }
@@ -37,8 +37,8 @@
               "id": "config.xml",
               "oldAttrib": {
                 "android:hardwareAccelerated": "true",
-                "android:versionCode": "12",
-                "android:versionName": "1.1.1",
+                "android:versionCode": "13",
+                "android:versionName": "1.1.2",
                 "package": "com.Akshara.BBplusplus",
                 "xmlns:android": "http://schemas.android.com/apk/res/android",
                 "xmlns:tools": "http://schemas.android.com/tools"
