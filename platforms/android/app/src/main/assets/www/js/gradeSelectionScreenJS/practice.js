@@ -209,7 +209,7 @@ Game.practiceModegradeSelectionScreen.prototype = {
 
 			}, _this);
 
-			this.gameProgressBtn = game.add.image(870, 18, 'userProgressIcon');
+			this.gameProgressBtn = game.add.image(820, 18, 'userProgressIcon');//870, 18,
 			this.gameProgressBtn.anchor.setTo(0.5);
 			this.gameProgressBtn.scale.setTo(0.8);
 			this.gameProgressBtn.inputEnabled = true;
@@ -225,7 +225,7 @@ Game.practiceModegradeSelectionScreen.prototype = {
 			}, this);
 
 
-			this.gameModeShareBtn = game.add.image(920, 18, 'shareIcon');
+			this.gameModeShareBtn = game.add.image(870, 18, 'shareIcon');//920, 18,
 			this.gameModeShareBtn.anchor.setTo(0.5);
 			this.gameModeShareBtn.scale.setTo(0.75);
 			this.gameModeShareBtn.inputEnabled = true;
@@ -246,13 +246,13 @@ Game.practiceModegradeSelectionScreen.prototype = {
 			// this.helpIcon.anchor.setTo(0.5);
 			// this.helpIcon.inputEnabled = true;
 			// this.helpIcon.input.useHandCursor = true;
-			// this.helpIcon.events.onInputDown.add(function()
-			// {
-			// 	this.clickSound = this.add.audio('ClickSound');
-			// 	this.clickSound.play();
-			// 	_this.scale.forceOrientation(false, true);
-			// 	nativeApp.playHelp(this,"practiceModegradeSelectionScreen");
-			// },this);
+			// // this.helpIcon.events.onInputDown.add(function()
+			// // {
+			// // 	this.clickSound = this.add.audio('ClickSound');
+			// // 	this.clickSound.play();
+			// // 	_this.scale.forceOrientation(false, true);
+			// // 	nativeApp.playHelp(this,"practiceModegradeSelectionScreen");
+			// // },this);
 
 			//adding grade clouds
 			_this.grade6Cloud = _this.add.sprite(220, 180, 'gradeCloud');

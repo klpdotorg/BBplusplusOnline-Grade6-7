@@ -63,7 +63,7 @@ Game.appLoginEditScreen.prototype = {
 		// ["Odiya.zip", 40129117], ["Gujarati.zip", 31882078], ["questionSounds.zip", 162758079]];
 
 		_this.zipFiles = [["Assets1.zip", 565373], ["Assets2.zip", 25572815], ["Assets4.zip", 66105124], ["EnglishquestionSounds.zip", 29272691], ["HINquestionSounds.zip", 29272691],
-		["KANquestionSounds.zip", 29272691], ["ODIquestionSounds.zip", 48682701], ["MARquestionSounds.zip", 39766797], ["TMquestionSounds.zip", 30783494], ["sounds.zip", 3683747]];
+		["KANquestionSounds.zip", 29272691], ["ODIquestionSounds.zip", 48682701], ["MARquestionSounds.zip", 39766797], ["TMquestionSounds.zip", 30783494], ["sounds.zip", 3742800]];
 
 		_this.counter = 0;
 		_this.counter1 = 0;
