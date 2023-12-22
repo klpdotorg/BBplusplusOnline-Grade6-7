@@ -65,27 +65,27 @@ Game.gameModeSelectionScreen.prototype={
 							
 						}
 						
-				this.helpIcon = this.add.image(500,42,'helpIcon');
-    	this.helpIcon.scale.setTo(1);
-    	this.helpIcon.anchor.setTo(0.5);
-		this.helpIcon.inputEnabled = true;
-        		this.helpIcon.input.useHandCursor = true;
-		this.helpIcon.events.onInputDown.add(function()
-        		{
-        			//this.clickSound = this.add.audio('ClickSound');
-                	//this.clickSound.play();
-        			//if(appConfig.cordova && !appConfig.browser)
-        			//{
-						screen.orientation.lock('landscape');
-						AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_FULLSCREEN, null, null);
-						//AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_FULLSCREEN | AndroidFullScreen.SYSTEM_UI_FLAG_LOW_PROFILE, null, null);
+		// 		this.helpIcon = this.add.image(500,42,'helpIcon');
+    	// this.helpIcon.scale.setTo(1);
+    	// this.helpIcon.anchor.setTo(0.5);
+		// this.helpIcon.inputEnabled = true;
+        // 		this.helpIcon.input.useHandCursor = true;
+		// this.helpIcon.events.onInputDown.add(function()
+        // 		{
+        // 			//this.clickSound = this.add.audio('ClickSound');
+        //         	//this.clickSound.play();
+        // 			//if(appConfig.cordova && !appConfig.browser)
+        // 			//{
+		// 				screen.orientation.lock('landscape');
+		// 				AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_FULLSCREEN, null, null);
+		// 				//AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_FULLSCREEN | AndroidFullScreen.SYSTEM_UI_FLAG_LOW_PROFILE, null, null);
 
 						
-						_this.game.scale.setGameSize(960, 540);
-						nativeApp.playHelp(_this,"appLoginScreen");
-        			//}
+		// 				_this.game.scale.setGameSize(960, 540);
+		// 				nativeApp.playHelp(_this,"appLoginScreen");
+        // 			//}
 
-        		},this);
+        // 		},this);
 	},
 
 	checkPermission:function()
