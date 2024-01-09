@@ -586,7 +586,7 @@ Game.NSD_6_G7level1.prototype =
         _this.orangeStripe.scale.setTo(0.9);
 
         _this.yellowStripe = _this.add.sprite(80, 190, 'yellowBox')
-        _this.yellowStripe.scale.setTo(0.4);
+        _this.yellowStripe.scale.setTo(0.4, 0.52);//w,h//0.46
 
         _this.reverse = _this.add.sprite(50, 210, 'reverse');
 
@@ -726,11 +726,11 @@ Game.NSD_6_G7level1.prototype =
         _this.greenStripecpy = _this.add.sprite(37, 184, 'greenBox')
         _this.greenStripecpy.scale.setTo(0.9);
 
-        _this.orangeStripecpy = _this.add.sprite(75, 320, 'orangeBox')
+        _this.orangeStripecpy = _this.add.sprite(75, 340, 'orangeBox')
         _this.orangeStripecpy.scale.setTo(0.9);
 
         _this.yellowStripecpy = _this.add.sprite(80, 190, 'yellowBox')
-        _this.yellowStripecpy.scale.setTo(0.4);
+        _this.yellowStripecpy.scale.setTo(0.4, 0.52);//w,h//0.46
 
         _this.yellowStripecpy.inputEnabled = true;
         _this.yellowStripecpy.input.useHandCursor = true;
@@ -777,7 +777,7 @@ Game.NSD_6_G7level1.prototype =
 
                     if (_this.yellowGrp.children.length < 5) {
                         newBox = _this.add.sprite(_this.lastX + _this.yellowGrp.children.length * 10, 100 + _this.yellowGrp.children.length * 10, 'yellowBox');
-                        newBox.scale.setTo(0.45, 0.52);//0.4
+                        newBox.scale.setTo(0.42, 0.49);//0.45, 0.52//0.4,0.47
                         _this.yellowGrp.add(newBox);
                         _this.snapSound.play();
                     }
@@ -785,7 +785,7 @@ Game.NSD_6_G7level1.prototype =
                 else if (target === _this.greenStripecpy) {
                     if (_this.ggreenGrp.children.length < 9) {
                         newGreenBox = _this.add.sprite(_this.lastX3 + _this.ggreenGrp.children.length * 15, 95, 'greenBox');
-                        newGreenBox.scale.setTo(0.6, 0.55);
+                        newGreenBox.scale.setTo(0.6, 0.5);//0.6, 0.55
                         _this.ggreenGrp.add(newGreenBox);
                         _this.snapSound.play();
                     }
@@ -796,7 +796,7 @@ Game.NSD_6_G7level1.prototype =
 
                     if (_this.yellowGrp2.children.length < 1) {
                         newBox = _this.add.sprite(_this.lastX2 + _this.yellowGrp2.children.length * 10, 100 + _this.yellowGrp2.children.length * 10, 'yellowBox');
-                        newBox.scale.setTo(0.4, 0.47);
+                        newBox.scale.setTo(0.42, 0.49);//0.4, 0.47
                         _this.yellowGrp2.add(newBox);
                         _this.snapSound.play();
                     }
@@ -804,7 +804,7 @@ Game.NSD_6_G7level1.prototype =
                 else if (target === _this.greenStripecpy) {
                     if (_this.ggreenGrp2.children.length < 9) {
                         newGreenBox = _this.add.sprite(_this.lastX4 + _this.ggreenGrp2.children.length * 15, 95, 'greenBox');
-                        newGreenBox.scale.setTo(0.6, 0.5);
+                        newGreenBox.scale.setTo(0.6, 0.5);//0.6, 0.5
                         _this.ggreenGrp2.add(newGreenBox);
                         _this.snapSound.play();
                     }
@@ -815,14 +815,14 @@ Game.NSD_6_G7level1.prototype =
 
     },
 
-    //re arranging the first space yellow part after dragging.
-    reArrangeYellow: function () {
+      //re arranging the first space yellow part after dragging.
+      reArrangeYellow: function () {
         x = _this.yellowGrp.children.length;
         _this.yellowGrp.destroy();
         _this.yellowGrp = _this.add.group();
         for (i = 0; i < x; i++) {
             newBox = _this.add.sprite(_this.lastX + i * 10, 100 + i * 10, 'yellowBox')
-            newBox.scale.setTo(0.45, 0.52);
+            newBox.scale.setTo(0.42, 0.49);//0.45, 0.52
             _this.yellowGrp.add(newBox);
         }
     },
@@ -833,7 +833,7 @@ Game.NSD_6_G7level1.prototype =
         _this.yellowGrp2 = _this.add.group();
         for (i = 0; i < x; i++) {
             newBox = _this.add.sprite(_this.lastX2 + i * 10, 100 + i * 10, 'yellowBox')
-            newBox.scale.setTo(0.4, 0.47);
+            newBox.scale.setTo(0.42, 0.49);//(0.4,0.47);
             _this.yellowGrp2.add(newBox);
         }
     },
@@ -844,7 +844,7 @@ Game.NSD_6_G7level1.prototype =
         _this.ggreenGrp = _this.add.group();
         for (i = 0; i < x; i++) {
             newGreenBox = _this.add.sprite(_this.lastX3 + i * 15, 95, 'greenBox')
-            newGreenBox.scale.setTo(0.6, 0.55);
+            newGreenBox.scale.setTo(0.6, 0.5);//0.6, 0.55
             _this.ggreenGrp.add(newGreenBox);
         }
     },

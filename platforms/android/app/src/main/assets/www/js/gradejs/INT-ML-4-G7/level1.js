@@ -296,7 +296,7 @@ Game.INT_ML4_G7level1.prototype =
         _this.hintBtn.inputEnabled = true;
         _this.hintBtn.input.useHandCursor = true;
         _this.hint_flag = 1;
-        
+
         //edited for baseurl apk
         _this.questionid = 1;
 
@@ -478,9 +478,9 @@ Game.INT_ML4_G7level1.prototype =
         _this.text2.scale.setTo(1.2)
         _this.text2.fill = '#F0000';
 
-        _this.textSign = _this.add.text(113, 30, 'X')
+        _this.textSign = _this.add.text(113, 33, '⨉')
         _this.questionBox.addChild(_this.textSign)
-        _this.textSign.scale.setTo(1.2)
+        // _this.textSign.scale.setTo(1.2)
         _this.textSign.fill = '#FF0000';
 
         if (multiplier[_this.count1] > 9)
@@ -866,11 +866,15 @@ Game.INT_ML4_G7level1.prototype =
         _this.text2.scale.setTo(1.2)
         _this.text2.fill = '#F0000';
 
-        _this.textSign = _this.add.text(113 - 14, 30, 'X')
-        _this.questionBox.addChild(_this.textSign)
-        _this.textSign.scale.setTo(1.2)
-        _this.textSign.fill = '#FF0000';
+        // _this.textSign = _this.add.text(113 - 14, 30, 'X')
+        // _this.questionBox.addChild(_this.textSign)
+        // _this.textSign.scale.setTo(1.2)
+        // _this.textSign.fill = '#FF0000';
 
+        _this.textSign = _this.add.text(113 - 14, 33, '⨉');
+        _this.questionBox.addChild(_this.textSign)
+        // _this.textSign.scale.setTo(1.2)
+        _this.textSign.fill = '#FF0000';
 
         if (multiplier[_this.count1] > 9)
             _this.text4 = _this.add.text(146 - 11, 30, '(+' + multiplier[_this.count1] + ')')

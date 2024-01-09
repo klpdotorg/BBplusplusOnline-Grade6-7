@@ -1043,8 +1043,9 @@ Game.GMLA_05_G7level1.prototype =
 
             }
 
-            _this.exterior_x = _this.add.image(640 - ((185 * _this.sinC) / _this.sinB), 445 - ((185 * _this.sinC) / _this.sinB) - 20, 'close_btn');
-            _this.exterior_x.scale.setTo(0.45);
+            _this.exterior_x = _this.add.image(640 - ((185 * _this.sinC) / _this.sinB), 445 - ((185 * _this.sinC) / _this.sinB) - 20, 'x_Y_and_Z');
+            _this.exterior_x.frame = 0;
+            _this.exterior_x.scale.setTo(0.55);
             _this.watermelonGroup_4.addChild(_this.exterior_x);
             if (_this.count1 > 3) {
                 _this.exterior_x.inputEnabled = true;
@@ -1053,7 +1054,7 @@ Game.GMLA_05_G7level1.prototype =
             }
 
             if (_this.count1 < 4) {
-                _this.interiar_y = _this.add.sprite(475, 445 - ((185 * _this.sinC) / _this.sinB) / 3.4, 'Y_and_Z');
+                _this.interiar_y = _this.add.sprite(475, 445 - ((185 * _this.sinC) / _this.sinB) / 3.4, 'x_Y_and_Z');
                 _this.interiar_y.frame = 1;
                 _this.interiar_y.scale.setTo(0.55);
                 _this.interiar_y.inputEnabled = true;
@@ -1064,19 +1065,19 @@ Game.GMLA_05_G7level1.prototype =
             else {
 
                 if (_this.ywOrder[0] == 1) {
-                    _this.interiar_y = _this.add.sprite(475, 445 - ((185 * _this.sinC) / _this.sinB) / 3.4, 'Y_and_Z');
+                    _this.interiar_y = _this.add.sprite(475, 445 - ((185 * _this.sinC) / _this.sinB) / 3.4, 'x_Y_and_Z');
                     _this.interiar_y.frame = 1;
                     _this.interiar_y.scale.setTo(0.6);
                     _this.watermelonGroup_4.addChild(_this.interiar_y);
                 }
                 if (_this.ywOrder[0] == 2) {
-                    _this.interiar_w = _this.add.sprite(690 - ((185 * _this.sinC) / _this.sinB), 480 - ((185 * _this.sinC) / _this.sinB), 'Y_and_Z');
+                    _this.interiar_w = _this.add.sprite(690 - ((185 * _this.sinC) / _this.sinB), 480 - ((185 * _this.sinC) / _this.sinB), 'x_Y_and_Z');
                     _this.interiar_w.frame = 1;
                     _this.interiar_w.scale.setTo(0.6);
                     _this.watermelonGroup_4.addChild(_this.interiar_w);
                 }
                 if (_this.ywOrder[0] == 3) {
-                    _this.interiar_y = _this.add.sprite(475, 445 - ((185 * _this.sinC) / _this.sinB) / 3.2, 'Y_and_Z');
+                    _this.interiar_y = _this.add.sprite(475, 445 - ((185 * _this.sinC) / _this.sinB) / 3.2, 'x_Y_and_Z');
                     _this.interiar_y.frame = 1;
                     _this.interiar_y.scale.setTo(0.55);
                     _this.interiar_y.inputEnabled = true;
@@ -1087,7 +1088,8 @@ Game.GMLA_05_G7level1.prototype =
             }
 
             if (_this.count1 < 4 || _this.ywOrder[0] == 1 || _this.ywOrder[0] == 2) {
-                _this.interiar_z = _this.add.sprite(630, 405, 'Y_and_Z');
+                _this.interiar_z = _this.add.sprite(630, 405, 'x_Y_and_Z');
+                _this.interiar_z.frame = 2;
                 _this.interiar_z.scale.setTo(0.6);
                 _this.interiar_z.inputEnabled = true;
                 _this.interiar_z.input.useHandCursor = true;
@@ -1095,7 +1097,8 @@ Game.GMLA_05_G7level1.prototype =
                 _this.watermelonGroup_4.addChild(_this.interiar_z);
             }
             else {
-                _this.interiar_z = _this.add.sprite(620 - ((185 * _this.sinV) / _this.sinW), 410 - ((185 * _this.sinV) / _this.sinW), 'Y_and_Z');
+                _this.interiar_z = _this.add.sprite(620 - ((185 * _this.sinV) / _this.sinW), 410 - ((185 * _this.sinV) / _this.sinW), 'x_Y_and_Z');
+                _this.interiar_z.frame = 2;
                 _this.interiar_z.scale.setTo(0.6);
                 _this.watermelonGroup_4.addChild(_this.interiar_z);
             }
@@ -1425,8 +1428,9 @@ Game.GMLA_05_G7level1.prototype =
                 }
             }
 
-            _this.exterior_x = _this.add.image(430 + ((139 * _this.sinC) / _this.sinB) + 10, 405, 'close_btn');
-            _this.exterior_x.scale.setTo(0.37);
+            _this.exterior_x = _this.add.image(430 + ((139 * _this.sinC) / _this.sinB) + 10, 405, 'x_Y_and_Z');
+            _this.exterior_x.frame = 0;
+            _this.exterior_x.scale.setTo(0.45);
             _this.CheeseGroup_4.addChild(_this.exterior_x);
             if (_this.count1 > 3) {
                 _this.exterior_x.inputEnabled = true;
@@ -1435,7 +1439,7 @@ Game.GMLA_05_G7level1.prototype =
             }
 
             if (_this.count1 < 4) {
-                _this.interiar_y = _this.add.sprite(475, 360, 'Y_and_Z');
+                _this.interiar_y = _this.add.sprite(475, 360, 'x_Y_and_Z');
                 _this.interiar_y.frame = 1;
                 _this.interiar_y.scale.setTo(0.45);
                 _this.interiar_y.inputEnabled = true;
@@ -1445,20 +1449,21 @@ Game.GMLA_05_G7level1.prototype =
             }
             else {
                 if (_this.ywOrder[0] == 1) {
-                    _this.interiar_y = _this.add.sprite(475, 360, 'Y_and_Z');
+                    _this.interiar_y = _this.add.sprite(475, 360, 'x_Y_and_Z');
                     _this.interiar_y.frame = 1;
                     _this.interiar_y.scale.setTo(0.5);
                     _this.CheeseGroup_4.addChild(_this.interiar_y);
                 }
                 if (_this.ywOrder[0] == 2) {
-                    _this.interiar_w = _this.add.sprite(430 + ((139 * _this.sinC) / _this.sinB) - 50, 420, 'Y_and_Z');//
+                    _this.interiar_w = _this.add.sprite(430 + ((139 * _this.sinC) / _this.sinB) - 50, 420, 'x_Y_and_Z');//
                     _this.interiar_w.frame = 1;
                     _this.interiar_w.scale.setTo(0.4);
                     _this.CheeseGroup_4.addChild(_this.interiar_w);
                 }
             }
 
-            _this.interiar_z = _this.add.sprite(460, 405, 'Y_and_Z');
+            _this.interiar_z = _this.add.sprite(460, 405, 'x_Y_and_Z');
+            _this.interiar_z.frame = 2;
             _this.interiar_z.scale.setTo(0.5);
             _this.interiar_z.inputEnabled = true;
             _this.interiar_z.input.useHandCursor = true;
@@ -1777,8 +1782,9 @@ Game.GMLA_05_G7level1.prototype =
                 }
             }
 
-            _this.exterior_x = _this.add.image(376 + ((200 * _this.sinC) / _this.sinB) + 10, 405, 'close_btn');
-            _this.exterior_x.scale.setTo(0.37);
+            _this.exterior_x = _this.add.image(376 + ((200 * _this.sinC) / _this.sinB) + 10, 405, 'x_Y_and_Z');
+            _this.exterior_x.frame = 0;
+            _this.exterior_x.scale.setTo(0.5);
             _this.wafferGroup_4.addChild(_this.exterior_x);
             if (_this.count1 > 3) {
                 _this.exterior_x.inputEnabled = true;
@@ -1787,7 +1793,7 @@ Game.GMLA_05_G7level1.prototype =
             }
 
             if (_this.count1 < 4) {
-                _this.interiar_y = _this.add.sprite(475, 335, 'Y_and_Z');
+                _this.interiar_y = _this.add.sprite(475, 335, 'x_Y_and_Z');
                 _this.interiar_y.frame = 1;
                 _this.interiar_y.scale.setTo(0.5);
                 _this.interiar_y.inputEnabled = true;
@@ -1797,20 +1803,21 @@ Game.GMLA_05_G7level1.prototype =
             }
             else {
                 if (_this.ywOrder[0] == 1) {
-                    _this.interiar_y = _this.add.sprite(475, 335, 'Y_and_Z');
+                    _this.interiar_y = _this.add.sprite(475, 335, 'x_Y_and_Z');
                     _this.interiar_y.frame = 1;
                     _this.interiar_y.scale.setTo(0.5);
                     _this.wafferGroup_4.addChild(_this.interiar_y);
                 }
                 if (_this.ywOrder[0] == 2) {
-                    _this.interiar_w = _this.add.sprite(376 + ((200 * _this.sinC) / _this.sinB) - 60, 400, 'Y_and_Z');
+                    _this.interiar_w = _this.add.sprite(376 + ((200 * _this.sinC) / _this.sinB) - 60, 400, 'x_Y_and_Z');
                     _this.interiar_w.frame = 1;
                     _this.interiar_w.scale.setTo(0.5);
                     _this.wafferGroup_4.addChild(_this.interiar_w);
                 }
             }
 
-            _this.interiar_z = _this.add.sprite(420, 405, 'Y_and_Z');
+            _this.interiar_z = _this.add.sprite(420, 405, 'x_Y_and_Z');
+            _this.interiar_z.frame = 2;
             _this.interiar_z.scale.setTo(0.5);
             _this.interiar_z.inputEnabled = true;
             _this.interiar_z.input.useHandCursor = true;
@@ -2140,8 +2147,9 @@ Game.GMLA_05_G7level1.prototype =
                     }
                 }
 
-                _this.exterior_x = _this.add.image(485 + (_this.sandwitch_1.height * _this.tanA) + 20, 350, 'close_btn');
-                _this.exterior_x.scale.setTo(0.5);
+                _this.exterior_x = _this.add.image(485 + (_this.sandwitch_1.height * _this.tanA) + 20, 350, 'x_Y_and_Z');
+                _this.exterior_x.frame = 0;
+                _this.exterior_x.scale.setTo(0.7);
                 _this.sandwitchGroup_4.addChild(_this.exterior_x);
                 if (_this.count1 > 3) {
                     _this.exterior_x.inputEnabled = true;
@@ -2150,7 +2158,7 @@ Game.GMLA_05_G7level1.prototype =
                 }
 
                 if (_this.count1 < 4) {
-                    _this.interiar_y = _this.add.sprite(489, 220, 'Y_and_Z');
+                    _this.interiar_y = _this.add.sprite(489, 220, 'x_Y_and_Z');
                     _this.interiar_y.frame = 1;
                     _this.interiar_y.scale.setTo(0.7);
                     _this.interiar_y.inputEnabled = true;
@@ -2160,20 +2168,21 @@ Game.GMLA_05_G7level1.prototype =
                 }
                 else {
                     if (_this.ywOrder[0] == 1) {
-                        _this.interiar_y = _this.add.sprite(489, 220, 'Y_and_Z');
+                        _this.interiar_y = _this.add.sprite(489, 220, 'x_Y_and_Z');
                         _this.interiar_y.frame = 1;
                         _this.interiar_y.scale.setTo(0.7);
                         _this.sandwitchGroup_4.addChild(_this.interiar_y);
                     }
                     if (_this.ywOrder[0] == 2) {
-                        _this.interiar_w = _this.add.sprite(485 + (_this.sandwitch_1.height * _this.tanA) - 50, 375, 'Y_and_Z');
+                        _this.interiar_w = _this.add.sprite(485 + (_this.sandwitch_1.height * _this.tanA) - 50, 375, 'x_Y_and_Z');
                         _this.interiar_w.frame = 1;
                         _this.interiar_w.scale.setTo(0.7);
                         _this.sandwitchGroup_4.addChild(_this.interiar_w);
                     }
                 }
 
-                _this.interiar_z = _this.add.sprite(520, 350, 'Y_and_Z');
+                _this.interiar_z = _this.add.sprite(520, 350, 'x_Y_and_Z');
+                _this.interiar_z.frame = 2;
                 _this.interiar_z.scale.setTo(0.7);
                 _this.interiar_z.inputEnabled = true;
                 _this.interiar_z.input.useHandCursor = true;
@@ -2448,8 +2457,9 @@ Game.GMLA_05_G7level1.prototype =
                         // _this.Ask_Question4.play();
                     }
                 }
-                _this.exterior_x = _this.add.image(680, 390 - (_this.sandwitch_1.height * _this.tanA), 'close_btn');
-                _this.exterior_x.scale.setTo(0.5);
+                _this.exterior_x = _this.add.image(680, 390 - (_this.sandwitch_1.height * _this.tanA), 'x_Y_and_Z');
+                _this.exterior_x.frame = 0;
+                _this.exterior_x.scale.setTo(0.6);
                 _this.sandwitchGroup_4.addChild(_this.exterior_x);
                 if (_this.count1 > 3) {
                     _this.exterior_x.inputEnabled = true;
@@ -2458,7 +2468,7 @@ Game.GMLA_05_G7level1.prototype =
                 }
 
                 if (_this.count1 < 4) {
-                    _this.interiar_y = _this.add.sprite(560, 365, 'Y_and_Z');
+                    _this.interiar_y = _this.add.sprite(560, 365, 'x_Y_and_Z');
                     _this.interiar_y.frame = 1;
                     _this.interiar_y.scale.setTo(0.7);
                     _this.interiar_y.inputEnabled = true;
@@ -2468,22 +2478,23 @@ Game.GMLA_05_G7level1.prototype =
                 }
                 else {
                     if (_this.ywOrder[0] == 1) {
-                        _this.interiar_y = _this.add.sprite(560, 365, 'Y_and_Z');
+                        _this.interiar_y = _this.add.sprite(560, 365, 'x_Y_and_Z');
                         _this.interiar_y.frame = 1;
-                        _this.interiar_y.scale.setTo(0.7);
+                        _this.interiar_y.scale.setTo(0.6);
                         _this.sandwitchGroup_4.addChild(_this.interiar_y);
                     }
 
                     if (_this.ywOrder[0] == 2) {
-                        _this.interiar_w = _this.add.sprite(690, 450 - (_this.sandwitch_1.height * _this.tanA), 'Y_and_Z');
+                        _this.interiar_w = _this.add.sprite(690, 450 - (_this.sandwitch_1.height * _this.tanA), 'x_Y_and_Z');
                         _this.interiar_w.frame = 1;
                         _this.interiar_w.scale.setTo(0.7);
                         _this.sandwitchGroup_4.addChild(_this.interiar_w);
                     }
                 }
 
-                _this.interiar_z = _this.add.sprite(680, 360, 'Y_and_Z');
-                _this.interiar_z.scale.setTo(0.7);
+                _this.interiar_z = _this.add.sprite(680, 360, 'x_Y_and_Z');
+                _this.interiar_z.frame = 2;
+                _this.interiar_z.scale.setTo(0.6);
                 _this.interiar_z.inputEnabled = true;
                 _this.interiar_z.input.useHandCursor = true;
                 _this.interiar_z.events.onInputDown.add(_this.interiar_z_Angle);
