@@ -8,7 +8,7 @@ Game.AL_ES1_G8level1.prototype =
         _this = this;
 
         //* language is passed as parameter.
-        _this.languageSelected = window.languageSelected; 
+        _this.languageSelected = window.languageSelected;
         //* language is passed as parameter.
         // _this.languageSelected = document.getElementById("LANGUAGE").innerHTML;
 
