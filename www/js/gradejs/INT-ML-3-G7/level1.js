@@ -183,7 +183,7 @@ Game.INT_ML3_G7level1.prototype =
         // BULB
         // _this.hintBtn = _this.add.sprite(670, 6, 'bulb');
         // _this.hintBtn.scale.setTo(0.5, 0.6);
-         _this.hintBtn.bringToTop();
+        _this.hintBtn.bringToTop();
         _this.hintBtn.visible = true;
         _this.hintBtn.smoothed = false;
         _this.hintBtnAnim = _this.hintBtn.animations.add('hint');
@@ -291,11 +291,11 @@ Game.INT_ML3_G7level1.prototype =
         _this.StoreArrayValues();
         _this.showInitialScreen()
 
-         //* hintbtn will be true when the game is playing
+        //* hintbtn will be true when the game is playing
         _this.hintBtn.inputEnabled = true;
         _this.hintBtn.input.useHandCursor = true;
         _this.hint_flag = 1;
-        
+
         //edited for baseurl apk
         _this.questionid = 1;
 
@@ -478,10 +478,15 @@ Game.INT_ML3_G7level1.prototype =
         _this.text2.scale.setTo(1.2)
         _this.text2.fill = '#F0000';
 
-        _this.textSign = _this.add.text(113, 30, 'X')
+        _this.textSign = _this.add.text(113, 33, '⨉')
         _this.questionBox.addChild(_this.textSign)
-        _this.textSign.scale.setTo(1.2)
+        // _this.textSign.scale.setTo(1.2)
         _this.textSign.fill = '#FF0000';
+
+        //     _this.textSign = _this.add.text(113 - 5, 33, '⨉');
+        //     _this.questionBox.addChild(_this.textSign)
+        //    // _this.textSign.scale.setTo(1.2)
+        //     _this.textSign.fill = '#FF0000';
 
         if (multiplier[_this.count1] > 9)
             _this.text4 = _this.add.text(146 + 2, 30, '(-' + multiplier[_this.count1] + ')')
@@ -869,11 +874,10 @@ Game.INT_ML3_G7level1.prototype =
         _this.text2.scale.setTo(1.2)
         _this.text2.fill = '#F0000';
 
-        _this.textSign = _this.add.text(113 - 10, 30, 'X')
+        _this.textSign = _this.add.text(113 - 5, 33, '⨉');
         _this.questionBox.addChild(_this.textSign)
-        _this.textSign.scale.setTo(1.2)
+        // _this.textSign.scale.setTo(1.2)
         _this.textSign.fill = '#FF0000';
-
 
         if (multiplier[_this.count1] > 9)
             _this.text4 = _this.add.text(146 - 5, 30, '(- ' + multiplier[_this.count1] + ')')

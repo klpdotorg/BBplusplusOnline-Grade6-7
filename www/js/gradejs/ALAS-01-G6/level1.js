@@ -709,6 +709,7 @@ Game.ALAS_01_G6level1.prototype =
     },
 
     animObject: function () {
+        _this.firstTween = false;
         switch (_this.ObjectArray[_this.count1]) //_this.ObjectArray[_this.count1]
         {
             case 1: _this.tweenCarToScreen();
@@ -1822,19 +1823,38 @@ Game.ALAS_01_G6level1.prototype =
         adjustBalanceTweenR = _this.add.tween(_this.rightscaleGroup);
         adjustBarTween = _this.add.tween(weightScale2); //*the middle beam of balance.
 
-        _this.leftScaleY = _this.leftscaleGroup.y + 1.5 * _this.diffnetWeight;
-        _this.rightScaleY = _this.rightscaleGroup.y - 1.5 * _this.diffnetWeight;
-        _this.barAngleY = weightScale2.angle - 0.55 * _this.diffnetWeight;
+        // _this.leftScaleY  = _this.leftscaleGroup.y  + 1.5 * _this.diffnetWeight;
+        // _this.rightScaleY = _this.rightscaleGroup.y - 1.5 * _this.diffnetWeight;
+        // _this.barAngleY   = weightScale2.angle - 0.55 * _this.diffnetWeight;
 
-        console.log("+++++++++++++++++++++++" + _this.barAngleY + " " + weightScale2.angle);
+        // console.log("+++++++++++++++++++++++" + _this.barAngleY + " " + weightScale2.angle);
 
-        adjustBalanceTweenL.to({ x: 0, y: _this.leftScaleY }, 600, 'Sine', true, 0);
-        adjustBalanceTweenR.to({ x: 0, y: _this.rightScaleY }, 600, 'Sine', true, 0);
-        adjustBarTween.to({ angle: _this.barAngleY }, 600, 'Sine', true, 0);
+        // adjustBalanceTweenL.to({ x: 0, y: _this.leftScaleY  }, 600, 'Sine', true, 0);
+        // adjustBalanceTweenR.to({ x: 0, y: _this.rightScaleY }, 600, 'Sine', true, 0);
+        // adjustBarTween.to     ({ angle: _this.barAngleY }, 600, 'Sine', true, 0);
 
-        adjustBalanceTweenL.start();
-        adjustBalanceTweenR.start();
+        // adjustBalanceTweenL.start();
+        // adjustBalanceTweenR.start();
+        if (_this.firstTween == false) {
+            _this.leftScaleY = _this.leftscaleGroup.y + 1.5 * _this.diffnetWeight;
+            _this.rightScaleY = _this.rightscaleGroup.y - 1.5 * _this.diffnetWeight;
+            _this.barAngleY = weightScale2.angle - 0.55 * _this.diffnetWeight;
 
+            console.log("+++++++++++++++++++++++" + _this.barAngleY + " " + weightScale2.angle);
+
+            adjustBalanceTweenL.to({ x: 0, y: _this.leftScaleY }, 600, 'Sine', true, 0);
+            adjustBalanceTweenR.to({ x: 0, y: _this.rightScaleY }, 600, 'Sine', true, 0);
+            adjustBarTween.to({ angle: _this.barAngleY }, 600, 'Sine', true, 0);
+
+            adjustBalanceTweenL.start();
+            adjustBalanceTweenR.start();
+            _this.firstTween = true;
+        } else {
+
+            weightScale2.angle -= 0.55 * _this.diffnetWeight;
+            _this.rightscaleGroup.y -= 1.5 * _this.diffnetWeight;
+            _this.leftscaleGroup.y += 1.5 * _this.diffnetWeight;
+        }
         //weightScale2.angle -= 0.55 * _this.diffnetWeight;
 
         if (_this.objectCounter == _this.rightValueZArray[_this.questionNumber]) {
@@ -1846,6 +1866,48 @@ Game.ALAS_01_G6level1.prototype =
             }, this);
         }
     },
+
+    // adjustBalanace: function () {
+    //     //* Based on the net weight we will find Y ( vertical displacement of the left balance) and Angle (beam of the balance)
+    //     //* Maximum displacement is 11 digrees & 30 Y value 
+    //     //* Y = X * 1.5 where X is the net.w. 1.5 is the per object displacement 
+    //     //* angle = X * 0.55. 0.55 is the per objrct angle 
+
+    //     console.log("++++++ adjustBalance Function");
+
+    //     _this.prevnetWeight = _this.netWeight; //* save the previous net weight.
+    //     _this.netWeight = _this.leftValueXArray[_this.questionNumber] - (_this.rightValueYArray[_this.questionNumber] + _this.objectCounter);
+
+    //     _this.diffnetWeight = _this.netWeight - _this.prevnetWeight;
+
+    //     adjustBalanceTweenL = _this.add.tween(_this.leftscaleGroup);
+    //     adjustBalanceTweenR = _this.add.tween(_this.rightscaleGroup);
+    //     adjustBarTween = _this.add.tween(weightScale2); //*the middle beam of balance.
+
+    //     _this.leftScaleY = _this.leftscaleGroup.y + 1.5 * _this.diffnetWeight;
+    //     _this.rightScaleY = _this.rightscaleGroup.y - 1.5 * _this.diffnetWeight;
+    //     _this.barAngleY = weightScale2.angle - 0.55 * _this.diffnetWeight;
+
+    //     console.log("+++++++++++++++++++++++" + _this.barAngleY + " " + weightScale2.angle);
+
+    //     adjustBalanceTweenL.to({ x: 0, y: _this.leftScaleY }, 600, 'Sine', true, 0);
+    //     adjustBalanceTweenR.to({ x: 0, y: _this.rightScaleY }, 600, 'Sine', true, 0);
+    //     adjustBarTween.to({ angle: _this.barAngleY }, 600, 'Sine', true, 0);
+
+    //     adjustBalanceTweenL.start();
+    //     adjustBalanceTweenR.start();
+
+    //     //weightScale2.angle -= 0.55 * _this.diffnetWeight;
+
+    //     if (_this.objectCounter == _this.rightValueZArray[_this.questionNumber]) {
+    //         console.log("inside if ");
+    //         //* play a clung sound
+    //         _this.time.events.add(100, function () {
+    //             // _this.clungSound = _this.add.audio('ClungSound');
+    //             _this.clungSound.play();
+    //         }, this);
+    //     }
+    // },
 
     adjustBalanaceback: function () {
 
