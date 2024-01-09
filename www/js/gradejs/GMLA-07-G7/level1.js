@@ -3695,13 +3695,13 @@ Game.GMLA_07_G7level1.prototype =
         _this.nontriangleGroup.addChild(_this.nextScreen);
         _this.nextScreen.events.onInputDown.add(function () {
             _this.pauseVoice();
-            _this.drawTriangle();
+            _this.drawTriangleHint();
         });
 
         _this.background_demo.addChild(_this.nontriangleGroup);
 
     },
-    drawTriangle: function () {
+    drawTriangleHint: function () {
         if (_this.nontriangleGroup)
             _this.nontriangleGroup.destroy();
 
