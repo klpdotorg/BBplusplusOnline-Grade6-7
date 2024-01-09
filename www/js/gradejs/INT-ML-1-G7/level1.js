@@ -475,9 +475,9 @@ Game.INT_ML1_G7level1.prototype =
         _this.text2.scale.setTo(1.2)
         _this.text2.fill = '#F0000';
 
-        _this.textSign = _this.add.text(113, 30, 'X')
+        _this.textSign = _this.add.text(113, 33, '⨉')
         _this.questionBox.addChild(_this.textSign)
-        _this.textSign.scale.setTo(1.2)
+        // _this.textSign.scale.setTo(1.2)
         _this.textSign.fill = '#FF0000';
 
         if (multiplier[_this.count1] > 9)
@@ -862,9 +862,9 @@ Game.INT_ML1_G7level1.prototype =
         _this.text2.scale.setTo(1.2)
         _this.text2.fill = '#F0000';
 
-        _this.textSign = _this.add.text(113 - 5, 30, 'X')
+        _this.textSign = _this.add.text(113 - 5, 33, '⨉');
         _this.questionBox.addChild(_this.textSign)
-        _this.textSign.scale.setTo(1.2)
+        // _this.textSign.scale.setTo(1.2)
         _this.textSign.fill = '#FF0000';
 
 
