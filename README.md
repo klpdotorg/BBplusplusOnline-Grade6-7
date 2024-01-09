@@ -1,2 +1,2 @@
-The APK name includes 'Online' in it there is only one apk here in the list - 'BBplusplusOnlineG6G7' This APP is fully online.User phone needs to be online in order to play the games in this App also the score/user progress will update eventually after playing each game.This app have both grade 6 and grade 7 games in it.
-The APK name includes 'G6' in it that means Grade 6. That indicates that particular app have only grade 6 games it does not have grade 7 or other grade games.# BBplusplusOnline-Grade6-7
+ This APP is fully online.User phone needs to be online in order to play the games in this App also the score/user progress will update eventually after playing each game.This app includes grade 6,7 & 8  games in it.
+134 total games# BBplusplusOnline-Grade6-7
