@@ -300,6 +300,43 @@ var GMLA_05_G7_JSON = {
 		}
 	},
 
+	xyz_image: {
+		"frames": [
+
+			{
+				"filename": "Symbol 4 instance 10000",
+				"frame": { "x": 0, "y": 0, "w": 47, "h": 47 },
+				"rotated": false,
+				"trimmed": false,
+				"spriteSourceSize": { "x": 0, "y": 0, "w": 47, "h": 47 },
+				"sourceSize": { "w": 47, "h": 47 }
+			}
+			, {
+				"filename": "Symbol 4 instance 10001",
+				"frame": { "x": 47, "y": 0, "w": 47, "h": 47 },
+				"rotated": false,
+				"trimmed": false,
+				"spriteSourceSize": { "x": 0, "y": 0, "w": 47, "h": 47 },
+				"sourceSize": { "w": 47, "h": 47 }
+			}
+			, {
+				"filename": "Symbol 4 instance 10002",
+				"frame": { "x": 94, "y": 0, "w": 47, "h": 47 },
+				"rotated": false,
+				"trimmed": false,
+				"spriteSourceSize": { "x": 0, "y": 0, "w": 47, "h": 47 },
+				"sourceSize": { "w": 47, "h": 47 }
+			}],
+		"meta": {
+			"app": "Adobe Animate",
+			"version": "24.0.0.305",
+			"image": "xyz.png",
+			"format": "RGBA8888",
+			"size": { "w": 143, "h": 48 },
+			"scale": "1"
+		}
+	},
+
 	speakerJson: {
 		"frames": [
 

@@ -2491,13 +2491,14 @@ Game.GMM_04_G8level1.prototype = {
     _this.x = 70;
     // set the number pad invisible initially. only after tweening it is made visible
     _this.numGroup.visible = false;
-    if (
-      _this.BoxClicked2 == 2 ||
-      _this.circleRad == true ||
-      _this.part4 == true
-    )
-      cn = 10;
-    else cn = 11;
+    // if (
+    //   _this.BoxClicked2 == 2 ||
+    //   _this.circleRad == true ||
+    //   _this.part4 == true
+    // )
+    //   cn = 10;
+    // else cn = 11;
+    cn = 11;
     for (var i = 0; i < cn; i++) {
       _this.numbg = _this.numGroup.create(_this.x, 552, "Numberpad");
       _this.numbg.anchor.setTo(0.5);
@@ -2507,17 +2508,20 @@ Game.GMM_04_G8level1.prototype = {
 
       _this.numbg.inputEnabled = true;
       _this.numbg.input.useHandCursor = true;
-      if (
-        _this.BoxClicked2 == 2 ||
-        _this.circleRad == true ||
-        _this.part4 == true
-      ) {
-        _this.numbg.events.onInputDown.add(_this.numClicked, _this);
-        _this.x += 75;
-      } else {
-        _this.numbg.events.onInputDown.add(_this.numClicked2, _this); //ans string one
-        _this.x += 65;
-      }
+      // if (
+      //   _this.BoxClicked2 == 2 ||
+      //   _this.circleRad == true ||
+      //   _this.part4 == true
+      // ) {
+      //   _this.numbg.events.onInputDown.add(_this.numClicked, _this);
+      //   _this.x += 75;
+      // } else {
+      //   _this.numbg.events.onInputDown.add(_this.numClicked2, _this); //ans string one
+      //   _this.x += 65;
+      // }
+
+      _this.numbg.events.onInputDown.add(_this.numClicked2, _this); //ans string one
+      _this.x += 65;
     }
     _this.wrongbtn = _this.numGroup.create(_this.x + 10, 552, "Numberpad");
     _this.wrongbtn.frame = 11;
@@ -2550,6 +2554,77 @@ Game.GMM_04_G8level1.prototype = {
     //tween in the number pad after a second.
     _this.tweenNumPad();
   },
+  // addNumberPad: function () {
+  //   _this.Choice = 1;
+  //   _this.objGroup = _this.add.group();
+  //   _this.numGroup = _this.add.group();
+  //   var bottomnumpadbg = _this.numGroup.create(0, 515, "numpadbg");
+  //   bottomnumpadbg.scale.setTo(1, 1);
+
+  //   bottomnumpadbg.name = "numpadbg";
+
+  //   _this.x = 70;
+  //   // set the number pad invisible initially. only after tweening it is made visible
+  //   _this.numGroup.visible = false;
+  //   if (
+  //     _this.BoxClicked2 == 2 ||
+  //     _this.circleRad == true ||
+  //     _this.part4 == true
+  //   )
+  //     cn = 10;
+  //   else cn = 11;
+  //   for (var i = 0; i < cn; i++) {
+  //     _this.numbg = _this.numGroup.create(_this.x, 552, "Numberpad");
+  //     _this.numbg.anchor.setTo(0.5);
+  //     // _this.numbg.scale.setTo(0.8, 0.8);
+  //     _this.numbg.name = i + 1;
+  //     _this.numbg.frame = i;
+
+  //     _this.numbg.inputEnabled = true;
+  //     _this.numbg.input.useHandCursor = true;
+  //     if (
+  //       _this.BoxClicked2 == 2 ||
+  //       _this.circleRad == true ||
+  //       _this.part4 == true
+  //     ) {
+  //       _this.numbg.events.onInputDown.add(_this.numClicked, _this);
+  //       _this.x += 75;
+  //     } else {
+  //       _this.numbg.events.onInputDown.add(_this.numClicked2, _this); //ans string one
+  //       _this.x += 65;
+  //     }
+  //   }
+  //   _this.wrongbtn = _this.numGroup.create(_this.x + 10, 552, "Numberpad");
+  //   _this.wrongbtn.frame = 11;
+  //   _this.wrongbtn.anchor.setTo(0.5);
+  //   // _this.wrongbtn.scale.setTo(0.8, 0.8);
+  //   _this.wrongbtn.name = "wrongbtn";
+  //   _this.wrongbtn.inputEnabled = true;
+  //   _this.wrongbtn.input.useHandCursor = true;
+  //   _this.wrongbtn.events.onInputDown.add(_this.wrongbtnClicked, _this);
+
+  //   _this.rightbtn = _this.numGroup.create(_this.x + 72, 552, "Numberpad");
+  //   _this.rightbtn.frame = 12;
+  //   _this.rightbtn.anchor.setTo(0.5);
+  //   // _this.rightbtn.scale.setTo(0.8, 0.8);
+  //   _this.rightbtn.name = "rightbtn";
+  //   _this.rightbtn.inputEnabled = true;
+  //   _this.rightbtn.input.useHandCursor = true;
+  //   _this.rightbtn.events.onInputDown.add(_this.rightbtnClicked1, _this);
+
+  //   _this.enterTxt = _this.add.text(-100, 8, "");
+  //   _this.enterTxt.anchor.setTo(0.5);
+  //   _this.enterTxt.align = "center";
+  //   _this.enterTxt.font = "Akzidenz-Grotesk BQ";
+  //   _this.enterTxt.fontSize = "30px";
+  //   _this.enterTxt.fontWeight = "normal";
+  //   _this.enterTxt.fill = "#65B4C3";
+
+  //   _this.numpadTween = _this.add.tween(_this.numGroup);
+  //   //_this.AnswerBox.visible=true;
+  //   //tween in the number pad after a second.
+  //   _this.tweenNumPad();
+  // },
   numClicked: function (target) {
     _this.clickSound.currentTime = 0;
     _this.clickSound.play();
@@ -2611,6 +2686,7 @@ Game.GMM_04_G8level1.prototype = {
     _this.enterTxt.visible = true;
     _this.AnswerBox.name = Number("" + var_selectedAns1 + var_selectedAns2);
   },
+
   numClicked2: function (target) {
     _this.clickSound.currentTime = 0;
     _this.clickSound.play();
@@ -2619,7 +2695,10 @@ Game.GMM_04_G8level1.prototype = {
     else if (target.name == 10) var_selectedAns1 = 0;
     else var_selectedAns1 = target.name;
 
-    if (_this.table1 == true || _this.table2 == true) {
+    if (_this.circleRad == true || _this.BoxClicked2 == 2) {
+      max = 3
+    }
+    else if (_this.table1 == true || _this.table2 == true) {
       max = 6;
       _this.box_1.removeChild(_this.enterTxt);
     } else {
@@ -2664,8 +2743,30 @@ Game.GMM_04_G8level1.prototype = {
     _this.enterTxt.fill = "#65B4C3";
     _this.enterTxt.fontWeight = "normal";
 
+    if (_this.circleRad == true || _this.part4 == true) {
+      _this.enterTxt.x -= 46
+    }
+    if (_this.circleRad == true && _this.area == 1) {
+      _this.enterTxt.x -= 46
+    }
+    if (_this.part4 == true) {
+      _this.enterTxt.x -= 110
+    }
+    if (_this.BoxClicked2 == 2) {
+      _this.enterTxt.x -= (180 - 12)
+    }
     if (_this.part3 == true || _this.part31 == true || _this.part5 == true)
       _this.enterTxt.x -= 155;
+
+
+    if (!_this.ansString.includes(".") && (_this.circleRad == true || _this.BoxClicked2 == 2) && _this.ansString.length > 2) {
+      _this.enterTxt.x -= 4
+    }
+    else if (!_this.ansString.includes(".") && (_this.part4 == true) && _this.ansString.length > 2) {
+      _this.enterTxt.x -= 6
+    } else if (!_this.ansString.includes(".") && _this.ansString.length > 4) {
+      _this.enterTxt.x -= 6
+    }
 
     if (_this.table1 == true || _this.table2 == true) {
       _this.enterTxt.y = 94;
@@ -2681,6 +2782,76 @@ Game.GMM_04_G8level1.prototype = {
       _this.AnswerBox.name = Number("" + _this.ansString);
     }
   },
+  // numClicked2: function (target) {
+  //   _this.clickSound.currentTime = 0;
+  //   _this.clickSound.play();
+
+  //   if (target.name == 11) var_selectedAns1 = ".";
+  //   else if (target.name == 10) var_selectedAns1 = 0;
+  //   else var_selectedAns1 = target.name;
+
+  //   if (_this.table1 == true || _this.table2 == true) {
+  //     max = 6;
+  //     _this.box_1.removeChild(_this.enterTxt);
+  //   } else {
+  //     max = 5;
+  //     _this.AnswerBox.removeChild(_this.enterTxt);
+  //   }
+  //   _this.enterTxt.visible = false;
+
+  //   if (!_this.ansString || _this.ansString.length < max) {
+  //     if (!_this.ansString) _this.ansString = "";
+  //     _this.ansString += var_selectedAns1;
+  //   }
+
+  //   if (_this.ansString.length == 1)
+  //     _this.enterTxt = _this.add.text(95, 20, "" + _this.ansString, {
+  //       fontSize: "30px",
+  //     });
+  //   else if (_this.ansString.length == 2)
+  //     _this.enterTxt = _this.add.text(90, 20, "" + _this.ansString, {
+  //       fontSize: "30px",
+  //     });
+  //   else if (_this.ansString.length == 3)
+  //     _this.enterTxt = _this.add.text(85, 20, "" + _this.ansString, {
+  //       fontSize: "30px",
+  //     });
+  //   else if (_this.ansString.length == 4)
+  //     _this.enterTxt = _this.add.text(80, 20, "" + _this.ansString, {
+  //       fontSize: "30px",
+  //     });
+  //   else if (_this.ansString.length == 5)
+  //     _this.enterTxt = _this.add.text(75, 20, "" + _this.ansString, {
+  //       fontSize: "30px",
+  //     });
+  //   else if (_this.ansString.length == 6)
+  //     _this.enterTxt = _this.add.text(70, 20, "" + _this.ansString, {
+  //       fontSize: "30px",
+  //     });
+
+  //   _this.enterTxt.x += 170;
+  //   _this.enterTxt.align = "right";
+  //   _this.enterTxt.font = "Akzidenz-Grotesk BQ";
+  //   _this.enterTxt.fill = "#65B4C3";
+  //   _this.enterTxt.fontWeight = "normal";
+
+  //   if (_this.part3 == true || _this.part31 == true || _this.part5 == true)
+  //     _this.enterTxt.x -= 155;
+
+  //   if (_this.table1 == true || _this.table2 == true) {
+  //     _this.enterTxt.y = 94;
+  //     _this.enterTxt.x -= 10;
+  //     if (_this.table2 == true) _this.enterTxt.y = 177;
+
+  //     _this.box_1.addChild(_this.enterTxt);
+  //     _this.enterTxt.visible = true;
+  //     _this.box_1.name = Number("" + _this.ansString);
+  //   } else {
+  //     _this.AnswerBox.addChild(_this.enterTxt);
+  //     _this.enterTxt.visible = true;
+  //     _this.AnswerBox.name = Number("" + _this.ansString);
+  //   }
+  // },
   tweenNumPad: function () {
     _this.numGroup.visible = true;
     _this.numpadTween.to({ x: 0, y: -43 }, 1000, "Linear", true, 0);

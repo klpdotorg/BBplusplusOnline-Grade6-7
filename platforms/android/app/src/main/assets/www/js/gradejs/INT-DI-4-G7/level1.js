@@ -510,19 +510,21 @@ Game.INT_DI4_G7level1.prototype =
         _this.DSign1.lineStyle(4, 0xFF0000);
         _this.DSign1.moveTo(115, 50);
         _this.DSign1.lineTo(135, 50);
-        _this.questionBox.addChild(_this.DSign1)
+        _this.questionBox.addChild(_this.DSign1);
 
         _this.DSign2 = _this.add.graphics();
         _this.DSign2.lineStyle(4, 0xFF0000);
-        _this.DSign2.moveTo(122, 40);
-        _this.DSign2.lineTo(128, 40);
-        _this.questionBox.addChild(_this.DSign2)
+        _this.DSign2.beginFill(0xFF0000);
+        _this.DSign2.drawCircle(125, 40, 2);
+        _this.DSign2.endFill();
+        _this.questionBox.addChild(_this.DSign2);
 
         _this.DSign3 = _this.add.graphics();
         _this.DSign3.lineStyle(4, 0xFF0000);
-        _this.DSign3.moveTo(122, 60);
-        _this.DSign3.lineTo(128, 60);
-        _this.questionBox.addChild(_this.DSign3)
+        _this.DSign3.beginFill(0xFF0000);
+        _this.DSign3.drawCircle(125, 60, 2);
+        _this.DSign3.endFill();
+        _this.questionBox.addChild(_this.DSign3);
 
     },
     eraserStart: function (target) {

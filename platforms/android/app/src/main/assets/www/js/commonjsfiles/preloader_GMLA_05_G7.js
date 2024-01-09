@@ -58,7 +58,8 @@ Game.preloader_GMLA_05_G7.prototype = {
                 this.load.atlas('image_2', window.baseUrl +'assets/gradeAssets/GMLA-05-G7/image_2.png', null, GMLA_05_G7_JSON.image_2);
                 this.load.atlas('image_3', window.baseUrl +'assets/gradeAssets/GMLA-05-G7/image_3.png', null, GMLA_05_G7_JSON.image_3);
                 this.load.atlas('box', window.baseUrl +'assets/gradeAssets/GMLA-05-G7/box.png', null, GMLA_05_G7_JSON.box);
-                this.load.atlas('Y_and_Z', window.baseUrl +'assets/gradeAssets/GMLA-05-G7/Y and Z.png', null, GMLA_05_G7_JSON.Y_and_Z);
+                //this.load.atlas('Y_and_Z', window.baseUrl +'assets/gradeAssets/GMLA-05-G7/Y and Z.png', null, GMLA_05_G7_JSON.Y_and_Z);
+                this.load.atlas('x_Y_and_Z', 'assets/gradeAssets/GMLA-05-G7/xyz.png', null, GMLA_05_G7_JSON.xyz_image);
 
                 this.load.atlas('TickBtn', window.baseUrl +'assets/gradeAssets/GMLA-05-G7/TickBtn.png', null, GMLA_05_G7_JSON.tickJson);
 
