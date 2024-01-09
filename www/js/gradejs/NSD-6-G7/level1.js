@@ -582,7 +582,7 @@ Game.NSD_6_G7level1.prototype =
         _this.greenStripe = _this.add.sprite(37, 184, 'greenBox')
         _this.greenStripe.scale.setTo(0.9);
 
-        _this.orangeStripe = _this.add.sprite(75, 320, 'orangeBox')
+        _this.orangeStripe = _this.add.sprite(75, 340, 'orangeBox')
         _this.orangeStripe.scale.setTo(0.9);
 
         _this.yellowStripe = _this.add.sprite(80, 190, 'yellowBox')
@@ -1001,6 +1001,9 @@ Game.NSD_6_G7level1.prototype =
     SecondSpaceTween: function () {
         console.log("SecondSpaceTween");
         if (_this.yellowGrp2.length > 0) {
+            _this.yellowGrp2.children.forEach(element => {
+                element.scale.setTo(0.4, 0.47);
+            });
             yellowDragAction = _this.add.tween(_this.yellowGrp2);
             yellowDragAction.to({ x: -350, y: 186 }, 500, 'Linear', true, 0);//470
             yellowDragAction.start();
