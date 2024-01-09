@@ -766,11 +766,11 @@ Game.GMLA_07_G7level1.prototype =
             _this.triangle.add(_this.stick2); // add the second stick to the group
             _this.triangle.add(_this.stick3); // add the third stick to the group
         }
-        else{
+        else {
             _this.noofAttempts++;
             _this.wrongSound.play();
         }
-            
+
 
     },
 
@@ -1225,11 +1225,11 @@ Game.GMLA_07_G7level1.prototype =
             _this.len55.visible = false;
             _this.displayabc();  //display textboxes and value of a b c
         }
-        else{
+        else {
             _this.noofAttempts++;
             _this.wrongSound.play();
         }
-            
+
 
     },
 
@@ -2285,7 +2285,8 @@ Game.GMLA_07_G7level1.prototype =
 
             }
             else  //else wrong give again chance
-            {   _this.noofAttempts++;
+            {
+                _this.noofAttempts++;
                 _this.wrongSound.play();
                 _this.thumDown.inputEnabled = true;
                 _this.thumUp.inputEnabled = true;
